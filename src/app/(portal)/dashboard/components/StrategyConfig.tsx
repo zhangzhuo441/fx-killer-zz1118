@@ -29,7 +29,10 @@ export default function StrategyConfig({ config, onConfigChange }: StrategyConfi
   ];
 
   useEffect(() => {
-    // 从Binance获取热门交易对
+    // 外汇交易对（始终保留在顶部）
+    const forexSymbols = ['XAUUSDT', 'EURUSD', 'GBPUSD', 'USDJPY'];
+
+    // 从Binance获取热门加密货币交易对
     const fetchPopularSymbols = async () => {
       setLoadingSymbols(true);
       try {
@@ -39,8 +42,9 @@ export default function StrategyConfig({ config, onConfigChange }: StrategyConfi
           const usdtSymbols = data.symbols
             .filter((s: any) => s.symbol.endsWith('USDT') && s.status === 'TRADING')
             .map((s: any) => s.symbol)
-            .slice(0, 20); // 取前20个
-          setPopularSymbols(usdtSymbols.length > 0 ? usdtSymbols : defaultSymbols);
+            .slice(0, 15); // 取前15个加密货币
+          // 合并：外汇交易对 + Binance加密货币
+          setPopularSymbols([...forexSymbols, ...usdtSymbols]);
         } else {
           setPopularSymbols(defaultSymbols);
         }

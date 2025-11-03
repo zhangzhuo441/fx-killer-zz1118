@@ -36,11 +36,22 @@ export async function GET(request: NextRequest) {
       }))
       .sort((a: any, b: any) => a.symbol.localeCompare(b.symbol));
 
-    // Get popular symbols to show first (only real Binance USDS-margined futures)
-    const popularSymbols = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'SOLUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT'];
+    // Forex symbols (not from Binance, but supported by our data providers)
+    const forexSymbols = [
+      { symbol: 'XAUUSDT', baseAsset: 'XAU', quoteAsset: 'USDT', pricePrecision: 2, quantityPrecision: 3 },
+      { symbol: 'EURUSD', baseAsset: 'EUR', quoteAsset: 'USD', pricePrecision: 5, quantityPrecision: 0 },
+      { symbol: 'GBPUSD', baseAsset: 'GBP', quoteAsset: 'USD', pricePrecision: 5, quantityPrecision: 0 },
+      { symbol: 'USDJPY', baseAsset: 'USD', quoteAsset: 'JPY', pricePrecision: 3, quantityPrecision: 0 },
+    ];
 
-    const popular = symbols.filter((s: any) => popularSymbols.includes(s.symbol));
-    const others = symbols.filter((s: any) => !popularSymbols.includes(s.symbol));
+    // Get popular crypto symbols
+    const popularCryptoSymbols = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'SOLUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT'];
+
+    const popularCrypto = symbols.filter((s: any) => popularCryptoSymbols.includes(s.symbol));
+    const others = symbols.filter((s: any) => !popularCryptoSymbols.includes(s.symbol));
+
+    // Combine: Forex first, then popular crypto
+    const popular = [...forexSymbols, ...popularCrypto];
 
     return NextResponse.json({
       popular,
@@ -50,8 +61,14 @@ export async function GET(request: NextRequest) {
   } catch (error) {
     console.error('Error fetching symbols:', error);
 
-    // Fallback to default symbols if Binance API fails (only real Binance futures)
+    // Fallback to default symbols if Binance API fails - forex + crypto
     const fallbackSymbols = [
+      // Forex
+      { symbol: 'XAUUSDT', baseAsset: 'XAU', quoteAsset: 'USDT', pricePrecision: 2, quantityPrecision: 3 },
+      { symbol: 'EURUSD', baseAsset: 'EUR', quoteAsset: 'USD', pricePrecision: 5, quantityPrecision: 0 },
+      { symbol: 'GBPUSD', baseAsset: 'GBP', quoteAsset: 'USD', pricePrecision: 5, quantityPrecision: 0 },
+      { symbol: 'USDJPY', baseAsset: 'USD', quoteAsset: 'JPY', pricePrecision: 3, quantityPrecision: 0 },
+      // Crypto
       { symbol: 'BTCUSDT', baseAsset: 'BTC', quoteAsset: 'USDT', pricePrecision: 2, quantityPrecision: 3 },
       { symbol: 'ETHUSDT', baseAsset: 'ETH', quoteAsset: 'USDT', pricePrecision: 2, quantityPrecision: 3 },
       { symbol: 'BNBUSDT', baseAsset: 'BNB', quoteAsset: 'USDT', pricePrecision: 2, quantityPrecision: 2 },
