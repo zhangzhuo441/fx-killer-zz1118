@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { BacktestEngine } from '@/lib/trading/backtest/engine';
 import { HistoricalDataProvider } from '@/lib/trading/connectors/historicalDataProvider';
+import { ForexDataProvider } from '@/lib/trading/connectors/forexDataProvider';
 import type { TradingConfig, Candle } from '@/lib/trading/types';
 
 /**
@@ -157,62 +158,182 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    let candles: Candle[] = [];
+    let candles1m: Candle[] = [];
+    let candles5m: Candle[] | undefined;
     let dataSource = 'generated';
 
-    // Try to fetch from Binance public API first
-    try {
+    // CRITICAL FIX: Determine if we need dual timeframe
+    const needsDualTimeframe = tradingConfig.interval === '1m' &&
+                               (tradingConfig.strategy.aggressiveness === 1 ||
+                                tradingConfig.strategy.aggressiveness === 2);
+
+    // 优先级: 外汇数据提供商 -> Binance -> 模拟数据
+    // 对于XAUUSDT等外汇品种，使用专门的外汇数据源
+    const isForexSymbol = tradingConfig.symbol.toUpperCase().includes('XAU') ||
+                          tradingConfig.symbol.toUpperCase().includes('XAG') ||
+                          tradingConfig.symbol.toUpperCase().includes('EUR') ||
+                          tradingConfig.symbol.toUpperCase().includes('GBP');
+
+    // 尝试从外汇数据提供商获取数据（免费API）
+    if (isForexSymbol) {
+      try {
+        console.log(`🌍 Fetching ${tradingConfig.symbol} from free forex data providers...`);
+        const forexProvider = new ForexDataProvider();
+
+        const candlesNeeded = Math.min(20000, Math.ceil((endDate - startDate) / getIntervalMs(tradingConfig.interval)));
+
+        const result = await forexProvider.fetchHistoricalData(
+          tradingConfig.symbol,
+          tradingConfig.interval,
+          startDate,
+          endDate,
+          candlesNeeded
+        );
+
+        candles1m = result.candles;
+        dataSource = result.source;
+
+        if (candles1m.length > 0) {
+          console.log(`✅ Fetched ${candles1m.length} candles from ${dataSource}`);
+          console.log(`   First: ${new Date(candles1m[0].openTime).toISOString()}, Last: ${new Date(candles1m[candles1m.length - 1].closeTime).toISOString()}`);
+
+          // 如果需要双时间框架，生成5m数据
+          if (needsDualTimeframe) {
+            console.log('⏰ Generating 5m confirmation data for dual timeframe strategy...');
+            const result5m = await forexProvider.fetchHistoricalData(
+              tradingConfig.symbol,
+              '5m',
+              startDate,
+              endDate,
+              Math.min(20000, Math.ceil((endDate - startDate) / getIntervalMs('5m')))
+            );
+            candles5m = result5m.candles;
+            console.log(`✅ Fetched ${candles5m.length} candles (5m) for confirmation`);
+          }
+        }
+      } catch (error) {
+        console.warn('⚠️  Forex data providers failed, trying Binance fallback:', error);
+      }
+    }
+
+    // Fallback: 尝试从Binance获取数据 (仅加密货币)
+    if (candles1m.length === 0 && !isForexSymbol) {
+      try {
       console.log(`Fetching historical data from Binance for ${tradingConfig.symbol}...`);
       console.log(`Date range: ${new Date(startDate).toISOString()} to ${new Date(endDate).toISOString()}`);
+      console.log(`Primary interval: ${tradingConfig.interval}, Aggressiveness: ${tradingConfig.strategy.aggressiveness}`);
 
-      candles = await fetchBinancePublicCandles(
+      // Fetch primary timeframe
+      candles1m = await fetchBinancePublicCandles(
         tradingConfig.symbol,
         tradingConfig.interval,
         startDate,
         endDate
       );
 
-      if (candles.length > 0) {
+      if (candles1m.length > 0) {
         dataSource = 'binance-public';
-        console.log(`Fetched ${candles.length} candles from Binance`);
-        console.log(`First candle: ${new Date(candles[0].openTime).toISOString()}`);
-        console.log(`Last candle: ${new Date(candles[candles.length - 1].closeTime).toISOString()}`);
+        console.log(`Fetched ${candles1m.length} candles (${tradingConfig.interval}) from Binance`);
+        console.log(`First candle: ${new Date(candles1m[0].openTime).toISOString()}`);
+        console.log(`Last candle: ${new Date(candles1m[candles1m.length - 1].closeTime).toISOString()}`);
       }
-    } catch (error) {
-      console.warn('Binance API failed, falling back to simulated data:', error);
+
+      // CRITICAL FIX: Fetch 5m confirmation data if needed
+      if (needsDualTimeframe) {
+        console.log('⏰ Fetching 5m confirmation data for Level 1-2 strategy...');
+        try {
+          candles5m = await fetchBinancePublicCandles(
+            tradingConfig.symbol,
+            '5m',
+            startDate,
+            endDate
+          );
+          console.log(`✅ Fetched ${candles5m.length} candles (5m) for confirmation`);
+        } catch (error5m) {
+          console.warn('⚠️  Failed to fetch 5m data, continuing with 1m only:', error5m);
+          candles5m = undefined;
+        }
+      } else {
+        console.log(`ℹ️  Single timeframe mode (${tradingConfig.interval}, Aggressiveness: ${tradingConfig.strategy.aggressiveness})`);
+      }
+      } catch (error) {
+        console.warn('Binance API failed, falling back to simulated data:', error);
+      }
     }
 
-    // Fallback to simulated historical data if Binance failed
-    if (candles.length === 0) {
-      console.log('Using simulated historical data provider...');
-      const historicalProvider = new HistoricalDataProvider();
+    // Final fallback: 使用高质量模拟数据
+    if (candles1m.length === 0) {
+      console.log('⚠️  All external data sources failed, using high-quality simulated data...');
 
-      // Calculate number of candles needed
-      const intervalMs = getIntervalMs(tradingConfig.interval);
-      const candlesNeeded = Math.min(
-        20000,
-        Math.ceil((endDate - startDate) / intervalMs)
-      );
+      // 对于外汇，使用专门的外汇模拟数据生成器
+      if (isForexSymbol) {
+        const forexProvider = new ForexDataProvider();
+        const intervalMs = getIntervalMs(tradingConfig.interval);
+        const candlesNeeded = Math.min(20000, Math.ceil((endDate - startDate) / intervalMs));
 
-      candles = await historicalProvider.generateHistoricalCandles(
-        tradingConfig.symbol,
-        tradingConfig.interval,
-        candlesNeeded,
-        startDate,
-        endDate
-      );
+        candles1m = await forexProvider.generateRealisticForexData(
+          tradingConfig.symbol,
+          tradingConfig.interval,
+          startDate,
+          endDate,
+          candlesNeeded
+        );
 
-      console.log(`Generated ${candles.length} simulated candles`);
+        dataSource = 'simulated-forex';
+        console.log(`📊 Generated ${candles1m.length} realistic forex candles (${tradingConfig.interval})`);
+
+        // 生成5m数据（如果需要）
+        if (needsDualTimeframe) {
+          const candles5mNeeded = Math.min(20000, Math.ceil((endDate - startDate) / getIntervalMs('5m')));
+          candles5m = await forexProvider.generateRealisticForexData(
+            tradingConfig.symbol,
+            '5m',
+            startDate,
+            endDate,
+            candles5mNeeded
+          );
+          console.log(`✅ Generated ${candles5m.length} realistic forex candles (5m) for confirmation`);
+        }
+      } else {
+        // 加密货币使用通用模拟数据
+        const historicalProvider = new HistoricalDataProvider();
+        const intervalMs = getIntervalMs(tradingConfig.interval);
+        const candlesNeeded = Math.min(20000, Math.ceil((endDate - startDate) / intervalMs));
+
+        candles1m = await historicalProvider.generateHistoricalCandles(
+          tradingConfig.symbol,
+          tradingConfig.interval,
+          candlesNeeded,
+          startDate,
+          endDate
+        );
+
+        dataSource = 'simulated-crypto';
+        console.log(`Generated ${candles1m.length} simulated crypto candles (${tradingConfig.interval})`);
+
+        // 生成5m数据（如果需要）
+        if (needsDualTimeframe) {
+          const candles5mNeeded = Math.min(20000, Math.ceil((endDate - startDate) / getIntervalMs('5m')));
+          candles5m = await historicalProvider.generateHistoricalCandles(
+            tradingConfig.symbol,
+            '5m',
+            candles5mNeeded,
+            startDate,
+            endDate
+          );
+          console.log(`✅ Generated ${candles5m.length} simulated crypto candles (5m) for confirmation`);
+        }
+      }
     }
 
-    if (candles.length === 0) {
+    if (candles1m.length === 0) {
       return NextResponse.json(
         { error: 'No candles found for specified date range' },
         { status: 404 }
       );
     }
 
-    // Run backtest
+    // Run backtest with dual timeframe if available
     const engine = new BacktestEngine({
       startDate,
       endDate,
@@ -221,14 +342,14 @@ export async function POST(request: NextRequest) {
     });
 
     console.log('Running backtest...');
-    const results = await engine.runBacktest(candles);
+    const results = await engine.runBacktest(candles1m, candles5m);
     console.log('Backtest complete');
 
     return NextResponse.json({
       ...results,
-      candles: candles.slice(-500), // Return last 500 candles for charting
+      candles: candles1m.slice(-500), // Return last 500 candles for charting
       dataSource, // 'binance-public' or 'generated'
-      totalCandles: candles.length,
+      totalCandles: candles1m.length,
     });
   } catch (error) {
     console.error('Backtest error:', error);
