@@ -1014,14 +1014,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const locale = pathname.split('/')[1];
     const pathLang: Language = locale === 'en' ? 'en' : 'zh';
 
-    // If URL language differs from localStorage, update localStorage
+    // If URL language differs from current state, update both state and localStorage
     if (pathLang !== language) {
       setLanguage(pathLang);
       if (typeof window !== 'undefined') {
         localStorage.setItem('language', pathLang);
       }
     }
-  }, [pathname]);
+  }, [pathname, language]);
 
   const toggleLanguage = () => {
     const newLanguage = language === 'zh' ? 'en' : 'zh';

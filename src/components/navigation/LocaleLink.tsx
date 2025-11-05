@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { ComponentProps, useEffect, useState } from 'react';
+import { ComponentProps } from 'react';
+import { usePathname } from 'next/navigation';
 
 type LocaleLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {
   href: string;
@@ -11,22 +12,14 @@ type LocaleLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {
 /**
  * Locale-aware Link component that automatically prefixes href with current locale
  * Usage: <LocaleLink href="/education">Education</LocaleLink>
- * Result: /zh/education or /en/education based on localStorage language preference
+ * Result: /zh/education or /en/education based on current URL locale
  */
 export default function LocaleLink({ href, locale, ...props }: LocaleLinkProps) {
-  const [currentLocale, setCurrentLocale] = useState<string>('zh');
+  const pathname = usePathname();
 
-  useEffect(() => {
-    // Read language from localStorage
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem('language');
-      if (stored === 'en' || stored === 'zh') {
-        setCurrentLocale(stored);
-      }
-    }
-  }, []);
-
-  const effectiveLocale = locale || currentLocale;
+  // Get current locale from URL pathname
+  const currentLocale = pathname.split('/')[1] || 'zh';
+  const effectiveLocale = locale || (currentLocale === 'en' ? 'en' : 'zh');
 
   // Don't prefix if href is external or already has locale
   const isExternal = href.startsWith('http') || href.startsWith('//');
