@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
+import LocaleLink from '@/components/navigation/LocaleLink';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ShineLinkButton } from '@/components/custom/ShineButton';
 
@@ -96,44 +96,44 @@ export default function SplanFooter() {
             <h4 className="font-bold mb-4">{t('footer.nav.title')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.home')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/splan/join-us" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/splan/join-us" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.training')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/education" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/education" className="text-gray-400 hover:text-white transition-colors">
                   {language === 'zh' ? '教育中心' : 'Education'}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/splan/blog" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/splan/blog" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.blog')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/splan/psychology-test" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/splan/psychology-test" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.psychology')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/dashboard" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/dashboard" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.dashboard')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/splan/faq" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/splan/faq" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.faq')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/splan/donate" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/splan/donate" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.membership')}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
           </div>
@@ -143,28 +143,28 @@ export default function SplanFooter() {
             <h4 className="font-bold mb-4">{language === 'zh' ? '交易工具' : 'Trading Tools'}</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/tools/position-calculator" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/tools/position-calculator" className="text-gray-400 hover:text-white transition-colors">
                   {language === 'zh' ? '仓位计算器' : 'Position Calculator'}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/tools/risk-reward-calculator" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/tools/risk-reward-calculator" className="text-gray-400 hover:text-white transition-colors">
                   {language === 'zh' ? '风险回报计算器' : 'Risk/Reward Calculator'}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/tools/pip-calculator" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/tools/pip-calculator" className="text-gray-400 hover:text-white transition-colors">
                   {language === 'zh' ? '点值计算器' : 'Pip Calculator'}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
 
             <h4 className="font-bold mb-4 mt-6">{language === 'zh' ? '其他资源' : 'Resources'}</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                <LocaleLink href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                   {language === 'zh' ? '隐私政策' : 'Privacy Policy'}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
                 <a href="https://www.bilibili.com/video/BV19a411X7eY" target="_blank" rel="noopener noreferrer"
