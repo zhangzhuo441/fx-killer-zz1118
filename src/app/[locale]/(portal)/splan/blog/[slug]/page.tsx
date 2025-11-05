@@ -23,7 +23,7 @@ export default function BlogPostPage() {
             {t('blog.notFound')}
           </h1>
           <button
-            onClick={() => router.push('/splan/blog')}
+            onClick={() => router.push(`/${language}/splan/blog`)}
             className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
           >
             {t('blog.backToBlog')}
@@ -59,7 +59,7 @@ export default function BlogPostPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back Button */}
           <button
-            onClick={() => router.push('/splan/blog')}
+            onClick={() => router.push(`/${language}/splan/blog`)}
             className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white mb-8 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,7 +148,7 @@ export default function BlogPostPage() {
               {relatedPosts.map((relatedPost) => (
                 <article
                   key={relatedPost.id}
-                  onClick={() => router.push(`/splan/blog/${relatedPost.slug}`)}
+                  onClick={() => router.push(`/${language}/splan/blog/${relatedPost.slug}`)}
                   className="bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white p-6 cursor-pointer transition-all group"
                 >
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:underline">
@@ -177,7 +177,7 @@ export default function BlogPostPage() {
             {t('blog.cta.subtitle')}
           </p>
           <button
-            onClick={() => router.push('/splan/join-us')}
+            onClick={() => router.push(`/${language}/splan/join-us`)}
             className="px-8 py-4 bg-white dark:bg-black text-black dark:text-white font-bold border-2 border-white dark:border-black hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:hover:text-black transition-colors"
           >
             {t('blog.cta.button')}
