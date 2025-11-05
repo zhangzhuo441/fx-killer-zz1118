@@ -32,9 +32,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Get locale from cookie or use default
-  const cookieLocale = request.cookies.get('language')?.value;
-  const locale = locales.includes(cookieLocale || '') ? cookieLocale : defaultLocale;
+  // Get locale from Accept-Language header or use default
+  const acceptLanguage = request.headers.get('accept-language') || '';
+  const browserLocale = acceptLanguage.toLowerCase().includes('en') ? 'en' : defaultLocale;
+  const locale = locales.includes(browserLocale) ? browserLocale : defaultLocale;
 
   // Redirect to locale-prefixed URL
   const newUrl = new URL(`/${locale}${pathname}`, request.url);

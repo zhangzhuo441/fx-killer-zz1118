@@ -1003,9 +1003,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const toggleLanguage = () => {
     const newLanguage = language === 'zh' ? 'en' : 'zh';
 
-    // Update cookie for middleware
-    document.cookie = `language=${newLanguage}; path=/; max-age=31536000`; // 1 year
-
     // Get current path without locale prefix
     const pathSegments = pathname.split('/').filter(Boolean);
     const currentLocale = pathSegments[0] === 'en' || pathSegments[0] === 'zh' ? pathSegments[0] : 'zh';
