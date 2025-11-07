@@ -135,7 +135,7 @@ const DummyContent = () => {
                 <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
                   <span className="text-2xl text-white dark:text-black font-bold">1</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{t('advantage.selection.title')}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-black dark:text-white">{t('advantage.selection.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {t('advantage.selection.desc')}
                 </p>
@@ -149,7 +149,7 @@ const DummyContent = () => {
                 <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
                   <span className="text-2xl text-white dark:text-black font-bold">2</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{t('advantage.growth.title')}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-black dark:text-white">{t('advantage.growth.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {t('advantage.growth.desc')}
                 </p>
@@ -163,7 +163,7 @@ const DummyContent = () => {
                 <div className="mb-4 w-12 h-12 bg-black dark:bg-white flex items-center justify-center">
                   <span className="text-2xl text-white dark:text-black font-bold">3</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{t('advantage.commission.title')}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-black dark:text-white">{t('advantage.commission.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {t('advantage.commission.desc')}
                 </p>
