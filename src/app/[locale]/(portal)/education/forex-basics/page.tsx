@@ -14,7 +14,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     forexBasicsContent.en.description,
     forexBasicsContent.zh.keywords,
     forexBasicsContent.en.keywords,
-    lang
+    lang,
+    {
+      url: '/education/forex-basics',
+      type: 'article',
+      section: 'Forex Education - Basics',
+      author: 'FX Killer Education Team',
+      publishedTime: '2024-01-15T00:00:00Z',
+      modifiedTime: new Date().toISOString(),
+    }
   );
 }
 

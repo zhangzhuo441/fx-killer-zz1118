@@ -106,14 +106,14 @@ export default function UnifiedNavbar() {
       } border-b border-gray-200 dark:border-gray-800`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <LocaleLink href="/" className="flex items-center group">
+        <div className="flex items-center h-16">
+          {/* Logo - 靠左 */}
+          <LocaleLink href="/" className="flex items-center group mr-8">
             <span className="text-2xl"><BrandName /></span>
           </LocaleLink>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          {/* Desktop Navigation - 靠左布局 */}
+          <div className="hidden md:flex items-center space-x-1 flex-1">
             {navItems.map((item, index) => (
               <div
                 key={index}
@@ -187,8 +187,8 @@ export default function UnifiedNavbar() {
             ))}
           </div>
 
-          {/* Right Side Actions (Desktop) */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Right Side Actions (Desktop) - 保持在右边 */}
+          <div className="hidden md:flex items-center gap-3 ml-auto">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -217,14 +217,6 @@ export default function UnifiedNavbar() {
             >
               {language === 'zh' ? 'EN' : '中文'}
             </button>
-
-            {/* Join Us Button */}
-            <LocaleLink
-              href="/splan/join-us"
-              className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold border border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors"
-            >
-              {t('nav.join')}
-            </LocaleLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -356,13 +348,6 @@ export default function UnifiedNavbar() {
                   {language === 'zh' ? 'EN' : '中文'}
                 </button>
               </div>
-
-              <LocaleLink
-                href="/splan/join-us"
-                className="block px-4 py-3 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold text-center mt-4 border border-black dark:border-white"
-              >
-                {t('nav.join')}
-              </LocaleLink>
             </div>
           </motion.div>
         )}
