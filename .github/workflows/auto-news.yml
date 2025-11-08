@@ -32,7 +32,7 @@ jobs:
 
       - name: Commit and push if changes
         run: |
-          git config --global user.name 'SEO Content Bot'
+          git config --global user.name 'C-L-STARK'
           git config --global user.email 'x.stark.dylan@gmail.com'
           git add src/content/news/
           git add .news-history.json
