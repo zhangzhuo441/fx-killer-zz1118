@@ -42,28 +42,30 @@ export default function PartnersLogos() {
           </p>
         </motion.div>
 
-        {/* Logos Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-          {logos.map((logo, index) => (
-            <motion.div
-              key={logo.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
-            >
-              <div className="relative w-full h-20">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                />
-              </div>
-            </motion.div>
-          ))}
+        {/* Logos Horizontal Scroll */}
+        <div className="overflow-x-auto pb-4">
+          <div className="flex items-center gap-12 min-w-max px-4">
+            {logos.map((logo, index) => (
+              <motion.div
+                key={logo.id}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="flex-shrink-0 w-40 h-20 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+              >
+                <div className="relative w-full h-full">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    sizes="160px"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
