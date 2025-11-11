@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-11T10:53:02.917Z",
+  "price": {
+    "close": "154.21700",
+    "high": "154.36099",
+    "low": "154.21100",
+    "open": "154.33000",
+    "change": "-0.07",
+    "datetime": "2025-11-11 21:00:00"
+  },
+  "indicators": {
+    "rsi": 54.89147,
+    "macd": 0.10692845,
+    "macd_signal": 0.12091151,
+    "sma20": 154.1664
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[短期震荡趋势]",
+      "content": "当前美元/日元（USD/JPY）价格为154.21700，整体呈现出短期震荡的趋势。尽管日内波动幅度有限，但在154.36099的高点与154.21100的低点之间的反复测试，表明市场动能并不强劲。投资者可能在等待更明确的市场信号，以决定下一步的方向。\n\n技术指标方面，虽然RSI（14）数值尚未提供，但MACD显示出0.10692845的正值，表明短期内买方力量仍然存在。20日简单移动平均线（SMA）处于154.16640附近，作为支撑位可能会对价格形成一定的保护。若价格回踩至该水平，可能会引发买入机会。\n\n支撑位方面，154.21100为关键水平，若突破则可能引发更大幅度的回调。阻力位则在154.36099附近，若突破此水平，可能会引发进一步上涨。投资者应密切关注这些关键价位，以把握市场转折的机会。\n\n交易建议上，建议在154.21100附近寻找买入机会，同时设定止损于154.20000以下，以控制风险。若价格上破154.36099，短期内可考虑逐步加仓。保持灵活的交易策略，将有助于适应瞬息万变的市场环境。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY currency pair is currently trading at 154.217, showing a slight decline of 0.07% over the past 24 hours. This minor pullback is noteworthy given the recent high of 154.36099, suggesting a momentary resistance level around this price point. The recent price action indicates a bullish trend overall, yet the proximity to the recent low of 154.211 might be a pivotal point. A sustained move below this level could signal a deeper correction, while a rebound could affirm the ongoing bullish sentiment.\n\nIn terms of technical indicators, the MACD is currently at 0.1069, which suggests that the bullish momentum is still intact, albeit weakening. Without the RSI data, we cannot fully assess the overbought or oversold conditions; however, the presence of the SMA(20) at 154.1664 provides a crucial support level for traders to monitor. If the price holds above this moving average, it could attract buyers, indicating continued strength in the USD against the JPY.\n\nTraders should keep a close eye on the support and resistance levels. The immediate support is established at 154.211, and if this level holds, it may present a buying opportunity. Conversely, if the price breaks below this support, it could lead to further declines towards the next support level. Resistance remains at 154.36099, and a successful breach above this could open the door for a test of higher psychological levels, potentially around 155.00.\n\nIn conclusion, the current trading environment for USD/JPY suggests a cautious bullish outlook, but traders should be prepared for volatility. A strategy of buying near the support level while watching for confirmation of upward momentum could be prudent. Conversely, a break below the support level may warrant a reassessment of long positions, with potential short opportunities emerging if bearish signals materialize."
+    }
+  }
+}

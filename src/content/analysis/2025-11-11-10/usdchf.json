@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-11T10:56:25.257Z",
+  "price": {
+    "close": "0.80229998",
+    "high": "0.80334997",
+    "low": "0.80198997",
+    "open": "0.80320001",
+    "change": "-0.12",
+    "datetime": "2025-11-11 21:00:00"
+  },
+  "indicators": {
+    "rsi": 33.24902,
+    "macd": -0.00063478128,
+    "macd_signal": -0.0004196786,
+    "sma20": 0.804689
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡整理中，待突破]",
+      "content": "当前美元/瑞郎（USD/CHF）交易在0.8023附近，显示出震荡整理的特征。价格在0.8033的高点和0.8019的低点之间波动，未能形成明显的上行或下行趋势。市场情绪相对谨慎，投资者在等待进一步的市场信号。\n\n从技术指标来看，MACD目前显示出微弱的负值，表明短期内卖方稍占优势。随着RSI未提供，无法全面评估超买或超卖状态，但SMA(20)为0.8047，若价格突破此均线，可能会引发新的上涨动能。反之，若跌破支撑位0.8019，则可能加剧下行风险。\n\n在支撑和阻力方面，关注0.8019的支撑位，若此水平被有效跌破，可考虑做空策略。相反，若价格突破0.8047的阻力位，则可能吸引更多买盘进入市场，建议投资者关注这一关键点位的动态变化。\n\n综合考虑，当前市场处于震荡整理阶段，建议投资者保持观望，待价格明确突破关键支撑或阻力位后再采取行动。同时，建议使用止损策略以控制潜在风险，确保投资安全。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently exhibiting a slight bearish trend, with a recent price of 0.8023 marking a minor decline of 0.12% over the past 24 hours. The price action remains contained within a range defined by a high of 0.8033 and a low of 0.8020. This consolidation phase suggests a lack of decisive momentum, indicating that traders should remain cautious and attentive to potential breakout opportunities. Given the recent price movement, a continued bearish sentiment may lead to further testing of lower support levels.\n\nIn terms of technical indicators, the MACD is slightly negative at -0.0006, suggesting that bullish momentum is waning. Without the RSI value available, it is difficult to assess overbought or oversold conditions, which could provide additional context for potential reversals. However, the 20-period Simple Moving Average (SMA) at 0.8047 serves as a potential resistance level, indicating that if the price can break above this threshold, it may signal a shift in momentum toward a bullish outlook.\n\nSupport levels are critical in this context, with immediate support appearing around the recent low of 0.8019. A breach of this level could open the door for further declines, potentially targeting psychological levels or historical support zones. Conversely, if the price manages to hold above this support, it could initiate a corrective rally towards the SMA and beyond. \n\nTraders should consider employing a cautious approach, watching for breakouts or reversals near key levels. A short position might be prudent if the price breaches the support level, while a long position could be considered if it successfully rebounds off support and breaks above the SMA. Setting stop-loss orders is advisable to mitigate potential risks amid this uncertain market environment."
+    }
+  }
+}

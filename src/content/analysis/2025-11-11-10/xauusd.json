@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T10:57:13.081Z",
+  "price": {
+    "close": "4133.77",
+    "high": "4134.71",
+    "low": "4124",
+    "open": "4133.11",
+    "change": "0.01",
+    "datetime": "2025-11-11 21:00:00"
+  },
+  "indicators": {
+    "rsi": 70.60183,
+    "macd": 18.10225,
+    "macd_signal": 19.953,
+    "sma20": 4114.9275
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元(XAU/USD)在4133.77附近震荡整理，短期内缺乏明确的趋势。高点4134.71和低点4124构成了一个相对狭窄的区间，市场情绪偏向谨慎，投资者可能在等待更明确的市场信号。\n\n从技术指标来看，虽然当前的MACD值为18.10225，但缺乏信号线的数据，使得趋势判断变得复杂。相对强弱指数(RSI)的缺失也限制了对超买或超卖状态的分析。SMA(20)在4114.9275附近提供了短期支撑，若价格回调至该水平，可能会吸引买盘。\n\n支撑位方面，4124是一条关键的心理关口，若突破该水平，可能会引发更深的回调。阻力位则在4134.71附近，突破此点位将为进一步上涨创造空间。投资者应密切关注这些关键价位，以制定相应的交易策略。\n\n建议交易者在当前区间内谨慎操作，若价格接近支撑位4124，可以考虑布局多单；相反，若价格接近阻力位4134.71则可考虑做空。同时，保持对市场新闻和经济数据的关注，以捕捉潜在的交易机会。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4133.77 indicates a relatively stable market, with a slight 24-hour change of 0.01%. This stability follows a period of fluctuations, as evidenced by the recent high of 4134.71 and a low of 4124. The overall trend appears to be consolidating, suggesting that traders may be awaiting further catalysts to drive momentum. A break above the high could signal a bullish continuation, while a move below the low might indicate a bearish reversal.\n\nIn terms of technical indicators, the absence of an RSI value complicates momentum analysis. However, the MACD at 18.10225 suggests a potential bullish momentum, albeit without a corresponding signal line for confirmation. The SMA(20) at 4114.93 serves as a critical support level, as it has historically provided a buffer during price retracements. Traders should monitor for price action around this moving average, as a bounce could indicate continued upward pressure.\n\nSupport is clearly defined at the recent low of 4124, while resistance is presented at the recent high of 4134.71. A breakout above this resistance could open the path for further gains, potentially targeting psychological levels like 4150. Conversely, if prices breach the support level, it may trigger a sell-off, with the next support likely around 4100. Traders should remain vigilant for any news events that could influence market sentiment.\n\nFor trading suggestions, a cautious approach is advised. Those looking to enter long positions might consider waiting for a confirmed breakout above 4134.71, coupled with increased volume. Conversely, short positions could be warranted if the price drops decisively below 4124, confirming a bearish sentiment. Utilizing stop-loss orders at strategic levels will help manage risk in this uncertain environment."
+    }
+  }
+}

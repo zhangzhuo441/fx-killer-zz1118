@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-11T10:55:33.996Z",
+  "price": {
+    "close": "0.56452525",
+    "high": "0.56462085",
+    "low": "0.56430227",
+    "open": "0.56449336",
+    "change": "-0.01",
+    "datetime": "2025-11-11 21:00:00"
+  },
+  "indicators": {
+    "rsi": 54.55184,
+    "macd": 0.00013524635,
+    "macd_signal": 0.00015990569,
+    "sma20": 0.56428204
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理，面临支撑考验]",
+      "content": "当前纽元/美元(NZD/USD)的价格在0.5645附近，整体表现出震荡整理的趋势。从24小时变化来看，价格小幅下跌0.01%，显示出市场未能形成明显的方向性动能。短期来看，价格已接近近期的低点0.5643，若跌破该水平，可能会引发进一步的下行压力。\n\n在技术指标方面，MACD显示出微弱的正值，暗示短期内买方力量尚存，但由于RSI数据缺失，无法充分判断超买或超卖情况。SMA(20)为0.5643，提示该水平可能成为短期的支撑位，投资者应密切关注。\n\n支撑位方面，0.5643将是关键支撑区域，若价格持续维持在此之上，则有望反弹。阻力位则在0.5646附近，突破该水平可能会促进进一步上涨。若价格无法突破阻力位，可能会继续在当前区间内整理。\n\n综合来看，建议投资者在0.5643附近寻找买入机会，同时设置止损以防止意外下跌。如果价格突破0.5646，则可以考虑加仓做多，反之则需谨慎对待短期风险。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.5645, showing a slight decline of 0.01% over the past 24 hours. The price has oscillated between a high of 0.5646 and a low of 0.5643, indicating a narrow trading range. This tight movement suggests a consolidation phase, reflecting uncertainty among traders. Given the prevailing trend, the market may be waiting for clearer signals from economic data or geopolitical developments before committing to a more decisive move.\n\nTechnical indicators present a mixed picture. The MACD is marginally above zero at 0.00013524635, suggesting a possible bullish sentiment; however, the absence of a signal line makes it difficult to confirm. The 20-period Simple Moving Average (SMA) at 0.5643 may act as a dynamic support level. If price trades below this SMA, it could signal further bearish momentum, while a breakthrough above the recent high could indicate a reversal or upward correction.\n\nSupport for NZD/USD can be identified around the recent low of 0.5643, with further support likely at psychological levels, such as 0.5600. On the resistance side, the immediate level to watch is 0.5646, which has proven to be a cap on recent rallies. A sustained breakout above this level could open the doors for a move towards 0.5700, while a dip below support might target 0.5600.\n\nTraders may consider a cautious approach, particularly in light of the current consolidation. A buy signal could emerge if the pair manages to break above the resistance at 0.5646, while a sell signal may be warranted if it falls below the 0.5643 support level. Monitoring upcoming economic indicators, particularly from New Zealand and the US, will be crucial for making informed trading decisions."
+    }
+  }
+}
