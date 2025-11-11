@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-11T20:13:27.017Z",
+  "price": {
+    "close": "154.10899",
+    "high": "154.12900",
+    "low": "154.095993",
+    "open": "154.11501",
+    "change": "-0.00",
+    "datetime": "2025-11-12 07:00:00"
+  },
+  "indicators": {
+    "rsi": 51.09771,
+    "macd": 0.0072333338,
+    "macd_signal": 0.027695865,
+    "sma20": 154.16345
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理中]",
+      "content": "当前美元/日元在154.10附近震荡整理，虽然价格变化不大，但市场情绪依然谨慎。技术面显示，该货币对在高点154.13和低点154.10之间波动，表明短期内缺乏明确方向。若价格突破154.13，可能会吸引更多买盘。\n\n从技术指标来看，RSI尚未提供具体数据，但MACD显示出微弱的正值，暗示潜在的上行动能。20日简单移动平均线(SMA)位于154.16，表明短期内可能存在一定的阻力。投资者需关注价格是否能突破这一水平，以确认后续趋势。\n\n支撑位方面，154.10是短期关键支撑，若跌破可能会引发进一步的回调，测试更低水平。反之，若能守住该支撑位，将可能推动价格向上挑战154.13的阻力位。因此，投资者应密切关注这些关键价位的变化。\n\n建议交易者在当前区间内采取区间交易策略，若价格接近支撑位时考虑买入，接近阻力位时考虑卖出。同时，需保持警惕，设定好止损，以防市场出现意外波动。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.10899, demonstrating a stable price action with minimal movement over the past 24 hours. The recent high of 154.12900 suggests that the pair has encountered resistance at this level, while the low of 154.095993 indicates a potential support zone. Traders should monitor these levels closely, as a break above the resistance could signal further bullish momentum, whereas a move below the support may prompt a downward correction.\n\nThe absence of a calculated RSI(14) at this moment limits our ability to assess overbought or oversold conditions effectively. However, the MACD at 0.0072333338 suggests a neutral trend, indicating that momentum is currently lacking. This neutrality could mean that traders should exercise caution and wait for clearer signals before entering new positions. The 20-period Simple Moving Average (SMA) at 154.16345 further reinforces the resistance level, indicating that sellers might emerge near this point.\n\nIn terms of trading strategy, it may be prudent to adopt a wait-and-see approach until clearer technical signals materialize. Should the price break above the SMA and resistance level, a long position could be considered, targeting the next psychological level around 155.00. Conversely, if the market declines below the support level at 154.095993, a short position may be warranted, with targets set around the next support level, potentially near 153.80.\n\nOverall, the USD/JPY appears to be in a consolidation phase, with key levels defining the short-term trend. Traders should remain vigilant for breakout opportunities while utilizing proper risk management techniques. Close monitoring of price action around the stated support and resistance levels will be essential in making informed trading decisions in this relatively stable market environment."
+    }
+  }
+}

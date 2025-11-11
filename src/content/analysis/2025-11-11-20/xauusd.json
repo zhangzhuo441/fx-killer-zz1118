@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T20:17:17.172Z",
+  "price": {
+    "close": "4126.96216",
+    "high": "4127.22892",
+    "low": "4121.95514",
+    "open": "4123.20807",
+    "change": "0.09",
+    "datetime": "2025-11-12 07:00:00"
+  },
+  "indicators": {
+    "rsi": 58.30238,
+    "macd": 7.79682,
+    "macd_signal": 11.45919,
+    "sma20": 4125.70913
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，短期关注支撑位]",
+      "content": "当前黄金/美元(XAU/USD)的价格在4126.96附近波动，近期显示出震荡整理的趋势。价格在4121.95和4127.23之间反复震荡，表明市场参与者在这一价位附近存在较强的买卖意愿。短期内，投资者需要关注这些价位，以判断后续走势的方向。\n\n从技术指标来看，虽然RSI(14)数据缺失，但MACD指标显示出当前的多头动能（7.79682），这可能暗示短期内还有进一步上行的潜力。同时，20日简单移动平均线(SMA)在4125.71附近，提供了一个重要的支撑区域，若价格回落至此，可能会吸引更多买盘入场。\n\n在支撑位方面，4121.95是关键支撑位，若价格跌破该位，可能会引发更多的卖盘压力，进一步下行的风险加大。阻力位则集中在4127.23，若有效突破该阻力，可能会引发更强的买入信号，推动价格向上测试更高的水平。\n\n综合考虑，建议投资者在当前价格附近观望，若价格回调至4125.71附近可考虑逢低买入，止损设在4121.95以下。同时，若突破4127.23则可考虑短期多头布局，目标可设在4130以上。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The XAU/USD pair is currently exhibiting a slight upward trend, with the latest price at 4126.96, reflecting a 0.09% increase over the last 24 hours. This modest gain suggests a consolidation phase following recent volatility. The high of 4127.22 indicates potential resistance, while the low of 4121.96 serves as a nearby support level. Traders should watch for price action around these levels, as a breakout above resistance could signal further bullish momentum, while a dip below support may indicate a reversal.\n\nIn interpreting key indicators, the absence of an RSI value limits our ability to assess overbought or oversold conditions. However, the MACD value of 7.79682 suggests bullish momentum, as it remains positive. The SMA(20) at 4125.71 aligns closely with the current price, acting as a dynamic support level. Traders should monitor these indicators closely, as a divergence in MACD or a crossover could provide further clarity on the market's direction.\n\nSupport at 4121.96 is crucial in the short term; a sustained move below this level could trigger increased selling pressure and open the door for a deeper correction. Conversely, if the price breaks above 4127.22, it may attract bullish traders, leading to a potential test of higher resistance levels. Key areas to watch include 4130.00 and 4140.00, which may act as psychological barriers for traders.\n\nIn terms of trading strategy, those with a bullish outlook might consider entering long positions on a confirmed break above resistance, while placing stop-loss orders just below the support level at 4121.96 to manage risk. Conversely, bearish traders could explore short positions if the price fails to maintain above the critical support, targeting lower levels while keeping an eye on market sentiment and broader economic indicators that may influence gold prices."
+    }
+  }
+}

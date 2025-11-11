@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-11T20:12:43.026Z",
+  "price": {
+    "close": "1.31697",
+    "high": "1.31705",
+    "low": "1.31673",
+    "open": "1.31673",
+    "change": "0.02",
+    "datetime": "2025-11-12 07:00:00"
+  },
+  "indicators": {
+    "rsi": 53.74227,
+    "macd": 0.00034617814,
+    "macd_signal": 0.00015546943,
+    "sma20": 1.31593
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理，等待突破]",
+      "content": "当前英镑/美元的走势呈现出震荡整理的态势。最新价格1.31697附近，全天变动幅度较小，显示市场参与者对未来方向的谨慎态度。虽然未能有效突破1.31705的高点，但在1.31673的低点附近获得支撑，预示短期内仍可能维持窄幅波动。\n\n从技术指标来看，目前的MACD值为0.00034617814，尚无明确的信号线数据可供参考，表明市场动能较弱。20日简单移动平均线(SMA)位于1.31593，进一步强化了支撑位的有效性。相对强弱指数(RSI)数据缺失，但结合当前价格走势，市场情绪偏向中性，投资者需密切关注后续变化。\n\n支撑位方面，1.31673是关键支撑，若价格跌破该水平，可能引发更大幅度的回调。反之，若突破1.31705，则可能进一步上探至1.3200附近的心理关口。建议投资者在这些关键水平附近设置止损，灵活操作，以应对市场的不确定性，尤其在缺乏强烈趋势信号时。\n\n总之，英镑/美元目前处于整理阶段，短期内需关注关键支撑和阻力位。建议保持观望，待市场出现更明确的信号后再决定入场时机。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The GBP/USD currency pair is currently experiencing a period of consolidation around the 1.3170 level, which indicates a relatively stable market sentiment. This price action suggests that traders are weighing their options ahead of significant market events or data releases. The recent high of 1.31705 and low of 1.31673 create a tight range, implying that the pair is lacking a clear directional bias at this moment. A breakout from this range could signal the next leg of the trend, either upward or downward.\n\nFrom a technical perspective, the simple moving average (SMA) of 20 periods at 1.31593 is acting as a dynamic support level. If the price holds above this SMA, it could reinforce bullish sentiment, potentially leading to a retest of the recent high. Conversely, a drop below this level could open up bearish sentiment, with traders targeting the lower end of the recent range or even lower support levels. The absence of RSI and MACD signals in this analysis suggests that momentum indicators may not yet provide additional clarity on the market's immediate direction.\n\nIn terms of support and resistance, the immediate support level is established at 1.31673, while resistance is seen at 1.31705. A breakout above the resistance could attract further buying interest, potentially pushing prices towards the next psychological level of 1.3200. On the other hand, should the pair break below 1.31673, traders might look for further support around 1.3150, where additional buying interest could emerge.\n\nFor traders, a cautious approach is advisable, given the current market indecision. Watching for a clear breakout above 1.31705 or a dip below 1.31673 will be critical for determining the next trading strategy. If bullish momentum develops, consider entering long positions with a target toward 1.3200. Conversely, if bearish trends materialize, look for short opportunities near the support levels mentioned, with a potential target towards 1.3150 or lower."
+    }
+  }
+}
