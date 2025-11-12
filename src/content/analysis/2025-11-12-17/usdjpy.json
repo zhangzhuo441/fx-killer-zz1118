@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-12T17:40:07.544Z",
+  "price": {
+    "close": "154.61600",
+    "high": "154.64600",
+    "low": "154.49100",
+    "open": "154.64200",
+    "change": "-0.02",
+    "datetime": "2025-11-13 04:00:00"
+  },
+  "indicators": {
+    "rsi": 53.817,
+    "macd": 0.14676305,
+    "macd_signal": 0.1657547,
+    "sma20": 154.59345
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理趋势]",
+      "content": "当前美元/日元在154.6附近震荡整理，短期内缺乏明显的方向性。价格在154.646附近形成了较强的阻力，而154.491则是关键支撑位。若价格突破154.646，可能会进一步上涨至155.0区域；反之，若跌破154.491，则有可能回调至154.3附近。\n\n从技术指标来看，虽然RSI未提供，但MACD显示出0.146的正值，表明当前市场仍有一定的买入动能。然而，随着价格的横盘整理，动能可能减弱，投资者需保持警惕。SMA(20)的支撑在154.593，对短期走势形成了一定的支撑作用。\n\n在交易策略上，建议投资者采取区间交易的方式。若价格回调至154.5附近，可考虑适量买入，同时在154.65附近设置止盈点。反之，若价格突破154.65，可适时跟进多单，目标看向155.0，同时注意设置止损以控制风险。在操作中，需密切关注市场情绪及相关经济数据发布。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently showing a slight bearish sentiment, with a recent price of 154.61600, which reflects a marginal decline of 0.02% over the last 24 hours. The price action has been contained within a narrow range, marked by a high of 154.64600 and a low of 154.49100. This consolidation phase suggests indecision in the market, which could lead to a breakout in either direction. Traders should closely monitor these levels to gauge potential future moves.\n\nAnalyzing the indicators, the MACD reading of 0.14676305 indicates a bullish momentum, albeit weak. The lack of an RSI value makes it challenging to ascertain whether the pair is overbought or oversold. However, the 20-period Simple Moving Average (SMA) at 154.59345 serves as a dynamic support level. A sustained move below this SMA might trigger further selling, while a rally above the current high could signal a return to bullish strength.\n\nSupport levels are identified at the recent low of 154.49100, which could provide a foundation for buyers if tested. Conversely, resistance is seen near the high of 154.64600. A break above this level could encourage bullish traders to enter, potentially targeting higher levels. Conversely, if the support at 154.49100 is breached, a deeper pullback may occur, possibly leading to further declines.\n\nTraders are advised to adopt a cautious approach in this market environment. A breakout above 154.64600 may offer a buying opportunity, while a drop below 154.49100 could signal a selling point. Implementing a stop-loss strategy is crucial to manage risks effectively, as market conditions remain volatile. Keeping an eye on broader economic indicators, such as interest rate changes and geopolitical developments, will also be essential for informed trading decisions."
+    }
+  }
+}

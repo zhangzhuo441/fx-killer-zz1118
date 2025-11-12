@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-12T17:43:41.662Z",
+  "price": {
+    "close": "4205.31666",
+    "high": "4205.31666",
+    "low": "4192.80761",
+    "open": "4195.09313",
+    "change": "0.24",
+    "datetime": "2025-11-13 04:00:00"
+  },
+  "indicators": {
+    "rsi": 76.9692,
+    "macd": 15.98848,
+    "macd_signal": 7.75608,
+    "sma20": 4135.25102
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡上行趋势]",
+      "content": "当前黄金/美元(XAU/USD)的价格为4205.32，显示出一定的上行势头。虽然24小时内变动幅度较小，仅为0.24%，但价格维持在4200上方，表明市场对黄金的需求依然稳健。结合最近的高点和低点，市场可能正处于震荡上行的阶段。\n\n从技术指标来看，MACD的值为15.99，显示出较强的看涨趋势。而RSI指标尚不可用，但若其回升至60以上，可能进一步确认黄金的上行动能。20日简单移动平均线(SMA)为4135.25，表明价格仍在该均线之上，进一步支持了短期看涨的判断。\n\n在支撑与阻力位方面，当前的支撑位在4192.81附近，而阻力位则在4230.00左右。若价格突破这一阻力位，可能会迎来更强的上涨动力。反之，若跌破支撑位，则需警惕可能的回调风险。\n\n综合以上分析，建议投资者在当前价位附近布局多头，并关注关键支撑和阻力位的变化。同时，建议设置合理的止损位以应对市场波动，确保资金安全。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) is showing a slight upward movement, trading at 4205.31. This indicates a bullish sentiment, particularly after a recent low of 4192.81. The 24-hour change of +0.24% suggests that the market is finding stability above the support level near 4192.80. If this upward trend continues, we may see the price test resistance around 4220, a key level that has previously impeded upward momentum.\n\nAnalyzing the technical indicators, the absence of an RSI value limits our assessment of overbought or oversold conditions. However, the MACD reading of 15.99 indicates a potential bullish crossover, suggesting that the momentum is leaning towards further price increases. The presence of the SMA(20) at 4135.25 reinforces a bullish outlook, as the price remains well above this moving average, highlighting the strength of the current trend.\n\nIn terms of support and resistance levels, the immediate support is at 4192.80, while the next significant resistance level is around 4220. A breakout above this resistance could propel prices towards 4250, further affirming the bullish trend. Conversely, a drop below the support level could trigger a sell-off, potentially testing lower support at 4150, which traders should watch closely.\n\nFor traders, the current environment suggests a cautious bullish approach. Entering long positions near the support level of 4192.80 could be advantageous, with a target of 4220 for profit taking. A stop-loss order below 4180 could help manage risk in case of unexpected market reversals. Maintaining close attention to upcoming economic data and geopolitical developments will be crucial, as these factors can significantly impact gold prices moving forward."
+    }
+  }
+}
