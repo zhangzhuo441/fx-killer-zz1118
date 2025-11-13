@@ -7,17 +7,17 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const rows = new Array(150).fill(1);
   const cols = new Array(100).fill(1);
 
-  // 使用原版的彩色方案
-  let colors = [
-    "--sky-300",
-    "--pink-300",
-    "--green-300",
-    "--yellow-300",
-    "--red-300",
-    "--purple-300",
-    "--blue-300",
-    "--indigo-300",
-    "--violet-300",
+  // 直接使用完整的 RGB 颜色值
+  const colors = [
+    "rgb(125, 211, 252)", // sky-300
+    "rgb(249, 168, 212)", // pink-300
+    "rgb(134, 239, 172)", // green-300
+    "rgb(253, 224, 71)",  // yellow-300
+    "rgb(252, 165, 165)", // red-300
+    "rgb(216, 180, 254)", // purple-300
+    "rgb(147, 197, 253)", // blue-300
+    "rgb(165, 180, 252)", // indigo-300
+    "rgb(196, 181, 253)", // violet-300
   ];
 
   const getRandomColor = () => {
@@ -43,7 +43,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
           {cols.map((_, j) => (
             <motion.div
               whileHover={{
-                backgroundColor: `rgb(var(${getRandomColor()}))`,
+                backgroundColor: getRandomColor(),
                 transition: { duration: 0 },
               }}
               animate={{
