@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-13T06:58:30.081Z",
+  "price": {
+    "close": "0.65596",
+    "high": "0.65607",
+    "low": "0.65557",
+    "open": "0.65577",
+    "change": "0.03",
+    "datetime": "2025-11-13 17:00:00"
+  },
+  "indicators": {
+    "rsi": 63.80677,
+    "macd": 0.00069338811,
+    "macd_signal": 0.00057091167,
+    "sma20": 0.6546305
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理趋势]",
+      "content": "当前AUD/USD的价格为0.65596，整体表现出震荡整理的趋势。从24小时的变化来看，价格微幅上涨0.03%，表明市场情绪相对平稳。近期的高点和低点分别为0.65607和0.65557，显示出价格在这个区间内波动，投资者需密切关注突破的可能性。\n\n在技术指标方面，MACD显示出微弱的多头信号，当前值为0.00069338811，表明短期内买方力量略占优势。然而，RSI未提供，因此我们无法全面评估超买或超卖的情况。SMA(20)为0.6546305，提供了支持位，若价格下跌至此水平，可能会吸引买盘介入。\n\n从支撑和阻力位来看，支撑位在0.65463，若跌破此位，可能会加剧下行风险。阻力位则在0.65607，若突破该位，可能会引发进一步上涨。综合考虑，建议投资者在当前区间内采取区间交易策略，关注价格的突破信号，适时调整仓位以应对市场变化。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The Australian Dollar (AUD) against the US Dollar (USD) is currently exhibiting a mildly bullish sentiment, trading at 0.65596. The recent price action indicates a consolidation phase, as the pair has remained within a narrow range between the high of 0.65607 and a low of 0.65557 over the last 24 hours. This stability suggests a potential buildup of momentum, and traders should monitor for breakout opportunities, particularly if the price can close above the recent high.\n\nFrom a technical perspective, the simple moving average (SMA) of 20 periods at 0.6546305 serves as a critical support level. This level has provided a foundation for the current price action, and a failure to hold above this could lead to a retest of lower supports. In contrast, resistance is likely to be encountered around the 0.65700 mark, where selling pressure may increase. A decisive move above this level could signal a shift towards a more bullish outlook.\n\nThe MACD reading of 0.00069338811 points to a slight positive momentum, although without accompanying signal line data, it’s essential to remain cautious. Further clarity may arise from observing the RSI when available, as it will provide insights into overbought or oversold conditions. Traders may find it prudent to wait for confirmation of momentum before entering positions, ideally looking for an upward break above the resistance level.\n\nIn terms of trading strategies, a breakout above the resistance could provide a favorable entry point for long positions, targeting higher levels with a stop-loss set just below the SMA. Conversely, if the price breaches the support level, it may trigger short positions with a focus on capturing downward movements. In both scenarios, proper risk management is crucial to navigate the inherent volatility in the forex market."
+    }
+  }
+}

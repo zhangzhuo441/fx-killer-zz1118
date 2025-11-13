@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-13T07:01:32.207Z",
+  "price": {
+    "close": "4211.75674",
+    "high": "4212.84118",
+    "low": "4202.70945",
+    "open": "4212.2808",
+    "change": "-0.01",
+    "datetime": "2025-11-13 17:00:00"
+  },
+  "indicators": {
+    "rsi": 67.03507,
+    "macd": 19.82228,
+    "macd_signal": 19.5143,
+    "sma20": 4185.55743
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理趋势]",
+      "content": "当前黄金/美元(XAU/USD)价格为4211.76，显示出震荡整理的趋势。尽管24小时内变化微乎其微，但市场在4202.70至4212.84区间内波动，反映出投资者情绪相对谨慎。短期内，市场可能会继续保持这种震荡状态，等待更明确的方向信号。\n\n从技术指标来看，虽然RSI(14)数据缺失，但根据MACD指标(19.82)来看，当前处于相对强势区域。这表明虽然短期内缺乏明显的上行动能，但潜在的上升趋势仍然存在。SMA(20)的支撑位在4185.56，提供了一定的下行保护。\n\n在支撑位方面，4202.70是关键的支撑区，如果价格跌破该水平，可能会引发更大的回调。而在阻力位方面，4212.84一线需密切关注，一旦突破，可能会迎来新的买入机会。综合来看，建议投资者可以在支撑位附近寻找进场机会，同时在接近阻力位时考虑减仓或止盈。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The XAU/USD pair is currently trading at 4211.76, showing a slight decrease of 0.01% over the past 24 hours. The price action has remained within a narrow range, with a high of 4212.84 and a low of 4202.71. This consolidation phase suggests potential indecision in the market, as traders await further clues about future direction. A sustained break above the recent high could signal a bullish trend continuation, while a breach below the recent low may indicate a bearish reversal.\n\nIn terms of technical indicators, the MACD at 19.82 indicates a moderately bullish momentum, although the absence of a signal line prevents a comprehensive analysis of the momentum's strength. The lack of an RSI reading means we cannot assess overbought or oversold conditions at this time. However, the 20-period Simple Moving Average (SMA) at 4185.56 acts as a dynamic support level, suggesting that as long as the price remains above this level, the outlook may remain bullish.\n\nSupport levels are currently established at 4202.71 and further down at the SMA level of 4185.56. Should the price decline and breach these support levels, a move towards 4170 may be seen. Conversely, resistance is found at 4212.84, with further resistance at around 4220, which could attract sellers. Traders should closely monitor these levels for potential breakouts or reversals, as they could define the next significant price action.\n\nFor trading strategies, maintaining a watchful eye on the established support and resistance levels is crucial. A long position may be considered if the price successfully breaks above 4212.84, with a target near 4220. Conversely, if the price falls below the SMA at 4185.56, short positions could be initiated, targeting the 4170 mark. Risk management strategies should be employed to mitigate potential losses, ensuring a disciplined approach to trading in this fluctuating market."
+    }
+  }
+}
