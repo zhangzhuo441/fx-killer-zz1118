@@ -17,6 +17,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ShineButton from '@/components/custom/ShineButton';
 import { CosmicPortal } from '@/components/ui/cosmic-portal';
 import { NeuralBackground } from '@/components/ui/neural-background';
+import { Boxes } from '@/components/ui/background-boxes';
 
 const DummyContent = () => {
   const router = useRouter();
@@ -57,18 +58,15 @@ const DummyContent = () => {
 
   return (
     <div className="w-full">
-      {/* Neural Background - Full Page - Always Dark */}
-      <div className="fixed inset-0 w-full h-full -z-10 bg-black">
-        <NeuralBackground
-          hue={200}
-          saturation={0.5}
-          chroma={0.4}
-          isDark={true}
-        />
-      </div>
-
       {/* Hero Section */}
-      <div className="relative overflow-hidden h-screen">
+      <div className="relative overflow-hidden h-screen bg-black">
+        {/* Boxes Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <Boxes />
+        </div>
+        {/* Background overlay for better text readability */}
+        <div className="absolute inset-0 w-full h-full bg-black/50 z-[1]" />
+
         {/* Content Overlay - Centered in viewport */}
         <div className="relative z-10 flex items-center h-full">
           <div className="max-w-7xl mx-auto px-6 w-full">
