@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LocaleLink from '@/components/navigation/LocaleLink';
+import FlashNewsSidebar from '@/components/news/FlashNewsSidebar';
 
 interface NewsItem {
   slug: string;
@@ -213,7 +214,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
         </div>
       </div>
 
-      {/* News List with Sidebar */}
+      {/* News List with Flash News Sidebar */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         {filteredNews.length === 0 ? (
           <div className="text-center py-20">
@@ -224,9 +225,16 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
             </div>
           </div>
         ) : (
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Main News List */}
-            <div className="flex-1 min-w-0">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            {/* Left Sidebar: Flash News - Only show on large screens */}
+            <div className="hidden lg:block lg:col-span-1">
+              <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-hidden">
+                <FlashNewsSidebar />
+              </div>
+            </div>
+
+            {/* Right: Main News List */}
+            <div className="lg:col-span-3">
               <div className="grid gap-6">
                 {paginatedNews.map((item) => (
                   <div
@@ -340,58 +348,6 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
               )}
             </div>
 
-            {/* Sidebar - Recent News (10 items) */}
-            <aside className="lg:w-80 shrink-0">
-              <div className="sticky top-24 space-y-6">
-                {/* Archive Links */}
-                <div className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 p-6">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-gray-800">
-                    {isZh ? '归档' : 'Archives'}
-                  </h3>
-                  <div className="space-y-3">
-                    <LocaleLink
-                      href="/news/archive"
-                      className="block px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      📅 {isZh ? '按月份归档' : 'By Month'}
-                    </LocaleLink>
-                    <LocaleLink
-                      href="/news/tags"
-                      className="block px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      🏷️ {isZh ? '按标签归档' : 'By Tags'}
-                    </LocaleLink>
-                  </div>
-                </div>
-
-                {/* Recent News */}
-                <div className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 p-6">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-gray-800">
-                    {isZh ? '最新新闻' : 'Recent News'}
-                  </h3>
-                  <ul className="space-y-3">
-                    {recentNews.map((item) => (
-                      <li key={item.slug}>
-                        <LocaleLink
-                          href={`/news/${item.slug}`}
-                          className="block group"
-                        >
-                          <div className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 mb-1">
-                            {item.title}
-                          </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400">
-                            {new Date(item.date).toLocaleDateString(isZh ? 'zh-CN' : 'en-US', {
-                              month: 'short',
-                              day: 'numeric'
-                            })}
-                          </div>
-                        </LocaleLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </aside>
           </div>
         )}
       </div>
