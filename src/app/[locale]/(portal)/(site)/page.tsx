@@ -70,7 +70,7 @@ const DummyContent = () => {
             {/* Main Title */}
             <ScaleFadeIn delay={0.2}>
               <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white tracking-tight leading-none">
-                <BrandName />
+                <BrandName inHero={true} />
               </h1>
             </ScaleFadeIn>
 

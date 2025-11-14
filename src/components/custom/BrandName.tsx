@@ -6,9 +6,10 @@ import { useState, useEffect } from 'react';
 
 interface BrandNameProps {
   inNavbar?: boolean; // 是否在导航栏中使用
+  inHero?: boolean; // 是否在 Hero 中使用（黑色背景）
 }
 
-export default function BrandName({ inNavbar = false }: BrandNameProps) {
+export default function BrandName({ inNavbar = false, inHero = false }: BrandNameProps) {
   const { language } = useLanguage();
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -28,13 +29,23 @@ export default function BrandName({ inNavbar = false }: BrandNameProps) {
       {chars.map((char, index) => {
         const isSecondPart = language === 'zh' ? index >= 1 : index >= 2;
 
+        // 根据使用场景决定颜色
+        let colorClass;
+        if (inHero) {
+          // Hero 中始终是白色（因为背景是黑色）
+          colorClass = isSecondPart ? 'font-normal text-gray-400' : 'font-black text-white';
+        } else if (inNavbar) {
+          // 导航栏中根据主题切换
+          colorClass = isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white';
+        } else {
+          // 其他地方（如 Dashboard 登录页）根据主题切换
+          colorClass = isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white';
+        }
+
         return (
           <motion.span
             key={`${language}-${index}`}
-            className={inNavbar
-              ? (isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white')
-              : (isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white')
-            }
+            className={colorClass}
             initial={hasAnimated ? false : {
               x: (index % 2 === 0 ? -1 : 1) * 150,
               y: (index % 3 === 0 ? -1 : 1) * 80,
