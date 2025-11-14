@@ -19,6 +19,7 @@ export default function FlashNewsSidebar() {
   const [news, setNews] = useState<FlashNews[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [countdown, setCountdown] = useState(30);
 
   // Fetch flash news from backend cache
   const fetchFlashNews = async () => {
@@ -29,8 +30,9 @@ export default function FlashNewsSidebar() {
 
       const data = await response.json();
       if (data.success && data.news) {
-        setNews(data.news);
+        setNews(data.news.slice(0, 10)); // Only keep latest 10 items
         setError('');
+        setCountdown(30); // Reset countdown
       }
     } catch (err) {
       console.error('Failed to fetch flash news:', err);
@@ -46,6 +48,20 @@ export default function FlashNewsSidebar() {
     const interval = setInterval(fetchFlashNews, 30000); // 30 seconds
     return () => clearInterval(interval);
   }, [language]);
+
+  // Countdown timer - update every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev <= 1) {
+          return 30; // Reset to 30 when reaching 0
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   // Format timestamp to readable time
   const formatTime = (timestamp: string) => {
@@ -67,7 +83,7 @@ export default function FlashNewsSidebar() {
     <div className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 h-full flex flex-col">
       {/* Header */}
       <div className="sticky top-0 bg-black dark:bg-white px-4 py-3 border-b-2 border-black dark:border-white z-10">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-2">
           <h3 className="text-lg font-bold text-white dark:text-black">
             {isZh ? '实时快讯' : 'Flash News'}
           </h3>
@@ -76,6 +92,34 @@ export default function FlashNewsSidebar() {
             <span className="text-xs text-white dark:text-black">
               {isZh ? '实时' : 'Live'}
             </span>
+          </div>
+        </div>
+
+        {/* Countdown Timer */}
+        <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/20 dark:border-black/20">
+          <svg
+            className="w-4 h-4 text-white dark:text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          <span className="text-xs font-mono text-white dark:text-black">
+            {isZh ? '下次刷新: ' : 'Next refresh: '}
+            <span className="font-bold tabular-nums">{countdown}s</span>
+          </span>
+          {/* Progress Bar */}
+          <div className="flex-1 h-1 bg-white/20 dark:bg-black/20 rounded-full overflow-hidden ml-2">
+            <div
+              className="h-full bg-white dark:bg-black transition-all duration-1000 ease-linear"
+              style={{ width: `${(countdown / 30) * 100}%` }}
+            />
           </div>
         </div>
       </div>
