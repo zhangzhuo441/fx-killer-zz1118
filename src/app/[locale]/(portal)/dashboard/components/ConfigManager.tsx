@@ -98,18 +98,19 @@ export default function ConfigManager() {
 
   // Predefined model options for OPENAI_BLOG_MODEL
   const BLOG_MODEL_OPTIONS = [
-    { value: 'gpt-4o-mini', label: 'GPT-4o Mini (推荐 - 性价比高)' },
-    { value: 'gpt-4o', label: 'GPT-4o (平衡)' },
-    { value: 'gpt-4-turbo', label: 'GPT-4 Turbo (强大)' },
-    { value: 'gpt-4', label: 'GPT-4 (稳定)' },
-    { value: 'gpt-3.5-turbo', label: 'GPT-3.5 Turbo (快速)' },
-    { value: 'o3-mini', label: 'O3 Mini (推理模型)' },
-    { value: 'o1-preview', label: 'O1 Preview (高级推理)' },
-    { value: 'o1-mini', label: 'O1 Mini (推理)' },
+    { value: 'gpt-4o-mini', label: 'GPT-4o Mini (推荐 - 性价比高，已验证可用)' },
+    { value: 'o3-mini', label: 'O3 Mini (推理模型，已修复兼容性)' },
+    { value: 'custom', label: '自定义模型 (输入其他模型名称)' },
   ];
 
   // Check if current config is OPENAI_BLOG_MODEL
   const isModelConfig = formData.key_name === 'OPENAI_BLOG_MODEL';
+
+  // Check if user selected custom model (not in predefined list)
+  const isCustomModel = isModelConfig &&
+    formData.key_content !== '' &&
+    !BLOG_MODEL_OPTIONS.some(opt => opt.value === formData.key_content) &&
+    formData.key_content !== 'custom';
 
   return (
     <div className="p-8">
@@ -150,12 +151,18 @@ export default function ConfigManager() {
                 {language === 'zh' ? '配置值 (Key Content)' : 'Key Content'}
               </label>
               {isModelConfig ? (
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <select
-                    value={formData.key_content}
-                    onChange={(e) => setFormData({ ...formData, key_content: e.target.value })}
+                    value={isCustomModel ? 'custom' : formData.key_content}
+                    onChange={(e) => {
+                      if (e.target.value === 'custom') {
+                        setFormData({ ...formData, key_content: '' });
+                      } else {
+                        setFormData({ ...formData, key_content: e.target.value });
+                      }
+                    }}
                     className="w-full px-4 py-2 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white"
-                    required
+                    required={!isCustomModel}
                   >
                     <option value="">{language === 'zh' ? '选择模型...' : 'Select model...'}</option>
                     {BLOG_MODEL_OPTIONS.map(option => (
@@ -163,11 +170,35 @@ export default function ConfigManager() {
                         {option.label}
                       </option>
                     ))}
+                    {isCustomModel && (
+                      <option value="custom" selected>
+                        {language === 'zh' ? '自定义: ' : 'Custom: '}{formData.key_content}
+                      </option>
+                    )}
                   </select>
+
+                  {(isCustomModel || formData.key_content === 'custom' || formData.key_content === '') && (
+                    <div>
+                      <input
+                        type="text"
+                        value={formData.key_content === 'custom' ? '' : formData.key_content}
+                        onChange={(e) => setFormData({ ...formData, key_content: e.target.value })}
+                        className="w-full px-4 py-2 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white"
+                        placeholder={language === 'zh' ? '输入自定义模型名称 (如: gpt-4, claude-3-opus)' : 'Enter custom model name (e.g., gpt-4, claude-3-opus)'}
+                        required
+                      />
+                    </div>
+                  )}
+
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     {language === 'zh'
-                      ? '💡 推荐: gpt-4o-mini (性价比最高) 或 gpt-4o (综合性能好)'
-                      : '💡 Recommended: gpt-4o-mini (best value) or gpt-4o (balanced)'}
+                      ? '💡 推荐使用 gpt-4o-mini (已验证可用，性价比最高)'
+                      : '💡 Recommended: gpt-4o-mini (verified working, best value)'}
+                  </p>
+                  <p className="text-xs text-yellow-600 dark:text-yellow-500">
+                    {language === 'zh'
+                      ? '⚠️ 注意: 只有列表中的模型经过测试，其他模型可能不可用'
+                      : '⚠️ Note: Only listed models are tested, others may not work'}
                   </p>
                 </div>
               ) : (
