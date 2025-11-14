@@ -40,9 +40,11 @@ export default function FlashNewsSidebar() {
     }
   };
 
-  // Fetch on mount and when language changes
+  // Fetch on mount, when language changes, and auto-refresh every 30 seconds
   useEffect(() => {
     fetchFlashNews();
+    const interval = setInterval(fetchFlashNews, 30000); // 30 seconds
+    return () => clearInterval(interval);
   }, [language]);
 
   // Format timestamp to readable time
@@ -78,7 +80,7 @@ export default function FlashNewsSidebar() {
         </div>
       </div>
 
-      {/* Content */}
+      {/* Content - Scrollable */}
       <div className="flex-1 overflow-y-auto">
         {loading ? (
           <div className="p-4 text-center text-gray-500">
@@ -91,7 +93,7 @@ export default function FlashNewsSidebar() {
             {news.map((item, index) => (
               <div
                 key={item.id}
-                className="p-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                className="p-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors border-b border-gray-200 dark:border-gray-700 last:border-b-2"
               >
                 {/* Time and New Badge */}
                 <div className="flex items-center justify-between mb-2">
@@ -106,23 +108,9 @@ export default function FlashNewsSidebar() {
                 </div>
 
                 {/* Content */}
-                <p className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed mb-2">
+                <p className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed">
                   {item.content}
                 </p>
-
-                {/* Related Stocks */}
-                {item.relatedStocks && item.relatedStocks.length > 0 && (
-                  <div className="flex flex-wrap gap-1">
-                    {item.relatedStocks.map((stock: any) => (
-                      <span
-                        key={stock.code || stock}
-                        className="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
-                      >
-                        {stock.name || stock}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
           </div>

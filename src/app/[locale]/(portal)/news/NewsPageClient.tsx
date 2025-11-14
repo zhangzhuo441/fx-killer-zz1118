@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LocaleLink from '@/components/navigation/LocaleLink';
 import FlashNewsSidebar from '@/components/news/FlashNewsSidebar';
+import InterviewCTA from '@/components/custom/InterviewCTA';
 
 interface NewsItem {
   slug: string;
@@ -404,6 +405,9 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
           </div>
         )}
       </div>
+
+      {/* Interview CTA */}
+      <InterviewCTA />
     </div>
   );
 }
