@@ -30,7 +30,7 @@ export default function FlashNewsSidebar() {
 
       const data = await response.json();
       if (data.success && data.news) {
-        setNews(data.news.slice(0, 10)); // Only keep latest 10 items
+        setNews(data.news.slice(0, 6)); // Only keep latest 6 items
         setError('');
         setCountdown(30); // Reset countdown
       }
