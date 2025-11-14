@@ -229,7 +229,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {/* Left Sidebar: Flash News - Only show on large screens */}
             <div className="hidden lg:block lg:col-span-1">
-              <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-hidden">
+              <div className="sticky top-20 h-[calc(100vh-6rem)]">
                 <FlashNewsSidebar />
               </div>
             </div>
