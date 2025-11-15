@@ -56,7 +56,7 @@ function TradingViewWidget({ symbol }: TradingViewWidgetProps) {
     <div
       ref={container}
       className="tradingview-widget-container"
-      style={{ height: '100vh', width: '100%' }}
+      style={{ height: '800px', width: '100%' }}
     />
   );
 }
