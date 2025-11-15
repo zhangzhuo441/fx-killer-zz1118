@@ -245,13 +245,15 @@ export default function MarketDetailClient({ analysis, language }: MarketDetailC
       </div>
 
       {/* TradingView Chart - Full Width */}
-      <div className="w-full bg-white dark:bg-gray-900 border-y-2 border-gray-200 dark:border-gray-800">
-        <div className="w-full py-8 px-6">
+      <div className="w-full bg-white dark:bg-gray-900 border-y-2 border-gray-200 dark:border-gray-800" style={{ width: '100vw', height: '100vh' }}>
+        <div className="w-full px-6 pt-8 pb-4">
           <div className="max-w-7xl mx-auto mb-6">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
               {isZh ? '实时图表' : 'Live Chart'}
             </h3>
           </div>
+        </div>
+        <div className="w-full px-6 pb-8" style={{ height: 'calc(100vh - 120px)' }}>
           <TradingViewWidget symbol={analysis.symbol.replace('/', '')} />
         </div>
       </div>
