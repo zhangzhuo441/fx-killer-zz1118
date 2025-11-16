@@ -132,18 +132,18 @@ export default function PartnersLogos() {
                   </>
                 )}
               </p>
-              <p className="text-sm text-[#ff102a] mt-2">
+              <p className="text-sm text-white mt-2">
                 {isZh ? (
                   <>
                     使用专属链接注册，享受<span className="font-black bg-[#ff102a] text-white px-2 py-0.5">平台最高自动返佣</span>、<span className="font-bold underline">超低点差</span>、<span className="font-bold underline">手续费</span>
                     <br />
-                    <span className="font-black">FTMO</span> 和 <span className="font-black">FundedNext</span> 更有<span className="font-black text-base bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 ml-1">立减优惠</span>
+                    <span className="font-black">FTMO</span> 和 <span className="font-black">FundedNext</span> 更有<span className="font-black text-base bg-[#ff102a] text-white px-2 py-0.5 ml-1">立减优惠</span>
                   </>
                 ) : (
                   <>
                     Register with exclusive links for <span className="font-black bg-[#ff102a] text-white px-2 py-0.5">maximum auto-rebates</span>, <span className="font-bold underline">ultra-low spreads & fees</span>
                     <br />
-                    <span className="font-black">FTMO</span> & <span className="font-black">FundedNext</span> with <span className="font-black text-base bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 ml-1">instant discounts</span>
+                    <span className="font-black">FTMO</span> & <span className="font-black">FundedNext</span> with <span className="font-black text-base bg-[#ff102a] text-white px-2 py-0.5 ml-1">instant discounts</span>
                   </>
                 )}
               </p>
@@ -164,13 +164,13 @@ export default function PartnersLogos() {
                   className="group"
                 >
                   <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-all px-4 py-2 flex items-center gap-2">
-                    <span className="font-bold text-[#ff102a] text-sm group-hover:underline">
+                    <span className="font-bold text-white group-hover:text-[#ff102a] text-sm group-hover:underline transition-colors">
                       {partner.name}
                     </span>
                     {partner.name === 'FundedNext' && partner.code && (
                       <>
-                        <span className="text-gray-400">|</span>
-                        <code className="text-xs bg-[#131318] px-2 py-0.5 text-[#ff102a] font-mono">
+                        <span className="text-[#dadafa]">|</span>
+                        <code className="text-xs bg-[#131318] px-2 py-0.5 text-white group-hover:text-[#ff102a] font-mono transition-colors">
                           {partner.code}
                         </code>
                       </>

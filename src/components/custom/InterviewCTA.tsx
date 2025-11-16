@@ -46,7 +46,7 @@ export default function InterviewCTA() {
 
   return (
     <>
-      <section className="relative py-12 overflow-hidden bg-black">
+      <section className="relative py-24 overflow-hidden bg-black">
         {/* Neural Background - Light mode (白色神经网络) */}
         <div className="dark:hidden">
           <NeuralBackground
@@ -91,16 +91,16 @@ export default function InterviewCTA() {
           className="absolute bottom-0 left-0 right-0 h-1 bg-[#dadafa] origin-right"
         />
 
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-6"
+            className="text-center mb-10"
           >
-            <span className="inline-block px-6 py-2 bg-[#131318] text-white text-sm font-bold tracking-wider border-2 border-[#dadafa]">
+            <span className="inline-block px-8 py-3 bg-[#131318] text-white text-base font-bold tracking-wider border-2 border-[#dadafa]">
               {currentContent.badge.toUpperCase()}
             </span>
           </motion.div>
@@ -111,7 +111,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-6xl font-bold text-center mb-4 text-white"
+            className="text-5xl md:text-7xl font-bold text-center mb-4 text-white"
           >
             {currentContent.title}
           </motion.h2>
@@ -133,7 +133,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-center mb-12 text-[#b0b0b0] max-w-2xl mx-auto"
+            className="text-center mb-12 text-[#b0b0b0] max-w-3xl mx-auto"
           >
             {currentContent.description}
           </motion.p>
@@ -144,7 +144,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12"
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16"
           >
             {currentContent.features.map((feature, index) => (
               <motion.div
@@ -153,10 +153,10 @@ export default function InterviewCTA() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                className="bg-[#0a0a0a] backdrop-blur-sm border-2 border-[#dadafa]/30 p-4 text-center hover:bg-[#131318] transition-colors"
+                className="bg-[#0a0a0a] backdrop-blur-sm border-2 border-[#dadafa]/30 p-6 text-center hover:border-[#ff102a] transition-colors"
               >
                 <div className="text-3xl mb-2 text-white">{feature.icon}</div>
-                <div className="text-sm font-bold text-white">{feature.text}</div>
+                <div className="text-base font-bold text-white">{feature.text}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -167,11 +167,11 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-center mb-8"
+            className="text-center mb-10"
           >
             <ShineButton
               onClick={() => setIsModalOpen(true)}
-              className="inline-block px-12 py-5 bg-[#ff102a] text-white text-xl font-bold border-4 border-[#ff102a] hover:bg-[#eb383e] hover:text-white shadow-2xl"
+              className="inline-block px-16 py-6 bg-[#ff102a] text-white text-2xl font-bold border-4 border-[#ff102a] hover:bg-[#eb383e] hover:text-white shadow-2xl"
             >
               {currentContent.button}
               <motion.span
@@ -206,7 +206,7 @@ export default function InterviewCTA() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute top-10 left-10 w-20 h-20 border-4 border-[#dadafa]/10"
+          className="absolute top-10 left-10 w-24 h-24 border-4 border-[#dadafa]/10"
         />
         <motion.div
           animate={{
@@ -217,7 +217,7 @@ export default function InterviewCTA() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute bottom-10 right-10 w-32 h-32 border-4 border-[#dadafa]/10"
+          className="absolute bottom-10 right-10 w-36 h-36 border-4 border-[#dadafa]/10"
         />
       </section>
 

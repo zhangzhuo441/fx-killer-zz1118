@@ -274,13 +274,6 @@ const DummyContent = () => {
       {/* 职业发展路径 - Akira 风格 */}
       <div className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">
-            {t('career.title')}
-          </h2>
-          <p className="text-center text-[#dadafa] mb-16 text-lg">
-            {t('career.subtitle')}
-          </p>
-
           {/* 发展阶梯 */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
             {/* 阶段 1 */}
@@ -397,10 +390,7 @@ const DummyContent = () => {
           {/* 人群画像 */}
           <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
             <div className="text-white">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
-                  <span className="text-2xl">👥</span>
-                </div>
+              <div className="mb-6">
                 <h3 className="text-2xl font-bold">{t('req.profile.title')}</h3>
               </div>
               <div className="space-y-5">
@@ -422,41 +412,23 @@ const DummyContent = () => {
 
           {/* 时间与环境 */}
           <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
-                <span className="text-2xl">⏰</span>
-              </div>
+            <div className="mb-6">
               <h3 className="text-2xl font-bold text-white">{t('req.time.title')}</h3>
             </div>
             <div className="space-y-5">
               <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
-                <div className="flex-shrink-0 w-8 h-8 bg-[#ff102a] flex items-center justify-center mt-1">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
                 <div>
                   <p className="font-bold text-white mb-1">{t('req.time.commitment')}</p>
                   <p className="text-sm text-[#b0b0b0]">{t('req.time.commitment.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
-                <div className="flex-shrink-0 w-8 h-8 bg-[#ff102a] flex items-center justify-center mt-1">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
                 <div>
                   <p className="font-bold text-white mb-1">{t('req.time.equipment')}</p>
                   <p className="text-sm text-[#b0b0b0]">{t('req.time.equipment.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
-                <div className="flex-shrink-0 w-8 h-8 bg-[#ff102a] flex items-center justify-center mt-1">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
                 <div>
                   <p className="font-bold text-white mb-1">{t('req.time.environment')}</p>
                   <p className="text-sm text-[#b0b0b0]">{t('req.time.environment.desc')}</p>
@@ -468,10 +440,7 @@ const DummyContent = () => {
           {/* 在线时间 */}
           <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
             <div className="text-white">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
-                  <span className="text-2xl">📅</span>
-                </div>
+              <div className="mb-6">
                 <h3 className="text-2xl font-bold">{t('req.online.title')}</h3>
               </div>
               <div className="space-y-5">
@@ -490,10 +459,7 @@ const DummyContent = () => {
           {/* 适合与否 */}
           <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
             <div className="text-white">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
-                  <span className="text-2xl">⚠️</span>
-                </div>
+              <div className="mb-6">
                 <h3 className="text-2xl font-bold">{t('unsuitable.title')}</h3>
               </div>
               <div className="space-y-5">
@@ -602,15 +568,11 @@ const DummyContent = () => {
         </div>
       </div>
 
-      {/* 学员展示 - 收益滚动 - Akira 风格 */}
+      {/* 学员展示 - 收益统计 - Akira 风格 */}
       <div className="relative bg-black w-full">
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[#ff102a] w-full">
-          {t('showcase.title')}
-        </h2>
-
         {/* 收益统计 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-[#0a0a0a] p-6 border-2 border-[#dadafa]/30 text-center">
             <div className="text-4xl font-black text-white mb-2">{t('showcase.junior')}</div>
             <p className="text-2xl font-bold text-[#dadafa]">¥10,000 - ¥30,000</p>
@@ -625,35 +587,6 @@ const DummyContent = () => {
             <div className="text-4xl font-black text-white mb-2">{t('showcase.senior')}</div>
             <p className="text-2xl font-bold text-white">¥60,000 - ¥100,000+</p>
             <p className="text-sm text-white/70 mt-2">{t('showcase.income.range')}</p>
-          </div>
-        </div>
-
-        {/* 收益图片滚动展示 - 每次显示3张 */}
-        <div className="bg-[#131318] border-2 border-[#dadafa]/30 p-8">
-          <h3 className="text-2xl font-bold text-center mb-6 text-white">
-            {t('showcase.screenshots.title')}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[0, 1, 2].map((offset) => {
-              const imageIndex = currentImageIndex + offset;
-              const image = profitImages[imageIndex < profitImages.length ? imageIndex : imageIndex - profitImages.length];
-              return (
-                <div key={offset} className="relative h-80 overflow-hidden bg-[#0a0a0a] border-2 border-[#dadafa]/30">
-                  <div className="relative w-full h-full flex items-center justify-center p-4">
-                    <img
-                      src={image}
-                      alt={`学员收益 ${imageIndex + 1}`}
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="mt-6 text-center">
-            <p className="text-sm text-[#dadafa]">
-              {t('showcase.screenshots.note')}
-            </p>
           </div>
         </div>
       </div>
