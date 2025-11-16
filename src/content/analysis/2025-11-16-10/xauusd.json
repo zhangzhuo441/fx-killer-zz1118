@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-16T10:51:59.743Z",
+  "price": {
+    "close": "4080.42743",
+    "high": "4080.64181",
+    "low": "4080.39587",
+    "open": "4080.45682",
+    "change": "-0.00",
+    "datetime": "2025-11-15 23:00:00"
+  },
+  "indicators": {
+    "rsi": 32.27506,
+    "macd": -14.35388,
+    "macd_signal": -17.98936,
+    "sma20": 4083.16397
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元市场表现出震荡整理的趋势，最新价格在4080.42附近波动。24小时内价格变化微乎其微，显示出市场参与者对未来方向的谨慎态度。尽管短期内缺乏明显的突破信号，但整体趋势仍需密切关注。\n\n在技术指标方面，MACD值为-14.35，表明黄金价格在短期内可能面临一定的卖压，而RSI指标尚未提供，限制了对超买或超卖状态的评估。SMA(20)在4083.16附近，为价格提供了一个动态的阻力位，若价格持续低于该水平，可能会加大回调风险。\n\n支撑位方面，4080.40是近期低点，有效支撑在该水平之上有助于防止进一步下跌。若价格突破4083.16，则可能引发买盘的涌入，进一步推高价格。交易者应密切关注这些关键水平，以决定进出场时机。\n\n建议投资者在当前区间内保持观望，避免盲目追单，建议在价格接近支撑位时适当布局多单，而在接近阻力位时则考虑轻仓做空，以降低风险。市场情绪变化迅速，灵活应对是关键。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) is trading at 4080.43, showing a stable performance with a minimal 24-hour change of -0.00%. This stability suggests a period of consolidation following recent fluctuations. The price is currently situated close to the recent high of 4080.64, indicating that buyers are attempting to maintain momentum. However, the lack of significant movement may signal indecision in the market, warranting a closer examination of key technical indicators.\n\nThe absence of an RSI value makes it challenging to gauge overbought or oversold conditions, but the MACD reading of -14.35 indicates bearish momentum. This negative value suggests that sellers might still maintain some control in the short term. The SMA(20) at 4083.16 serves as a dynamic resistance level, and if the price can break above this average, it may trigger further buying interest. Conversely, the immediate support level appears to be around 4080.40, which aligns with recent low levels.\n\nTraders should watch for potential breakout scenarios. A move above the SMA could lead to a retest of the recent highs, while a failure to hold above the support level of 4080.40 may prompt a deeper pullback toward lower support zones. Risk management will be crucial, as volatility could increase with any significant market news. \n\nIn summary, the XAU/USD pair is currently hovering around critical levels, with bearish indicators suggesting caution. Traders should remain vigilant for price action near support and resistance levels, utilizing appropriate risk management strategies. A breakout could present buying opportunities, while a sustained decline below support may necessitate a more defensive stance."
+    }
+  }
+}

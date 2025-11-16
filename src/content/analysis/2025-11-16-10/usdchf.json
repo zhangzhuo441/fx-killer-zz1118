@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-16T10:51:17.656Z",
+  "price": {
+    "close": "0.79374999",
+    "high": "0.79438001",
+    "low": "0.79321003",
+    "open": "0.79395002",
+    "change": "-0.02",
+    "datetime": "2025-11-15 08:00:00"
+  },
+  "indicators": {
+    "rsi": 54.10161,
+    "macd": -8.3951137e-7,
+    "macd_signal": -0.00045605797,
+    "sma20": 0.792283
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡整理趋势]",
+      "content": "当前美元/瑞郎的价格在0.7937附近震荡整理，短期内没有明显的趋势方向。由于价格在高点0.7944和低点0.7932之间波动，显示出市场的犹豫情绪。投资者需要关注即将到来的经济数据和市场情绪变化，以决定后市的走向。\n\n技术指标方面，虽然当前RSI和MACD值未提供，但从SMA(20)来看，价格已突破此均线，暗示短期内可能维持偏强态势。如果后续价格能够稳固在0.7944上方，可能会引发进一步的上涨动力。\n\n支撑位方面，0.7932是一个关键支撑区域，若价格跌破此位，可能会引发更大幅度的回调。而0.7944则是主要阻力位，突破后将进一步确认上行趋势。投资者应密切关注这些关键价位的变化。\n\n基于当前市场情况，建议短线交易者可以在支撑位0.7932附近寻找买入机会，设置止损以控制风险。同时，可以在接近阻力位0.7944时考虑获利了结或反向操作，以应对可能的价格回落。保持灵活的交易策略，将有助于应对市场的波动。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The current price of USD/CHF at 0.79374999 reflects a slight bearish sentiment, evidenced by the 24-hour change of -0.02%. The pair has oscillated between a high of 0.79438001 and a low of 0.79321003 during this period, indicating a tight trading range. This sideways movement suggests that traders are currently indecisive, potentially waiting for clearer directional signals or macroeconomic developments to influence their strategies.\n\nAnalyzing the technical indicators, the absence of a specified RSI and MACD signal makes it challenging to gain insights into momentum. However, the MACD value is slightly negative, which can indicate a bearish trend. The Simple Moving Average (SMA) of 20 periods at 0.79228300 serves as a dynamic support level. Should the price dip below this SMA, it may reinforce the bearish outlook, prompting traders to consider short positions.\n\nIn terms of support and resistance levels, the immediate support is observed at the recent low of 0.79321003, while resistance can be identified at 0.79438001, the recent high. A breakout above this level may signal a shift in sentiment, attracting buyers and potentially pushing the price higher. Conversely, a breach of the support level could lead to increased selling pressure, taking the pair lower.\n\nFor trading strategies, it may be prudent to monitor price action closely around these key levels. A confirmation of a breakout above resistance could provide opportunities for long positions, while a decline below support could set up favorable conditions for short trades. Risk management remains crucial, considering the current volatility and lack of strong momentum indicators."
+    }
+  }
+}
