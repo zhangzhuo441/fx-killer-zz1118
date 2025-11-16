@@ -10,9 +10,11 @@ import type { BlogPost } from '@/lib/supabase';
 interface BlogDetailClientProps {
   post: BlogPost;
   relatedPosts: BlogPost[];
+  latestNews: any[];
+  locale: string;
 }
 
-export default function BlogDetailClient({ post, relatedPosts }: BlogDetailClientProps) {
+export default function BlogDetailClient({ post, relatedPosts, latestNews, locale }: BlogDetailClientProps) {
   const router = useRouter();
   const { language } = useLanguage();
 
@@ -116,6 +118,44 @@ export default function BlogDetailClient({ post, relatedPosts }: BlogDetailClien
             dangerouslySetInnerHTML={{ __html: language === 'zh' ? post.content : post.content_en }}
           />
         </motion.div>
+
+        {/* Latest News Section */}
+        {latestNews.length > 0 && (
+          <div className="mt-16 pt-16 border-t border-gray-200 dark:border-gray-800">
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white mb-8">
+              {language === 'zh' ? '最新新闻' : 'Latest News'}
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {latestNews.map((news) => (
+                <motion.div
+                  key={news.id}
+                  whileHover={{ y: -4 }}
+                  onClick={() => router.push(`/${locale}/news/${news.slug}`)}
+                  className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all cursor-pointer p-6"
+                >
+                  <div className="flex items-start gap-3 mb-3">
+                    <svg className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
+                      <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                    </svg>
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2">
+                      {language === 'zh' ? news.title : (news.title_en || news.title)}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-3 ml-8">
+                    {language === 'zh' ? news.summary : (news.summary_en || news.summary)}
+                  </p>
+                  <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-500 ml-8">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>{new Date(news.created_at).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric' })}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (

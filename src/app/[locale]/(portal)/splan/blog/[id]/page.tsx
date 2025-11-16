@@ -79,6 +79,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
   const { locale, id } = await params;
+  const lang = getLanguageFromLocale(locale);
 
   // Fetch blog post
   const { data: postData, error: postError } = await supabase
@@ -118,5 +119,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
     }
   }
 
-  return <BlogDetailClient post={post} relatedPosts={relatedPosts} />;
+  // Fetch latest 4 news articles
+  let latestNews: any[] = [];
+  try {
+    const { data: newsData } = await supabase
+      .from('News')
+      .select('id, title, title_en, summary, summary_en, created_at, slug')
+      .order('created_at', { ascending: false })
+      .limit(4);
+
+    if (newsData) {
+      latestNews = newsData;
+    }
+  } catch (error) {
+    console.error('Error fetching latest news:', error);
+  }
+
+  return <BlogDetailClient post={post} relatedPosts={relatedPosts} latestNews={latestNews} locale={locale} />;
 }
