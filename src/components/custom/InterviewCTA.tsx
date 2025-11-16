@@ -5,7 +5,6 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useState } from 'react';
 import EmailContactModal from './EmailContactModal';
 import ShineButton from './ShineButton';
-import { NeuralBackground } from '@/components/ui/neural-background';
 
 export default function InterviewCTA() {
   const { language } = useLanguage();
@@ -47,26 +46,6 @@ export default function InterviewCTA() {
   return (
     <>
       <section className="relative py-24 overflow-hidden bg-black">
-        {/* Neural Background - Light mode (白色神经网络) */}
-        <div className="dark:hidden">
-          <NeuralBackground
-            hue={0}
-            saturation={0.5}
-            chroma={0.4}
-            isDark={false}
-          />
-        </div>
-
-        {/* Neural Background - Dark mode (黑色神经网络) */}
-        <div className="hidden dark:block">
-          <NeuralBackground
-            hue={0}
-            saturation={0.5}
-            chroma={0.4}
-            isDark={true}
-          />
-        </div>
-
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5 z-[5]">
           <div className="absolute inset-0" style={{

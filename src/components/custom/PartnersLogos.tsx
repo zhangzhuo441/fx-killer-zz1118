@@ -58,8 +58,8 @@ export default function PartnersLogos() {
   ];
 
   return (
-    <section className="py-16 bg-black overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-16 bg-black overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ export default function PartnersLogos() {
                   src={logo.src}
                   alt={logo.alt}
                   style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
-                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  className="object-contain hover:scale-110 transition-all duration-300"
                 />
               </div>
             ))}

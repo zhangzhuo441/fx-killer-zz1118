@@ -16,7 +16,6 @@ import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ShineButton from '@/components/custom/ShineButton';
 import { CosmicPortal } from '@/components/ui/cosmic-portal';
-import { NeuralBackground } from '@/components/ui/neural-background';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import Hyperspeed, { hyperspeedPresets } from '@/components/effects/Hyperspeed';
 
@@ -123,10 +122,12 @@ const DummyContent = () => {
         </div>
       </div>
 
-      {/* 为什么选择 FX Killer - Akira 风格 */}
-      <div className="relative bg-black w-full">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="text-center mb-12">
+      {/* Shared Black Background for All Sections (除了Hero和Footer) */}
+      <div className="relative bg-black w-full overflow-hidden">
+
+        {/* 为什么选择 FX Killer - Akira 风格 */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+          <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-[#ff102a]">
             {t('why.title')}
           </h2>
@@ -268,114 +269,106 @@ const DummyContent = () => {
             </p>
           </div>
         </div>
-        </div>
-      </div>
 
-      {/* 职业发展路径 - Akira 风格 */}
-      <div className="bg-black py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* 发展阶梯 */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-            {/* 阶段 1 */}
-            <div className="relative">
-              <div className="bg-[#0a0a0a] border-2 border-[#ff102a] p-6 h-full">
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#ff102a] border-2 border-[#ff102a] flex items-center justify-center">
-                  <span className="text-white font-black text-2xl">1</span>
-                </div>
-                <div className="mt-4">
-                  <div className="inline-block px-3 py-1 bg-[#ff102a] text-white text-xs font-bold mb-3">
-                    {t('career.stage1.days')}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage1.title')}</h3>
-                  <p className="text-sm text-[#b0b0b0] mb-4">
-                    {t('career.stage1.desc')}
-                  </p>
-                  <div className="bg-[#131318] p-3 border-l-2 border-[#eb383e]">
-                    <p className="text-xs text-[#dadafa]">
-                      {t('career.stage1.warning')}
-                    </p>
-                  </div>
-                </div>
+        {/* 职业发展阶梯 - 4 Stages */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+          {/* 阶段 1 */}
+          <div className="relative">
+            <div className="bg-[#0a0a0a] border-2 border-[#ff102a] p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#ff102a] border-2 border-[#ff102a] flex items-center justify-center">
+                <span className="text-white font-black text-2xl">1</span>
               </div>
-            </div>
-
-            {/* 阶段 2 */}
-            <div className="relative">
-              <div className="bg-[#0a0a0a] border-2 border-[#eb383e] p-6 h-full">
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#eb383e] border-2 border-[#eb383e] flex items-center justify-center">
-                  <span className="text-white font-black text-2xl">2</span>
+              <div className="mt-4">
+                <div className="inline-block px-3 py-1 bg-[#ff102a] text-white text-xs font-bold mb-3">
+                  {t('career.stage1.days')}
                 </div>
-                <div className="mt-4">
-                  <div className="inline-block px-3 py-1 bg-[#eb383e] text-white text-xs font-bold mb-3">
-                    {t('career.stage2.days')}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage2.title')}</h3>
-                  <p className="text-sm text-[#b0b0b0] mb-4">
-                    {t('career.stage2.desc')}
+                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage1.title')}</h3>
+                <p className="text-sm text-[#b0b0b0] mb-4">
+                  {t('career.stage1.desc')}
+                </p>
+                <div className="bg-[#131318] p-3 border-l-2 border-[#eb383e]">
+                  <p className="text-xs text-[#dadafa]">
+                    {t('career.stage1.warning')}
                   </p>
-                  <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]/50">
-                    <p className="text-xs text-[#dadafa]">
-                      {t('career.stage2.tip')}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 阶段 3 */}
-            <div className="relative">
-              <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/50 p-6 h-full">
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#dadafa] border-2 border-[#dadafa] flex items-center justify-center">
-                  <span className="text-black font-black text-2xl">3</span>
-                </div>
-                <div className="mt-4">
-                  <div className="inline-block px-3 py-1 bg-[#dadafa] text-black text-xs font-bold mb-3">
-                    {t('career.stage3.days')}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage3.title')}</h3>
-                  <p className="text-sm text-[#b0b0b0] mb-4">
-                    {t('career.stage3.desc')}
-                  </p>
-                  <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]">
-                    <p className="text-xs text-[#dadafa]">
-                      {t('career.stage3.success')}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 阶段 4 */}
-            <div className="relative">
-              <div className="bg-[#ff102a] border-2 border-[#ff102a] p-6 h-full">
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-white border-2 border-white flex items-center justify-center">
-                  <span className="text-[#ff102a] font-black text-2xl">★</span>
-                </div>
-                <div className="mt-4">
-                  <div className="inline-block px-3 py-1 bg-white text-[#ff102a] text-xs font-bold mb-3">
-                    {t('career.stage4.path')}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage4.title')}</h3>
-                  <p className="text-sm text-white/90 mb-4">
-                    {t('career.stage4.desc')}
-                  </p>
-                  <div className="bg-[#eb383e] p-3 border-l-2 border-white">
-                    <p className="text-xs text-white font-semibold">
-                      {t('career.stage4.goal')}
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
+          {/* 阶段 2 */}
+          <div className="relative">
+            <div className="bg-[#0a0a0a] border-2 border-[#eb383e] p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#eb383e] border-2 border-[#eb383e] flex items-center justify-center">
+                <span className="text-white font-black text-2xl">2</span>
+              </div>
+              <div className="mt-4">
+                <div className="inline-block px-3 py-1 bg-[#eb383e] text-white text-xs font-bold mb-3">
+                  {t('career.stage2.days')}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage2.title')}</h3>
+                <p className="text-sm text-[#b0b0b0] mb-4">
+                  {t('career.stage2.desc')}
+                </p>
+                <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]/50">
+                  <p className="text-xs text-[#dadafa]">
+                    {t('career.stage2.tip')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      {/* 你是否符合基本条件 - Akira 风格 */}
-      <div className="relative bg-black w-full">
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="text-center mb-12">
+          {/* 阶段 3 */}
+          <div className="relative">
+            <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/50 p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#dadafa] border-2 border-[#dadafa] flex items-center justify-center">
+                <span className="text-black font-black text-2xl">3</span>
+              </div>
+              <div className="mt-4">
+                <div className="inline-block px-3 py-1 bg-[#dadafa] text-black text-xs font-bold mb-3">
+                  {t('career.stage3.days')}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage3.title')}</h3>
+                <p className="text-sm text-[#b0b0b0] mb-4">
+                  {t('career.stage3.desc')}
+                </p>
+                <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]">
+                  <p className="text-xs text-[#dadafa]">
+                    {t('career.stage3.success')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 阶段 4 */}
+          <div className="relative">
+            <div className="bg-[#ff102a] border-2 border-[#ff102a] p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-white border-2 border-white flex items-center justify-center">
+                <span className="text-[#ff102a] font-black text-2xl">★</span>
+              </div>
+              <div className="mt-4">
+                <div className="inline-block px-3 py-1 bg-white text-[#ff102a] text-xs font-bold mb-3">
+                  {t('career.stage4.path')}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage4.title')}</h3>
+                <p className="text-sm text-white/90 mb-4">
+                  {t('career.stage4.desc')}
+                </p>
+                <div className="bg-[#eb383e] p-3 border-l-2 border-white">
+                  <p className="text-xs text-white font-semibold">
+                    {t('career.stage4.goal')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        {/* 你是否符合基本条件 - Akira 风格 */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+          <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-[#ff102a]">
             {t('req.title')}
           </h2>
@@ -500,13 +493,11 @@ const DummyContent = () => {
               </p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
-      </div>
 
-      {/* 视频介绍板块 - Akira 风格 */}
-      <div className="bg-black py-20">
-        <div className="max-w-7xl mx-auto px-6">
+        {/* 视频介绍板块 - Akira 风格 */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <h2 className="text-4xl font-bold text-center mb-4 text-[#ff102a] w-full">
             {t('video.title')}
           </h2>
@@ -565,137 +556,126 @@ const DummyContent = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* 学员展示 - 收益统计 - Akira 风格 */}
-      <div className="relative bg-black w-full">
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        {/* 收益统计 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-[#0a0a0a] p-6 border-2 border-[#dadafa]/30 text-center">
-            <div className="text-4xl font-black text-white mb-2">{t('showcase.junior')}</div>
-            <p className="text-2xl font-bold text-[#dadafa]">¥10,000 - ¥30,000</p>
-            <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
-          </div>
-          <div className="bg-[#0a0a0a] p-6 border-2 border-[#ff102a] text-center">
-            <div className="text-4xl font-black text-white mb-2">{t('showcase.intermediate')}</div>
-            <p className="text-2xl font-bold text-[#eb383e]">¥30,000 - ¥60,000</p>
-            <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
-          </div>
-          <div className="bg-[#ff102a] p-6 border-2 border-[#ff102a] text-center">
-            <div className="text-4xl font-black text-white mb-2">{t('showcase.senior')}</div>
-            <p className="text-2xl font-bold text-white">¥60,000 - ¥100,000+</p>
-            <p className="text-sm text-white/70 mt-2">{t('showcase.income.range')}</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      {/* CTA - Akira 风格 */}
-      <div className="relative bg-black py-20 w-full overflow-hidden">
-        {/* Neural Background - Light mode (白色神经网络) */}
-        <div className="dark:hidden">
-          <NeuralBackground
-            hue={0}
-            saturation={0.5}
-            chroma={0.4}
-            isDark={false}
-          />
-        </div>
-
-        {/* Neural Background - Dark mode (黑色神经网络) */}
-        <div className="hidden dark:block">
-          <NeuralBackground
-            hue={0}
-            saturation={0.5}
-            chroma={0.4}
-            isDark={true}
-          />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            {t('cta.title')}
-          </h2>
-          <p className="text-xl text-[#dadafa] mb-4">
-            {t('cta.subtitle')}
-          </p>
-
-          {/* 通过率警告 - Akira 重新设计 */}
-          <div className="relative max-w-3xl mx-auto mb-12">
-            {/* 背景装饰 */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ff102a]/20 via-[#eb383e]/20 to-[#ff102a]/20 blur-xl"></div>
-
-            <div className="relative bg-[#131318] border-2 border-[#ff102a]/50 p-8 shadow-2xl">
-              <div className="flex flex-col items-center mb-6">
-                <div className="w-16 h-16 bg-[#ff102a] flex items-center justify-center mb-4">
-                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-black text-[#ff102a] mb-2">{t('cta.notice.title')}</h3>
-                <div className="h-1 w-24 bg-[#ff102a]"></div>
+          {/* 学员收益展示 - Added to Video Section */}
+          <div className="mt-16">
+            {/* 收益统计 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-[#0a0a0a] p-6 border-2 border-[#dadafa]/30 text-center hover:border-[#ff102a] transition-colors">
+                <div className="text-4xl font-black text-white mb-2">{t('showcase.junior')}</div>
+                <p className="text-2xl font-bold text-[#dadafa]">¥10,000 - ¥30,000</p>
+                <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
               </div>
-
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#dadafa] mb-3">{t('cta.passrate')}</p>
-                <p className="text-6xl font-black text-white mb-2">
-                  <span className="text-[#ff102a]">10</span>-<span className="text-[#ff102a]">15</span><span className="text-4xl">%</span>
-                </p>
-                <p className="text-[#dadafa] text-lg">
-                  {t('cta.passrate.desc')}
-                </p>
+              <div className="bg-[#0a0a0a] p-6 border-2 border-[#ff102a] text-center">
+                <div className="text-4xl font-black text-white mb-2">{t('showcase.intermediate')}</div>
+                <p className="text-2xl font-bold text-[#eb383e]">¥30,000 - ¥60,000</p>
+                <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
               </div>
+              <div className="bg-[#ff102a] p-6 border-2 border-[#ff102a] text-center">
+                <div className="text-4xl font-black text-white mb-2">{t('showcase.senior')}</div>
+                <p className="text-2xl font-bold text-white">¥60,000 - ¥100,000+</p>
+                <p className="text-sm text-white/70 mt-2">{t('showcase.income.range')}</p>
+              </div>
+            </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div className="bg-[#0a0a0a] backdrop-blur-sm p-4 border border-[#eb383e]/30">
-                  <p className="text-xs text-[#b0b0b0] mb-2">{t('cta.elimination')}</p>
-                  <p className="text-sm text-white font-bold">{t('cta.elimination.reason')}</p>
-                </div>
-                <div className="bg-[#0a0a0a] backdrop-blur-sm p-4 border border-[#eb383e]/30">
-                  <p className="text-xs text-[#b0b0b0] mb-2">{t('cta.opportunity')}</p>
-                  <p className="text-sm text-white font-bold">{t('cta.opportunity.value')}</p>
-                </div>
-                <div className="bg-[#0a0a0a] backdrop-blur-sm p-4 border border-[#eb383e]/30">
-                  <p className="text-xs text-[#b0b0b0] mb-2">{t('cta.time.cost')}</p>
-                  <p className="text-sm text-white font-bold">{t('cta.time.value')}</p>
-                </div>
-                <div className="bg-[#0a0a0a] backdrop-blur-sm p-4 border border-[#dadafa]/30">
-                  <p className="text-xs text-[#b0b0b0] mb-2">{t('cta.money.cost')}</p>
-                  <p className="text-sm text-[#dadafa] font-bold">{t('cta.money.value')}</p>
-                </div>
+            {/* 收益图片滚动展示 */}
+            <div className="bg-[#131318] border-2 border-[#dadafa]/30 p-8">
+              <h3 className="text-2xl font-bold text-center mb-6 text-white">
+                {t('showcase.screenshots.title')}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[0, 1, 2].map((offset) => {
+                  const imageIndex = currentImageIndex + offset;
+                  const image = profitImages[imageIndex < profitImages.length ? imageIndex : imageIndex - profitImages.length];
+                  return (
+                    <div key={offset} className="relative h-80 overflow-hidden bg-[#0a0a0a] border-2 border-[#dadafa]/30">
+                      <div className="relative w-full h-full flex items-center justify-center p-4">
+                        <img
+                          src={image}
+                          alt={`学员收益 ${imageIndex + 1}`}
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-sm text-[#dadafa]">
+                  {t('showcase.screenshots.note')}
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="space-y-4">
+        </div>
+
+
+        {/* CTA - 全新设计 - 极简高端 */}
+        <div className="relative z-10 max-w-5xl mx-auto px-6 py-32">
+          {/* 主标题 */}
+          <div className="text-center mb-20">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-none">
+              {t('cta.title')}
+            </h2>
+            <div className="w-32 h-2 bg-[#ff102a] mx-auto mb-8"></div>
+            <p className="text-2xl md:text-3xl text-[#dadafa] font-semibold">
+              {t('cta.subtitle')}
+            </p>
+          </div>
+
+          {/* 关键信息 - 横向排列 */}
+          <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
+            <div className="text-center">
+              <div className="text-7xl font-black text-[#ff102a] mb-2">10-15%</div>
+              <p className="text-sm text-[#dadafa]">{t('cta.passrate')}</p>
+            </div>
+            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-white mb-2">淘汰</div>
+              <p className="text-sm text-[#dadafa]">{t('cta.elimination')}</p>
+            </div>
+            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-white mb-2">时间</div>
+              <p className="text-sm text-[#dadafa]">{t('cta.time.cost')}</p>
+            </div>
+            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-white mb-2">¥0</div>
+              <p className="text-sm text-[#dadafa]">{t('cta.money.cost')}</p>
+            </div>
+          </div>
+
+          {/* CTA按钮 */}
+          <div className="text-center">
             <button
               onClick={() => setIsEmailModalOpen(true)}
-              className="px-10 py-5 bg-[#ff102a] text-white font-bold text-lg border-2 border-[#ff102a] hover:bg-[#eb383e] hover:border-[#eb383e] transition-colors animate-shake"
+              className="group relative inline-block px-24 py-8 bg-[#ff102a] text-white font-black text-4xl overflow-hidden transition-all duration-300 hover:scale-105"
             >
-              {t('cta.button.interview')}
+              <span className="relative z-10">{t('cta.button.interview')}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff102a] via-[#eb383e] to-[#ff102a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
-            <p className="text-sm text-[#b0b0b0]">
+            <p className="text-sm text-[#b0b0b0] mt-6">
               {t('cta.button.note')}
             </p>
           </div>
         </div>
+
+        {/* Stats Section */}
+        <StatsSection />
+
+        {/* Testimonials */}
+        <Testimonials />
+
+        {/* Partners Logos */}
+        <PartnersLogos />
+
+        {/* Interview CTA */}
+        <InterviewCTA />
       </div>
 
       {/* Email Contact Modal */}
-      {/* Stats Section */}
-      <StatsSection />
-
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* Partners Logos */}
-      <PartnersLogos />
-
-      {/* Interview CTA */}
-      <InterviewCTA />
-
       <EmailContactModal
         isOpen={isEmailModalOpen}
         onClose={() => setIsEmailModalOpen(false)}

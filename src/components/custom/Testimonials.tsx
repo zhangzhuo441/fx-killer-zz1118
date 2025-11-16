@@ -229,8 +229,8 @@ export default function Testimonials() {
   const doubledTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-20 bg-black overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-20 bg-black overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -281,15 +281,24 @@ const Hyperspeed = ({
   const appRef = useRef<any>(null);
 
   useEffect(() => {
+    // Cleanup previous instance first
     if (appRef.current) {
-      appRef.current.dispose();
-      const container = document.getElementById('lights');
-      if (container) {
-        while (container.firstChild) {
-          container.removeChild(container.firstChild);
-        }
+      try {
+        appRef.current.dispose();
+        appRef.current = null;
+      } catch (e) {
+        console.error('Error disposing app:', e);
       }
     }
+
+    const container = document.getElementById('lights');
+    if (!container) return;
+
+    // Clear container
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+
     const mountainUniforms = {
       uFreq: { value: new THREE.Vector3(3, 6, 10) },
       uAmp: { value: new THREE.Vector3(30, 30, 20) }
@@ -577,14 +586,15 @@ const Hyperspeed = ({
     class App {
       options: any;
       container: HTMLElement;
-      renderer: THREE.WebGLRenderer;
-      composer: EffectComposer;
-      camera: THREE.PerspectiveCamera;
-      scene: THREE.Scene;
+      renderer: THREE.WebGLRenderer | null;
+      composer: EffectComposer | null;
+      camera: THREE.PerspectiveCamera | null;
+      scene: THREE.Scene | null;
       fogUniforms: any;
       clock: THREE.Clock;
       assets: any;
       disposed: boolean;
+      animationFrameId: number | null;
       road: Road;
       leftCarLights: CarLights;
       rightCarLights: CarLights;
@@ -636,6 +646,7 @@ const Hyperspeed = ({
         this.clock = new THREE.Clock();
         this.assets = {};
         this.disposed = false;
+        this.animationFrameId = null;
 
         this.road = new Road(this, options);
         this.leftCarLights = new CarLights(
@@ -673,6 +684,8 @@ const Hyperspeed = ({
       }
 
       onWindowResize() {
+        if (!this.renderer || !this.camera || !this.composer) return;
+
         const width = this.container.offsetWidth;
         const height = this.container.offsetHeight;
 
@@ -683,28 +696,44 @@ const Hyperspeed = ({
       }
 
       initPasses() {
-        this.renderPass = new RenderPass(this.scene, this.camera);
-        this.bloomPass = new EffectPass(
-          this.camera,
-          new BloomEffect({
-            luminanceThreshold: 0.2,
-            luminanceSmoothing: 0,
-            resolutionScale: 1
-          })
-        );
+        if (!this.composer || !this.scene || !this.camera) {
+          console.error('Composer, scene, or camera not initialized');
+          return;
+        }
 
-        const smaaPass = new EffectPass(
-          this.camera,
-          new SMAAEffect({
-            preset: SMAAPreset.MEDIUM
-          })
-        );
-        this.renderPass.renderToScreen = false;
-        this.bloomPass.renderToScreen = false;
-        smaaPass.renderToScreen = true;
-        this.composer.addPass(this.renderPass);
-        this.composer.addPass(this.bloomPass);
-        this.composer.addPass(smaaPass);
+        try {
+          this.renderPass = new RenderPass(this.scene, this.camera);
+          this.bloomPass = new EffectPass(
+            this.camera,
+            new BloomEffect({
+              luminanceThreshold: 0.2,
+              luminanceSmoothing: 0,
+              resolutionScale: 1
+            })
+          );
+
+          const smaaPass = new EffectPass(
+            this.camera,
+            new SMAAEffect({
+              preset: SMAAPreset.MEDIUM
+            })
+          );
+
+          this.renderPass.renderToScreen = false;
+          this.bloomPass.renderToScreen = false;
+          smaaPass.renderToScreen = true;
+
+          // Double check composer still exists before adding passes
+          if (this.composer && this.composer.addPass) {
+            this.composer.addPass(this.renderPass);
+            this.composer.addPass(this.bloomPass);
+            this.composer.addPass(smaaPass);
+          } else {
+            console.error('Composer became null during initialization');
+          }
+        } catch (error) {
+          console.error('Error in initPasses:', error);
+        }
       }
 
       loadAssets() {
@@ -767,6 +796,8 @@ const Hyperspeed = ({
       }
 
       update(delta: number) {
+        if (!this.camera) return;
+
         let lerpPercentage = Math.exp(-(-60 * Math.log2(1 - 0.1)) * delta);
         this.speedUp += lerp(this.speedUp, this.speedUpTarget, lerpPercentage, 0.00001);
         this.timeOffset += this.speedUp * delta;
@@ -803,22 +834,47 @@ const Hyperspeed = ({
       }
 
       render(delta: number) {
-        this.composer.render(delta);
+        if (this.composer) {
+          this.composer.render(delta);
+        }
       }
 
       dispose() {
         this.disposed = true;
 
-        if (this.renderer) {
-          this.renderer.dispose();
-        }
-        if (this.composer) {
-          this.composer.dispose();
-        }
-        if (this.scene) {
-          this.scene.clear();
+        // Stop animation loop first
+        if (this.animationFrameId) {
+          cancelAnimationFrame(this.animationFrameId);
+          this.animationFrameId = null;
         }
 
+        // Dispose composer and its passes
+        if (this.composer) {
+          this.composer.dispose();
+          this.composer = null;
+        }
+
+        // Dispose renderer and force context loss
+        if (this.renderer) {
+          this.renderer.dispose();
+          this.renderer.forceContextLoss();
+          this.renderer = null;
+        }
+
+        // Clear scene
+        if (this.scene) {
+          this.scene.clear();
+          this.scene = null;
+        }
+
+        // Clear camera
+        this.camera = null;
+
+        // Clear passes
+        this.renderPass = null;
+        this.bloomPass = null;
+
+        // Remove event listeners
         window.removeEventListener('resize', this.onWindowResize.bind(this));
         if (this.container) {
           this.container.removeEventListener('mousedown', this.onMouseDown);
@@ -833,11 +889,13 @@ const Hyperspeed = ({
       }
 
       setSize(width: number, height: number, updateStyles?: boolean) {
-        this.composer.setSize(width, height, updateStyles);
+        if (this.composer) {
+          this.composer.setSize(width, height, updateStyles);
+        }
       }
 
       tick() {
-        if (this.disposed || !this) return;
+        if (this.disposed || !this || !this.renderer || !this.camera) return;
         if (resizeRendererToDisplaySize(this.renderer, this.setSize)) {
           const canvas = this.renderer.domElement;
           this.camera.aspect = canvas.clientWidth / canvas.clientHeight;
@@ -846,7 +904,7 @@ const Hyperspeed = ({
         const delta = this.clock.getDelta();
         this.render(delta);
         this.update(delta);
-        requestAnimationFrame(this.tick);
+        this.animationFrameId = requestAnimationFrame(this.tick);
       }
     }
 
@@ -1008,7 +1066,9 @@ const Hyperspeed = ({
 
         let mesh = new THREE.Mesh(instanced, material);
         mesh.frustumCulled = false;
-        this.webgl.scene.add(mesh);
+        if (this.webgl.scene) {
+          this.webgl.scene.add(mesh);
+        }
         this.mesh = mesh;
       }
 
@@ -1144,7 +1204,9 @@ const Hyperspeed = ({
 
         const mesh = new THREE.Mesh(instanced, material);
         mesh.frustumCulled = false;
-        this.webgl.scene.add(mesh);
+        if (this.webgl.scene) {
+          this.webgl.scene.add(mesh);
+        }
         this.mesh = mesh;
       }
 
@@ -1262,7 +1324,9 @@ const Hyperspeed = ({
         mesh.rotation.x = -Math.PI / 2;
         mesh.position.z = -options.length / 2;
         mesh.position.x += (this.options.islandWidth / 2 + options.roadWidth / 2) * side;
-        this.webgl.scene.add(mesh);
+        if (this.webgl.scene) {
+          this.webgl.scene.add(mesh);
+        }
 
         return mesh;
       }
@@ -1376,7 +1440,12 @@ const Hyperspeed = ({
 
     return () => {
       if (appRef.current) {
-        appRef.current.dispose();
+        try {
+          appRef.current.dispose();
+          appRef.current = null;
+        } catch (e) {
+          console.error('Error in cleanup:', e);
+        }
       }
     };
   }, [effectOptions]);

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useEffect, useState } from 'react';
-import { NeuralBackground } from '@/components/ui/neural-background';
 
 interface StatItem {
   id: string;
@@ -166,26 +165,6 @@ export default function StatsSection() {
 
   return (
     <section className="relative py-20 bg-black overflow-hidden">
-      {/* Neural Background - 仅在黑色背景（浅色模式）时显示白色神经网络 */}
-      <div className="dark:hidden">
-        <NeuralBackground
-          hue={0}
-          saturation={0.5}
-          chroma={0.4}
-          isDark={false}
-        />
-      </div>
-
-      {/* Neural Background - 暗色模式下显示黑色神经网络 */}
-      <div className="hidden dark:block">
-        <NeuralBackground
-          hue={0}
-          saturation={0.5}
-          chroma={0.4}
-          isDark={true}
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
