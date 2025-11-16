@@ -18,6 +18,7 @@ import ShineButton from '@/components/custom/ShineButton';
 import { CosmicPortal } from '@/components/ui/cosmic-portal';
 import { NeuralBackground } from '@/components/ui/neural-background';
 import { BackgroundBeams } from '@/components/ui/background-beams';
+import Hyperspeed, { hyperspeedPresets } from '@/components/effects/Hyperspeed';
 
 const DummyContent = () => {
   const router = useRouter();
@@ -60,8 +61,10 @@ const DummyContent = () => {
     <div className="w-full -mt-16">
       {/* Hero Section */}
       <div className="relative overflow-hidden h-screen bg-black">
-        {/* Background Beams */}
-        <BackgroundBeams />
+        {/* Hyperspeed Background with Akira Preset */}
+        <div className="absolute inset-0 w-full h-full">
+          <Hyperspeed effectOptions={hyperspeedPresets.akira} />
+        </div>
 
         {/* Content Overlay - Centered in viewport */}
         <div className="relative z-10 flex items-center h-full">
