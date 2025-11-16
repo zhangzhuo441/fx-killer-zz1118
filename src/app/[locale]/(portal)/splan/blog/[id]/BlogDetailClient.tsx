@@ -142,19 +142,13 @@ export default function BlogDetailClient({ post, relatedPosts, latestNews, local
                   onClick={() => router.push(`/${locale}/news/${news.slug}`)}
                   className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all cursor-pointer p-6"
                 >
-                  <div className="flex items-start gap-3 mb-3">
-                    <svg className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
-                      <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                    </svg>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2">
-                      {news.title}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-3 ml-8">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2 mb-3">
+                    {news.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-3">
                     {news.description}
                   </p>
-                  <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500 ml-8">
+                  <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500">
                     <div className="flex items-center gap-1">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
