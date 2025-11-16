@@ -80,7 +80,9 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
         for (const line of lines) {
           if (line.startsWith('data: ')) {
             try {
-              const data = JSON.parse(line.slice(6));
+              const jsonStr = line.slice(6);
+              console.log('[BlogAI] Parsing JSON:', jsonStr.substring(0, 200));
+              const data = JSON.parse(jsonStr);
 
               if (data.type === 'content') {
                 fullContent += data.data;
@@ -89,14 +91,20 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
                 const estimatedTotal = 5000; // Rough estimate for full JSON
                 setProgress(Math.min(90, (fullContent.length / estimatedTotal) * 100));
               } else if (data.type === 'complete') {
+                console.log('[BlogAI] Complete event received:', data.data);
                 setProgress(100);
+                // Call onGenerated which will handle closing the modal
                 onGenerated({ ...data.data, author: 'FX Killer Team' });
-                onClose();
+                // Modal will be closed by parent component (BlogManager)
               } else if (data.type === 'error') {
                 throw new Error(data.data);
               }
             } catch (e) {
-              // Ignore JSON parse errors for incomplete chunks
+              // Only ignore parse errors for incomplete chunks
+              const error = e as Error;
+              if (error.message && !error.message.includes('Unexpected end of JSON')) {
+                console.error('[BlogAI] JSON parse error:', error, 'Line:', line);
+              }
             }
           }
         }

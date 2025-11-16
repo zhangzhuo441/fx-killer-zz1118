@@ -214,6 +214,11 @@ export default function BlogManager() {
     remark_en: string;
     author: string;
   }) => {
+    console.log('[BlogManager] AI Generated data received:', {
+      titleLength: data.title?.length,
+      contentLength: data.content?.length,
+    });
+
     setFormData({
       ...formData,
       title: data.title,
@@ -226,6 +231,10 @@ export default function BlogManager() {
       remark_en: data.remark_en,
       author: data.author || 'FX Killer Team',
     });
+
+    // Close AI generator modal
+    setShowAIGenerator(false);
+    // Show edit form
     setShowForm(true);
   };
 
