@@ -259,10 +259,6 @@ export default function BlogManager() {
     setShowForm(true);
   };
 
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
-
   // Helper function to revalidate blog pages
   const revalidateBlogPages = async () => {
     try {
