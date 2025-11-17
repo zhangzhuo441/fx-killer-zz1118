@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-17T04:22:53.304Z",
+  "price": {
+    "close": "4082.33929",
+    "high": "4087.41633",
+    "low": "4081.94989",
+    "open": "4083.09261",
+    "change": "-0.01",
+    "datetime": "2025-11-17 15:00:00"
+  },
+  "indicators": {
+    "rsi": 44.22454,
+    "macd": -3.46966,
+    "macd_signal": -5.48761,
+    "sma20": 4082.37964
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理趋势]",
+      "content": "当前黄金/美元(XAU/USD)价格在4082.33附近震荡整理，近期价格波动较小，显示市场缺乏明确的方向。技术面上，价格接近20日简单移动平均线(SMA 20)的水平，这意味着短期内可能会出现反弹或进一步整理。投资者需关注市场情绪和经济数据对金价的影响。\n\n从技术指标来看，MACD指标显示出负值(-3.46966)，表明当前市场可能存在卖压，但尚未形成明显的下行趋势。由于RSI未提供，无法判断超买或超卖状态，建议密切关注后续数据更新。整体而言，市场情绪偏向谨慎，投资者应保持警惕。\n\n在支撑和阻力位方面，4081.95为短期支撑位，而4087.41则为阻力位。若金价突破4087.41，可能会引发进一步的上行动能；反之，若跌破4081.95，则可能引发更大幅度的下行调整。因此，投资者应设定合理的止损和止盈策略，以应对潜在的市场波动。\n\n交易建议方面，建议在4081.95附近考虑小幅买入，目标设定在4087.41。同时，若金价突破该阻力位，可考虑追加多单。但若价格跌破支撑位，则应果断止损，规避风险。在当前震荡整理的市场环境中，保持灵活的交易策略至关重要。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) stands at 4082.34, reflecting a minor decline of 0.01% over the past 24 hours. This slight downward movement suggests a consolidation phase following previous volatility. The high and low for the day are closely aligned, indicating that the market is experiencing a tight range. Traders should keep an eye on this narrow trading band as it often precedes a more significant price movement.\n\nIn terms of technical indicators, the MACD is currently positioned at -3.47, which indicates bearish momentum. Without an available Relative Strength Index (RSI), we cannot assess potential overbought or oversold conditions at this time. The 20-day Simple Moving Average (SMA) is almost equal to the latest price, suggesting that the market is in a state of equilibrium. A decisive break above or below this SMA could trigger further buying or selling activity and set the tone for the next trading session.\n\nSupport and resistance levels are crucial for determining potential entry and exit points. Key support is observed near the low of 4081.95, while resistance is identified at the day's high of 4087.41. A sustained move below 4081.95 could encourage further selling, potentially testing lower support levels. Conversely, breaking above 4087.41 may signal a bullish reversal, attracting buyers and possibly pushing the price toward higher resistance levels.\n\nIn light of these observations, traders may consider waiting for confirmation of a breakout in either direction. A close above the resistance level could present a buying opportunity, while a close below support might warrant a short position. Overall, maintaining a cautious approach while monitoring these key levels and indicators will be essential for navigating the current market dynamics effectively."
+    }
+  }
+}

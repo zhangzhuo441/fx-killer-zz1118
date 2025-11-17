@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-17T04:21:24.108Z",
+  "price": {
+    "close": "0.56654012",
+    "high": "0.56660438",
+    "low": "0.56644386",
+    "open": "0.56644386",
+    "change": "0.03",
+    "datetime": "2025-11-17 15:00:00"
+  },
+  "indicators": {
+    "rsi": 41.58499,
+    "macd": -0.00020875749,
+    "macd_signal": 0.000059525783,
+    "sma20": 0.56775851
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理中]",
+      "content": "当前纽元/美元(NZD/USD)的市场价格在0.5665附近震荡，显示出短期内的整理态势。根据最新的数据，价格在高点0.5666和低点0.5664之间波动，反映出市场缺乏明确的方向。投资者需关注即将发布的经济数据，以判断后市的走势。\n\n从技术指标来看，虽然RSI(14)数据尚不可用，但MACD指标显示出微弱的负值，表明当前市场可能处于弱势。20日简单移动平均线(SMA)位于0.5678，进一步确认了短期内的下行压力。如果价格突破此水平，将可能吸引更多卖盘。\n\n在支撑和阻力位方面，当前的支撑位可以设定在0.5664，而阻力位则在0.5678附近。这两个关键水平将是交易者观察市场动态的重要参考。若价格突破这些水平，将可能引发新的交易机会。\n\n综合来看，建议短期内采取观望策略，等待更明确的信号。如果价格下破支撑位，则可考虑适度做空；而若突破阻力位，可能会激发反弹行情，适合做多。保持灵活的头寸管理将有助于应对市场的波动。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD currency pair is currently trading at 0.56654012, showing a marginal increase of 0.03% over the last 24 hours. The price action remains confined within a narrow range, as indicated by the high of 0.56660438 and a low of 0.56644386. This sideways movement suggests a period of consolidation, which may precede a breakout in either direction. Traders should monitor the upcoming sessions closely for any signs of momentum that could establish a clearer trend.\n\nTechnical indicators present a mixed picture. The MACD is slightly negative at -0.00020875749, indicating a bearish sentiment; however, the absence of a signal line complicates the interpretation. The SMA(20) at 0.56775851 is above the current price, suggesting that the market is still below its recent average, which could act as a resistance level. If the price approaches this moving average, traders should be cautious of potential pullbacks.\n\nSupport levels can be identified around the recent low of 0.56644386, which may provide a safety net for buyers if the market tests this area. A break below this level could open the door to further declines, potentially targeting the next key support around 0.5650. Conversely, if the price breaks above the SMA(20), it could signal a potential shift in momentum, encouraging buyers to step in and target higher resistance levels.\n\nFor traders, a prudent strategy would involve waiting for a clear breakout above the SMA(20) or a confirmed bounce off the support level. This approach can help to minimize risk while maximizing potential rewards. Establishing stop-loss orders just below the identified support and taking profit near resistance levels can create a balanced risk-reward profile in the current market environment."
+    }
+  }
+}
