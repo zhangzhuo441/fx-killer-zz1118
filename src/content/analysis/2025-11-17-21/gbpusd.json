@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-17T21:36:05.760Z",
+  "price": {
+    "close": "1.31591",
+    "high": "1.31596",
+    "low": "1.31555",
+    "open": "1.31560",
+    "change": "0.03",
+    "datetime": "2025-11-18 08:00:00"
+  },
+  "indicators": {
+    "rsi": 48.52146,
+    "macd": 0.000010848978,
+    "macd_signal": 0.00019118542,
+    "sma20": 1.31626
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：当前走势趋于震荡整理",
+      "content": "目前，英镑/美元（GBP/USD）在1.31591附近交易，短期内呈现出震荡整理的趋势。昨日的波动幅度较小，最高点为1.31596，最低点为1.31555，显示出市场缺乏明显的方向性。投资者可能在等待更多的经济数据或市场消息来推动价格。\n\n在技术指标方面，虽然RSI数据未能提供，但MACD的微弱值表明动能不足。与此同时，20日简单移动平均线（SMA）位于1.31626，显示出短期的阻力水平。若价格突破该水平，可能会吸引更多的买入兴趣，推动价格向上测试更高的阻力位。\n\n考虑到目前的支撑位在1.31555附近，若价格跌破这一水平，可能会引发进一步的抛售压力。因此，交易者应密切关注这一关键支撑。同时，若价格突破1.31626，建议寻找进场机会，设定合理的止损，以控制风险。\n\n综上所述，英镑/美元在当前水平上仍处于横盘整理状态，投资者应保持谨慎，利用短期波动进行灵活交易，关注技术指标的变化以便及时调整策略。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The GBP/USD pair is currently trading at 1.31591, exhibiting a minor change of 0.03% over the last 24 hours. The price action remains confined within a narrow range, with a high of 1.31596 and a low of 1.31555. This tight consolidation suggests a lack of momentum, indicating that traders are awaiting further catalysts for direction. The overall trend appears neutral in the short term, characterized by indecision in the market.\n\nAnalyzing the key indicators, the absence of the RSI and MACD signal leaves a gap in momentum evaluation. However, the SMA(20) at 1.31626 serves as a potential resistance level. If the price manages to break above this moving average, it could signal a shift toward a bullish trend. Conversely, should the price fall below the recent low of 1.31555, it may indicate a continuation of bearish sentiment, prompting traders to consider short positions.\n\nSupport levels are crucial to watch in this current setup. The recent low of 1.31555 could act as a critical support area; any sustained break below this point may open the door to further declines. Conversely, the proximity to the SMA suggests a potential rebound if the price tests this level. Traders should keep a close eye on these levels and consider placing buy orders near support while looking for sell opportunities if resistance is confirmed.\n\nIn summary, GBP/USD is currently in a consolidation phase, with critical levels established around the SMA(20) and recent highs and lows. Traders should remain vigilant, monitoring for breakout signals while being prepared to react to either bullish or bearish developments. A careful approach is warranted, as the lack of momentum indicators necessitates a more cautious stance until clearer direction emerges."
+    }
+  }
+}

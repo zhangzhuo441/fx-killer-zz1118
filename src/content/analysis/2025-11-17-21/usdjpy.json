@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-17T21:36:51.318Z",
+  "price": {
+    "close": "155.22400",
+    "high": "155.24400",
+    "low": "155.21100",
+    "open": "155.22200",
+    "change": "0.00",
+    "datetime": "2025-11-18 08:00:00"
+  },
+  "indicators": {
+    "rsi": 68.79362,
+    "macd": 0.17092913,
+    "macd_signal": 0.14052659,
+    "sma20": 154.91445
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理，短期关注支撑位]",
+      "content": "当前美元/日元的价格为155.22400，近期走势呈现震荡整理的状态。虽然价格在155.24附近触及高点，但未能有效突破，显示出市场在此区域的卖压较强。短期内，若价格有效跌破155.21的支撑位，可能会引发一波回调，进一步测试154.91的SMA(20)支撑。\n\n技术指标方面，MACD显示出轻微的上涨动能，但RSI指标尚未提供明确的超买或超卖信号。由于当前没有明显的趋势形成，投资者应保持谨慎，观察市场情绪的变化。若出现突破155.24的情况，则可能会引发强烈的买入信号，推动价格向上测试更高的阻力位。\n\n在支撑与阻力的分析中，155.21作为近期的重要支撑位，若被有效击穿，可能会导致短期回调。而155.24则是关键的阻力位，突破后有望迎来上行走势。交易者在操作中，可以考虑在155.21附近寻找买入机会，止损设置在155.10下方，以控制风险。\n\n综合来看，美元/日元在短期内呈现震荡整理走势，投资者应关注支撑位和阻力位的突破情况。保持灵活的交易策略，以适应市场变化是关键。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY currency pair is currently trading at 155.224, exhibiting a stable price action with a 24-hour change of 0.00%. The market appears to be in a consolidation phase as it oscillates between the recent high of 155.244 and a low of 155.211. This narrow range suggests that traders are awaiting further catalysts, potentially from economic data releases or geopolitical developments, which could provide direction for the pair.\n\nFrom a trend analysis perspective, the USD/JPY has been in an overall uptrend, supported by a recent SMA(20) of 154.91445. The price comfortably above this moving average indicates bullish momentum. However, the lack of significant movement in the last 24 hours suggests a potential pause or a buildup of buying pressure before the next significant move. Traders should closely monitor any breakouts above 155.244, which could signal a continuation of the upward trend.\n\nIn terms of indicators, the MACD value of 0.1709 suggests that bullish momentum is still present, although the absence of a signal line complicates a full interpretation. The RSI is currently unavailable, but if it trends toward overbought levels, it may indicate a potential correction. Traders should remain cautious and watch for divergence signals that could hint at a weakening trend or reversal.\n\nSupport levels are established at 155.211, while resistance can be anticipated at 155.244. A break below the support could lead to a retest of the SMA(20) at 154.91445, presenting a buying opportunity if the price holds above this level. Conversely, a sustained move above 155.244 could open the door for further bullish momentum, potentially targeting higher resistance levels. As always, prudent risk management strategies should be employed in light of market volatility."
+    }
+  }
+}
