@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-17T20:16:00.764Z",
+  "price": {
+    "close": "0.56516331",
+    "high": "0.56532305",
+    "low": "0.56509942",
+    "open": "0.56509942",
+    "change": "-0.01",
+    "datetime": "2025-11-18 07:00:00"
+  },
+  "indicators": {
+    "rsi": 35.78435,
+    "macd": -0.00042436954,
+    "macd_signal": -0.00022464284,
+    "sma20": 0.56683991
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理趋势]",
+      "content": "当前纽元/美元（NZD/USD）价格为0.5652，显示出震荡整理的趋势。过去24小时内，汇率变化幅度不大，只有-0.01%。在高点和低点之间的微小波动表明市场参与者对该货币对的方向尚未形成明确共识，可能会持续在此区间内波动。\n\n从技术指标来看，RSI(14)数据缺失，无法判断市场是否超买或超卖。MACD显示出轻微的负值（-0.0004），暗示出短期内卖压略显，但并未显著偏离零轴，表明市场仍处于整理状态。20日简单移动平均线（SMA）位于0.5668，反映出短期内的阻力水平。\n\n支撑位方面，可以关注0.5651附近的低点，而阻力位则在0.5668附近。若价格突破0.5668，将有可能重拾上行趋势，反之，跌破0.5651则可能引发进一步回调。在当前环境下，建议交易者采用区间交易策略，关注上述支撑和阻力位的突破情况，谨慎把握交易时机。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.56516331, reflecting a slight decline of 0.01% over the last 24 hours. The price action has remained relatively tight, with a high of 0.56532305 and a low of 0.56509942. This narrow range indicates a period of consolidation, suggesting that market participants are hesitant to commit to a clear direction. Observing the broader trend, the pair appears to be in a downtrend, highlighted by its recent inability to sustain levels above the 20-day Simple Moving Average (SMA) at 0.56683991.\n\nIn terms of indicators, the MACD is currently at -0.00042436954, which implies bearish momentum. Although the RSI is not available, the negative MACD suggests that selling pressure is present. Traders should be cautious, as the absence of bullish signals may indicate a continuation of downward pressure. The lack of significant upward movement could lead to further declines if the sentiment remains bearish.\n\nSupport for the NZD/USD pair can be identified around the recent low of 0.56509942, which may act as a crucial level for buyers. Should the price break below this level, further support could be found at 0.564500, a key psychological level. On the upside, immediate resistance is seen near the 20-day SMA at 0.56683991, and a sustained breach above this area could open the door for a reversal.\n\nTraders are advised to monitor price action closely around these key levels. A break below the support may provide short-selling opportunities, while a rally above the resistance could warrant long positions. Implementing stop-loss orders strategically will help manage risk, particularly in the context of the prevailing bearish sentiment. As always, staying informed about broader market dynamics and economic indicators will be essential for making well-informed trading decisions."
+    }
+  }
+}

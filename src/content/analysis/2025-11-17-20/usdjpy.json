@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-17T20:13:51.283Z",
+  "price": {
+    "close": "155.18201",
+    "high": "155.25700",
+    "low": "155.16100",
+    "open": "155.24200",
+    "change": "-0.04",
+    "datetime": "2025-11-18 07:00:00"
+  },
+  "indicators": {
+    "rsi": 66.095241,
+    "macd": 0.16649821,
+    "macd_signal": 0.13227182,
+    "sma20": 154.8799
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理趋势]",
+      "content": "当前美元/日元在155.18201附近震荡整理，显示出短期内的横盘走势。虽然24小时变化仅为-0.04%，但价格在155.25700和155.16100之间波动，表明市场情绪较为谨慎。整体来看，汇率未能突破前高，可能面临回调风险。\n\n从技术指标来看，虽然RSI未提供，但MACD显示出0.16649821的正值，暗示短期内存在上涨动能。然而，若价格未能有效突破155.25的阻力位，可能会引发投资者获利回吐，进一步压制价格。SMA(20)为154.87990，为短期支撑位，若回落至此水平，则可能吸引买盘。\n\n在支撑与阻力分析中，155.25为关键阻力位，若突破该水平，可能引发进一步上涨，目标可看向156.00。而154.88为重要支撑位，若跌破该水平，则有可能回调至154.50的区域。因此，建议投资者在155.25附近谨慎考虑做空，而在154.88附近考虑布局多单，以捕捉价格的反弹机会。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair currently trades at 155.18201, reflecting a minor decline of 0.04% over the past 24 hours. The price action suggests a consolidation phase following recent highs near 155.25700. This level may act as a short-term resistance, while the lower boundary at 155.16100 presents a potential support level. Observing the price within this range can provide traders with insight into the strength of the current trend and the potential for breakout scenarios.\n\nTechnical indicators provide further context for the current market dynamics. The SMA(20) at 154.87990 indicates that the pair has maintained an upward trajectory, as the price remains well above this moving average. The MACD value at 0.16649821 suggests a bullish momentum, although the absence of a signal line limits further interpretation. Traders should monitor the MACD closely for potential crossovers that could confirm shifts in momentum or trend reversals.\n\nSupport and resistance levels are critical in shaping trading strategies. Should the price break above 155.25700, it could signal a continuation of bullish momentum, potentially targeting further highs. Conversely, a decline below 155.16100 may indicate a bearish reversal, prompting traders to consider short positions or protective strategies. Keeping an eye on these levels will help in managing risk effectively in this volatile environment.\n\nTraders are advised to adopt a cautious approach, particularly given the current consolidation. Using a combination of support and resistance levels alongside the MACD and moving averages can enhance decision-making. Entering long positions near the support level while considering short positions near resistance may provide opportunities for profit, depending on how the market responds to these technical indicators in the coming sessions."
+    }
+  }
+}
