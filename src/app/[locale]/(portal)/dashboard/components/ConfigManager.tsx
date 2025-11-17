@@ -19,6 +19,22 @@ export default function ConfigManager() {
     key_remark: '',
   });
 
+  // Fetch configs (defined before useEffect to avoid initialization issues)
+  const fetchConfigs = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/config');
+      if (response.ok) {
+        const data = await response.json();
+        setConfigs(data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch configs:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Check authentication status
   useEffect(() => {
     const authenticated = localStorage.getItem('config_authenticated');
@@ -112,22 +128,6 @@ export default function ConfigManager() {
     formData.key_content !== '' &&
     !BLOG_MODEL_OPTIONS.some(opt => opt.value === formData.key_content) &&
     formData.key_content !== 'custom';
-
-  // Fetch configs
-  const fetchConfigs = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('/api/config');
-      if (response.ok) {
-        const data = await response.json();
-        setConfigs(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch configs:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <div className="p-8">
