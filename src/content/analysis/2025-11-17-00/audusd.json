@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-17T00:53:12.645Z",
+  "price": {
+    "close": "0.65272",
+    "high": "0.65335",
+    "low": "0.65244",
+    "open": "0.65329",
+    "change": "-0.09",
+    "datetime": "2025-11-17 11:00:00"
+  },
+  "indicators": {
+    "rsi": 43.61482,
+    "macd": -0.00012766657,
+    "macd_signal": -0.00014779406,
+    "sma20": 0.653172
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[短期震荡整理，偏向下行]",
+      "content": "当前澳元/美元（AUD/USD）最新价格为0.65272，近期走势呈现出震荡整理的状态。价格在0.65335和0.65244之间波动，显示出市场缺乏明确的方向。短期内，若价格持续在当前水平附近徘徊，可能会引发进一步的下行压力。\n\n从技术指标来看，虽然RSI（相对强弱指数）数据未提供，但可以根据价格波动情况判断市场情绪偏向于卖出。MACD的负值表明卖方力量占据主导，短期内可能出现回调。20日简单移动平均线（SMA）在0.653172附近形成了一定的阻力，若价格能够突破此位，将可能引发新的上涨动能。\n\n支撑位方面，0.65244是当前关键支撑水平，若价格跌破此位，则可能出现进一步的下行趋势，目标看向0.6500心理关口。相反，若价格反弹，则需关注0.65335的阻力位。交易策略上，建议短期内采取谨慎态度，可以考虑在支撑位附近寻找买入机会，或在接近阻力位时进行卖出操作，以把握短期波动带来的利润。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The current price of AUD/USD at 0.65272 suggests a bearish sentiment prevailing in the market, particularly after the recent 24-hour change of -0.09%. This slight decline indicates a lack of momentum in the upward direction. Analyzing the recent high of 0.65335 and low of 0.65244, we can identify a tight trading range, suggesting that traders are cautious, possibly awaiting further economic data or geopolitical developments to provide clearer direction.\n\nIn terms of technical indicators, the absence of RSI data limits our ability to assess overbought or oversold conditions. However, the MACD value of -0.00012766657 indicates that the momentum is currently negative, which could lead to further downward pressure on the pair. The SMA(20) at 0.653172 serves as a dynamic resistance level; if the price fails to break above this level, it could reinforce a bearish trend in the near term.\n\nSupport levels can be identified around 0.65244, where recent price action has found buying interest. A break below this level may trigger further selling and could lead to a test of the next significant support around 0.6500. Conversely, if the price manages to reclaim the SMA(20) and break above 0.65335, it could signal a shift in sentiment, potentially targeting higher resistance around 0.6550.\n\nTraders may consider short positions if the price breaks below the immediate support at 0.65244, aiming for a target near 0.6500. Conversely, a successful move above the SMA(20) could open the door for long positions, with a focus on resistance levels above 0.6540. As always, risk management strategies should be employed, especially in a market characterized by potential volatility."
+    }
+  }
+}

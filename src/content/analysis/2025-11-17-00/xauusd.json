@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-17T00:55:59.716Z",
+  "price": {
+    "close": "4090.20663",
+    "high": "4097.4802",
+    "low": "4082.52619",
+    "open": "4097.41051",
+    "change": "-0.18",
+    "datetime": "2025-11-17 11:00:00"
+  },
+  "indicators": {
+    "rsi": 51.059078,
+    "macd": -4.42919,
+    "macd_signal": -8.093781,
+    "sma20": 4081.76841
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，寻求突破]",
+      "content": "当前黄金/美元(XAU/USD)的价格在4090附近震荡整理，表现出一定的弱势。24小时内微幅下跌0.18%，且高点与低点的区间相对狭窄，显示出市场多空力量的平衡。短期内，价格走势可能会在4080至4100之间进行窄幅波动，投资者应密切关注这一区间的突破情况。\n\n从技术指标来看，SMA(20)位于4081.77，表明短期均线对价格有一定支持。而MACD当前呈现负值，显示出短期内卖压仍在，尽管RSI未提供具体数值，但市场情绪略显谨慎，可能需要时间来消化当前的价格水平。若价格能够突破4100，可能会引发进一步的上涨趋势。\n\n在支撑与阻力方面，4082.52是短期支撑位，若跌破该水平，可能会加剧卖盘压力。相对而言，4100是重要的阻力位，突破后有望带来新的买入机会。投资者应关注这一点，以便及时调整交易策略。\n\n建议交易者在当前价格水平附近保持谨慎态度，尤其是在尚未出现明确趋势信号的情况下。可以考虑在支撑位附近进行买入尝试，而在阻力位附近则应准备好适时获利了结或止损。保持灵活应变的策略，将有助于在市场波动中把握机会。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4090.20663 reflects a slight bearish sentiment, given the recent 24-hour change of -0.18%. The price has oscillated between a high of 4097.4802 and a low of 4082.52619 during this period, indicating a range-bound market. This consolidation phase suggests that traders are awaiting further directional cues, possibly influenced by macroeconomic factors or shifts in market sentiment.\n\nFrom a technical standpoint, the absence of RSI data limits our momentum analysis; however, the MACD at -4.42919 indicates a bearish divergence, suggesting that downward momentum may persist unless a shift occurs. The 20-period Simple Moving Average (SMA) at 4081.76841 is currently acting as a dynamic support level. A sustained break below this SMA could lead to further declines, while a bounce off this level may signal a potential reversal and test of higher resistance levels.\n\nIn terms of support and resistance levels, immediate support can be identified around the recent low of 4082.52619, while resistance is found at 4097.4802. A breakout above this resistance could pave the way for a bullish trend, potentially targeting the psychological level of 4100. Conversely, if the price breaches the support level, it could lead to a test of lower levels, such as 4070, which should be monitored closely.\n\nTraders should consider a cautious approach in the current environment. A confirmation of a rebound from the SMA or support level could provide a buying opportunity, whereas a rejection at resistance may offer a short-selling signal. Risk management strategies should be employed, with stop-loss orders positioned just below key levels to mitigate potential losses in this volatile market."
+    }
+  }
+}

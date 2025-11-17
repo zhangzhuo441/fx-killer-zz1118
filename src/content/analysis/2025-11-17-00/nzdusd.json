@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-17T00:54:37.391Z",
+  "price": {
+    "close": "0.56715059",
+    "high": "0.56773025",
+    "low": "0.56708634",
+    "open": "0.56773025",
+    "change": "-0.14",
+    "datetime": "2025-11-17 11:00:00"
+  },
+  "indicators": {
+    "rsi": 44.72693,
+    "macd": 0.0001757389,
+    "macd_signal": 0.00033348932,
+    "sma20": 0.56813516
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡走势下的支撑挑战]",
+      "content": "当前纽元/美元（NZD/USD）在0.5671附近震荡，近期价格波动较小，显示出市场缺乏明确方向。考虑到24小时变化为-0.14%，整体趋势显得较为疲弱。虽然价格未能突破前期高点，但也未跌破低点，可能在短期内维持横盘整理格局。\n\n从技术指标来看，RSI虽然未提供，但MACD的微弱正值暗示多头力量略有存在，或可视为短期反弹的潜力。然而，SMA(20)在0.5681附近形成了短期阻力，若价格继续未能突破该水平，可能会加大下行风险，反之则可能获得进一步上升动力。\n\n支撑位方面，0.5671将是关键支撑，若跌破则可能向0.5660寻找进一步支撑。而上方阻力位在0.5681附近，突破后可能引发更强的回升。投资者应密切关注这两个关键价位，以便判断后市走势。\n\n交易建议方面，短期内可考虑在支撑位附近寻找买入机会，设置止损位于0.5660下方，目标看向0.5681。而若价格突破该阻力位，则可考虑轻仓追多，享受可能的上行空间。保持灵活的交易策略，将有助于在当前震荡市场中把握机会。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.56715059, reflecting a slight decline of 0.14% over the last 24 hours. This price action suggests the pair remains within a narrow range, as evidenced by the recent high of 0.56773025 and low of 0.56708634. The overall trend appears bearish in the short term, especially given the recent price action below the 20-period simple moving average (SMA) at 0.56813516, indicating potential downward pressure.\n\nIn terms of technical indicators, the absence of an available Relative Strength Index (RSI) limits our ability to assess momentum; however, the MACD value of 0.00017573890 implies that momentum may be waning. Traders should closely monitor for any crossovers in the MACD, as this could signal shifts in momentum. The lack of a defined uptrend suggests that caution is warranted, with the potential for further declines if the bearish sentiment persists.\n\nKey support levels are located at 0.56708634, which is the recent low, and 0.5660, a psychological barrier. Should the pair breach these levels, it could open the door for further downside. Conversely, resistance is found near the SMA at 0.56813516, with additional resistance at the recent high of 0.56773025. A failure to breach these resistance levels may reinforce the bearish outlook in the near term.\n\nGiven the current market dynamics, traders might consider short positions if the price breaks below the support level of 0.56708634, with targets set towards 0.5660. Conversely, a move above the SMA could provide a buying opportunity, targeting the recent high. It is essential for traders to remain vigilant, as market conditions can change rapidly, and to employ risk management strategies accordingly."
+    }
+  }
+}
