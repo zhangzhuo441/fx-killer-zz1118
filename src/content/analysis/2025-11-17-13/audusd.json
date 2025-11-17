@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-17T13:49:06.185Z",
+  "price": {
+    "close": "0.65105",
+    "high": "0.65204",
+    "low": "0.65099",
+    "open": "0.65191",
+    "change": "-0.13",
+    "datetime": "2025-11-18 00:00:00"
+  },
+  "indicators": {
+    "rsi": 38.82082,
+    "macd": -0.00048935649,
+    "macd_signal": -0.00038656037,
+    "sma20": 0.6525195
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[下行趋势显现]",
+      "content": "当前AUD/USD的价格为0.65105，近期趋势显示出一定的下行压力。价格在24小时内微幅下跌0.13%，并且在高点和低点之间波动较小。短期内，市场情绪较为谨慎，投资者对未来走势持观望态度。\n\n从技术指标来看，虽然RSI(14)数据缺失，MACD值为负，表明下行动能仍在延续。SMA(20)为0.6525，价格目前在其下方，显示出短期内的弱势。此外，若价格持续维持在这一水平下方，可能会进一步加大空头压力。\n\n支撑位方面，0.6500是一个重要的心理关口，若跌破该位，可能会导致更深的调整。阻力位则在0.6520附近，若价格反弹至此，可能会吸引卖盘。在这样的市场环境下，投资者应密切关注价格在支撑位和阻力位的表现。\n\n基于当前技术面分析，建议交易者在接近0.6520时考虑短线做空，同时在0.6500附近寻找买入机会，以应对可能的反弹。保持谨慎，注意设置止损以控制风险。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The Australian Dollar (AUD) against the US Dollar (USD) is currently trading at 0.65105, reflecting a slight decline of 0.13% over the past 24 hours. This price action suggests a bearish sentiment in the market, particularly as the pair remains below the recent high of 0.65204. The inability to sustain upward momentum raises concerns about further downside potential. Traders should closely monitor the prevailing trend as it appears to be consolidating within a narrow range, signaling indecision.\n\nIn terms of technical indicators, the MACD is currently negative at -0.00048935649, indicating downward momentum. However, the absence of an RSI reading may limit the depth of analysis regarding overbought or oversold conditions. The 20-period Simple Moving Average (SMA) is positioned at 0.65251950, serving as a potential resistance level. If the price can break above this SMA, it may signal a return to bullish sentiment; otherwise, the current bearish trend could persist.\n\nKey support levels to watch are at 0.65099, which has been tested recently, and a further break below this level could lead to a more significant decline towards 0.64950. Conversely, resistance is evident near the SMA level and the recent high of 0.65204. A sustained move above this resistance could signal a shift in momentum, potentially inviting buyers back into the market. \n\nGiven the current technical landscape, traders may consider short positions near resistance levels, particularly if the price approaches 0.65204. Conversely, a breakout above this resistance could trigger a reversal, prompting a long position. Overall, maintaining a cautious approach with stop-loss orders is advisable, as the market remains volatile and subject to rapid changes."
+    }
+  }
+}

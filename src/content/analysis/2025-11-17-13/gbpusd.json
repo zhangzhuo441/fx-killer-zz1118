@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-17T13:47:27.481Z",
+  "price": {
+    "close": "1.31761",
+    "high": "1.31876",
+    "low": "1.31761",
+    "open": "1.31818",
+    "change": "-0.03",
+    "datetime": "2025-11-18 00:00:00"
+  },
+  "indicators": {
+    "rsi": 55.95452,
+    "macd": 0.00040508139,
+    "macd_signal": 0.00015591966,
+    "sma20": 1.31622
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理中]",
+      "content": "当前英镑/美元（GBP/USD）价格为1.31761，近期市场表现出一定的震荡整理态势。虽然24小时内小幅下跌0.03%，但整体趋势仍保持在相对平稳的区间内。当前的高点为1.31876，低点则为1.31761，显示出市场缺乏明确方向。\n\n技术指标方面，虽然RSI数据尚缺失，但MACD的值为0.0004，表明短期内买卖力量相对平衡。20日简单移动平均线（SMA）在1.31622附近，为市场提供了一定的支撑。若价格突破该支撑位，可能会引发进一步的下行压力。\n\n从支撑和阻力位来看，1.31622是短期内的重要支撑位，而1.32000则是关键的阻力位。如果价格突破1.32000，有可能重新测试更高的水平。反之，若跌破1.31622，可能会加速下行趋势。\n\n综上所述，建议交易者保持谨慎，关注1.31622和1.32000的关键价位。可以考虑在支撑位附近寻找买入机会，同时在接近阻力位时设置止盈，确保风险控制。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The GBP/USD currency pair currently trades at 1.31761, reflecting a slight decline of 0.03% over the last 24 hours. The price movement remains within a narrow range, with a high of 1.31876 and a low of 1.31761, indicating a period of consolidation. This behavior suggests that the market is awaiting further catalysts for direction, as traders assess the potential for a breakout or breakdown from this tight trading range. \n\nFrom a trend analysis perspective, the recent price action indicates a generally bullish sentiment, supported by the SMA(20) at 1.31622, which could act as a dynamic support level. If the price holds above this moving average, it may reaffirm the upward momentum. However, a decisive break below this level could signal a shift in market sentiment, potentially leading to further downside pressure.\n\nTechnical indicators such as the MACD, although currently showing a minimal value, suggest that momentum may be waning. Without a clear signal from the RSI, traders should remain cautious. Monitoring these indicators closely will be essential in determining the strength of any potential moves. A bullish crossover in the MACD could provide a more robust signal for buyers, while a bearish crossover would indicate a shift toward selling pressure.\n\nIn terms of support and resistance levels, the immediate support is identified at the SMA(20), while resistance can be observed around the recent high of 1.31876. Traders may consider entering long positions on a confirmed break above this resistance, targeting higher levels while placing stop-loss orders just below the SMA. Conversely, should the price break below the support level, a short position may be warranted, aiming for a retest of lower support levels."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-17T13:48:12.370Z",
+  "price": {
+    "close": "154.86400",
+    "high": "154.91600",
+    "low": "154.83200",
+    "open": "154.84300",
+    "change": "0.01",
+    "datetime": "2025-11-18 00:00:00"
+  },
+  "indicators": {
+    "rsi": 60.40853,
+    "macd": 0.080638415,
+    "macd_signal": 0.057728715,
+    "sma20": 154.6748
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理中]",
+      "content": "当前美元/日元（USD/JPY）价格为154.86400，近期走势表现出震荡整理的特征。从日线图来看，价格在154.91600的高点和154.83200的低点之间波动，表明市场情绪暂时趋于谨慎。投资者在等待更明确的市场信号，可能导致短期内缺乏方向性。\n\n在技术指标方面，MACD显示出轻微的上行动能，当前值为0.0806，尽管信号线尚未提供明确的交叉信号。相对强弱指数（RSI）未提供，但从当前价格水平来看，市场可能处于超买区间，需谨慎对待后续走势。20日简单移动平均线（SMA）为154.67480，形成了重要的支撑位。\n\n从支撑和阻力位来看，154.83200为短期支撑位，而154.91600则为阻力位。若价格突破154.91600，可能打开进一步上涨空间；反之，若跌破154.83200，则可能引发更大幅度的回调。因此，投资者可考虑在154.83200附近寻找买入机会，同时在154.91600附近设置止盈位，控制风险。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.86400, showing a slight upward movement of 0.01% over the past 24 hours. The recent high of 154.91600 indicates a potential resistance level, while the low of 154.83200 serves as immediate support. The price action is hovering near the upper boundary of this range, suggesting that traders may be eyeing a breakout scenario. A sustained movement above 154.91600 could signal further bullish momentum, while a drop below 154.83200 may trigger a corrective phase.\n\nIn terms of technical indicators, the absence of a current RSI value limits our ability to assess the momentum effectively. However, the MACD at 0.0806 indicates that the pair is in a slight bullish phase, albeit with limited strength. The 20-period Simple Moving Average (SMA) at 154.67480 reinforces the bullish outlook, as the price is trading significantly above this level. A crossover of the MACD above its signal line, if calculated, could further confirm bullish sentiment.\n\nTraders should keep a close eye on the key levels mentioned, particularly the resistance at 154.91600. A breakout above this level could open the door to higher targets, possibly approaching 155.2000. Conversely, if the price fails to maintain momentum and breaks below the support at 154.83200, it could lead to a retest of the SMA at 154.67480. In such a scenario, short positions could be considered with appropriate risk management.\n\nOverall, the outlook for USD/JPY remains cautiously optimistic. The market appears to be consolidating near significant resistance, and any breakout could present lucrative trading opportunities. Monitoring economic news and geopolitical developments will be essential, as these factors could influence volatility and the overall trend in this currency pair."
+    }
+  }
+}
