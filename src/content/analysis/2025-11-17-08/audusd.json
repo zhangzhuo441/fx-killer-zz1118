@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-17T08:18:57.658Z",
+  "price": {
+    "close": "0.65356",
+    "high": "0.6537",
+    "low": "0.65343",
+    "open": "0.65361",
+    "change": "-0.01",
+    "datetime": "2025-11-17 19:00:00"
+  },
+  "indicators": {
+    "rsi": 52.94719,
+    "macd": -0.00020115024,
+    "macd_signal": -0.00028639622,
+    "sma20": 0.653146
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[短期震荡整理]",
+      "content": "在当前市场环境中，澳元/美元处于震荡整理的趋势。最新价格为0.65356，显示出价格在高点0.6537和低点0.65343之间波动，尚未形成明确的趋势方向。在这样的市场状态下，投资者需谨慎操作，避免追高或追低。\n\n从技术指标来看，虽然RSI(14)数据缺失，但MACD指标显示出微弱的负值，暗示市场可能处于卖方主导的状态。SMA(20)的水平为0.653146，表明短期均线支持当前价格略微偏上的位置。这些指标结合在一起，意味着在短期内可能出现横盘整理，等待更强的趋势信号。\n\n支撑位方面，0.65343是一个关键的低点，一旦跌破可能引发进一步下行压力。同时，0.6537作为阻力位，需关注价格能否有效突破。若价格持续在这两个区间内波动，交易者可以考虑在支撑位附近寻找买入机会，而在接近阻力位时则考虑卖出。\n\n综合来看，短期内澳元/美元的走势仍然不明朗，建议交易者保持观望，耐心等待更为明确的交易信号，避免在震荡行情中盲目入场。保持灵活的交易策略，将有助于应对市场的不确定性。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The Australian Dollar (AUD) has recently displayed a slight bearish trend against the US Dollar (USD), currently trading at 0.65356. The price action has been relatively tight, with a high of 0.6537 and a low of 0.65343 over the past 24 hours. This limited range suggests a period of consolidation, where traders are weighing macroeconomic factors influencing both currencies. Investors may be cautious ahead of key economic data releases, which could provide direction for a breakout.\n\nIn terms of technical indicators, the current MACD value of -0.00020115024 indicates a bearish momentum, suggesting that sellers are currently in control. However, the absence of a Signal line makes it challenging to gauge the strength of this momentum. The SMA(20) at 0.65314600 serves as a short-term support level, implying potential buying interest if the price approaches this moving average. A close above this level could signal a reversal or continuation of upward momentum, while a break below may intensify bearish sentiment.\n\nKey support levels to watch include the SMA(20) and the immediate low around 0.65343. If the price breaks below these levels, it could trigger further selling pressure, perhaps targeting the next significant support level. Conversely, resistance is seen near the recent high of 0.6537. A sustained move above this level could open the door for a test of higher resistance zones, allowing bullish traders to capitalize on potential upward momentum.\n\nTraders might consider a cautious approach in this tight trading range. A potential strategy could involve buying near the 0.65314600 level with a tight stop-loss just below the recent low, while aiming for a profit target near the 0.6537 resistance level. Conversely, a break below the SMA(20) could warrant short positions, especially if accompanied by increased volume, as this would confirm bearish momentum and suggest a deeper retracement in the near term."
+    }
+  }
+}

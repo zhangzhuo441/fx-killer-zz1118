@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-17T08:22:18.665Z",
+  "price": {
+    "close": "4088.8649",
+    "high": "4094.57156",
+    "low": "4086.19558",
+    "open": "4087.22415",
+    "change": "0.03",
+    "datetime": "2025-11-17 19:00:00"
+  },
+  "indicators": {
+    "rsi": 52.54663,
+    "macd": -3.78085,
+    "macd_signal": -5.13799,
+    "sma20": 4081.1511
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[短期震荡，长期看涨]",
+      "content": "当前黄金/美元（XAU/USD）的价格为4088.8649，整体趋势呈现震荡整理的状态。近期高点4094.57156和低点4086.19558的波动范围较小，表明市场缺乏明确的方向性。投资者需关注即将到来的经济数据，以判断市场情绪是否会发生变化。\n\n从技术指标来看，MACD目前为负值-3.78085，显示出短期内卖压较重，但尚未形成强烈的下行趋势。虽然RSI未提供，但结合市场的横盘整理，可能表明市场尚未过度超买或超卖。短期内，价格可能会在4080至4100之间反复波动。\n\n支撑位方面，4080区域可能会提供一定的支撑，而4095附近则是主要的阻力位。如果价格突破4095，可能会吸引更多买盘，推动价格进一步上行。反之，如果跌破4080，则可能会引发更大的调整。\n\n交易建议方面，建议投资者在4080附近寻找买入机会，设置止损于4075下方，以控制风险。若价格突破4095，则可考虑加仓并锁定利润。保持关注市场动态，以便及时调整交易策略。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4088.8649 reflects a relatively stable market, with a minimal 24-hour change of 0.03%. The price has oscillated between a high of 4094.57156 and a low of 4086.19558, indicating a tight trading range. This range suggests a consolidation phase, where buyers and sellers are in equilibrium. Investors should keep an eye on the breakout potential, as a sustained move above 4094 could signify bullish momentum, while a breach below 4086 may trigger further selling pressure.\n\nThe absence of a current RSI value limits our ability to gauge overbought or oversold conditions. However, the MACD reading of -3.78085 indicates a bearish sentiment, as the MACD line is below the signal line, suggesting that downward momentum may continue in the near term. Traders should monitor this indicator closely for potential reversals. A crossover into positive territory could signal a buying opportunity, while persistent negative readings may reinforce a bearish outlook.\n\nIn terms of support and resistance levels, the immediate support can be identified at 4086, where buying interest may emerge. Should the price break below this level, the next significant support is likely at 4075. Conversely, resistance is seen at 4095, and a breakthrough here could pave the way for a challenge of the psychological level at 4100. Traders should look for confirmation of price action near these critical levels to inform their trading decisions.\n\nFor trading strategies, a conservative approach would involve waiting for a clear breakout above 4095 before entering long positions, as this would confirm bullish sentiment. Conversely, short positions could be considered if the price falls below 4086, with targets set at the next support level. Utilizing stop-loss orders around these key levels can help manage risk effectively while allowing traders to capitalize on potential price movements."
+    }
+  }
+}

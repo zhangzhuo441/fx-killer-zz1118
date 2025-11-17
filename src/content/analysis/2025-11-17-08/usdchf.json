@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-17T08:21:26.672Z",
+  "price": {
+    "close": "0.79405999",
+    "high": "0.79405999",
+    "low": "0.79315001",
+    "open": "0.79330999",
+    "change": "0.09",
+    "datetime": "2025-11-17 19:00:00"
+  },
+  "indicators": {
+    "rsi": 51.99049,
+    "macd": 0.00034139767,
+    "macd_signal": 0.0002752164,
+    "sma20": 0.79339949
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡整理趋势]",
+      "content": "当前美元/瑞郎（USD/CHF）价格在0.7940附近震荡整理，整体趋势偏稳。尽管在24小时内仅微幅上涨0.09%，但价格在高点和低点之间的波动表明市场仍在寻找明确的方向。投资者应关注这一波动区域，可能存在短期交易机会。\n\n从技术指标来看，RSI(14)尚未提供，无法判断超买或超卖情况。MACD值为0.00034139767，显示出微弱的上涨动能，但未能形成明确的买入信号。20日简单移动平均线（SMA）在0.7934附近提供了一定的支撑，若价格持续维持在该水平之上，短期看涨情绪将有所增强。\n\n支撑位方面，0.7931为重要支撑线，若下破则可能进一步回调。阻力位则在0.7950附近，突破该位可能引发更多买盘。因此，建议交易者关注价格在这两个关键水平附近的表现，以便把握短线交易机会。\n\n综合来看，当前美元/瑞郎处于震荡整理状态，投资者应保持谨慎。可以考虑在支撑位附近寻找买入机会，而在接近阻力位时则可考虑获利了结或反向操作，以期实现稳健收益。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.7941, showing a slight upward movement of 0.09% over the past 24 hours. This price action indicates a potential bullish sentiment as the market seeks to break above the recent high. The observed price range of 0.7931 to 0.7941 suggests a narrow trading channel, which could signal indecision among traders. A sustained move above the recent high could confirm a bullish trend, while a fall below the low may indicate bearish momentum.\n\nFrom a technical indicators perspective, the MACD value of 0.00034 hints at a slight bullish crossover, although the signal line is unavailable for further confirmation. The absence of a calculated RSI makes it challenging to assess whether the pair is overbought or oversold. However, the SMA(20) at 0.7934 serves as a critical support level, as the price is currently above the moving average, reinforcing the bullish outlook. Traders should watch for potential price action around this SMA for further directional cues.\n\nIn terms of support and resistance levels, the immediate support can be identified at 0.7931, which aligns with the recent low. A break below this level may trigger selling pressure and expose the pair to further declines. Conversely, resistance is found at the psychological level of 0.7950, where traders may look to take profits. Watching these levels closely will be essential for identifying potential entry and exit points.\n\nFor trading strategies, maintaining a long position seems favorable as long as the price holds above the SMA(20). Traders could consider entering near the support level at 0.7931 with a target around the resistance at 0.7950. Conversely, if the price breaks below the support level, a cautious approach should be adopted, as it could lead to further downward momentum. Risk management strategies, such as setting stop-loss orders, will be crucial in navigating this trade setup effectively."
+    }
+  }
+}
