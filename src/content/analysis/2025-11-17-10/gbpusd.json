@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-17T10:53:22.311Z",
+  "price": {
+    "close": "1.31579",
+    "high": "1.31712",
+    "low": "1.31579",
+    "open": "1.31660",
+    "change": "-0.06",
+    "datetime": "2025-11-17 21:00:00"
+  },
+  "indicators": {
+    "rsi": 49.74586,
+    "macd": 0.000066882174,
+    "macd_signal": -0.0000071297261,
+    "sma20": 1.31583
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理]",
+      "content": "当前英镑/美元（GBP/USD）在1.31579附近震荡整理，近期的价格波动幅度较小，显示出市场缺乏强烈的方向性。虽然24小时变化仅为-0.06%，但高点和低点之间的差距表明，市场参与者在此区域内仍在进行博弈，未能形成明确的趋势。\n\n从技术指标来看，SMA(20)为1.31583，显示出价格与均线相近，表明市场可能处于短期平衡状态。MACD值接近于零，且RSI尚未提供明确数据，这意味着市场动能不足，缺乏强烈的买入或卖出信号，交易者需保持谨慎。\n\n在支撑与阻力位方面，当前支撑位可观察于1.3150附近，而阻力位则在1.3170附近。如果价格突破1.3170，可能会引发进一步上涨；反之，则需关注1.3150的支撑是否有效。\n\n综合来看，建议交易者在当前区间内保持观望，等待价格突破关键支撑或阻力位后再进行操作。短期内，适合采取区间交易策略，控制风险并关注市场动态。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The current price of GBP/USD at 1.31579 reflects a slight bearish sentiment, as indicated by the recent 24-hour change of -0.06%. This minor decline suggests that the market is consolidating within a narrow range. The recent high of 1.31712 serves as an immediate resistance level, while the ability to hold above the SMA(20) at 1.31583 indicates potential support. Traders should watch for price action around these levels to gauge the next directional move.\n\nIn terms of indicators, the MACD is currently hovering near the zero line, suggesting a lack of momentum in either direction. Without a clear signal, traders may consider waiting for a more definitive crossover or divergence to confirm a trend shift. The RSI, although not available, typically provides valuable insights into overbought or oversold conditions, which can further inform trading decisions. A potential move above the SMA could signal a bullish trend, while a break below might confirm bearish pressure.\n\nSupport levels are observed around the 1.31500 mark, which could act as a psychological barrier for traders. Conversely, resistance remains at 1.31800, where sellers may emerge. A breakout above the high could open the door to further gains, potentially targeting 1.32000. Conversely, if the price fails to hold above key support, a retracement towards 1.31000 might be in play, warranting caution among long positions.\n\nFor traders, a strategy could involve waiting for confirmation of a breakout above resistance or a breakdown below support. Utilizing stop-loss orders can help manage risk, particularly in this uncertain environment. Overall, monitoring the price action around these critical levels will be essential in determining the next moves in the GBP/USD pair."
+    }
+  }
+}
