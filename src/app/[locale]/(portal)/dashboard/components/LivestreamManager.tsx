@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import type { LiveStream } from '@/lib/supabase';
+import AdminConfigAuth from './AdminConfigAuth';
 
 export default function LivestreamManager() {
   const { language } = useLanguage();
@@ -12,6 +13,7 @@ export default function LivestreamManager() {
   const [showForm, setShowForm] = useState(false);
   const [clearingCache, setClearingCache] = useState(false);
   const [cacheMessage, setCacheMessage] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const [formData, setFormData] = useState<LiveStream>({
     nickname: '',
@@ -19,6 +21,25 @@ export default function LivestreamManager() {
     live_url: '',
     remark: '',
   });
+
+  // Check authentication status
+  useEffect(() => {
+    const authenticated = localStorage.getItem('config_authenticated');
+    if (authenticated === 'true') {
+      setIsAuthenticated(true);
+      fetchStreams();
+    } else {
+      setLoading(false);
+    }
+  }, []);
+
+  // Show auth modal if not authenticated
+  if (!isAuthenticated) {
+    return <AdminConfigAuth onAuthenticated={() => {
+      setIsAuthenticated(true);
+      fetchStreams();
+    }} />;
+  }
 
   // Fetch livestreams
   const fetchStreams = async () => {

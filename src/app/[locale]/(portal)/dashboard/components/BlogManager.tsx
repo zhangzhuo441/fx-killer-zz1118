@@ -8,6 +8,7 @@ import BlogAIGenerator from './BlogAIGenerator';
 import LoadingButton from './LoadingButton';
 import { migrateBlogs, convertBlogPost } from '@/lib/blogMigration';
 import { blogPosts } from '@/data/blogPosts';
+import AdminConfigAuth from './AdminConfigAuth';
 
 export default function BlogManager() {
   const { language } = useLanguage();
@@ -21,6 +22,7 @@ export default function BlogManager() {
   const [editingBlog, setEditingBlog] = useState<BlogPost | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [showAIGenerator, setShowAIGenerator] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   // Refs for textarea elements to insert templates
   const contentZhRef = useRef<HTMLTextAreaElement>(null);
@@ -43,6 +45,25 @@ export default function BlogManager() {
     recommand: false,
     top: false,
   });
+
+  // Check authentication status
+  useEffect(() => {
+    const authenticated = localStorage.getItem('config_authenticated');
+    if (authenticated === 'true') {
+      setIsAuthenticated(true);
+      fetchBlogs();
+    } else {
+      setLoading(false);
+    }
+  }, []);
+
+  // Show auth modal if not authenticated
+  if (!isAuthenticated) {
+    return <AdminConfigAuth onAuthenticated={() => {
+      setIsAuthenticated(true);
+      fetchBlogs();
+    }} />;
+  }
 
   // Fetch blogs
   const fetchBlogs = async (forceRefresh = false) => {

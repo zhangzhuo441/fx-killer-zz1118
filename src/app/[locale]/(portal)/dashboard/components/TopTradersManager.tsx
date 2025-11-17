@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import type { TopTrader as DbTrader } from '@/lib/supabase';
 import type { TopTrader as DisplayTrader } from '@/types/top-traders';
 import { convertDbTraderToDisplay } from '@/lib/topTradersMigration';
+import AdminConfigAuth from './AdminConfigAuth';
 
 export default function TopTradersManager() {
   const { language } = useLanguage();
@@ -12,6 +13,7 @@ export default function TopTradersManager() {
   const [loading, setLoading] = useState(true);
   const [editingTrader, setEditingTrader] = useState<DbTrader | null>(null);
   const [showForm, setShowForm] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const [formData, setFormData] = useState<Omit<DbTrader, 'id' | 'created_at' | 'updated_at'>>({
     rank: 1,
@@ -33,6 +35,25 @@ export default function TopTradersManager() {
     in_matrix: false,
     update_time: new Date().toISOString(),
   });
+
+  // Check authentication status
+  useEffect(() => {
+    const authenticated = localStorage.getItem('config_authenticated');
+    if (authenticated === 'true') {
+      setIsAuthenticated(true);
+      fetchTraders();
+    } else {
+      setLoading(false);
+    }
+  }, []);
+
+  // Show auth modal if not authenticated
+  if (!isAuthenticated) {
+    return <AdminConfigAuth onAuthenticated={() => {
+      setIsAuthenticated(true);
+      fetchTraders();
+    }} />;
+  }
 
   // Fetch traders
   const fetchTraders = async (forceRefresh = false) => {
