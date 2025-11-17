@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-17T09:42:49.217Z",
+  "price": {
+    "close": "1.31740",
+    "high": "1.31754",
+    "low": "1.31601",
+    "open": "1.31633",
+    "change": "0.06",
+    "datetime": "2025-11-17 20:00:00"
+  },
+  "indicators": {
+    "rsi": 56.30415,
+    "macd": 0.00015576394,
+    "macd_signal": -0.000011518593,
+    "sma20": 1.31588
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理趋势]",
+      "content": "当前英镑/美元（GBP/USD）价格为1.31740，显示出短期内的震荡整理趋势。伴随市场波动性较小，价格在1.31601至1.31754之间波动，表明投资者在这一区间内缺乏明确的方向。考虑到这种情况，市场参与者可能在观望即将发布的经济数据和政策变化，以寻找更明确的交易信号。\n\n从技术指标来看，尽管RSI和MACD数据缺失，但20日简单移动平均线（SMA）为1.31588，表明短期内价格有企稳迹象。若价格突破1.3180的阻力位，可能会引发进一步的上涨趋势。而若跌破1.3160的支撑位，则可能会加大下行压力，投资者需保持警惕。\n\n支撑位方面，1.3160是关键的支撑水平，若价格持续在此之上，有助于维持多头的信心。对于阻力位，1.3180和1.3200是需要关注的重要关口，突破这些区域可能会引发新的买入机会。建议投资者在当前区间内采取观望策略，等待更明确的突破信号。\n\n综上所述，英镑/美元在当前市场环境下呈现震荡整理格局，投资者应关注重要支撑与阻力位，并结合即将发布的经济数据，灵活调整交易策略，以应对潜在的市场波动。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The current market price for GBP/USD stands at 1.31740, reflecting a modest 24-hour change of 0.06%. The pair has exhibited stability within a narrow range, with a recent high of 1.31754 and a low of 1.31601. This price action suggests a consolidation phase, indicating indecision among traders. The market appears to be waiting for a catalyst that could trigger a breakout either to the upside or downside, reflecting broader economic sentiments and potential volatility.\n\nIn terms of technical indicators, the 20-period Simple Moving Average (SMA) at 1.31588 serves as a critical support level. The proximity of the current price to this SMA suggests that it could act as a floor for the pair, providing a potential buying opportunity should the price retrace towards it. Additionally, the absence of a definitive RSI and MACD reading indicates that momentum is currently neutral, suggesting traders should be cautious and observe for clearer signals before committing to positions.\n\nSupport is firmly established around the recent low of 1.31601, while resistance can be identified at the recent high of 1.31754. A break above this resistance level could pave the way for further gains, potentially targeting the next psychological level around 1.32000. Conversely, a drop below the support level might lead to increased selling pressure, opening the door for a deeper corrective move towards 1.31400 or lower.\n\nGiven the current market dynamics, a wait-and-see approach may be prudent. Traders should monitor the price action closely around the established support and resistance levels. A clear breakout above 1.31754 could present a buying opportunity, while a breakdown below 1.31601 may signal a bearish trend. Utilizing stop-loss orders to manage risk and employing a cautious entry strategy could enhance trading performance in this uncertain environment."
+    }
+  }
+}

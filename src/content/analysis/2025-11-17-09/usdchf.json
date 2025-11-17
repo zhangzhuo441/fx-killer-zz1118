@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-17T09:46:39.874Z",
+  "price": {
+    "close": "0.79416001",
+    "high": "0.79514998",
+    "low": "0.79398000",
+    "open": "0.79470998",
+    "change": "-0.07",
+    "datetime": "2025-11-17 20:00:00"
+  },
+  "indicators": {
+    "rsi": 52.025304,
+    "macd": 0.00036199904,
+    "macd_signal": 0.00030099689,
+    "sma20": 0.79357199
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡整理趋势]",
+      "content": "当前美元/瑞郎（USD/CHF）在0.79416001附近震荡整理，整体趋势相对平稳。虽然24小时变化仅为-0.07%，但价格在最近的高点和低点之间波动，显示出市场短期内的犹豫。这种横盘整理的状态可能预示着即将出现突破，投资者需保持警惕。\n\n从技术指标来看，当前的MACD值为0.00036199904，表明短期内买方力量略强，但信号线缺失使得趋势判断不够明确。相对强弱指数（RSI）未提供，无法全面判断超买或超卖状态。20日简单移动平均线（SMA）在0.79357199，提供了一定的支持，若价格跌破该水平，可能会引发更大的下行压力。\n\n支撑位在0.79398000附近，若下破该支撑，可能会导致进一步回调，投资者应考虑止损策略。而阻力位在0.79514998，若突破该水平，则可能重新测试之前的高点。建议投资者密切关注价格走势，适时调整仓位，以应对潜在的波动风险。总的来说，保持灵活的交易策略是当前市场环境的关键。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently positioned near the 0.7942 level, reflecting a slight decline of 0.07% over the past 24 hours. The price action has been relatively contained, with a high of 0.7951 and a low of 0.7939. This tight range suggests a period of consolidation, indicating indecision among traders. The overall trend appears to be neutral to slightly bearish, as the price struggles to maintain momentum above the 0.7950 resistance level.\n\nIn terms of technical indicators, the absence of a 14-period RSI complicates a comprehensive momentum analysis; however, the MACD shows a positive value of 0.00036, suggesting that bullish momentum may still be present despite the recent pullback. The SMA(20) at 0.7936 indicates that the average price over the last 20 periods is slightly below the current price, suggesting a potential support level. Traders may look for confirmation of a reversal if the price breaks and holds above the SMA.\n\nKey support levels to monitor are around 0.7935 and 0.7930, where buying interest may emerge. Conversely, resistance remains strong at 0.7950, which, if breached, could invite further bullish momentum towards the next psychological level at 0.8000. A failure to hold above the support levels could see the pair test lower support around 0.7900, increasing the likelihood of a bearish trend continuation.\n\nFor trading strategies, a cautious approach is advisable given the current market conditions. Traders may consider waiting for a breakout above 0.7950 for a potential buy signal, targeting gains near the 0.8000 level. Conversely, if the price drops below 0.7930, a short position may be warranted, with targets set around 0.7900. Risk management should be prioritized, utilizing stop-loss orders to protect against unexpected volatility."
+    }
+  }
+}
