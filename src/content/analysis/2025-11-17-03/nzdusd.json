@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-17T03:43:27.393Z",
+  "price": {
+    "close": "0.56602705",
+    "high": "0.56647593",
+    "low": "0.56602705",
+    "open": "0.56641179",
+    "change": "-0.09",
+    "datetime": "2025-11-17 14:00:00"
+  },
+  "indicators": {
+    "rsi": 37.39593,
+    "macd": -0.00018393884,
+    "macd_signal": 0.0001214814,
+    "sma20": 0.56780198
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理，谨慎观望]",
+      "content": "当前纽元/美元(NZD/USD)处于震荡整理状态，价格在0.5660附近反复波动。考虑到最近的24小时变化仅为-0.09%，市场情绪似乎较为谨慎。走势上，短期内价格未能有效突破0.5678的20日简单移动平均线(SMA)，显示出上行压力，短期内可能维持在此区间内。\n\n技术指标方面，虽然RSI(14)数据缺失，但MACD显示出微弱的负值，表明当前市场缺乏强烈的买入动能。若RSI进入超卖区域，可能会为短期反弹提供支撑，但在缺乏其他强烈信号的情况下，仍需保持警惕，避免追高。\n\n在支撑与阻力位方面，当前的支撑位可关注0.5660附近，而上方的阻力位则在0.5678，若价格突破此水平，可能会引发更强的买入信号。相反，若跌破0.5660，则需警惕进一步下行的风险。\n\n综上所述，建议投资者在当前市场环境下采取谨慎观望策略，等待更明确的信号再做决策。短期内可考虑在支撑位附近布局多单，但需设置止损以控制风险。同时，关注即将发布的经济数据，以便及时调整操作策略。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.5660, showing a slight decline of 0.09% over the past 24 hours. This price action suggests a consolidation phase, as it has tested the recent high at 0.5665 but failed to maintain upward momentum. The overall trend appears bearish, especially considering that the price is below the 20-day Simple Moving Average (SMA) of 0.5678, indicating that sellers might have the upper hand in the near term.\n\nIn terms of technical indicators, the absence of an RSI reading makes it challenging to assess overbought or oversold conditions. However, the MACD value of -0.00018 indicates a bearish momentum, suggesting that downward pressure may persist. Traders should monitor for potential crossovers that could signal shifts in momentum. A close below the recent low of 0.5660 could trigger further selling, while a reversal above 0.5678 might indicate a possible bullish retracement.\n\nKey support levels to watch include the recent low at 0.5660 and a more significant support zone around 0.5630. Conversely, resistance is seen at 0.5678, aligned with the 20-day SMA, and a break above this level could invite buyers into the market. Should the pair manage to surpass this resistance, it may open the door for a retest of the 0.5700 psychological level.\n\nFor traders, a cautious approach is advisable. A short position could be considered below 0.5660, targeting the support level at 0.5630, with a tight stop-loss just above the recent high. Conversely, if the price breaks above 0.5678, a long position may be warranted, focusing on potential gains toward 0.5700. It’s essential to stay attuned to broader market sentiment and economic data releases that could impact the NZD/USD dynamics."
+    }
+  }
+}

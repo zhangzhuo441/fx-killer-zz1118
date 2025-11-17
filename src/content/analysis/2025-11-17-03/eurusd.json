@@ -1,0 +1,30 @@
+{
+  "symbol": "EUR/USD",
+  "name": "Euro vs US Dollar",
+  "nameCn": "欧元/美元",
+  "timestamp": "2025-11-17T03:40:02.563Z",
+  "price": {
+    "close": "1.15985",
+    "high": "1.16021",
+    "low": "1.15975",
+    "open": "1.16021",
+    "change": "-0.03",
+    "datetime": "2025-11-17 14:00:00"
+  },
+  "indicators": {
+    "rsi": 37.86076,
+    "macd": -0.00056258373,
+    "macd_signal": -0.00029082439,
+    "sma20": 1.16184
+  },
+  "analysis": {
+    "zh": {
+      "title": "欧元/美元技术分析：[震荡整理，待突破]",
+      "content": "当前欧元/美元（EUR/USD）在1.15985附近震荡整理，近期价格波动幅度较小，显示出市场参与者对未来方向的犹豫。价格接近近期低点1.15975，若突破该支撑位，可能会引发进一步下行，而如果能够站稳1.16021的高点，则有望反弹。\n\n从技术指标来看，虽然未提供RSI和MACD的完整数据，但当前MACD值为-0.00056，表明短期内动能偏弱，市场可能面临回调压力。SMA(20)在1.16184附近形成阻力，若价格未能突破，将可能限制上行空间。\n\n支撑位主要集中在1.15975，若价格跌破该水平，可能会进一步探测1.15850的心理关口。而阻力位则在1.16184，突破后有望测试1.16300的更高水平。在这种震荡格局下，建议交易者关注区间内的短线交易机会，谨慎布局，避免持有过长时间的头寸。"
+    },
+    "en": {
+      "title": "Euro vs US Dollar Technical Analysis",
+      "content": "The EUR/USD pair is currently trading at 1.15985, reflecting a slight decline of 0.03% over the past 24 hours. The price action has been confined within a narrow range, with a high of 1.16021 and a low of 1.15975. This consolidation suggests indecision in the market, as traders await further catalysts. The absence of a clear trend indicates that both bullish and bearish sentiments are present, making it crucial to monitor upcoming economic data releases for potential volatility.\n\nThe 20-period Simple Moving Average (SMA) is positioned at 1.16184, indicating a bearish short-term trend as the price has recently dipped below this moving average. This could signal a continuation of downward pressure if the price fails to reclaim this level. Additionally, the MACD reading is slightly negative, suggesting that momentum is currently favoring sellers. Traders should watch for a potential crossover in the MACD for clearer signals regarding future price direction.\n\nKey support and resistance levels are critical in this context. Immediate support is found at 1.15975, which, if broken, could lead to further declines toward the next support level around 1.15850. Conversely, resistance is evident at 1.16100, and a breakout above this level could open the door for a move back towards the 1.16200 mark. Traders should consider these levels for setting entry and exit points.\n\nGiven the current market conditions, a cautious approach is recommended. Traders may consider short positions if the price breaks below 1.15975, targeting the next support level. Conversely, a sustained move above 1.16100 could prompt a bullish reversal, making long positions more attractive. In either case, risk management strategies should be employed to navigate potential volatility, especially in response to upcoming economic indicators."
+    }
+  }
+}

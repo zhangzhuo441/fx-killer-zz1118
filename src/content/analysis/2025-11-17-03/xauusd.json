@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-17T03:45:07.148Z",
+  "price": {
+    "close": "4081.43608",
+    "high": "4084.85553",
+    "low": "4071.85619",
+    "open": "4083.6096",
+    "change": "-0.05",
+    "datetime": "2025-11-17 14:00:00"
+  },
+  "indicators": {
+    "rsi": 43.56263,
+    "macd": -3.6334,
+    "macd_signal": -6.0089391,
+    "sma20": 4082.25031
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "目前黄金/美元(XAU/USD)在4081.43附近震荡整理，短期内缺乏明显趋势。价格在4084.86的高点和4071.86的低点之间波动，表明市场参与者对当前价格水平的看法不一，可能导致进一步的横盘整理。\n\n技术指标方面，MACD显示出负值，暗示短期内卖压仍然存在，但尚未形成明确的卖出信号。由于RSI数据缺失，无法对超买或超卖状态进行评估。然而，20日简单移动平均线(SMA)位于4082.25，可能成为短期内的支撑位，若价格持续维持在此水平之上，短期看涨情绪有望修复。\n\n支撑位方面，关注4071.86附近的低点，一旦跌破该水平，将增加下行风险，可能进一步测试4050.00心理关口。相对地，阻力位则位于4084.86，突破此位有望引发短期反弹，吸引更多买盘介入。\n\n综合分析，建议投资者保持谨慎，关注价格在支撑与阻力区间内的表现。若能突破4084.86，短期可以考虑买入机会；相反，若跌破4071.86，则需谨防进一步回调风险。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4081.43608 suggests a slight bearish sentiment, especially given the 24-hour change of -0.05%. The price is hovering just below the recent high of 4084.85553, indicating a potential resistance level. If the price fails to break above this level, it may continue to test lower support zones around the recent low of 4071.85619. A sustained move below this support could signal further downside, potentially leading to a retest of lower levels.\n\nIn terms of indicators, the MACD is currently at -3.63340, suggesting a bearish momentum in the market. The absence of a signal line complicates the interpretation; however, it can be inferred that the momentum remains negative. Traders should monitor the MACD closely for any signs of convergence or divergence, as these can hint at potential reversals. The RSI is not available, but its inclusion would typically provide further insights into overbought or oversold conditions.\n\nThe Simple Moving Average (SMA) of 20 periods stands at 4082.25031, acting as a dynamic resistance level. A price action that closes above this SMA could indicate a potential bullish reversal, while a failure to maintain above it might reinforce the bearish outlook. Key support remains around the recent low, where buying interest could emerge. Traders should be particularly attentive to price action around these levels for entry or exit signals.\n\nFor trading strategies, a conservative approach would involve waiting for a confirmed break above the 4084 resistance, which could provide a buy signal with targets set higher. Conversely, if the price breaks below the support level of 4071, a short position could be considered, targeting further declines. Risk management is crucial, with stop-loss orders set just above resistance or below support to mitigate potential losses in this volatile environment."
+    }
+  }
+}
