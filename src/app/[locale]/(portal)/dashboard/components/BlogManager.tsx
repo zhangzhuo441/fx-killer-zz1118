@@ -46,6 +46,23 @@ export default function BlogManager() {
     top: false,
   });
 
+  // Fetch blogs (defined before useEffect)
+  const fetchBlogs = async (forceRefresh = false) => {
+    setLoading(true);
+    try {
+      const url = forceRefresh ? '/api/blogs?refresh=true' : '/api/blogs';
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        setBlogs(data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch blogs:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Check authentication status
   useEffect(() => {
     const authenticated = localStorage.getItem('config_authenticated');
@@ -64,23 +81,6 @@ export default function BlogManager() {
       fetchBlogs();
     }} />;
   }
-
-  // Fetch blogs
-  const fetchBlogs = async (forceRefresh = false) => {
-    setLoading(true);
-    try {
-      const url = forceRefresh ? '/api/blogs?refresh=true' : '/api/blogs';
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        setBlogs(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch blogs:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   // Handle cache clearing
   const handleClearCache = async () => {

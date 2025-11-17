@@ -36,6 +36,23 @@ export default function TopTradersManager() {
     update_time: new Date().toISOString(),
   });
 
+  // Fetch traders (defined before useEffect)
+  const fetchTraders = async (forceRefresh = false) => {
+    setLoading(true);
+    try {
+      const url = forceRefresh ? '/api/top-traders?refresh=true' : '/api/top-traders';
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        setTraders(data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch traders:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Check authentication status
   useEffect(() => {
     const authenticated = localStorage.getItem('config_authenticated');
@@ -55,23 +72,6 @@ export default function TopTradersManager() {
     }} />;
   }
 
-  // Fetch traders
-  const fetchTraders = async (forceRefresh = false) => {
-    setLoading(true);
-    try {
-      const url = forceRefresh ? '/api/top-traders?refresh=true' : '/api/top-traders';
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        setTraders(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch traders:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   // Handle cache clearing
   const handleClearCache = async () => {
     if (!confirm(language === 'zh' ? '确定要清除缓存并刷新数据吗？' : 'Clear cache and refresh data?')) {
@@ -81,10 +81,6 @@ export default function TopTradersManager() {
     await fetchTraders(true);
     alert(language === 'zh' ? '缓存已清除，数据已刷新' : 'Cache cleared and data refreshed');
   };
-
-  useEffect(() => {
-    fetchTraders();
-  }, []);
 
   // Handle create/update
   const handleSubmit = async (e: React.FormEvent) => {

@@ -22,6 +22,22 @@ export default function LivestreamManager() {
     remark: '',
   });
 
+  // Fetch livestreams (defined before useEffect)
+  const fetchStreams = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/livestreams');
+      if (response.ok) {
+        const data = await response.json();
+        setStreams(data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch livestreams:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Check authentication status
   useEffect(() => {
     const authenticated = localStorage.getItem('config_authenticated');
@@ -40,26 +56,6 @@ export default function LivestreamManager() {
       fetchStreams();
     }} />;
   }
-
-  // Fetch livestreams
-  const fetchStreams = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('/api/livestreams');
-      if (response.ok) {
-        const data = await response.json();
-        setStreams(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch livestreams:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchStreams();
-  }, []);
 
   // Clear Next.js cache for live-trading page
   const handleClearCache = async () => {
