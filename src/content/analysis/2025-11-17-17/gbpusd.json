@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-17T17:40:15.970Z",
+  "price": {
+    "close": "1.31721",
+    "high": "1.31799",
+    "low": "1.31714",
+    "open": "1.31778",
+    "change": "-0.05",
+    "datetime": "2025-11-18 04:00:00"
+  },
+  "indicators": {
+    "rsi": 53.19865,
+    "macd": 0.00045780541,
+    "macd_signal": 0.00031884091,
+    "sma20": 1.31632
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理，关注关键支撑]",
+      "content": "当前英镑/美元汇率为1.31721，近期走势表现出震荡整理的特征。尽管24小时内略微下跌0.05%，价格保持在1.31799至1.31714的区间内，显示出市场参与者对短期方向的犹豫。这种横向走势可能预示着即将出现更为明显的波动。\n\n在技术指标方面，虽然RSI和MACD数据尚不可用，但20日简单移动平均线(SMA)显示出1.31632的支撑位。若价格突破此区域，可能会引发进一步的回调。而如果价格能够突破1.3180的阻力水平，可能会吸引更多买盘，推动价格向上。\n\n支撑位方面，1.3160和1.3150是关键区域，若价格跌破这些支撑位，可能会加剧下行风险。另一方面，阻力位则集中在1.3180和1.3200，突破这些水平将有助于市场恢复上涨趋势。\n\n综合考虑当前市场状况，建议交易者密切关注支撑和阻力位的变化。在1.3170附近考虑短期的多头入场机会，同时设定止损位于1.3150下方，以防止潜在的下跌风险。保持警惕，及时调整策略，以应对市场的变化。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The GBP/USD pair currently trades at 1.31721, reflecting a minor decline of 0.05% over the past 24 hours. The price has remained in a tight range, with a high of 1.31799 and a low of 1.31714. Given the recent price action, the market appears to be consolidating, indicating indecision among traders. A sustained break above the recent high could signal a bullish reversal, while a move below the low may trigger further bearish pressure.\n\nIn terms of technical indicators, the absence of the RSI(14) and Signal for the MACD limits our ability to derive momentum insights. However, the SMA(20) at 1.31632 provides a potential area of support. If the price approaches this level and holds above it, it could attract buyers, reinforcing a bullish outlook. Conversely, failure to maintain this support may lead to further downward movement, emphasizing the importance of monitoring the SMA closely.\n\nSupport levels are found around 1.31632 and further below at 1.31500, while resistance is evident at 1.31800 and subsequently at 1.32000. These levels will be crucial for traders, as they offer potential entry and exit points. A break above 1.32000 could indicate a stronger uptrend, while a break below 1.31500 may signal a shift toward a bearish trend.\n\nGiven the current market conditions, traders should consider a cautious approach. A buy position may be warranted if the price breaks above 1.31800, confirming bullish sentiment. In contrast, a sell position could be justified if the price falls below 1.31500, indicating a potential continuation of the downward trend. As always, risk management practices should be employed to navigate market volatility effectively."
+    }
+  }
+}

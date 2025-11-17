@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-17T17:44:32.437Z",
+  "price": {
+    "close": "4075.29757",
+    "high": "4080.7252",
+    "low": "4070.22369",
+    "open": "4070.22369",
+    "change": "0.12",
+    "datetime": "2025-11-18 04:00:00"
+  },
+  "indicators": {
+    "rsi": 48.13697,
+    "macd": -4.25489,
+    "macd_signal": -4.45721,
+    "sma20": 4077.59982
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[当前震荡趋势]",
+      "content": "当前黄金/美元(XAU/USD)的价格在4075.30附近波动，呈现出震荡整理的态势。尽管24小时的变化幅度仅为0.12%，但整体趋势仍显得谨慎。市场需关注高点4080.73和低点4070.22的突破情况，这将为后市的方向提供线索。\n\n从技术指标来看，当前的MACD为-4.25，显示出卖压明显，短期内下行风险较大。由于RSI数据缺失，无法全面评估超买或超卖情况，但结合SMA(20)的4077.60水平，表明价格接近均线，可能会面临回调。投资者需密切关注均线的反应。\n\n在支撑和阻力方面，4070.22构成了近期的关键支撑位，一旦跌破可能会引发更大的卖盘。而在上方，4080.73则为阻力位，如果价格突破该水平，有望测试更高的价位。市场情绪的变化将直接影响价格波动，需保持警惕。\n\n基于当前市场环境，建议投资者采取观望策略，耐心等待明确的突破信号后再做出交易决策。如果价格跌破支撑位4070.22，可以考虑适度做空，反之则可寻找做多机会。保持灵活应变，以应对市场的快速变化。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of XAU/USD at 4075.30 indicates a relatively stable market, with a slight 24-hour change of 0.12%. The price has been oscillating around the recent high of 4080.73 and low of 4070.22, suggesting a consolidation phase. This trend indicates that the market is currently indecisive, which may lead to a breakout in either direction. Traders should closely monitor the upcoming sessions for a potential move beyond these levels, as a breakout could signal a resumption of the prevailing trend.\n\nThe absence of a calculated RSI (14) might limit the immediate analysis of momentum; however, the MACD at -4.25489 suggests bearish momentum is present. This negative value indicates that the recent price action has been weaker than the historical average, supporting the idea of a cautious approach. A crossover above the MACD line could signal a bullish reversal, providing an entry point for traders looking to capitalize on upward momentum.\n\nIn terms of support and resistance, the recent low of 4070.22 could serve as a crucial support level. If the price were to drop below this point, it may gather momentum towards further declines. Conversely, the resistance level at 4080.73 is critical for bullish traders; a sustained breach above this level could open the door for further upward movement, potentially targeting the next psychological level of 4100.\n\nTraders may consider employing a range-bound strategy given the current price action. Buying near the support level of 4070.22 while setting a stop-loss just below this mark could allow for a favorable risk-reward ratio. Conversely, a short position could be considered near the resistance level at 4080.73, with a stop-loss above this level. Monitoring volume and external economic factors will also be essential in determining the strength of any breakout or reversal."
+    }
+  }
+}

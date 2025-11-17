@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-17T17:43:48.526Z",
+  "price": {
+    "close": "0.79553002",
+    "high": "0.79574001",
+    "low": "0.79527003",
+    "open": "0.79556000",
+    "change": "-0.01",
+    "datetime": "2025-11-18 04:00:00"
+  },
+  "indicators": {
+    "rsi": 57.55059,
+    "macd": 0.00056722489,
+    "macd_signal": 0.00051744213,
+    "sma20": 0.7948875
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡偏弱，短期需关注支撑位]",
+      "content": "当前美元/瑞郎的价格在0.7955附近小幅震荡，整体趋势偏弱。虽然24小时变化仅为-0.01%，但价格在高点0.79574和低点0.79527的波动表明市场情绪较为谨慎。投资者需要关注即将到来的经济数据，以判断市场情绪的变化。\n\n从技术指标来看，MACD指标显示出微弱的买入信号，但由于信号线数据缺失，难以全面评估市场动向。SMA(20)为0.79488750，当前价格略高于该均线，可能暗示短期内支撑位在此附近。相对强弱指数（RSI）缺失，但通常在这一价格区间，RSI可能处于中性水平。\n\n支撑位方面，0.79527是一个关键支撑位，一旦跌破，可能会引发更深的调整。阻力位则在0.79574，若突破该水平，可能会激发进一步的买入兴趣。综合来看，短期交易者应密切关注这些关键价位，并在支撑位附近寻找进场机会，反之则在阻力位附近考虑出局或做空。\n\n在当前市场环境中，建议投资者采取谨慎态度，设定合理的止损策略，避免在波动性加剧时贸然决策。保持对经济数据发布的敏感性，可能会为后续的交易提供更好的机会。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.79553002, showing a slight decline of 0.01% over the past 24 hours. This stability suggests the market is in a consolidation phase, with both buyers and sellers exhibiting caution. The price remains within a narrow range, having reached a high of 0.79574001 and a low of 0.79527003 in the last day. This lack of volatility may indicate that traders are awaiting further economic data or geopolitical developments that could influence the pair's direction.\n\nFrom a technical standpoint, the 20-period Simple Moving Average (SMA) at 0.79488750 serves as a potential support level. If the price dips below this level, it could trigger further selling pressure, potentially testing the recent low around 0.79527003. Conversely, a break above the recent high of 0.79574001 may re-establish bullish momentum, prompting a rally towards the next resistance level. Given the current price action, traders should closely monitor these key levels to gauge the pair's next move.\n\nThe MACD indicator is currently showing a positive value of 0.00056722489, suggesting a slight bullish bias. However, the lack of a corresponding Signal line makes it challenging to ascertain a definitive trend. As the RSI(14) is unavailable, an assessment of overbought or oversold conditions is not possible. Traders may consider waiting for a clearer signal from the MACD or other momentum indicators before entering positions, as this will help mitigate the risks associated with potential false breakouts.\n\nIn the short term, traders should look for confirmation of price movements relative to the identified support and resistance levels. A bounce off the SMA could provide an opportunity for a long position, while a breach of support could warrant a short position. Additionally, keeping an eye on broader market sentiment and economic indicators will be crucial in making informed trading decisions in the USD/CHF pair."
+    }
+  }
+}

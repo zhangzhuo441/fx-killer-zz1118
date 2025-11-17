@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-17T17:41:38.599Z",
+  "price": {
+    "close": "0.65125",
+    "high": "0.65176",
+    "low": "0.65116",
+    "open": "0.65146",
+    "change": "-0.04",
+    "datetime": "2025-11-18 04:00:00"
+  },
+  "indicators": {
+    "rsi": 42.52568,
+    "macd": -0.00053941895,
+    "macd_signal": -0.00047738046,
+    "sma20": 0.6520315
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理，需关注支撑位]",
+      "content": "当前AUD/USD处于震荡整理阶段，最新价格为0.65125，较前一交易日略微下跌0.04%。市场在高低点之间反复波动，短期内缺乏明确方向，投资者需谨慎对待。若价格突破0.6520上方，可能会引发短期反弹，而跌破0.6510则有可能进一步回调。\n\n在技术指标方面，MACD值为-0.000539，表明市场动能偏弱，但尚未形成明确的卖出信号。RSI指标虽然未提供，但在震荡行情中，通常会出现超买或超卖情况。投资者需密切关注这些指标的变化，以便及时调整策略。\n\n支撑位方面，0.6510是较为重要的支撑线，若价格跌破该位，可能会引发进一步下行，目标看向0.6500。而阻力位则在0.6520和0.6525附近，若价格突破这些水平，可能会吸引更多买入资金，推动价格上涨。\n\n基于当前市场状况，建议交易者采取观望策略，等待价格突破关键支撑或阻力位后再入场。同时，设定合理的止损点，以控制风险并保护资本。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair is currently trading at 0.65125, reflecting a slight decrease of 0.04% over the past 24 hours. This price action suggests a consolidation phase following a recent downturn. The high and low of the day are 0.65176 and 0.65116, respectively, indicating a narrow trading range. This constrained movement might indicate indecision in the market, but it could also set the stage for a potential breakout in either direction as traders await further catalysts.\n\nFrom a technical perspective, the 20-period Simple Moving Average (SMA) at 0.65203150 is positioned above the current price, reinforcing a bearish sentiment in the short term. The negative MACD value of -0.00053941895 further supports this outlook, suggesting that downward momentum is present. Without the RSI value, we cannot assess overbought or oversold conditions directly, but the prevailing indicators suggest a cautious approach, favoring potential short positions or a wait-and-see strategy for bullish signals.\n\nFor support and resistance levels, immediate support can be identified around the low of 0.65116, while the resistance level is seen at the recent high of 0.65176. A break below 0.65116 could open the door for further declines, potentially targeting the psychological level of 0.65000. Conversely, if the price can break above 0.65176, it may signal a change in momentum, allowing for a retest of the SMA and possibly leading to a more sustained upward movement.\n\nTraders should consider monitoring these key levels closely, as they will provide critical insights into the market's direction. A prudent trading strategy may involve placing sell orders near resistance, while considering buy opportunities should the price decisively break above 0.65176. Implementing stop-loss orders just below support levels can help manage risk in this uncertain market environment."
+    }
+  }
+}
