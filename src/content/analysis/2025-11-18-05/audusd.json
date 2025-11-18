@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-18T05:41:52.429Z",
+  "price": {
+    "close": "0.64821",
+    "high": "0.64834",
+    "low": "0.6477",
+    "open": "0.64804",
+    "change": "0.03",
+    "datetime": "2025-11-18 16:00:00"
+  },
+  "indicators": {
+    "rsi": 36.11554,
+    "macd": -0.0010847144,
+    "macd_signal": -0.0009866925,
+    "sma20": 0.649854
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "当前澳元/美元（AUD/USD）交易处于震荡整理阶段，最新价格为0.64821。该货币对在0.64834和0.6477之间波动，显示出短期内缺乏方向性。投资者在等待市场明确信号的同时，可能会继续在这一区间内操作，暂时没有强烈的突破动能。\n\n从技术指标来看，MACD当前为负值，表明卖方略占优势，但尚未形成明显的下行趋势。此外，短期移动平均线（SMA 20）位于当前价格之上，暗示短期内价格可能面临阻力。相对强弱指数（RSI）数据缺失，但通常需要关注其是否接近超卖或超买区域，以便进行进一步分析。\n\n支撑位设在0.6477附近，若价格突破此区域，可能会加速下行。阻力位则在0.64985400，若上破，可能会引发买盘进入。建议投资者在当前价格区间内进行短线交易，利用震荡行情捕捉机会，同时保持对市场消息的敏感度，以应对突发波动。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The current price of AUD/USD at 0.64821 shows a slight 24-hour change of 0.03%, indicating a relatively stable market. However, the pair has faced resistance near the 0.64985 level, which corresponds with the 20-period Simple Moving Average (SMA). A failure to breach this resistance could suggest a bearish sentiment in the short term, particularly if the price retraces toward recent lows around 0.6477. Traders should be cautious, as the market appears to be consolidating within this range.\n\nThe absence of a Relative Strength Index (RSI) reading makes it challenging to gauge the momentum of the price action. However, the MACD value of -0.0010847144 indicates a slight bearish trend, as the MACD line is below the signal line. This suggests that selling pressure may be gaining traction. If the MACD begins to diverge positively, it could signal a potential reversal, prompting traders to look for buying opportunities at or near support levels.\n\nKey support is identified at 0.6477, where buyers may step in to prevent further declines. If this level holds, a bounce back toward the 0.64985 resistance could materialize, offering a potential short-term trading opportunity. Conversely, a break below 0.6477 would likely lead to increased selling pressure and could open the door for further downside, possibly targeting the next support level around 0.6450.\n\nIn summary, traders should closely monitor price action around the critical levels of 0.6477 and 0.64985. A confirmed break above 0.64985 may lead to a bullish trend, while a break below 0.6477 could trigger additional selling. Employing stop-loss orders near these levels could be prudent to manage risk effectively in this uncertain market environment."
+    }
+  }
+}
