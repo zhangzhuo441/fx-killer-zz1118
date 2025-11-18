@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-18T04:18:51.494Z",
+  "price": {
+    "close": "0.56423855",
+    "high": "0.56506753",
+    "low": "0.56423855",
+    "open": "0.56506753",
+    "change": "-0.15",
+    "datetime": "2025-11-18 15:00:00"
+  },
+  "indicators": {
+    "rsi": 34.053096,
+    "macd": -0.00060731529,
+    "macd_signal": -0.00045508591,
+    "sma20": 0.56617412
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理，短期承压]",
+      "content": "当前纽元/美元的最新价格为0.5642，显示出短期内的震荡整理趋势。价格在0.5650附近面临一定的阻力，而低点0.5642则可能成为支撑位。整体来看，市场情绪较为谨慎，投资者应关注即将发布的经济数据，以便更好地判断价格走势。\n\n从技术指标来看，虽然RSI未提供，但MACD显示出轻微的负值，表明市场可能处于卖压状态。20日简单移动平均线(SMA)为0.5662，价格位于其下方，进一步验证了短期内的下行压力。若价格突破SMA，则可能恢复上涨趋势。\n\n支撑位方面，0.5640和0.5635是关键水平，一旦跌破，可能引发进一步的下行调整。阻力位则设在0.5650和0.5660，突破这些水平将有助于确认反弹趋势。投资者应密切关注这些关键价格区间，以制定相应的交易策略。\n\n基于当前市场状况，建议投资者采取观望态度，等待价格突破关键支撑或阻力位后再做决策。如果价格在支撑位附近反弹，可以考虑小幅买入，但若跌破支撑，则应考虑止损出局。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The New Zealand Dollar (NZD) against the US Dollar (USD) is currently showing a slight bearish trend, with the latest price at 0.56423855, reflecting a 24-hour change of -0.15%. This modest decline suggests that traders may be cautious, potentially influenced by broader market sentiment or economic data releases. The price has recently tested the high of 0.56506753, but the inability to sustain upward momentum indicates a need for further bullish confirmation before any significant upward movement.\n\nTechnical indicators present a mixed picture. The MACD is currently negative at -0.00060731529, which suggests that bearish momentum might continue in the near term. However, the absence of a reliable RSI reading may limit the analysis of overbought or oversold conditions. The 20-period Simple Moving Average (SMA) at 0.56617412 acts as a resistance level, indicating that the price must break above this threshold for a stronger bullish signal to materialize. Traders should watch for a crossover or divergence in MACD for confirmation of potential reversals.\n\nKey support levels are identified around 0.5640, where the price has demonstrated resilience. A break below this level could lead to further declines, potentially targeting the next support at 0.5620. Conversely, if the price holds above this support and manages to break through the SMA, it could open up the path for a recovery towards the 0.5680 resistance level. This highlights the importance of monitoring these levels closely for trading opportunities.\n\nIn terms of trading strategies, a cautious approach is recommended. Traders may consider short positions if the price breaks below 0.5640, aiming for a target near 0.5620 while placing a stop-loss above the 20 SMA. Conversely, if there is a bullish breakout above 0.5662, a long position could be viable, targeting the 0.5680 resistance level. Overall, maintaining a watchful eye on market developments and global economic indicators will be crucial for effective trading decisions in this pair."
+    }
+  }
+}
