@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const emaMovingAveragesContent = {
   zh: {
-    title: 'EMA指数移动平均线完整指南丨汇刃丨外汇交易员培训、全职交易员培训',
+    title: 'EMA指数移动平均线完整指南丨时空交易丨外汇交易员培训、全职交易员培训',
     description: '深入讲解EMA指数移动平均线：计算公式、与SMA的区别、常用周期。外汇交易员和全职交易员培训必学的EMA均线交叉策略和多周期分析。',
     keywords: '外汇交易员培训, 全职交易员培训, EMA均线, 指数移动平均线, EMA策略, 均线交叉, 趋势指标',
 

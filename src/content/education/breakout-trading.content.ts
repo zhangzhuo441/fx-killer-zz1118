@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const breakoutTradingContent = {
   zh: {
-    title: '突破交易策略完整指南丨汇刃丨职业交易员培训、外汇交易员培训',
+    title: '突破交易策略完整指南丨时空交易丨职业交易员培训、外汇交易员培训',
     description: '深入讲解突破交易（Breakout Trading）：支撑阻力突破、成交量确认、假突破识别。职业交易员和外汇交易员培训核心课程，掌握爆发性行情捕捉技巧。',
     keywords: '职业交易员培训, 外汇交易员培训, 突破交易, Breakout Trading, 支撑阻力, 假突破',
 

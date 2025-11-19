@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const tradingSessionsContent = {
   zh: {
-    title: '全球外汇交易时段详解丨汇刃丨日内交易员培训、外汇交易员培训',
+    title: '全球外汇交易时段详解丨时空交易丨日内交易员培训、外汇交易员培训',
     description: '深入解析全球外汇市场四大交易时段：悉尼、东京、伦敦、纽约。日内交易员和外汇交易员培训必备的最佳交易时间窗口、货币对活跃时段分析。',
     keywords: '日内交易员培训, 外汇交易员培训, 外汇交易时段, 外汇交易时间, 伦敦交易时段, 最佳交易时间',
 

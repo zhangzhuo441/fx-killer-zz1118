@@ -34,23 +34,28 @@ export default function UnifiedNavbar() {
         { name: language === 'zh' ? '风险管理' : 'Risk Management', link: '/education#risk' },
       ]
     },
+    // 注释掉新闻按钮
+    // {
+    //   name: language === 'zh' ? '新闻' : 'News',
+    //   link: "/news",
+    // },
+    // 注释掉行情按钮
+    // {
+    //   name: language === 'zh' ? '行情' : 'Market',
+    //   link: "/market-analysis",
+    // },
     {
-      name: language === 'zh' ? '新闻' : 'News',
-      link: "/news",
-    },
-    {
-      name: language === 'zh' ? '行情' : 'Market',
-      link: "/market-analysis",
-    },
-    {
+
       name: t('nav.liveTrading'),
       link: "/live-trading",
     },
+    // 注释掉博客按钮
+    // {
+    //   name: t('nav.blog'),
+    //   link: "/splan/blog",
+    // },
     {
-      name: t('nav.blog'),
-      link: "/splan/blog",
-    },
-    {
+
       name: t('nav.psychology'),
       link: "/splan/psychology-test",
     },
@@ -62,11 +67,13 @@ export default function UnifiedNavbar() {
       name: language === 'zh' ? '日历' : 'Calendar',
       link: "/economic-calendar",
     },
+    // 注释掉天梯按钮
+    // {
+    //   name: language === 'zh' ? '天梯' : 'Leaderboard',
+    //   link: "/top-traders",
+    // },
     {
-      name: language === 'zh' ? '天梯' : 'Leaderboard',
-      link: "/top-traders",
-    },
-    {
+
       name: t('nav.tradingTools'),
       link: "/tools/position-calculator",
       hasDropdown: true,

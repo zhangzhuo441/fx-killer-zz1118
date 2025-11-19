@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import EmailContactModal from '@/components/custom/EmailContactModal';
 import BrandName from '@/components/custom/BrandName';
+// Note: The BrandName component is now updated to display '时空交易'
 import BrandSlogans from '@/components/custom/BrandSlogans';
 import { FadeInSlide, ScaleFadeIn, HoverCard, PulseButton, FloatingBadge, StaggeredFadeIn } from '@/components/custom/AnimatedSection';
 import Testimonials from '@/components/custom/Testimonials';

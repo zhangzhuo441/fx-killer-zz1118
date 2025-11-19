@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const stopLossStrategiesContent = {
   zh: {
-    title: '止损策略大全丨汇刃丨外汇交易员培训、日内交易员培训',
+    title: '止损策略大全丨时空交易丨外汇交易员培训、日内交易员培训',
     description: '深入讲解外汇交易止损策略：固定点数止损、ATR动态止损、技术位止损、追踪止损。外汇交易员和日内交易员培训必备的实战止损设置技巧，保护资金优化盈利。',
     keywords: '外汇交易员培训, 日内交易员培训, 止损策略, 止损设置, ATR止损, 技术止损, 追踪止损',
 

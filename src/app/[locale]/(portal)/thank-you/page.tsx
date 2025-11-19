@@ -2,7 +2,7 @@ import LocaleLink from '@/components/navigation/LocaleLink';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '感谢您的联系 | Thank You',
+  title: '感谢您的联系 | 时空交易 | Thank You',
   description: '我们已收到您的信息，会尽快与您联系。',
 };
 
@@ -54,8 +54,8 @@ export default async function ThankYouPage({
           </p>
           <p className="text-md text-gray-500 dark:text-gray-500">
             {isZh
-              ? '期待与您一起开启职业交易员之旅！'
-              : 'Looking forward to starting your professional trading journey!'}
+              ? '期待与您一起开启时空交易职业交易员之旅！'
+              : 'Looking forward to starting your professional trading journey with 时空交易!'}
           </p>
         </div>
 

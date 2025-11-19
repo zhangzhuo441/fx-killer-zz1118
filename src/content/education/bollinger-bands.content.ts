@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const bollingerBandsContent = {
   zh: {
-    title: '布林带指标完整指南丨汇刃丨日内交易员培训、全职交易员培训',
+    title: '布林带指标完整指南丨时空交易丨日内交易员培训、全职交易员培训',
     description: '深入讲解布林带（Bollinger Bands）指标：计算公式、参数设置、经典交易策略。日内交易员培训和全职交易员培训必学的波动性指标应用技巧。',
     keywords: '日内交易员培训, 全职交易员培训, 日内交易员, 布林带, Bollinger Bands, BB指标, 布林带策略, 波动性指标',
 

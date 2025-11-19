@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const tradingPsychologyContent = {
   zh: {
-    title: '交易心理学丨汇刃丨职业交易员培训、全职交易员培训',
+    title: '交易心理学丨时空交易丨职业交易员培训、全职交易员培训',
     description: '深入讲解外汇交易心理学核心知识：恐惧贪婪心理、FOMO、过度交易、交易纪律、压力管理。职业交易员和全职交易员培训的核心内容，助你克服心理陷阱实现稳定盈利。',
     keywords: '职业交易员培训, 全职交易员培训, 交易心理学, 交易心理, 情绪管理, 交易纪律, FOMO, 贪婪恐惧',
 

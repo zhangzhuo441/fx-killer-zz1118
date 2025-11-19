@@ -68,7 +68,7 @@ export function generateBilingualMetadata(
       locale: language === 'zh' ? 'zh_CN' : 'en_US',
       alternateLocale: language === 'zh' ? ['en_US'] : ['zh_CN'],
       url: url ? `${baseUrl}/${locale}${url}` : undefined,
-      siteName: 'FX Killer | 汇刃',
+      siteName: 'FX Killer | 时空交易',
       images: options?.image ? [{
         url: options.image,
         width: 1200,

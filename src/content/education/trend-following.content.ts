@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const trendFollowingContent = {
   zh: {
-    title: '趋势跟踪完整指南丨汇刃丨外汇交易员培训、职业交易员培训',
+    title: '趋势跟踪完整指南丨时空交易丨外汇交易员培训、职业交易员培训',
     description: '深入讲解趋势跟踪（Trend Following）：趋势识别方法、EMA均线系统、趋势强度判断、加仓策略。外汇交易员和职业交易员培训必备的顺势交易系统。',
     keywords: '外汇交易员培训, 职业交易员培训, 趋势跟踪, Trend Following, EMA均线, 趋势交易, 加仓策略',
 

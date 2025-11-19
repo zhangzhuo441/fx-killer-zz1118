@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const priceActionContent = {
   zh: {
-    title: '价格行为交易策略丨汇刃丨外汇交易员培训、全职交易员培训',
+    title: '价格行为交易策略丨时空交易丨外汇交易员培训、全职交易员培训',
     description: '深入讲解价格行为交易：Pin Bar、Inside Bar、Rejection Candle、供需区域。外汇交易员和全职交易员培训课程分享裸K交易策略，无需指标的纯价格分析。',
     keywords: '外汇交易员培训, 全职交易员培训, 价格行为, Pin Bar, Inside Bar, 供需区域, 裸K交易',
 

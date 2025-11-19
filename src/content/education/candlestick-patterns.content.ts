@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const candlestickPatternsContent = {
   zh: {
-    title: 'K线形态识别指南丨汇刃丨职业交易员培训、日内交易员培训',
+    title: 'K线形态识别指南丨时空交易丨职业交易员培训、日内交易员培训',
     description: '深入讲解外汇K线形态：Doji十字星、Hammer锤子线、Engulfing吞没、Morning Star等。职业交易员和日内交易员培训必学的反转与持续形态识别技巧。',
     keywords: '职业交易员培训, 日内交易员培训, K线形态, 蜡烛图, Doji, Hammer, Engulfing, K线识别',
 

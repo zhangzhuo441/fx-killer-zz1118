@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const marketParticipantsContent = {
   zh: {
-    title: '外汇市场参与者深度解析丨汇刃丨职业交易员培训、全职交易员培训',
+    title: '外汇市场参与者深度解析丨时空交易丨职业交易员培训、全职交易员培训',
     description: '深入讲解外汇市场参与者：中央银行、商业银行、对冲基金、零售交易者。职业交易员和全职交易员培训必懂的订单流动、市场结构、机构vs散户差异。',
     keywords: '职业交易员培训, 全职交易员培训, 外汇市场参与者, 中央银行, 对冲基金, 订单流, 市场结构',
 

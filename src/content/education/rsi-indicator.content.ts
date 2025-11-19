@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const rsiIndicatorContent = {
   zh: {
-    title: 'RSI相对强弱指标完整指南丨汇刃丨全职交易员培训、职业交易员培训',
+    title: 'RSI相对强弱指标完整指南丨时空交易丨全职交易员培训、职业交易员培训',
     description: '深入讲解RSI相对强弱指标：计算公式、超买超卖区域、RSI背离形态。全职交易员和职业交易员培训课程，掌握RSI策略，配合布林带等指标提升交易胜率。',
     keywords: '全职交易员培训, 职业交易员培训, RSI指标, 相对强弱指标, RSI策略, RSI背离, 超买超卖, 技术分析',
 

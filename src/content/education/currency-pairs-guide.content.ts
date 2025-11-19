@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const currencyPairsGuideContent = {
   zh: {
-    title: '货币对完整解析丨汇刃丨外汇交易员培训、全职交易员培训',
+    title: '货币对完整解析丨时空交易丨外汇交易员培训、全职交易员培训',
     description: '深入讲解外汇货币对：EUR/USD、GBP/USD、USD/JPY等主要货币对特性、相关性分析、点值计算。外汇交易员和全职交易员培训必备的货币对选择与交易技巧。',
     keywords: '外汇交易员培训, 全职交易员培训, 货币对, 主要货币对, EUR/USD, GBP/USD, 货币对相关性',
 

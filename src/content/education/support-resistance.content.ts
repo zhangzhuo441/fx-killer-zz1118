@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const supportResistanceContent = {
   zh: {
-    title: '支撑阻力与趋势线丨汇刃丨职业交易员培训、外汇交易员培训',
+    title: '支撑阻力与趋势线丨时空交易丨职业交易员培训、外汇交易员培训',
     description: '深入讲解支撑阻力位：水平支撑阻力、动态支撑阻力、趋势线画法、通道交易。职业交易员和外汇交易员培训必备的关键位置交易技巧。',
     keywords: '职业交易员培训, 外汇交易员培训, 支撑阻力, 趋势线, 水平支撑, 突破交易, 假突破, 通道交易',
 

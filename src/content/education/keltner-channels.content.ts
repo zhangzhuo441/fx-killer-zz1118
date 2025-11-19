@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const keltnerChannelsContent = {
   zh: {
-    title: '肯特纳通道指标完整指南丨汇刃丨职业交易员培训、全职交易员培训',
+    title: '肯特纳通道指标完整指南丨时空交易丨职业交易员培训、全职交易员培训',
     description: '深入讲解肯特纳通道（Keltner Channels）指标：计算公式、参数设置、与布林带的区别。职业交易员和全职交易员培训必学的KC指标突破策略和趋势跟踪应用。',
     keywords: '职业交易员培训, 全职交易员培训, 肯特纳通道, Keltner Channels, KC指标, ATR通道',
 

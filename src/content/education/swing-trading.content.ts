@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const swingTradingContent = {
   zh: {
-    title: '波段交易完整指南丨汇刃丨全职交易员培训、日内交易员培训',
+    title: '波段交易完整指南丨时空交易丨全职交易员培训、日内交易员培训',
     description: '深入讲解波段交易（Swing Trading）：H4/D1时间框架分析、趋势识别方法、持仓管理技巧。全职交易员和日内交易员培训课程分享多日交易策略和实战案例。',
     keywords: '全职交易员培训, 日内交易员培训, 波段交易, Swing Trading, H4交易, D1交易, 趋势交易, 多日持仓',
 

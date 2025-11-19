@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
-    '外汇交易教育中心丨汇刃丨日内交易员培训、全职交易员培训',
+    '外汇交易教育中心丨时空交易丨日内交易员培训、全职交易员培训',
     'Forex Trading Education Center丨FX Killer丨Day Trader Training, Full-Time Trader Training',
     '完整的外汇交易教育体系，涵盖基础知识、技术分析、交易策略、风险管理。从零基础到职业交易员，FX Killer助你系统化学习外汇交易。25+专业课程，4大学习方向，100%免费学习。专业日内交易员培训和全职交易员培训体系。',
     'Complete forex trading education system covering fundamentals, technical analysis, trading strategies, and risk management. From beginner to professional trader with FX Killer. 25+ professional courses, 4 learning categories, 100% free. Professional day trader training and full-time trader training system.',
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: '/education',
       type: 'website',
       section: 'Education',
-      author: 'FX Killer Education Team',
+      author: '时空交易教育团队',
     }
   );
 }
@@ -239,12 +239,12 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
             <p className="text-xl mb-8 text-gray-300 dark:text-gray-700">
               {isZh ? (
                 <>
-                  完成教育中心的学习后，加入 FX Killer 30天系统化培训<br />
+                  完成教育中心的学习后，加入 时空交易 30天系统化培训<br />
                   通过考核，获得真实资金进行交易
                 </>
               ) : (
                 <>
-                  After completing the education center, join FX Killer 30-day systematic training<br />
+                  After completing the education center, join 时空交易 30-day systematic training<br />
                   Pass the evaluation and receive real funds for trading
                 </>
               )}

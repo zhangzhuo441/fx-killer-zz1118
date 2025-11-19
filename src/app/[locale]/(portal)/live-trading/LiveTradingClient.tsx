@@ -54,7 +54,7 @@ export default function LiveTradingClient({ members }: LiveTradingClientProps) {
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             {isZh
-              ? '观看汇刃矩阵成员的实时交易，学习专业交易决策'
+              ? '观看时空交易矩阵成员的实时交易，学习专业交易决策'
               : 'Watch our matrix members trade live and learn professional decision-making'}
           </p>
         </div>

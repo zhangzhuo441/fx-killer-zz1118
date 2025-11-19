@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const riskManagementContent = {
   zh: {
-    title: '外汇风险管理基础丨汇刃丨日内交易员培训、全职交易员培训',
+    title: '外汇风险管理基础丨时空交易丨日内交易员培训、全职交易员培训',
     description: '深入讲解外汇交易风险管理核心知识：2%规则、风险回报比、仓位控制、最大回撤。日内交易员和全职交易员培训必备的实战风险管理策略，助你长期稳定盈利。',
     keywords: '日内交易员培训, 全职交易员培训, 风险管理, 仓位控制, 资金管理, 止损设置, 风险回报比, 2%规则',
 

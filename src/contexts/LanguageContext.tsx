@@ -18,7 +18,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations: Record<Language, Record<string, string>> = {
   zh: {
     // 品牌名
-    'brand.name': '汇刃',
+    'brand.name': '时空交易',
     'brand.full': 'FX Killer',
 
     // 导航栏
@@ -40,7 +40,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta.dashboard': '进入交易系统',
 
     // Why Choose Section
-    'why.title': '为什么选择汇刃',
+    'why.title': '为什么选择时空交易',
     'why.subtitle': '专注筛选和培养顶尖外汇交易员，培养真正适合的人，留下极少数，劝返大多数',
 
     // Advantages
@@ -53,7 +53,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Comparison
     'comparison.vs': 'VS 传统外汇培训',
-    'comparison.fxkiller': '汇刃',
+    'comparison.fxkiller': '时空交易',
     'comparison.traditional': '传统培训机构',
     'comparison.free': '完全免费 - 无任何培训费用',
     'comparison.practical': '实战培养 - 30天系统化职业训练',
@@ -167,7 +167,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.focus': '专注外汇交易培训',
     'footer.contact.cultivate': '培养职业外汇交易员',
     'footer.contact.apply': '立即申请',
-    'footer.copyright': '© 汇刃 · 专业外汇交易员培训平台 · fxkiller.com',
+    'footer.copyright': '© 时空交易 · 专业外汇交易员培训平台 · fxkiller.com',
     'footer.disclaimer': ' 外汇交易有风险，投资需谨慎 · 本站内容仅供学习参考，不构成投资建议',
     'footer.partners.title': '合作伙伴',
     'footer.partners.brokers': '合作经纪商',
@@ -179,7 +179,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
-    'joinus.hero.title1': '汇刃',
+    'joinus.hero.title1': '时空交易',
     'joinus.hero.title2': '外汇交易员培训',
     'joinus.hero.subtitle': '培养真正适合的人，留下极少数，劝返大多数',
     'joinus.hero.stat1': '通过率',
@@ -344,7 +344,7 @@ const translations: Record<Language, Record<string, string>> = {
     'donate.how.step1.title': '完成心理测评',
     'donate.how.step1.desc': '首先完成心理测评，确保您具备成为职业交易员的心理素质',
     'donate.how.step2.title': '发送邮件申请',
-    'donate.how.step2.desc': '邮件至 x.stark.dylan@gmail.com，说明您的意向',
+    'donate.how.step2.desc': '邮件至 shikongjiaoyi@163.com，说明您的意向',
     'donate.how.step3.title': '获取捐赠地址',
     'donate.how.step3.desc': '我们将通过邮件回复您具体的 USDT/USDC 捐赠地址',
     'donate.how.step4.title': '完成捐赠并开始培训',
@@ -826,7 +826,7 @@ const translations: Record<Language, Record<string, string>> = {
     'donate.how.step1.title': 'Complete Psychology Test',
     'donate.how.step1.desc': 'First complete the psychology test to ensure you possess the psychological qualities to become a professional trader',
     'donate.how.step2.title': 'Send Email Application',
-    'donate.how.step2.desc': 'Email to x.stark.dylan@gmail.com explaining your intention',
+    'donate.how.step2.desc': 'Email to shikongjiaoyi@163.com explaining your intention',
     'donate.how.step3.title': 'Obtain Donation Address',
     'donate.how.step3.desc': 'We will reply via email with the specific USDT/USDC donation address',
     'donate.how.step4.title': 'Complete Donation and Begin Training',

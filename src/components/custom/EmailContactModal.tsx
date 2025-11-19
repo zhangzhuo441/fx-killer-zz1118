@@ -13,7 +13,7 @@ interface EmailContactModalProps {
 
 export default function EmailContactModal({ isOpen, onClose, title, emailSubject: customEmailSubject }: EmailContactModalProps) {
   const { t } = useLanguage();
-  const emailAddress = "x.stark.dylan@gmail.com";
+  const emailAddress = "shikongjiaoyi@163.com";
 
   const displayTitle = title || t('email.default.title');
   const emailSubject = customEmailSubject || t('email.subject');

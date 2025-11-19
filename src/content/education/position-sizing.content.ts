@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const positionSizingContent = {
   zh: {
-    title: '仓位控制与资金管理丨汇刃丨职业交易员培训、日内交易员培训',
+    title: '仓位控制与资金管理丨时空交易丨职业交易员培训、日内交易员培训',
     description: '深入讲解外汇交易仓位控制：固定比例法、凯利公式、ATR动态调整、最大回撤控制。职业交易员和日内交易员培训必备的实战仓位管理技巧，优化资金利用率。',
     keywords: '职业交易员培训, 日内交易员培训, 仓位控制, 资金管理, 凯利公式, 动态仓位, ATR仓位',
 

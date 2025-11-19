@@ -246,7 +246,7 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
               </li>
               <li className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                 <span className="text-black dark:text-white font-bold">•</span>
-                <span>{language === 'zh' ? '符合汇刃品牌风格的HTML样式' : 'FX Killer brand-style HTML formatting'}</span>
+                <span>{language === 'zh' ? '符合时空交易品牌风格的HTML样式' : 'FX Killer brand-style HTML formatting'}</span>
               </li>
               <li className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                 <span className="text-black dark:text-white font-bold">•</span>

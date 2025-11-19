@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const leverageMarginContent = {
   zh: {
-    title: '杠杆与保证金详解丨汇刃丨日内交易员培训、外汇交易员培训',
+    title: '杠杆与保证金详解丨时空交易丨日内交易员培训、外汇交易员培训',
     description: '全面讲解外汇杠杆和保证金机制：杠杆比例选择、保证金计算、强制平仓规则、爆仓风险管理。日内交易员和外汇交易员培训必备的杠杆使用技巧，实现稳健盈利。',
     keywords: '日内交易员培训, 外汇交易员培训, 外汇杠杆, 保证金交易, 杠杆比例, 强制平仓, 保证金计算',
 

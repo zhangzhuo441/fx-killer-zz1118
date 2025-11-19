@@ -26,13 +26,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://fxkiller.com'),
   title: {
-    default: "FX Killer - Professional FX Trader Training Platform | 汇刃·外汇交易职业交易员培训",
+    default: "FX Killer - Professional FX Trader Training Platform | 时空交易·外汇交易职业交易员培训",
     template: "%s | FX Killer"
   },
-  description: "FX Killer (汇刃) - 专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。培养真正适合外汇市场的专业交易员。",
+  description: "FX Killer (时空交易) - 专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。培养真正适合外汇市场的专业交易员。",
   keywords: [
     "FX Killer",
-    "汇刃",
+    "时空交易",
     "外汇交易",
     "外汇培训",
     "职业交易员",
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     alternateLocale: ["en_US"],
     url: "https://fxkiller.com",
-    siteName: "FX Killer | 汇刃",
-    title: "FX Killer - Professional FX Trader Training Platform | 汇刃·职业交易员培训",
+    siteName: "FX Killer | 时空交易",
+    title: "FX Killer - Professional FX Trader Training Platform | 时空交易·职业交易员培训",
     description: "专注于外汇交易的职业交易员培训平台。提供系统化外汇交易培训、实战训练和资金支持。通过专业考核即可获得资金管理权限，分润比例高达90%。",
     images: [
       {

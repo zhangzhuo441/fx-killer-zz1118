@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const scalpingContent = {
   zh: {
-    title: '剥头皮交易完整指南丨汇刃丨日内交易员培训、外汇交易员培训',
+    title: '剥头皮交易完整指南丨时空交易丨日内交易员培训、外汇交易员培训',
     description: '深入讲解剥头皮交易（Scalping）：M1/M5超短线分析、快速入场出场、点差成本控制。日内交易员和外汇交易员培训课程分享专业剥头皮交易系统。',
     keywords: '日内交易员培训, 外汇交易员培训, 剥头皮交易, Scalping, M1交易, M5交易, 超短线交易, 快速交易',
 

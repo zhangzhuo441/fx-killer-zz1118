@@ -27,17 +27,17 @@ export const blogPosts: BlogPost[] = [
  id: '1',
  slug: 'about-fx-killer',
  title: {
- zh: '关于汇刃 (FX Killer) - 军事化外汇交易员训练营',
+ zh: '关于时空交易 (FX Killer) - 军事化外汇交易员训练营',
  en: 'About FX Killer - Military-Style Forex Trader Training Camp'
  },
  excerpt: {
- zh: '汇刃 (FX Killer) 是一个专注于筛选和培养外汇交易员的训练营。我们的理念：培养真正适合的人，留下极少数，劝返大多数。通过率10%-15%，30个工作日完整培训，盈利分成60%-90%。',
+ zh: '时空交易 (FX Killer) 是一个专注于筛选和培养外汇交易员的训练营。我们的理念：培养真正适合的人，留下极少数，劝返大多数。通过率10%-15%，30个工作日完整培训，盈利分成60%-90%。',
  en: 'FX Killer is a training camp focused on selecting and cultivating forex traders. Our philosophy: cultivating those truly suited, retaining the few, advising the majority. Pass rate 10%-15%, 30 working days complete training, 60%-90% profit share.'
  },
  content: {
- zh: `<h1 class="text-4xl font-bold text-center mb-8 text-black dark:text-white">关于汇刃 (FX Killer)</h1>
+ zh: `<h1 class="text-4xl font-bold text-center mb-8 text-black dark:text-white">关于时空交易 (FX Killer)</h1>
 
-<p class="text-base leading-relaxed mb-8 text-center text-gray-700 dark:text-gray-300">汇刃是一个专注于筛选和培养顶尖外汇交易员的军事化训练营。我们不追求数量，只培养真正适合的人。这是一个严格、高强度、高淘汰率的专业训练项目。</p>
+<p class="text-base leading-relaxed mb-8 text-center text-gray-700 dark:text-gray-300">时空交易是一个专注于筛选和培养顶尖外汇交易员的军事化训练营。我们不追求数量，只培养真正适合的人。这是一个严格、高强度、高淘汰率的专业训练项目。</p>
 
 <div class="bg-black dark:bg-white text-white dark:text-black p-8 mb-8 border-2 border-black dark:border-white">
 <p class="text-3xl font-bold mb-4 text-white dark:text-black text-center">培养真正适合的人，留下极少数，劝返大多数</p>
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2 class="text-3xl font-bold text-center mb-4 text-black dark:text-white border-b-4 border-black dark:border-white inline-block pb-2 w-full">我们的培训理念</h2>
 
-<p class="text-base leading-relaxed mb-6 text-gray-700 dark:text-gray-300">汇刃采用军事化管理模式，因为我们深知：交易是一场心理战争，需要极强的纪律性、执行力和心理素质。我们的培训不是教你如何快速致富，而是培养你成为一名专业的、可持续盈利的交易员。</p>
+<p class="text-base leading-relaxed mb-6 text-gray-700 dark:text-gray-300">时空交易采用军事化管理模式，因为我们深知：交易是一场心理战争，需要极强的纪律性、执行力和心理素质。我们的培训不是教你如何快速致富，而是培养你成为一名专业的、可持续盈利的交易员。</p>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 <div class="bg-white dark:bg-gray-800 p-6 border-2 border-gray-200 dark:border-gray-700">
@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2 class="text-3xl font-bold text-center mb-4 text-black dark:text-white border-b-4 border-black dark:border-white inline-block pb-2 w-full">收入体系</h2>
 
-<p class="text-base leading-relaxed mb-6 text-gray-700 dark:text-gray-300">汇刃采用分润制度，你的收入完全取决于你的交易盈利。我们不收取任何培训费用，也不要求你投入自己的资金。公司提供配资，你只需专注于交易。</p>
+<p class="text-base leading-relaxed mb-6 text-gray-700 dark:text-gray-300">时空交易采用分润制度，你的收入完全取决于你的交易盈利。我们不收取任何培训费用，也不要求你投入自己的资金。公司提供配资，你只需专注于交易。</p>
 
 <div class="bg-black dark:bg-white text-white dark:text-black p-8 mb-8 border-2 border-black dark:border-white">
 <p class="text-2xl font-bold mb-6 text-white dark:text-black text-center">分润比例：60% - 90%</p>
@@ -513,7 +513,7 @@ export const blogPosts: BlogPost[] = [
 <div class="flex-grow">
 <p class="text-xl font-bold mb-2 text-black dark:text-white">邮件联系团队长</p>
 <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">通过邮件提交你的申请资料，包括：个人简历、学历证明、心理测评结果、申请理由（200字以内）。</p>
-<p class="text-sm text-gray-500 dark:text-gray-500">邮箱：x.stark.dylan@gmail.com</p>
+<p class="text-sm text-gray-500 dark:text-gray-500">邮箱：shikongjiaoyi@163.com</p>
 </div>
 </div>
 </div>
@@ -943,7 +943,7 @@ export const blogPosts: BlogPost[] = [
 <div class="flex-grow">
 <p class="text-xl font-bold mb-2 text-black dark:text-white">Email Team Leader</p>
 <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">Submit your application materials via email, including: resume, education certificates, psychological assessment results, application reason (within 200 words).</p>
-<p class="text-sm text-gray-500 dark:text-gray-500">Email: x.stark.dylan@gmail.com</p>
+<p class="text-sm text-gray-500 dark:text-gray-500">Email: shikongjiaoyi@163.com</p>
 </div>
 </div>
 </div>
@@ -1028,7 +1028,7 @@ export const blogPosts: BlogPost[] = [
 
 <div class="bg-black dark:bg-white text-white dark:text-black p-8 mb-8 border-2 border-black dark:border-white">
 <p class="text-3xl font-bold mb-4 text-white dark:text-black text-center">Are you ready to accept the challenge?</p>
-<p class="text-lg text-center text-white dark:text-black">Email us: x.stark.dylan@gmail.com</p>
+<p class="text-lg text-center text-white dark:text-black">Email us: shikongjiaoyi@163.com</p>
 </div>
 
 <p class="text-base leading-relaxed mb-4 text-gray-700 dark:text-gray-300"><strong class="font-bold text-black dark:text-white">Risk Warning:</strong> Forex trading carries risk, investment requires caution. Site content for learning reference only, not investment advice.</p>
@@ -2860,7 +2860,7 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <div class="bg-black dark:bg-white text-white dark:text-black p-8 mb-8 border-2 border-black dark:border-white">
-<p class="text-2xl font-bold mb-4 text-white dark:text-black text-center">💡 汇刃推荐：波段交易策略</p>
+<p class="text-2xl font-bold mb-4 text-white dark:text-black text-center">💡 时空交易推荐：波段交易策略</p>
 <p class="text-lg leading-relaxed text-center text-white dark:text-black">风险可控、时间灵活、盈利目标明确，最适合大多数交易员。</p>
 </div>
 
@@ -2919,7 +2919,7 @@ export const blogPosts: BlogPost[] = [
 <div class="space-y-6 mb-8">
 <div class="bg-white dark:bg-gray-800 p-6 border-2 border-gray-200 dark:border-gray-700">
 <p class="text-xl font-bold mb-4 text-black dark:text-white">📈 案例：从$5,000到$50,000的12个月</p>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">某汇刃学员的真实交易记录（已脱敏）</p>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">某时空交易学员的真实交易记录（已脱敏）</p>
 <div class="overflow-x-auto">
 <table class="w-full border-2 border-gray-300 dark:border-gray-700">
 <thead>

@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
-    '仓位计算器丨汇刃丨日内交易员培训、全职交易员培训',
+    '仓位计算器丨时空交易丨日内交易员培训、全职交易员培训',
     'Position Calculator丨FX Killer丨Day Trader Training, Full-Time Trader Training',
     '专业仓位计算器，根据账户余额、风险比例、止损点数自动计算最佳交易手数。日内交易员培训和全职交易员培训必备工具，科学管理资金，提高交易稳定性。',
     'Professional position calculator. Auto-calculates optimal lot size based on account balance, risk percentage and stop loss. Essential tool for day trader training and full-time trader training to manage funds scientifically.',

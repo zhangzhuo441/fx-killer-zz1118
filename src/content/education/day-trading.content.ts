@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const dayTradingContent = {
   zh: {
-    title: '日内交易完整指南丨汇刃丨职业交易员培训、日内交易员培训',
+    title: '日内交易完整指南丨时空交易丨职业交易员培训、日内交易员培训',
     description: '深入讲解日内交易（Day Trading）：时间框架选择、入场出场策略、仓位控制、止损设置。职业交易员和日内交易员培训课程，分享M5、M15、H1图表的短线交易技巧。',
     keywords: '职业交易员培训, 日内交易员培训, 日内交易, Day Trading, 短线交易, M5交易, M15交易, 日内策略',
 
