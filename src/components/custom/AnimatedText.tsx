@@ -163,7 +163,7 @@ export default function AnimatedText({ className = "", loop = true, delay = 0 }:
           </div>
         </div>
 
-        {/* FxKiller */}
+        {/* Space-time trading */}
         <div className="flex items-center gap-1">
           {/* F */}
           <motion.span

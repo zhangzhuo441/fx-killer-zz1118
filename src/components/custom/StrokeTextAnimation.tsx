@@ -169,7 +169,7 @@ export default function StrokeTextAnimation({ className = "", loop = true }: Str
         />
       </svg>
 
-      {/* FxKiller - 英文动画 */}
+      {/* Space-time trading - 英文动画 */}
       <svg
         width="300"
         height="100"

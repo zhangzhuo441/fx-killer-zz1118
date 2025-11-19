@@ -32,7 +32,7 @@ export default function PageLoader() {
     };
   }, []);
 
-  const text = "时空交易 FxKiller";
+  const text = "时空交易 Space-time trading";
   const chars = text.split("");
   const textColor = isDark ? "#ffffff" : "#000000";
 

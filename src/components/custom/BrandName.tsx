@@ -21,7 +21,7 @@ export default function BrandName({ inNavbar = false, inHero = false }: BrandNam
     return () => clearTimeout(timer);
   }, []);
 
-  const text = language === 'zh' ? '时空交易' : 'FXKiller';
+  const text = language === 'zh' ? '时空交易' : 'Space-time trading';
   const chars = text.split('');
 
   return (

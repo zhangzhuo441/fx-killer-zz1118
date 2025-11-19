@@ -84,21 +84,21 @@ export default function ParticleTestPage() {
           </div>
         </div>
 
-        {/* FxKiller 动画 */}
-        <div className="mb-8">
-          <h3 className="text-xl font-bold text-center mb-4 text-black dark:text-white">
-            FxKiller
-          </h3>
-          <div className="w-full h-40 border-2 border-black dark:border-white bg-gray-50 dark:bg-gray-900">
-            <ParticleText
-              text="FxKiller"
-              fontSize={80}
-              color="#000000"
-              particleCount={3000}
-              animationDuration={2500}
-            />
-          </div>
+        {/* Space-time trading 动画 */}
+      <div className="mb-8">
+        <h3 className="text-xl font-bold text-center mb-4 text-black dark:text-white">
+          Space-time trading
+        </h3>
+        <div className="w-full h-40 border-2 border-black dark:border-white bg-gray-50 dark:bg-gray-900">
+          <ParticleText
+            text="Space-time trading"
+            fontSize={80}
+            color="#000000"
+            particleCount={3000}
+            animationDuration={2500}
+          />
         </div>
+      </div>
 
         <div className="mt-4 text-center text-gray-600 dark:text-gray-400">
           <p>✨ 粒子汇聚效果</p>

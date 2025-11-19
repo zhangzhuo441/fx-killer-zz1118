@@ -56,8 +56,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.typewriter} text="时空交易 FxKiller" type="typewriter" />
-          </div>
+          <ModernTextAnimation key={keys.typewriter} text="时空交易 Space-time trading" type="typewriter" />
+        </div>
         </div>
 
         {/* 方案B：渐变色流动 */}
@@ -71,8 +71,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.gradient} text="时空交易 FxKiller" type="gradient" />
-          </div>
+          <ModernTextAnimation key={keys.gradient} text="时空交易 Space-time trading" type="gradient" />
+        </div>
         </div>
 
         {/* 方案C：故障效果 */}
@@ -86,8 +86,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-black dark:bg-gray-950">
-            <ModernTextAnimation key={keys.glitch} text="时空交易 FxKiller" type="glitch" />
-          </div>
+          <ModernTextAnimation key={keys.glitch} text="时空交易 Space-time trading" type="glitch" />
+        </div>
         </div>
 
         {/* 方案D：霓虹灯效果 */}
@@ -101,8 +101,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-black dark:bg-gray-950">
-            <ModernTextAnimation key={keys.neon} text="时空交易 FxKiller" type="neon" />
-          </div>
+          <ModernTextAnimation key={keys.neon} text="时空交易 Space-time trading" type="neon" />
+        </div>
         </div>
 
         {/* 方案E：简单缩放 */}
@@ -116,8 +116,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.scale} text="时空交易 FxKiller" type="scale" />
-          </div>
+          <ModernTextAnimation key={keys.scale} text="时空交易 Space-time trading" type="scale" />
+        </div>
         </div>
 
         {/* 方案F：文字分裂 */}
@@ -131,8 +131,8 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.split} text="时空交易 FxKiller" type="split" />
-          </div>
+          <ModernTextAnimation key={keys.split} text="时空交易 Space-time trading" type="split" />
+        </div>
         </div>
 
         {/* 底部提示 */}
