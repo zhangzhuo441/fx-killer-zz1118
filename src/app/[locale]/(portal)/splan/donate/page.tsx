@@ -30,12 +30,20 @@ export default function DonatePage() {
         const response = await fetch('/api/config/COFFEE');
         if (response.ok) {
           const data = await response.json();
-          setWalletAddress(data.key_content || '');
+          if (data.key_content) {
+            setWalletAddress(data.key_content);
+          } else {
+            console.warn('Wallet address found but empty, using fallback');
+            setWalletAddress('bc1qxyz123'); // Fallback wallet address
+          }
         } else {
-          console.error('Failed to fetch wallet address');
+          const errorData = await response.json().catch(() => ({}));
+          console.error('Failed to fetch wallet address:', errorData.error || response.statusText);
+          setWalletAddress('bc1qxyz123'); // Fallback wallet address on API error
         }
       } catch (error) {
         console.error('Error fetching wallet address:', error);
+        setWalletAddress('bc1qxyz123'); // Fallback wallet address on network error
       } finally {
         setLoadingAddress(false);
       }

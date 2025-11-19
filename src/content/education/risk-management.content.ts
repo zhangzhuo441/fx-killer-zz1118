@@ -73,7 +73,7 @@ export const riskManagementContent = {
     ],
 
     ctaTitle: '想要系统学习风险管理？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业风险管理工具和一对一指导',
+    ctaDescription: '加入 Space-time trading 培训计划，获取专业风险管理工具和一对一指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -84,7 +84,7 @@ export const riskManagementContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Forex Risk Management Fundamentals丨FX Killer丨Day Trader Training, Full-Time Trader Training',
+    title: 'Risk Management Fundamentals丨Space-time trading丨Day Trader Training, Full-Time Trader Training',
     description: 'Comprehensive forex risk management guide: 2% rule, risk-reward ratio, position sizing, maximum drawdown. Day trader training and full-time trader training essential practical risk management strategies for long-term trading success.',
     keywords: 'Day Trader Training, Full-Time Trader Training, risk management, position control, money management, stop loss',
 
@@ -155,7 +155,7 @@ export const riskManagementContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Risk Management?',
-    ctaDescription: 'Join FX Killer training program for professional risk management tools and one-on-one guidance',
+    ctaDescription: 'Join Space-time trading training program for professional risk management tools and one-on-one guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Assessment',
 

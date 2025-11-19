@@ -81,7 +81,7 @@ export const marketParticipantsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Forex Market Participants Deep Analysis丨FX Killer丨Professional Trader Training, Full-Time Trader Training',
+    title: 'Market Participants Deep Analysis丨Space-time trading丨Professional Trader Training, Full-Time Trader Training',
     description: 'In-depth explanation of forex market participants: central banks, commercial banks, hedge funds, retail traders roles and influence. Professional trader training and full-time trader training essential knowledge for understanding order flow, market structure, institutional vs retail differences.',
     keywords: 'Professional Trader Training, Full-Time Trader Training, forex market participants, central banks, hedge funds, market structure',
 

@@ -70,7 +70,7 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 Space-time trading 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const keltnerChannelsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Keltner Channels Guide丨FX Killer丨Professional Trader Training, Full-Time Trader Training',
+    title: 'Complete Keltner Channels Guide丨Space-time trading丨Professional Trader Training, Full-Time Trader Training',
     description: 'In-depth explanation of Keltner Channels indicator: calculation formulas, parameter settings, differences from Bollinger Bands. Professional trader training and full-time trader training essential curriculum for mastering KC breakout strategies and trend following.',
     keywords: 'Professional Trader Training, Full-Time Trader Training, Keltner Channels, KC indicator, ATR channels',
 
@@ -149,7 +149,7 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join Space-time trading training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

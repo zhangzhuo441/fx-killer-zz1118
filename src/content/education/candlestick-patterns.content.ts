@@ -70,7 +70,7 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: '想要系统学习K线形态交易？',
-    ctaDescription: '加入FX Killer培训计划，获取专业K线分析工具和实战指导',
+    ctaDescription: '加入Space-time trading培训计划，获取专业K线分析工具和实战指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费技术分析工具',
 
@@ -81,7 +81,7 @@ export const candlestickPatternsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Candlestick Patterns Recognition Guide丨FX Killer丨Professional Trader Training, Day Trader Training',
+    title: 'Candlestick Patterns Recognition Guide丨Space-time trading丨Professional Trader Training, Day Trader Training',
     description: 'In-depth explanation of forex candlestick patterns: Doji, Hammer, Engulfing, Morning/Evening Star. Professional trader training and day trader training essential curriculum for mastering reversal and continuation pattern recognition.',
     keywords: 'Professional Trader Training, Day Trader Training, candlestick patterns, Doji, Hammer, Engulfing, candle recognition',
 
@@ -149,7 +149,7 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Candlestick Trading?',
-    ctaDescription: 'Join FX Killer training for professional candlestick analysis tools and practical guidance',
+    ctaDescription: 'Join Space-time trading training for professional candlestick analysis tools and practical guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Technical Analysis Tools',
 

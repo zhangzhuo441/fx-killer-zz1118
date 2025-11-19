@@ -217,7 +217,7 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
         <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-12 mb-20">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-black dark:text-white">
-              {isZh ? '为什么选择 FX Killer 教育中心？' : 'Why Choose FX Killer Education Center?'}
+              {isZh ? '为什么选择 Space-time trading 教育中心？' : 'Why Choose Space-time trading Education Center?'}
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
               {isZh

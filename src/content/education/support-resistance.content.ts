@@ -70,7 +70,7 @@ export const supportResistanceContent = {
     ],
 
     ctaTitle: '想要精通支撑阻力交易？',
-    ctaDescription: '加入FX Killer培训，学习专业支撑阻力识别与突破交易策略',
+    ctaDescription: '加入Space-time trading培训，学习专业支撑阻力识别与突破交易策略',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费技术分析工具',
 
@@ -81,7 +81,7 @@ export const supportResistanceContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Support Resistance & Trend Lines丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    title: 'Support Resistance & Trend Lines丨Space-time trading丨Professional Trader Training, Trading Training',
     description: 'In-depth explanation of support and resistance: horizontal S/R, dynamic S/R (MA), trendline drawing, channel trading, breakout and false breakout identification. Professional trader training and forex trader training essential knowledge for key level trading techniques.',
     keywords: 'Professional Trader Training, Forex Trader Training, support resistance, trendlines, horizontal support, breakout trading',
 
@@ -149,7 +149,7 @@ export const supportResistanceContent = {
     ],
 
     ctaTitle: 'Want to Master Support Resistance Trading?',
-    ctaDescription: 'Join FX Killer training to learn professional S/R identification and breakout strategies',
+    ctaDescription: 'Join Space-time trading training to learn professional S/R identification and breakout strategies',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Technical Analysis Tools',
 

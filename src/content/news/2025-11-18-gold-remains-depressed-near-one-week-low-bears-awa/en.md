@@ -1,10 +1,10 @@
 ---
 title: "Gold remains depressed near one-week low; bears await break below $4,000"
 date: "2025-11-18 05:42:38"
-description: "Gold (XAU/USD) prolongs its downtrend for the fourth straight day and drops to an over one-week low on Tuesday, though i. Free forex trading training by FX Killer."
-keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","FX Killer"]
+description: "Gold (XAU/USD) prolongs its downtrend for the fourth straight day and drops to an over one-week low on Tuesday, though i. Free trading training by Space-time trading."
+keywords: ["forex","trading","market analysis","forex news","trading training","trader incubation","Space-time trading"]
 category: "Forex News"
-source: "FX Killer Analysis Team"
+source: "Space-time trading Analysis Team"
 language: "en"
 ---
 
@@ -14,15 +14,15 @@ Traders are now closely monitoring for a potential break below this key threshol
 
 ---
 
-#### About FX Killer Trader Incubation Program
+#### About Space-time trading Trader Incubation Program
 
-Want to become a professional trader? FX Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
+Want to become a professional trader? Space-time trading offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
 
 👉 [Join Free Training Program](/splan/join-us) | [Trading Psychology Assessment](/splan/psychology-test)
 
 ---
 
-**Data Source**: FX Killer Analysis Team
+**Data Source**: Space-time trading Analysis Team
 **Updated**: 2025-11-18 05:42
 
 **Disclaimer**: This article is for reference only and does not constitute investment advice. Forex trading involves risks; please make decisions carefully.

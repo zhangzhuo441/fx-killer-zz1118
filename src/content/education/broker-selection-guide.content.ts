@@ -64,13 +64,13 @@ export const brokerSelectionContent = {
       {
         href: '/partners/brokers',
         icon: '🤝',
-        title: 'FX Killer合作经纪商',
+        title: 'Space-time trading合作经纪商',
         description: '查看我们推荐的受监管经纪商'
       }
     ],
 
     ctaTitle: '寻找可靠的外汇经纪商？',
-    ctaDescription: 'FX Killer只推荐受严格监管、信誉良好的合作经纪商',
+    ctaDescription: 'Space-time trading只推荐受严格监管、信誉良好的合作经纪商',
     ctaPrimaryButton: '查看合作经纪商',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const brokerSelectionContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Forex Broker Selection Guide丨FX Killer丨Day Trader Training, Full-Time Trader Training',
+    title: 'Forex Broker Selection Guide丨Space-time trading丨Day Trader Training, Full-Time Trader Training',
     description: 'Comprehensive guide to forex broker selection criteria: regulation verification, broker type comparison (MM/STP/ECN), fund security. Day trader training and full-time trader training essential knowledge to avoid scam brokers.',
     keywords: 'Day Trader Training, Full-Time Trader Training, forex broker, broker selection, forex regulation, ECN broker',
 
@@ -143,13 +143,13 @@ export const brokerSelectionContent = {
       {
         href: '/partners/brokers',
         icon: '🤝',
-        title: 'FX Killer Partner Brokers',
+        title: 'Space-time trading Partner Brokers',
         description: 'View our recommended regulated brokers'
       }
     ],
 
     ctaTitle: 'Looking for Reliable Forex Brokers?',
-    ctaDescription: 'FX Killer only recommends strictly regulated, reputable partner brokers',
+    ctaDescription: 'Space-time trading only recommends strictly regulated, reputable partner brokers',
     ctaPrimaryButton: 'View Partner Brokers',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -73,7 +73,7 @@ export const positionSizingContent = {
     ],
 
     ctaTitle: '想要优化你的仓位管理？',
-    ctaDescription: '使用 FX Killer 专业仓位计算工具，实现自动化风险控制',
+    ctaDescription: '使用 Space-time trading 专业仓位计算工具，实现自动化风险控制',
     ctaPrimaryButton: '免费使用工具',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,7 +84,7 @@ export const positionSizingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Position Sizing & Money Management丨FX Killer丨Professional Trader Training, Day Trader Training',
+    title: 'Position Sizing & Money Management丨Space-time trading丨Professional Trader Training, Day Trader Training',
     description: 'Comprehensive guide to forex position sizing methods: fixed fractional, Kelly Criterion, ATR dynamic adjustment, maximum drawdown control. Professional trader training and day trader training essential curriculum sharing practical position management techniques for optimizing capital efficiency.',
     keywords: 'Professional Trader Training, Day Trader Training, position sizing, money management, Kelly formula, ATR position',
 
@@ -155,7 +155,7 @@ export const positionSizingContent = {
     ],
 
     ctaTitle: 'Want to Optimize Your Position Management?',
-    ctaDescription: 'Use FX Killer professional position calculation tools for automated risk control',
+    ctaDescription: 'Use Space-time trading professional position calculation tools for automated risk control',
     ctaPrimaryButton: 'Use Tools Free',
     ctaSecondaryButton: 'Learn About Training',
 

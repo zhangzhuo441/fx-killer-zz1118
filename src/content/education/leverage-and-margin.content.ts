@@ -70,7 +70,7 @@ export const leverageMarginContent = {
     ],
 
     ctaTitle: '想要学习专业的杠杆管理策略？',
-    ctaDescription: '加入 FX Killer 培训，掌握职业交易员的风险控制技巧',
+    ctaDescription: '加入 Space-time trading 培训，掌握职业交易员的风险控制技巧',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const leverageMarginContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Leverage and Margin Explained丨FX Killer丨Day Trader Training, Forex Trader Training',
+    title: 'Leverage and Margin Explained丨Space-time trading丨Day Trader Training, Trading Training',
     description: 'Comprehensive explanation of forex leverage and margin: leverage ratio selection, margin calculation, margin call rules, liquidation risk management. Day trader training and forex trader training essential knowledge for learning to use leverage rationally for stable profitability.',
     keywords: 'Day Trader Training, Forex Trader Training, forex leverage, margin trading, leverage ratio, margin call',
 
@@ -149,7 +149,7 @@ export const leverageMarginContent = {
     ],
 
     ctaTitle: 'Want to Master Professional Leverage Management?',
-    ctaDescription: 'Join FX Killer training to learn professional risk control techniques',
+    ctaDescription: 'Join Space-time trading training to learn professional risk control techniques',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

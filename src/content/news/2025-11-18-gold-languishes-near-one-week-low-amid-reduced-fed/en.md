@@ -1,10 +1,10 @@
 ---
 title: "Gold languishes near one-week low amid reduced Fed rate cut bets"
 date: "2025-11-18 05:18:55"
-description: "Gold (XAU/USD) remains under some selling pressure for the fourth consecutive day on Tuesday and drifts back closer to a. Free forex trading training by FX Killer."
-keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","FX Killer"]
+description: "Gold (XAU/USD) remains under some selling pressure for the fourth consecutive day on Tuesday and drifts back closer to a. Free trading training by Space-time trading."
+keywords: ["forex","trading","market analysis","forex news","trading training","trader incubation","Space-time trading"]
 category: "Forex News"
-source: "FX Killer Analysis Team"
+source: "Space-time trading Analysis Team"
 language: "en"
 ---
 
@@ -14,15 +14,15 @@ As gold struggles near this critical technical level, traders are closely monito
 
 ---
 
-#### About FX Killer Trader Incubation Program
+#### About Space-time trading Trader Incubation Program
 
-Want to become a professional trader? FX Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
+Want to become a professional trader? Space-time trading offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
 
 👉 [Join Free Training Program](/splan/join-us) | [Trading Psychology Assessment](/splan/psychology-test)
 
 ---
 
-**Data Source**: FX Killer Analysis Team
+**Data Source**: Space-time trading Analysis Team
 **Updated**: 2025-11-18 05:18
 
 **Disclaimer**: This article is for reference only and does not constitute investment advice. Forex trading involves risks; please make decisions carefully.

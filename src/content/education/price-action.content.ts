@@ -70,7 +70,7 @@ export const priceActionContent = {
     ],
 
     ctaTitle: '想要掌握价格行为交易的精髓？',
-    ctaDescription: '加入FX Killer专业培训，学习裸K交易和供需区域策略',
+    ctaDescription: '加入Space-time trading专业培训，学习裸K交易和供需区域策略',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const priceActionContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Price Action Trading Strategy丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    title: 'Price Action Trading Strategy丨Space-time trading丨Trading Training, Full-Time Trader Training',
     description: 'In-depth explanation of price action trading: Pin Bar, Inside Bar, Rejection Candle, Supply/Demand zones, naked chart trading strategies. Forex trader training and full-time trader training curriculum for mastering pure price analysis without indicators.',
     keywords: 'Forex Trader Training, Full-Time Trader Training, price action, Pin Bar, Inside Bar, supply demand zones',
 
@@ -149,7 +149,7 @@ export const priceActionContent = {
     ],
 
     ctaTitle: 'Want to Master the Essence of Price Action Trading?',
-    ctaDescription: 'Join FX Killer professional training to learn naked trading and supply/demand strategies',
+    ctaDescription: 'Join Space-time trading professional training to learn naked trading and supply/demand strategies',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

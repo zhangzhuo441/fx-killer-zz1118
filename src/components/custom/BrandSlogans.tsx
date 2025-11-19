@@ -8,7 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const slogans = [
   {
     zh: "时空交易，外汇交易市场的黄金法则",
-    en: "FX Killer, the sharp blade in forex trading"
+    en: "Space-time trading, the sharp blade in forex trading"
   },
   {
     zh: "精准，如刀锋般锐利",

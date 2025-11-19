@@ -70,7 +70,7 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 Space-time trading 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const emaMovingAveragesContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete EMA Moving Averages Guide丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    title: 'Complete EMA Moving Averages Guide丨Space-time trading丨Trading Training, Full-Time Trader Training',
     description: 'In-depth explanation of Exponential Moving Average: calculation formulas, differences from SMA, common periods (8, 21, 55, 200). Forex trader training and full-time trader training essential curriculum for mastering EMA crossover strategies and multi-timeframe analysis.',
     keywords: 'Forex Trader Training, Full-Time Trader Training, EMA, moving averages, EMA strategy, trend indicator',
 
@@ -149,7 +149,7 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join Space-time trading training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

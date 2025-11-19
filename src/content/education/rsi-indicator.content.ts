@@ -70,7 +70,7 @@ export const rsiIndicatorContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 Space-time trading 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const rsiIndicatorContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete RSI Indicator Guide丨FX Killer丨Full-Time Trader Training, Professional Trader Training',
+    title: 'Complete RSI Indicator Guide丨Space-time trading丨Full-Time Trader Training, Professional Trader Training',
     description: 'In-depth RSI indicator guide: calculation, overbought/oversold zones, divergence patterns. Full-time trader training and professional trader training curriculum for mastering RSI strategies, combining with Bollinger Bands to improve win rate.',
     keywords: 'Full-Time Trader Training, Professional Trader Training, RSI indicator, relative strength index, RSI strategy, RSI divergence',
 
@@ -149,7 +149,7 @@ export const rsiIndicatorContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join Space-time trading training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

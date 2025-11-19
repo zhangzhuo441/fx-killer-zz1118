@@ -87,7 +87,7 @@ export default function TradingDashboard() {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-lg font-bold text-black dark:text-white">
-                {language === 'zh' ? '时空交易控制台' : 'FX Killer Dashboard'}
+                {language === 'zh' ? '时空交易控制台' : 'Space-time trading Dashboard'}
               </h2>
             </div>
             <button

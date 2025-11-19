@@ -84,7 +84,7 @@ export const riskRewardContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Risk-Reward Ratio Guide丨FX Killer丨Forex Trader Training, Professional Trader Training',
+    title: 'Risk-Reward Ratio Guide丨Space-time trading丨Trading Training, Professional Trader Training',
     description: 'Comprehensive guide to forex risk-reward ratio: R:R calculation formula, profit/loss ratio and win rate relationship, expectancy calculation, target setting strategies. Forex trader training and professional trader training essential curriculum for practical R:R optimization techniques.',
     keywords: 'Forex Trader Training, Professional Trader Training, risk reward ratio, R:R ratio, expectancy, win rate balance',
 

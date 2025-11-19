@@ -70,7 +70,7 @@ export const trendFollowingContent = {
     ],
 
     ctaTitle: '想要系统学习趋势交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业趋势跟踪策略和趋势分析工具',
+    ctaDescription: '加入 Space-time trading 培训计划，获取专业趋势跟踪策略和趋势分析工具',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const trendFollowingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Trend Following Guide丨FX Killer丨Forex Trader Training, Professional Trader Training',
+    title: 'Complete Trend Following Guide丨Space-time trading丨Trading Training, Professional Trader Training',
     description: 'In-depth explanation of Trend Following: trend identification methods, EMA system, trend strength judgment, pyramiding strategies. Master professional trend following complete system.',
     keywords: 'Forex Trader Training, Professional Trader Training, trend following, EMA, trend trading, pyramiding strategy',
 
@@ -149,7 +149,7 @@ export const trendFollowingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Trend Trading?',
-    ctaDescription: 'Join FX Killer training for professional trend following strategies and trend analysis tools',
+    ctaDescription: 'Join Space-time trading training for professional trend following strategies and trend analysis tools',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -109,7 +109,7 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
                     contentLength: data.data?.content?.length
                   });
                   setProgress(100);
-                  onGenerated({ ...data.data, author: 'FX Killer Team' });
+                  onGenerated({ ...data.data, author: 'Space-time trading Team' });
                 } else if (data.type === 'error') {
                   throw new Error(data.data);
                 }
@@ -138,7 +138,7 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
               if (data.type === 'complete') {
                 console.log('[BlogAI] Complete event from buffer');
                 setProgress(100);
-                onGenerated({ ...data.data, author: 'FX Killer Team' });
+                onGenerated({ ...data.data, author: 'Space-time trading Team' });
               }
             } catch (e) {
               console.error('[BlogAI] Error processing final buffer:', e);
@@ -246,7 +246,7 @@ export default function BlogAIGenerator({ onGenerated, onClose }: BlogAIGenerato
               </li>
               <li className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                 <span className="text-black dark:text-white font-bold">•</span>
-                <span>{language === 'zh' ? '符合时空交易品牌风格的HTML样式' : 'FX Killer brand-style HTML formatting'}</span>
+                <span>{language === 'zh' ? '符合时空交易品牌风格的HTML样式' : 'Space-time trading brand-style HTML formatting'}</span>
               </li>
               <li className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
                 <span className="text-black dark:text-white font-bold">•</span>

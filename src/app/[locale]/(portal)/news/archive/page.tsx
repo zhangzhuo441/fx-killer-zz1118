@@ -85,10 +85,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const isZh = language === 'zh';
 
   return {
-    title: isZh ? '新闻归档 - FX Killer' : 'News Archive - FX Killer',
+    title: isZh ? '新闻归档 - 时空交易' : 'News Archive - Space-time trading',
     description: isZh
-      ? '按月份浏览FX Killer的所有外汇新闻文章归档'
-      : 'Browse all FX Killer forex news articles by month',
+      ? '按月份浏览Space-time trading的所有交易新闻文章归档'
+      : 'Browse all Space-time trading trading news articles by month',
   };
 }
 
@@ -121,7 +121,7 @@ export default async function NewsArchivePage() {
             {isZh ? '新闻归档' : 'News Archive'}
           </h1>
           <p className="text-xl text-gray-300">
-            {isZh ? '按月份浏览所有外汇新闻文章' : 'Browse all forex news articles by month'}
+            {isZh ? '按月份浏览所有交易新闻文章' : 'Browse all trading news articles by month'}
           </p>
         </div>
       </div>

@@ -73,7 +73,7 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: '想要系统提升交易心理？',
-    ctaDescription: '加入 FX Killer 交易心理培训，获取专业心理评估和一对一心理辅导',
+    ctaDescription: '加入 Space-time trading 交易心理培训，获取专业心理评估和一对一心理辅导',
     ctaPrimaryButton: '免费心理测评',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,7 +84,7 @@ export const tradingPsychologyContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Trading Psychology丨FX Killer丨Professional Trader Training, Full-Time Trader Training',
+    title: 'Trading Psychology丨Space-time trading丨Professional Trader Training, Full-Time Trader Training',
     description: 'Comprehensive trading psychology guide: fear and greed psychology, FOMO, overtrading, discipline, stress management. Professional trader training and full-time trader training core curriculum to help you overcome mental traps for stable profitability.',
     keywords: 'Professional Trader Training, Full-Time Trader Training, trading psychology, emotion management, trading discipline, FOMO',
 
@@ -155,7 +155,7 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: 'Want to Systematically Improve Trading Psychology?',
-    ctaDescription: 'Join FX Killer trading psychology training for professional psychological assessment and one-on-one counseling',
+    ctaDescription: 'Join Space-time trading trading psychology training for professional psychological assessment and one-on-one counseling',
     ctaPrimaryButton: 'Free Psychology Assessment',
     ctaSecondaryButton: 'Learn About Training',
 

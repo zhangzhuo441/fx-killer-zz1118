@@ -126,7 +126,7 @@ const DummyContent = () => {
       {/* Shared Black Background for All Sections (除了Hero和Footer) */}
       <div className="relative bg-black w-full overflow-hidden">
 
-        {/* 为什么选择 FX Killer - Akira 风格 */}
+        {/* 为什么选择 Space-time trading - Akira 风格 */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-[#ff102a]">
@@ -189,7 +189,7 @@ const DummyContent = () => {
             <span className="bg-[#ff102a] text-white px-4 py-2">{t('comparison.vs')}</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* FX Killer */}
+            {/* Space-time trading */}
             <div className="bg-[#0a0a0a] p-6 border-l-4 border-[#ff102a]">
               <h4 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
                 <span className="text-2xl"></span> {t('comparison.fxkiller')}

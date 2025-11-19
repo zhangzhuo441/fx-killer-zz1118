@@ -70,7 +70,7 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: '想要系统学习波段交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业波段交易策略和中长期趋势分析',
+    ctaDescription: '加入 Space-time trading 培训计划，获取专业波段交易策略和中长期趋势分析',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const swingTradingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Swing Trading Guide丨FX Killer丨Full-Time Trader Training, Day Trader Training',
+    title: 'Complete Swing Trading Guide丨Space-time trading丨Full-Time Trader Training, Day Trader Training',
     description: 'In-depth explanation of Swing Trading: H4/D1 timeframe analysis, trend identification methods, position management techniques, multi-day trading strategies. Master complete swing trading system with real cases.',
     keywords: 'Full-Time Trader Training, Day Trader Training, swing trading, H4 trading, D1 trading, trend trading',
 
@@ -149,7 +149,7 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Swing Trading?',
-    ctaDescription: 'Join FX Killer training for professional swing trading strategies and medium-term trend analysis',
+    ctaDescription: 'Join Space-time trading training for professional swing trading strategies and medium-term trend analysis',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

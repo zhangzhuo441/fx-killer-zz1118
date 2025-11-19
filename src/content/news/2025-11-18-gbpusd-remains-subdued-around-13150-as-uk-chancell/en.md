@@ -1,10 +1,10 @@
 ---
 title: "GBP/USD remains subdued around 1.3150 as UK Chancellor Reeves abandons tax rises"
 date: "2025-11-18 04:44:38"
-description: "GBP/USD remains subdued for the third successive session, trading around 1.3150 during the Asian hours on Tuesday. The p. Free forex trading training by FX Killer."
-keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","FX Killer"]
+description: "GBP/USD remains subdued for the third successive session, trading around 1.3150 during the Asian hours on Tuesday. The p. Free trading training by Space-time trading."
+keywords: ["forex","trading","market analysis","forex news","trading training","trader incubation","Space-time trading"]
 category: "Forex News"
-source: "FX Killer Analysis Team"
+source: "Space-time trading Analysis Team"
 language: "en"
 ---
 
@@ -14,15 +14,15 @@ As the currency pair struggles to gain traction, market participants are closely
 
 ---
 
-#### About FX Killer Trader Incubation Program
+#### About Space-time trading Trader Incubation Program
 
-Want to become a professional trader? FX Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
+Want to become a professional trader? Space-time trading offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
 
 👉 [Join Free Training Program](/splan/join-us) | [Trading Psychology Assessment](/splan/psychology-test)
 
 ---
 
-**Data Source**: FX Killer Analysis Team
+**Data Source**: Space-time trading Analysis Team
 **Updated**: 2025-11-18 04:44
 
 **Disclaimer**: This article is for reference only and does not constitute investment advice. Forex trading involves risks; please make decisions carefully.

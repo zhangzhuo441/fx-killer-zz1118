@@ -73,7 +73,7 @@ export const stopLossStrategiesContent = {
     ],
 
     ctaTitle: '想要优化你的止损策略？',
-    ctaDescription: '使用 FX Killer 专业止损工具，实现自动化止损管理',
+    ctaDescription: '使用 Space-time trading 专业止损工具，实现自动化止损管理',
     ctaPrimaryButton: '免费使用工具',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,7 +84,7 @@ export const stopLossStrategiesContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Stop Loss Strategies丨FX Killer丨Forex Trader Training, Day Trader Training',
+    title: 'Complete Stop Loss Strategies丨Space-time trading丨Trading Training, Day Trader Training',
     description: 'Comprehensive guide to forex stop-loss strategies: fixed pip stops, percentage stops, ATR dynamic stops, technical stops, time stops, trailing stops. Professional trader shares practical stop-loss setting techniques to protect capital and optimize profits.',
     keywords: 'Forex Trader Training, Day Trader Training, stop loss strategies, ATR stop loss, trailing stop',
 
@@ -155,7 +155,7 @@ export const stopLossStrategiesContent = {
     ],
 
     ctaTitle: 'Want to Optimize Your Stop-Loss Strategy?',
-    ctaDescription: 'Use FX Killer professional stop-loss tools for automated stop management',
+    ctaDescription: 'Use Space-time trading professional stop-loss tools for automated stop management',
     ctaPrimaryButton: 'Use Tools Free',
     ctaSecondaryButton: 'Learn About Training',
 

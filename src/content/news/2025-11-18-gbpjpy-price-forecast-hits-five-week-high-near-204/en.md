@@ -1,10 +1,10 @@
 ---
 title: "GBP/JPY Price Forecast: Hits five week high near 204.50"
 date: "2025-11-18 01:24:58"
-description: "The GBP/JPY rallies to a five-week high of 204.53 on Monday, up by 0.33% as the Japanese Yen weakens on growing tensions. Free forex trading training by FX Killer."
-keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","FX Killer"]
+description: "The GBP/JPY rallies to a five-week high of 204.53 on Monday, up by 0.33% as the Japanese Yen weakens on growing tensions. Free trading training by Space-time trading."
+keywords: ["forex","trading","market analysis","forex news","trading training","trader incubation","Space-time trading"]
 category: "Forex News"
-source: "FX Killer Analysis Team"
+source: "Space-time trading Analysis Team"
 language: "en"
 ---
 
@@ -14,15 +14,15 @@ As traders reacted to the geopolitical landscape, the exchange rate displayed re
 
 ---
 
-#### About FX Killer Trader Incubation Program
+#### About Space-time trading Trader Incubation Program
 
-Want to become a professional trader? FX Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
+Want to become a professional trader? Space-time trading offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
 
 👉 [Join Free Training Program](/splan/join-us) | [Trading Psychology Assessment](/splan/psychology-test)
 
 ---
 
-**Data Source**: FX Killer Analysis Team
+**Data Source**: Space-time trading Analysis Team
 **Updated**: 2025-11-18 01:24
 
 **Disclaimer**: This article is for reference only and does not constitute investment advice. Forex trading involves risks; please make decisions carefully.

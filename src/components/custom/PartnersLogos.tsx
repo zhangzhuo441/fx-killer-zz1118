@@ -128,7 +128,7 @@ export default function PartnersLogos() {
                   </>
                 ) : (
                   <>
-                    FX Killer is an <span className="font-black text-xl underline decoration-2 underline-offset-4">official partner</span> of <span className="font-bold">EC Markets</span>, <span className="font-bold">TickMill</span>, <span className="font-bold">Binance</span>, <span className="font-bold">FTMO</span>, <span className="font-bold">FundedNext</span>
+                    Space-time trading is an <span className="font-black text-xl underline decoration-2 underline-offset-4">official partner</span> of <span className="font-bold">EC Markets</span>, <span className="font-bold">TickMill</span>, <span className="font-bold">Binance</span>, <span className="font-bold">FTMO</span>, <span className="font-bold">FundedNext</span>
                   </>
                 )}
               </p>

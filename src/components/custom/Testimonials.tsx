@@ -19,7 +19,7 @@ const testimonials = [
     date: "2024-10",
     content: {
       zh: "在时空交易学习的30天是我人生的转折点。从完全不懂交易到通过考核，整个过程非常系统和专业。现在我每个月都能稳定盈利，真正实现了财务自由。",
-      en: "The 30 days at FX Killer was a turning point in my life. From knowing nothing about trading to passing the assessment, the entire process was systematic and professional. Now I can make stable profits every month and truly achieve financial freedom."
+      en: "The 30 days at Space-time trading was a turning point in my life. From knowing nothing about trading to passing the assessment, the entire process was systematic and professional. Now I can make stable profits every month and truly achieve financial freedom."
     }
   },
   {
@@ -37,7 +37,7 @@ const testimonials = [
     date: "2024-09",
     content: {
       zh: "之前在其他平台学了很久都没有成果，来到时空交易后才发现什么是真正的交易培训。规则清晰，考核标准明确，老师耐心指导。通过考核后拿到资金，现在已经盈利20%+。",
-      en: "I had learned on other platforms for a long time without results. After coming to FX Killer, I realized what real trading training is. Clear rules, explicit assessment standards, and patient guidance. After passing, I got funding and have now made 20%+ profit."
+      en: "I had learned on other platforms for a long time without results. After coming to Space-time trading, I realized what real trading training is. Clear rules, explicit assessment standards, and patient guidance. After passing, I got funding and have now made 20%+ profit."
     }
   },
   {
@@ -55,7 +55,7 @@ const testimonials = [
     date: "2024-08",
     content: {
       zh: "时空交易最大的优势是实战性强。不是教你理论，而是直接教你怎么在市场上赚钱。我用了25个工作日通过考核，现在管理着6位数的资金，分成比例高达80%。",
-      en: "FX Killer's greatest advantage is its practicality. They don't teach theory, but directly teach you how to make money in the market. I passed the assessment in 25 working days and now manage six-figure funds with an 80% profit share."
+      en: "Space-time trading's greatest advantage is its practicality. They don't teach theory, but directly teach you how to make money in the market. I passed the assessment in 25 working days and now manage six-figure funds with an 80% profit share."
     }
   },
   {
@@ -73,7 +73,7 @@ const testimonials = [
     date: "2024-11",
     content: {
       zh: "起初我也怀疑过这个模式，但实际体验后发现确实是在培养真正的交易员。考核标准严格但合理，通过后的支持也很到位。现在每天只需要盯盘几小时，收入却比以前上班高多了。",
-      en: "Initially I doubted this model, but after experiencing it, I found they truly cultivate real traders. The assessment standards are strict but reasonable, and the support after passing is excellent. Now I only need to watch the market for a few hours daily, yet my income is much higher than before."
+      en: "Initially I doubted this model, but after experiencing it at Space-time trading, I found they truly cultivate real traders. The assessment standards are strict but reasonable, and the support after passing is excellent. Now I only need to watch the market for a few hours daily, yet my income is much higher than before."
     }
   },
   {
@@ -91,7 +91,7 @@ const testimonials = [
     date: "2024-07",
     content: {
       zh: "作为一个90后，我在时空交易找到了真正适合自己的职业。30天的培训虽然辛苦，但收获巨大。现在我可以在世界任何地方工作，时间和地点完全自由。",
-      en: "As a post-90s, I found a career truly suitable for me at FX Killer. The 30-day training was tough but rewarding. Now I can work anywhere in the world with complete freedom of time and location."
+      en: "As a post-90s, I found a career truly suitable for me at Space-time trading. The 30-day training was tough but rewarding. Now I can work anywhere in the world with complete freedom of time and location."
     }
   },
   {
@@ -109,7 +109,7 @@ const testimonials = [
     date: "2024-06",
     content: {
       zh: "时空交易的筛选机制很严格，但正因如此，通过的人都是真正有潜力的。我很庆幸自己坚持下来了。现在回头看，那45天的投入是我做过最值得的决定。",
-      en: "FX Killer's screening mechanism is strict, but that's why those who pass truly have potential. I'm glad I persisted. Looking back, those 45 days of investment were the most worthwhile decision I've ever made."
+      en: "Space-time trading's screening mechanism is strict, but that's why those who pass truly have potential. I'm glad I persisted. Looking back, those 45 days of investment were the most worthwhile decision I've ever made."
     }
   },
   {
@@ -127,7 +127,7 @@ const testimonials = [
     date: "2024-05",
     content: {
       zh: "我是从传统金融行业转行过来的。在时空交易学到的实战技能比我在银行5年学到的还多。这里没有废话，只有干货和结果导向的培训。",
-      en: "I transitioned from traditional finance. I learned more practical skills at FX Killer than my 5 years at the bank. No nonsense here, only solid content and results-oriented training."
+      en: "I transitioned from traditional finance. I learned more practical skills at Space-time trading than my 5 years at the bank. No nonsense here, only solid content and results-oriented training."
     }
   },
   {
@@ -145,7 +145,7 @@ const testimonials = [
     date: "2024-04",
     content: {
       zh: "最让我感动的是团队长的耐心指导。每次交易失误都会详细分析原因，帮我建立正确的交易思维。30天培训结束后，我完全掌握了盈利的方法。",
-      en: "What moved me most was the team leader's patient guidance. Every trading mistake was analyzed in detail, helping me build correct trading thinking. After 30 days, I fully mastered profitable methods."
+      en: "What moved me most at Space-time trading was the team leader's patient guidance. Every trading mistake was analyzed in detail, helping me build correct trading thinking. After 30 days, I fully mastered profitable methods."
     }
   },
   {
@@ -163,7 +163,7 @@ const testimonials = [
     date: "2024-03",
     content: {
       zh: "时空交易给了我第二次职业生涯的机会。之前在互联网公司996，现在做交易时间自由，收入还翻倍了。最重要的是找到了真正热爱的事业。",
-      en: "FX Killer gave me a second career opportunity. Previously worked 996 in an internet company, now trading with flexible hours and doubled income. Most importantly, I found a career I truly love."
+      en: "Space-time trading gave me a second career opportunity. Previously worked 996 in an internet company, now trading with flexible hours and doubled income. Most importantly, I found a career I truly love."
     }
   },
   {
@@ -181,7 +181,7 @@ const testimonials = [
     date: "2024-02",
     content: {
       zh: "心理测评环节非常关键，它帮我认清了自己的优劣势。培训过程针对性很强，通过考核后我管理着7位数资金，月收入稳定在5位数以上。",
-      en: "The psychology assessment was crucial, helping me recognize my strengths and weaknesses. The training was highly targeted. After passing, I manage seven-figure funds with stable five-figure monthly income."
+      en: "The psychology assessment at Space-time trading was crucial, helping me recognize my strengths and weaknesses. The training was highly targeted. After passing, I manage seven-figure funds with stable five-figure monthly income."
     }
   },
   {
@@ -199,7 +199,7 @@ const testimonials = [
     date: "2024-01",
     content: {
       zh: "从面试到培训到考核，每个环节都能看出时空交易的专业性。这不是培训班，而是真正的交易员孵化器。我用20个工作日通过考核，现在每月稳定盈利。",
-      en: "From interview to training to assessment, every step shows FX Killer's professionalism. This isn't a training class, but a real trader incubator. I passed in 20 working days and now profit stably monthly."
+      en: "From interview to training to assessment, every step shows Space-time trading's professionalism. This isn't a training class, but a real trader incubator. I passed in 20 working days and now profit stably monthly."
     }
   },
   {
@@ -217,7 +217,7 @@ const testimonials = [
     date: "2023-12",
     content: {
       zh: "最大的收获是学会了风险管理和资金管理。以前总是重仓梭哈，现在懂得了稳健盈利的重要性。通过考核后拿到资金支持，压力小了很多。",
-      en: "The biggest gain was learning risk and money management. Used to go all-in, now understand the importance of stable profits. Got funding support after passing, much less pressure."
+      en: "The biggest gain at Space-time trading was learning risk and money management. Used to go all-in, now understand the importance of stable profits. Got funding support after passing, much less pressure."
     }
   }
 ];

@@ -70,7 +70,7 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: '想要系统学习突破交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业突破交易策略和实时信号',
+    ctaDescription: '加入 Space-time trading 培训计划，获取专业突破交易策略和实时信号',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const breakoutTradingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Breakout Trading Strategy Guide丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    title: 'Complete Breakout Trading Strategy Guide丨Space-time trading丨Professional Trader Training, Trading Training',
     description: 'In-depth explanation of Breakout Trading: support/resistance breaks, volume confirmation, false breakout identification. Professional trader training and forex trader training core curriculum for mastering explosive market moves.',
     keywords: 'Professional Trader Training, Forex Trader Training, breakout trading, support resistance, false breakout, breakout strategy',
 
@@ -149,7 +149,7 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Breakout Trading?',
-    ctaDescription: 'Join FX Killer training for professional breakout strategies and real-time signals',
+    ctaDescription: 'Join Space-time trading training for professional breakout strategies and real-time signals',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

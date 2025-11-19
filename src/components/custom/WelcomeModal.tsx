@@ -179,7 +179,7 @@ const WelcomeModal = forwardRef<WelcomeModalHandle>((props, ref) => {
                     : 'Professional Trader Intro'
                   : isZh
                   ? '欢迎来到 时空交易'
-                  : 'Welcome to FX Killer'}
+                  : 'Welcome to Space-time trading'}
               </h2>
               {isExpanded && (
                 <p className="text-xs text-gray-300 dark:text-gray-700">

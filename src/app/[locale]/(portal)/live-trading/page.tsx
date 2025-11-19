@@ -12,9 +12,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return generateBilingualMetadata(
     '实盘直播丨时空交易丨职业交易员培训、外汇交易员培训',
-    'Live Trading丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    'Live Trading丨Space-time trading丨Professional Trader Training, Forex Trader Training',
     '观看时空交易矩阵成员的实盘交易直播，学习真实的交易决策过程。6位职业交易员同步直播，展示专业的交易技巧和风险管理策略。',
-    'Watch FX Killer matrix members\' live trading sessions and learn real trading decision-making processes. 6 professional traders streaming simultaneously, demonstrating expert trading skills and risk management strategies.',
+    'Watch Space-time trading matrix members\' live trading sessions and learn real trading decision-making processes. 6 professional traders streaming simultaneously, demonstrating expert trading skills and risk management strategies.',
     '实盘直播, 外汇直播, 交易直播, 职业交易员培训, 外汇交易员培训, 日内交易员培训',
     'live trading, forex live, trading stream, professional trader training, forex trader training, day trader training',
     lang,
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: '/live-trading',
       type: 'website',
       section: 'Live Trading',
-      author: 'FX Killer Team',
+      author: 'Space-time trading Team',
     }
   );
 }

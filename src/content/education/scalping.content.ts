@@ -70,7 +70,7 @@ export const scalpingContent = {
     ],
 
     ctaTitle: '想要学习专业交易策略？',
-    ctaDescription: '加入 FX Killer 培训计划，从基础策略开始系统学习',
+    ctaDescription: '加入 Space-time trading 培训计划，从基础策略开始系统学习',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const scalpingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Scalping Trading Guide丨FX Killer丨Day Trader Training, Forex Trader Training',
+    title: 'Complete Scalping Trading Guide丨Space-time trading丨Day Trader Training, Trading Training',
     description: 'In-depth explanation of Scalping: M1/M5 ultra-short-term analysis, rapid entry/exit, spread cost control. Day trader training and forex trader training curriculum sharing professional scalping trading systems.',
     keywords: 'Day Trader Training, Forex Trader Training, scalping, M1 trading, M5 trading, ultra-short-term trading',
 
@@ -149,7 +149,7 @@ export const scalpingContent = {
     ],
 
     ctaTitle: 'Want to Learn Professional Trading Strategies?',
-    ctaDescription: 'Join FX Killer training to systematically learn from foundational strategies',
+    ctaDescription: 'Join Space-time trading training to systematically learn from foundational strategies',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

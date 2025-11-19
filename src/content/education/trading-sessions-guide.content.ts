@@ -70,7 +70,7 @@ export const tradingSessionsContent = {
     ],
 
     ctaTitle: '想要系统学习时段交易策略？',
-    ctaDescription: '加入 FX Killer 培训计划，获取实时市场分析和专业指导',
+    ctaDescription: '加入 Space-time trading 培训计划，获取实时市场分析和专业指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const tradingSessionsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Global Forex Trading Sessions Guide丨FX Killer丨Day Trader Training, Forex Trader Training',
+    title: 'Global Trading Sessions Guide丨Space-time trading丨Day Trader Training, Trading Training',
     description: 'In-depth analysis of the four major forex trading sessions: Sydney, Tokyo, London, and New York. Day trader training and forex trader training essential knowledge for optimal trading windows, currency pair activity, and market liquidity patterns.',
     keywords: 'Day Trader Training, Forex Trader Training, forex trading sessions, London session, best trading times',
 
@@ -149,7 +149,7 @@ export const tradingSessionsContent = {
     ],
 
     ctaTitle: 'Want to Master Session-Based Trading?',
-    ctaDescription: 'Join FX Killer training for real-time market analysis and professional guidance',
+    ctaDescription: 'Join Space-time trading training for real-time market analysis and professional guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   if (error || !data) {
     return {
-      title: lang === 'zh' ? '文章未找到丨时空交易' : 'Article Not Found丨FX Killer',
+      title: lang === 'zh' ? '文章未找到丨时空交易' : 'Article Not Found丨Space-time trading',
     };
   }
 
@@ -96,7 +96,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   // Build title with tags and SEO framework
   const zhTitle = `${post.title}丨时空交易丨${keywordSuffix}`;
-  const enTitle = `${post.title_en}丨FX Killer丨${keywordSuffix}`;
+  const enTitle = `${post.title_en}丨Space-time trading丨${keywordSuffix}`;
 
   // Build description from content excerpt
   const stripHTML = (html: string) => html.replace(/<[^>]*>/g, '').substring(0, 160);

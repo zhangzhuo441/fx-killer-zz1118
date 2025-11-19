@@ -70,7 +70,7 @@ export const spreadsCommissionsContent = {
     ],
 
     ctaTitle: '想要获得更优质的交易条件？',
-    ctaDescription: 'FX Killer 合作经纪商提供极具竞争力的点差和佣金',
+    ctaDescription: 'Space-time trading 合作经纪商提供极具竞争力的点差和佣金',
     ctaPrimaryButton: '查看合作经纪商',
     ctaSecondaryButton: '免费心理测评',
 
@@ -149,7 +149,7 @@ export const spreadsCommissionsContent = {
     ],
 
     ctaTitle: 'Want Better Trading Conditions?',
-    ctaDescription: 'FX Killer partner brokers offer highly competitive spreads and commissions',
+    ctaDescription: 'Space-time trading partner brokers offer highly competitive spreads and commissions',
     ctaPrimaryButton: 'View Partner Brokers',
     ctaSecondaryButton: 'Free Psychology Test',
 

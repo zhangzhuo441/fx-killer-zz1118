@@ -8,7 +8,7 @@ export default function PartnerBrokersPage() {
   const { language } = useLanguage();
   const isZh = language === 'zh';
 
-  // Partner broker data - real FX Killer partners
+  // Partner broker data - real Space-time trading partners
   const brokers = [
     {
       id: 'ec-markets',
@@ -84,10 +84,10 @@ export default function PartnerBrokersPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block px-4 py-2 bg-white dark:bg-black text-black dark:text-white text-xs font-bold mb-6 border-2 border-white dark:border-black">
-              {isZh ? '时空交易 合作伙伴' : 'FX KILLER PARTNERS'}
+              {isZh ? '时空交易 合作伙伴' : 'SPACE-TIME TRADING PARTNERS'}
             </div>
             <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
-              {isZh ? '时空交易 合作经纪商' : 'FX Killer Partner Brokers'}
+              {isZh ? '时空交易 合作经纪商' : 'Space-time trading Partner Brokers'}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300 dark:text-gray-700">
               {isZh
@@ -108,7 +108,7 @@ export default function PartnerBrokersPage() {
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               {isZh
                 ? '时空交易只推荐满足以下所有标准的经纪商，为您的交易安全保驾护航'
-                : 'FX Killer only recommends brokers meeting all the following criteria, safeguarding your trading security'}
+                : 'Space-time trading only recommends brokers meeting all the following criteria, safeguarding your trading security'}
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function PartnerBrokersPage() {
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               {isZh
                 ? '以下经纪商均经过时空交易团队严格审核，符合我们的所有筛选标准'
-                : 'All brokers below have been rigorously vetted by the FX Killer team and meet all our selection criteria'}
+                : 'All brokers below have been rigorously vetted by the Space-time trading team and meet all our selection criteria'}
             </p>
           </div>
 
@@ -243,7 +243,7 @@ export default function PartnerBrokersPage() {
                   <span>
                     {isZh
                       ? '时空交易可能从部分推荐链接中获得佣金，但这不影响我们的筛选标准。'
-                      : 'FX Killer may receive commission from some referral links, but this does not affect our selection criteria.'}
+                      : 'Space-time trading may receive commission from some referral links, but this does not affect our selection criteria.'}
                   </span>
                 </li>
               </ul>

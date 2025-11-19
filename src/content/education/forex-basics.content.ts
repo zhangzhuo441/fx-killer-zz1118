@@ -118,7 +118,7 @@ export const forexBasicsContent = {
     ],
 
     ctaTitle: '准备开始你的外汇交易之旅？',
-    ctaDescription: '加入 FX Killer 30天系统化培训，从零基础到职业交易员',
+    ctaDescription: '加入 Space-time trading 30天系统化培训，从零基础到职业交易员',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -129,7 +129,7 @@ export const forexBasicsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Forex Basics Guide丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    title: 'Complete Trading Basics Guide丨Space-time trading丨Professional Trader Training, Trading Training',
     description: 'Comprehensive forex trading tutorial written by professional traders. Covering market basics, trading terminology, technical analysis, and risk management for beginners. Essential foundation course for professional trader training and forex trader training.',
     keywords: 'professional trader training, forex trader training, professional trader, forex trader, forex basics, forex tutorial, forex market',
 
@@ -197,7 +197,7 @@ export const forexBasicsContent = {
     ],
 
     ctaTitle: 'Ready to Start Your Forex Trading Journey?',
-    ctaDescription: 'Join FX Killer 30-day systematic training, from beginner to professional trader',
+    ctaDescription: 'Join Space-time trading 30-day systematic training, from beginner to professional trader',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

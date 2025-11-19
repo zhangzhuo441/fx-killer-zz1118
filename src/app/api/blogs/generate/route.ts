@@ -4,9 +4,9 @@ import { supabase } from '@/lib/supabase';
 export const dynamic = 'force-dynamic';
 
 // System prompt for AI blog generation
-const SYSTEM_PROMPT = `你是一位专业的外汇交易培训机构（时空交易 FX Killer）的内容创作者。你的任务是根据用户提供的核心内容，生成符合公司风格的中英文双语博客文章。
+const SYSTEM_PROMPT = `你是一位专业的外汇交易培训机构（时空交易 Space-time trading）的内容创作者。你的任务是根据用户提供的核心内容，生成符合公司风格的中英文双语博客文章。
 
-## 关于时空交易 (FX Killer)
+## 关于时空交易 (Space-time trading)
 
 时空交易是一个专注于筛选和培养顶尖外汇交易员的军事化训练营，采用严格筛选、系统培训、持续支持的理念。
 
@@ -297,7 +297,7 @@ const SYSTEM_PROMPT = `你是一位专业的外汇交易培训机构（时空交
    - 核心观点必须用高亮框强调
    - 对比信息优先使用表格
    - 多用引用块突出重要引言
-10. **作者固定为**: FX Killer Team
+10. **作者固定为**: Space-time trading Team
 
 请基于用户提供的核心内容，创作一篇专业、吸引人、符合时空交易品牌风格、视觉丰富的博客文章。`;
 
@@ -481,7 +481,7 @@ export async function POST(request: Request) {
       }
 
       // Set default author
-      generatedContent.author = 'FX Killer Team';
+      generatedContent.author = 'Space-time trading Team';
 
       console.log('[BlogAI] Successfully generated blog post with reasoning model');
       return NextResponse.json(generatedContent);
@@ -589,7 +589,7 @@ export async function POST(request: Request) {
           }
 
           // Set default author
-          generatedContent.author = 'FX Killer Team';
+          generatedContent.author = 'Space-time trading Team';
 
           console.log('[BlogAI] Successfully generated blog post');
 

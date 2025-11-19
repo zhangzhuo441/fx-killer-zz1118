@@ -70,7 +70,7 @@ export const macdIndicatorContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 Space-time trading 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const macdIndicatorContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete MACD Indicator Guide丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    title: 'Complete MACD Indicator Guide丨Space-time trading丨Trading Training, Full-Time Trader Training',
     description: 'In-depth explanation of MACD indicator: DIF, DEA, histogram calculations, golden/death cross signals, divergence pattern recognition. Forex trader training and full-time trader training essential curriculum for mastering MACD trend confirmation and momentum analysis.',
     keywords: 'Forex Trader Training, Full-Time Trader Training, MACD indicator, MACD strategy, golden cross, MACD divergence',
 
@@ -149,7 +149,7 @@ export const macdIndicatorContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join Space-time trading training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 
