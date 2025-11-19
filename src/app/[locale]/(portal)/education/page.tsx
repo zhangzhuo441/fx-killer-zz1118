@@ -8,9 +8,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return generateBilingualMetadata(
     '外汇交易教育中心丨时空交易丨日内交易员培训、全职交易员培训',
-    'Forex Trading Education Center丨FX Killer丨Day Trader Training, Full-Time Trader Training',
-    '完整的外汇交易教育体系，涵盖基础知识、技术分析、交易策略、风险管理。从零基础到职业交易员，FX Killer助你系统化学习外汇交易。25+专业课程，4大学习方向，100%免费学习。专业日内交易员培训和全职交易员培训体系。',
-    'Complete forex trading education system covering fundamentals, technical analysis, trading strategies, and risk management. From beginner to professional trader with FX Killer. 25+ professional courses, 4 learning categories, 100% free. Professional day trader training and full-time trader training system.',
+    'Forex Trading Education Center丨Space-time trading丨Day Trader Training, Full-Time Trader Training',
+    '完整的外汇交易教育体系，涵盖基础知识、技术分析、交易策略、风险管理。从零基础到职业交易员，Space-time trading助你系统化学习外汇交易。25+专业课程，4大学习方向，100%免费学习。专业日内交易员培训和全职交易员培训体系。',
+    'Complete forex trading education system covering fundamentals, technical analysis, trading strategies, and risk management. From beginner to professional trader with Space-time trading. 25+ professional courses, 4 learning categories, 100% free. Professional day trader training and full-time trader training system.',
     '外汇教育, 外汇学习, 交易课程, 外汇培训, 日内交易员培训, 全职交易员培训, 技术分析教程, 交易策略, 风险管理, 外汇基础知识, 技术指标, 价格行为, K线形态, 支撑阻力, 日内交易, 波段交易, 剥头皮交易, 趋势跟踪, 仓位管理, 止损策略, 交易心理',
     'forex education, forex learning, trading courses, forex training, day trader training, full-time trader training, technical analysis tutorials, trading strategies, risk management, forex basics, technical indicators, price action, candlestick patterns, support resistance, day trading, swing trading, scalping, trend following, position sizing, stop loss strategies, trading psychology',
     lang,
