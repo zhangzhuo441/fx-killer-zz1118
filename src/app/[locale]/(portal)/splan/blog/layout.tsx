@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
-   title: 'FX Killer 博客 - 外汇交易知识与市场洞察丨时空交易丨外汇交易员培训、全职交易员培训',
+    'FX Killer 博客 - 外汇交易知识与市场洞察丨时空交易丨外汇交易员培训、全职交易员培训',
     'FX Killer Blog - Forex Trading Insights & Market Analysis丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
     '探索外汇交易的专业知识、市场分析、交易心理、职业交易员经验分享。涵盖外汇、黄金、数字货币等多个交易领域的深度文章。外汇交易员培训和全职交易员培训资源库。',
     'Explore professional forex trading knowledge, market analysis, trading psychology, and professional trader insights. In-depth articles covering forex, gold, crypto, and more. Resource hub for forex trader training and full-time trader training.',
