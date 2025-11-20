@@ -164,7 +164,7 @@ export default function StatsSection() {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <section className="relative py-20 bg-black overflow-hidden">
+    <section className="relative py-20 bg-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -175,10 +175,10 @@ export default function StatsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#ff102a]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
             {language === 'zh' ? '平台数据' : 'Platform Statistics'}
           </h2>
-          <p className="text-[#dadafa] max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             {language === 'zh'
               ? '真实数据展示我们的培训成果和合作网络'
               : 'Real data showcasing our training results and partnership network'}
@@ -229,21 +229,21 @@ function StatCard({ stat, index, language, isVisible }: { stat: StatItem; index:
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="bg-[#0a0a0a] border-2 border-[#dadafa]/30 p-6 hover:border-[#ff102a] transition-colors group"
+      className="bg-gray-50 border-2 border-gray-200 p-6 hover:border-blue-800 transition-colors group"
     >
       {/* Icon */}
-      <div className="text-[#dadafa] mb-4 group-hover:scale-110 group-hover:text-[#ff102a] transition-all">
+      <div className="text-gray-400 mb-4 group-hover:scale-110 group-hover:text-blue-800 transition-all">
         {stat.icon}
       </div>
 
       {/* Value */}
-      <div className="text-3xl md:text-4xl font-bold mb-2 text-white">
+      <div className="text-3xl md:text-4xl font-bold mb-2 text-black">
         {formatValue(stat.value, animatedValue)}
         {stat.suffix && <span className="text-2xl">{stat.suffix}</span>}
       </div>
 
       {/* Label */}
-      <div className="text-sm text-[#b0b0b0] font-medium">
+      <div className="text-sm text-gray-600 font-medium">
         {language === 'zh' ? stat.label.zh : stat.label.en}
       </div>
     </motion.div>

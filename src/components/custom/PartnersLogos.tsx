@@ -58,7 +58,7 @@ export default function PartnersLogos() {
   ];
 
   return (
-    <section className="relative py-16 bg-black overflow-hidden">
+    <section className="relative py-16 bg-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -68,10 +68,10 @@ export default function PartnersLogos() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#ff102a] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
             {isZh ? '合作伙伴' : 'Our Partners'}
           </h2>
-          <p className="text-[#dadafa] max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             {isZh
               ? '与全球领先的金融机构和平台建立战略合作伙伴关系'
               : 'Strategic partnerships with leading global financial institutions and platforms'}
@@ -116,12 +116,12 @@ export default function PartnersLogos() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-[#131318] border-2 border-[#ff102a] p-6"
+          className="bg-gray-50 border-2 border-blue-800 p-6"
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Left: Description */}
             <div className="text-center md:text-left">
-              <p className="text-base md:text-lg text-[#ff102a]">
+              <p className="text-base md:text-lg text-blue-800">
                 {isZh ? (
                   <>
                     时空交易是 <span className="font-bold">EC Markets</span>、<span className="font-bold">TickMill</span>、<span className="font-bold">Binance</span>、<span className="font-bold">FTMO</span>、<span className="font-bold">FundedNext</span> 的<span className="font-black text-xl underline decoration-2 underline-offset-4">官方合作伙伴</span>
@@ -132,18 +132,18 @@ export default function PartnersLogos() {
                   </>
                 )}
               </p>
-              <p className="text-sm text-white mt-2">
+              <p className="text-sm text-gray-600 mt-2">
                 {isZh ? (
                   <>
-                    使用专属链接注册，享受<span className="font-black bg-[#ff102a] text-white px-2 py-0.5">平台最高自动返佣</span>、<span className="font-bold underline">超低点差</span>、<span className="font-bold underline">手续费</span>
+                    使用专属链接注册，享受<span className="font-black bg-blue-800 text-white px-2 py-0.5">平台最高自动返佣</span>、<span className="font-bold underline">超低点差</span>、<span className="font-bold underline">手续费</span>
                     <br />
-                    <span className="font-black">FTMO</span> 和 <span className="font-black">FundedNext</span> 更有<span className="font-black text-base bg-[#ff102a] text-white px-2 py-0.5 ml-1">立减优惠</span>
+                    <span className="font-black">FTMO</span> 和 <span className="font-black">FundedNext</span> 更有<span className="font-black text-base bg-blue-800 text-white px-2 py-0.5 ml-1">立减优惠</span>
                   </>
                 ) : (
                   <>
-                    Register with exclusive links for <span className="font-black bg-[#ff102a] text-white px-2 py-0.5">maximum auto-rebates</span>, <span className="font-bold underline">ultra-low spreads & fees</span>
+                    Register with exclusive links for <span className="font-black bg-blue-800 text-white px-2 py-0.5">maximum auto-rebates</span>, <span className="font-bold underline">ultra-low spreads & fees</span>
                     <br />
-                    <span className="font-black">FTMO</span> & <span className="font-black">FundedNext</span> with <span className="font-black text-base bg-[#ff102a] text-white px-2 py-0.5 ml-1">instant discounts</span>
+                    <span className="font-black">FTMO</span> & <span className="font-black">FundedNext</span> with <span className="font-black text-base bg-blue-800 text-white px-2 py-0.5 ml-1">instant discounts</span>
                   </>
                 )}
               </p>
@@ -163,20 +163,20 @@ export default function PartnersLogos() {
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="group"
                 >
-                  <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-all px-4 py-2 flex items-center gap-2">
-                    <span className="font-bold text-white group-hover:text-[#ff102a] text-sm group-hover:underline transition-colors">
+                  <div className="bg-white border-2 border-gray-200 hover:border-blue-800 transition-all px-4 py-2 flex items-center gap-2">
+                    <span className="font-bold text-gray-800 group-hover:text-blue-800 text-sm group-hover:underline transition-colors">
                       {partner.name}
                     </span>
                     {partner.name === 'FundedNext' && partner.code && (
                       <>
-                        <span className="text-[#dadafa]">|</span>
-                        <code className="text-xs bg-[#131318] px-2 py-0.5 text-white group-hover:text-[#ff102a] font-mono transition-colors">
+                        <span className="text-gray-400">|</span>
+                        <code className="text-xs bg-gray-100 px-2 py-0.5 text-gray-800 group-hover:text-blue-800 font-mono transition-colors">
                           {partner.code}
                         </code>
                       </>
                     )}
                     <svg
-                      className="w-4 h-4 text-[#dadafa] group-hover:text-[#ff102a] transition-colors"
+                      className="w-4 h-4 text-gray-400 group-hover:text-blue-800 transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

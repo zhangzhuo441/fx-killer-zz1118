@@ -45,12 +45,12 @@ export default function InterviewCTA() {
 
   return (
     <>
-      <section className="relative py-24 overflow-hidden bg-black">
+      <section className="relative py-24 overflow-hidden bg-white">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5 z-[5]">
           <div className="absolute inset-0" style={{
             backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 50px, currentColor 50px, currentColor 51px), repeating-linear-gradient(90deg, transparent, transparent 50px, currentColor 50px, currentColor 51px)',
-            color: 'white'
+            color: 'black'
           }} />
         </div>
 
@@ -60,14 +60,14 @@ export default function InterviewCTA() {
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="absolute top-0 left-0 right-0 h-1 bg-[#dadafa] origin-left"
+          className="absolute top-0 left-0 right-0 h-1 bg-gray-200 origin-left"
         />
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="absolute bottom-0 left-0 right-0 h-1 bg-[#dadafa] origin-right"
+          className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 origin-right"
         />
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -79,7 +79,7 @@ export default function InterviewCTA() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <span className="inline-block px-8 py-3 bg-[#131318] text-white text-base font-bold tracking-wider border-2 border-[#dadafa]">
+            <span className="inline-block px-8 py-3 bg-white text-blue-800 text-base font-bold tracking-wider border-2 border-blue-800">
               {currentContent.badge.toUpperCase()}
             </span>
           </motion.div>
@@ -90,7 +90,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold text-center mb-4 text-white"
+            className="text-5xl md:text-7xl font-bold text-center mb-4 text-blue-800"
           >
             {currentContent.title}
           </motion.h2>
@@ -101,7 +101,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-center mb-6 text-[#dadafa]"
+            className="text-xl md:text-2xl text-center mb-6 text-gray-600"
           >
             {currentContent.subtitle}
           </motion.p>
@@ -112,7 +112,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-center mb-12 text-[#b0b0b0] max-w-3xl mx-auto"
+            className="text-center mb-12 text-gray-500 max-w-3xl mx-auto"
           >
             {currentContent.description}
           </motion.p>
@@ -132,10 +132,10 @@ export default function InterviewCTA() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                className="bg-[#0a0a0a] backdrop-blur-sm border-2 border-[#dadafa]/30 p-6 text-center hover:border-[#ff102a] transition-colors"
+                className="bg-gray-50 backdrop-blur-sm border-2 border-gray-200 p-6 text-center hover:border-blue-800 transition-colors"
               >
-                <div className="text-3xl mb-2 text-white">{feature.icon}</div>
-                <div className="text-base font-bold text-white">{feature.text}</div>
+                <div className="text-3xl mb-2 text-blue-800">{feature.icon}</div>
+                <div className="text-base font-bold text-gray-800">{feature.text}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -150,7 +150,7 @@ export default function InterviewCTA() {
           >
             <ShineButton
               onClick={() => setIsModalOpen(true)}
-              className="inline-block px-16 py-6 bg-[#ff102a] text-white text-2xl font-bold border-4 border-[#ff102a] hover:bg-[#eb383e] hover:text-white shadow-2xl"
+              className="inline-block px-16 py-6 bg-blue-800 text-white text-2xl font-bold border-4 border-blue-800 hover:bg-blue-700 hover:text-white shadow-2xl"
             >
               {currentContent.button}
               <motion.span
@@ -169,7 +169,7 @@ export default function InterviewCTA() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1 }}
-            className="text-center text-sm text-[#b0b0b0] italic"
+            className="text-center text-sm text-gray-500 italic"
           >
             {currentContent.note}
           </motion.p>
@@ -185,7 +185,7 @@ export default function InterviewCTA() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute top-10 left-10 w-24 h-24 border-4 border-[#dadafa]/10"
+          className="absolute top-10 left-10 w-24 h-24 border-4 border-blue-800/10"
         />
         <motion.div
           animate={{
@@ -196,7 +196,7 @@ export default function InterviewCTA() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute bottom-10 right-10 w-36 h-36 border-4 border-[#dadafa]/10"
+          className="absolute bottom-10 right-10 w-36 h-36 border-4 border-blue-800/10"
         />
       </section>
 

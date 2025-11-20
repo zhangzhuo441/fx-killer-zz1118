@@ -129,10 +129,10 @@ const DummyContent = () => {
         {/* 为什么选择 Space-time trading - Akira 风格 */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-[#ff102a]">
+          <h2 className="text-4xl font-bold mb-4 text-blue-800">
             {t('why.title')}
           </h2>
-          <div className="w-24 h-1 bg-[#ff102a] mx-auto mb-4"></div>
+          <div className="w-24 h-1 bg-blue-800 mx-auto mb-4"></div>
           <p className="text-gray-600 text-lg">
             {t('why.subtitle')}
           </p>
@@ -142,12 +142,12 @@ const DummyContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <FadeInSlide direction="up" delay={0.1}>
             <HoverCard className="h-full">
-              <div className="p-8 bg-[#0a0a0a] border-2 border-[#dadafa]/30 h-full hover:border-[#ff102a] transition-colors group">
-                <div className="mb-4 w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
+              <div className="p-8 bg-gray-50 border-2 border-gray-200 h-full hover:border-blue-800 transition-colors group">
+                <div className="mb-4 w-12 h-12 bg-blue-800 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
                   <span className="text-2xl text-white font-bold">1</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">{t('advantage.selection.title')}</h3>
-                <p className="text-[#b0b0b0] leading-relaxed">
+                <h3 className="text-2xl font-bold mb-4 text-blue-800">{t('advantage.selection.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">
                   {t('advantage.selection.desc')}
                 </p>
               </div>
@@ -156,12 +156,12 @@ const DummyContent = () => {
 
           <FadeInSlide direction="up" delay={0.2}>
             <HoverCard className="h-full">
-              <div className="p-8 bg-[#0a0a0a] border-2 border-[#dadafa]/30 h-full hover:border-[#ff102a] transition-colors group">
-                <div className="mb-4 w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
+              <div className="p-8 bg-gray-50 border-2 border-gray-200 h-full hover:border-blue-800 transition-colors group">
+                <div className="mb-4 w-12 h-12 bg-blue-800 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
                   <span className="text-2xl text-white font-bold">2</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">{t('advantage.growth.title')}</h3>
-                <p className="text-[#b0b0b0] leading-relaxed">
+                <h3 className="text-2xl font-bold mb-4 text-blue-800">{t('advantage.growth.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">
                   {t('advantage.growth.desc')}
                 </p>
               </div>
@@ -170,12 +170,12 @@ const DummyContent = () => {
 
           <FadeInSlide direction="up" delay={0.3}>
             <HoverCard className="h-full">
-              <div className="p-8 bg-[#0a0a0a] border-2 border-[#dadafa]/30 h-full hover:border-[#ff102a] transition-colors group">
-                <div className="mb-4 w-12 h-12 bg-[#ff102a] flex items-center justify-center group-hover:bg-[#eb383e] transition-colors">
+              <div className="p-8 bg-gray-50 border-2 border-gray-200 h-full hover:border-blue-800 transition-colors group">
+                <div className="mb-4 w-12 h-12 bg-blue-800 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
                   <span className="text-2xl text-white font-bold">3</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">{t('advantage.commission.title')}</h3>
-                <p className="text-[#b0b0b0] leading-relaxed">
+                <h3 className="text-2xl font-bold mb-4 text-blue-800">{t('advantage.commission.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">
                   {t('advantage.commission.desc')}
                 </p>
               </div>
@@ -184,54 +184,54 @@ const DummyContent = () => {
         </div>
 
         {/* 与传统培训对比 */}
-        <div className="bg-[#131318] border-2 border-[#dadafa]/20 p-8">
-          <h3 className="text-2xl font-bold text-center mb-8 text-white">
-            <span className="bg-[#ff102a] text-white px-4 py-2">{t('comparison.vs')}</span>
+        <div className="bg-gray-50 border-2 border-gray-200 p-8">
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
+            <span className="bg-blue-800 text-white px-4 py-2">{t('comparison.vs')}</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Space-time trading */}
-            <div className="bg-[#0a0a0a] p-6 border-l-4 border-[#ff102a]">
-              <h4 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
+            <div className="bg-white p-6 border-l-4 border-blue-800 shadow-sm">
+              <h4 className="text-xl font-bold mb-4 text-blue-800 flex items-center gap-2">
                 <span className="text-2xl"></span> {t('comparison.fxkiller')}
               </h4>
-              <ul className="space-y-3 text-[#e0e0e0]">
+              <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.free')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.practical')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.selection')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.funding')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.share')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.career')}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ff102a] font-bold">•</span>
+                  <span className="text-blue-800 font-bold">•</span>
                   <span>{t('comparison.discipline')}</span>
                 </li>
               </ul>
             </div>
 
             {/* 传统培训 */}
-            <div className="bg-[#1a1a1a] p-6 border-l-4 border-[#dadafa]/30">
-              <h4 className="text-xl font-bold mb-4 text-[#dadafa] flex items-center gap-2">
+            <div className="bg-gray-200 p-6 border-l-4 border-gray-400">
+              <h4 className="text-xl font-bold mb-4 text-gray-600 flex items-center gap-2">
                 <span className="text-2xl"></span> {t('comparison.traditional')}
               </h4>
-              <ul className="space-y-3 text-[#909090]">
+              <ul className="space-y-3 text-gray-500">
                 <li className="flex items-start gap-2">
                   <span className="font-bold">•</span>
                   <span>{t('comparison.highfee')}</span>
@@ -264,7 +264,7 @@ const DummyContent = () => {
             </div>
           </div>
 
-          <div className="mt-8 bg-black border-2 border-[#ff102a] text-white p-6 text-center">
+          <div className="mt-8 bg-blue-50 border-2 border-blue-800 text-blue-900 p-6 text-center">
             <p className="text-lg font-semibold">
               {t('comparison.emphasis')}
             </p>
@@ -275,20 +275,20 @@ const DummyContent = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* 阶段 1 */}
           <div className="relative">
-            <div className="bg-[#0a0a0a] border-2 border-[#ff102a] p-6 h-full">
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#ff102a] border-2 border-[#ff102a] flex items-center justify-center">
+            <div className="bg-gray-50 border-2 border-blue-800 p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-blue-800 border-2 border-blue-800 flex items-center justify-center">
                 <span className="text-white font-black text-2xl">1</span>
               </div>
               <div className="mt-4">
-                <div className="inline-block px-3 py-1 bg-[#ff102a] text-white text-xs font-bold mb-3">
+                <div className="inline-block px-3 py-1 bg-blue-800 text-white text-xs font-bold mb-3">
                   {t('career.stage1.days')}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage1.title')}</h3>
-                <p className="text-sm text-[#b0b0b0] mb-4">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">{t('career.stage1.title')}</h3>
+                <p className="text-sm text-gray-600 mb-4">
                   {t('career.stage1.desc')}
                 </p>
-                <div className="bg-[#131318] p-3 border-l-2 border-[#eb383e]">
-                  <p className="text-xs text-[#dadafa]">
+                <div className="bg-blue-50 p-3 border-l-2 border-blue-700">
+                  <p className="text-xs text-blue-900">
                     {t('career.stage1.warning')}
                   </p>
                 </div>
@@ -298,20 +298,20 @@ const DummyContent = () => {
 
           {/* 阶段 2 */}
           <div className="relative">
-            <div className="bg-[#0a0a0a] border-2 border-[#eb383e] p-6 h-full">
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#eb383e] border-2 border-[#eb383e] flex items-center justify-center">
+            <div className="bg-gray-50 border-2 border-blue-700 p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-blue-700 border-2 border-blue-700 flex items-center justify-center">
                 <span className="text-white font-black text-2xl">2</span>
               </div>
               <div className="mt-4">
-                <div className="inline-block px-3 py-1 bg-[#eb383e] text-white text-xs font-bold mb-3">
+                <div className="inline-block px-3 py-1 bg-blue-700 text-white text-xs font-bold mb-3">
                   {t('career.stage2.days')}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage2.title')}</h3>
-                <p className="text-sm text-[#b0b0b0] mb-4">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">{t('career.stage2.title')}</h3>
+                <p className="text-sm text-gray-600 mb-4">
                   {t('career.stage2.desc')}
                 </p>
-                <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]/50">
-                  <p className="text-xs text-[#dadafa]">
+                <div className="bg-blue-50 p-3 border-l-2 border-gray-300">
+                  <p className="text-xs text-blue-900">
                     {t('career.stage2.tip')}
                   </p>
                 </div>
@@ -321,20 +321,20 @@ const DummyContent = () => {
 
           {/* 阶段 3 */}
           <div className="relative">
-            <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/50 p-6 h-full">
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#dadafa] border-2 border-[#dadafa] flex items-center justify-center">
+            <div className="bg-gray-50 border-2 border-gray-300 p-6 h-full">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-gray-200 border-2 border-gray-300 flex items-center justify-center">
                 <span className="text-black font-black text-2xl">3</span>
               </div>
               <div className="mt-4">
-                <div className="inline-block px-3 py-1 bg-[#dadafa] text-black text-xs font-bold mb-3">
+                <div className="inline-block px-3 py-1 bg-gray-200 text-black text-xs font-bold mb-3">
                   {t('career.stage3.days')}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage3.title')}</h3>
-                <p className="text-sm text-[#b0b0b0] mb-4">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">{t('career.stage3.title')}</h3>
+                <p className="text-sm text-gray-600 mb-4">
                   {t('career.stage3.desc')}
                 </p>
-                <div className="bg-[#131318] p-3 border-l-2 border-[#dadafa]">
-                  <p className="text-xs text-[#dadafa]">
+                <div className="bg-white p-3 border-l-2 border-gray-300">
+                  <p className="text-xs text-gray-600">
                     {t('career.stage3.success')}
                   </p>
                 </div>
@@ -344,19 +344,19 @@ const DummyContent = () => {
 
           {/* 阶段 4 */}
           <div className="relative">
-            <div className="bg-[#ff102a] border-2 border-[#ff102a] p-6 h-full">
+            <div className="bg-blue-800 border-2 border-blue-800 p-6 h-full">
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-white border-2 border-white flex items-center justify-center">
-                <span className="text-[#ff102a] font-black text-2xl">★</span>
+                <span className="text-blue-800 font-black text-2xl">★</span>
               </div>
               <div className="mt-4">
-                <div className="inline-block px-3 py-1 bg-white text-[#ff102a] text-xs font-bold mb-3">
+                <div className="inline-block px-3 py-1 bg-white text-blue-800 text-xs font-bold mb-3">
                   {t('career.stage4.path')}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">{t('career.stage4.title')}</h3>
                 <p className="text-sm text-white/90 mb-4">
                   {t('career.stage4.desc')}
                 </p>
-                <div className="bg-[#eb383e] p-3 border-l-2 border-white">
+                <div className="bg-blue-700 p-3 border-l-2 border-white">
                   <p className="text-xs text-white font-semibold">
                     {t('career.stage4.goal')}
                   </p>
@@ -370,10 +370,10 @@ const DummyContent = () => {
         {/* 你是否符合基本条件 - Akira 风格 */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-[#ff102a]">
+          <h2 className="text-4xl font-bold mb-4 text-blue-800">
             {t('req.title')}
           </h2>
-          <div className="w-24 h-1 bg-[#ff102a] mx-auto mb-4"></div>
+          <div className="w-24 h-1 bg-blue-800 mx-auto mb-4"></div>
           <p className="text-gray-600 text-lg">
             {t('req.subtitle')}
           </p>
@@ -382,79 +382,79 @@ const DummyContent = () => {
         {/* 条件卡片 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* 人群画像 */}
-          <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
-            <div className="text-white">
+          <div className="bg-gray-50 p-8 border-2 border-gray-200 hover:border-blue-800 transition-colors group">
+            <div className="text-gray-800">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold">{t('req.profile.title')}</h3>
+                <h3 className="text-2xl font-bold text-blue-800">{t('req.profile.title')}</h3>
               </div>
               <div className="space-y-5">
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg mb-1">{t('req.profile.education')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.profile.education.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('req.profile.education.desc')}</p>
                 </div>
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg mb-1">{t('req.profile.psychology')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.profile.psychology.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('req.profile.psychology.desc')}</p>
                 </div>
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg mb-1">{t('req.profile.character')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.profile.character.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('req.profile.character.desc')}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* 时间与环境 */}
-          <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
+          <div className="bg-gray-50 p-8 border-2 border-gray-200 hover:border-blue-800 transition-colors group">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white">{t('req.time.title')}</h3>
+              <h3 className="text-2xl font-bold text-blue-800">{t('req.time.title')}</h3>
             </div>
             <div className="space-y-5">
-              <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
+              <div className="flex items-start gap-3 hover:bg-white p-3 -m-3 transition-colors">
                 <div>
-                  <p className="font-bold text-white mb-1">{t('req.time.commitment')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.time.commitment.desc')}</p>
+                  <p className="font-bold text-gray-800 mb-1">{t('req.time.commitment')}</p>
+                  <p className="text-sm text-gray-500">{t('req.time.commitment.desc')}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
+              <div className="flex items-start gap-3 hover:bg-white p-3 -m-3 transition-colors">
                 <div>
-                  <p className="font-bold text-white mb-1">{t('req.time.equipment')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.time.equipment.desc')}</p>
+                  <p className="font-bold text-gray-800 mb-1">{t('req.time.equipment')}</p>
+                  <p className="text-sm text-gray-500">{t('req.time.equipment.desc')}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 hover:bg-[#131318] p-3 -m-3 transition-colors">
+              <div className="flex items-start gap-3 hover:bg-white p-3 -m-3 transition-colors">
                 <div>
-                  <p className="font-bold text-white mb-1">{t('req.time.environment')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.time.environment.desc')}</p>
+                  <p className="font-bold text-gray-800 mb-1">{t('req.time.environment')}</p>
+                  <p className="text-sm text-gray-500">{t('req.time.environment.desc')}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* 在线时间 */}
-          <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
-            <div className="text-white">
+          <div className="bg-gray-50 p-8 border-2 border-gray-200 hover:border-blue-800 transition-colors group">
+            <div className="text-gray-800">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold">{t('req.online.title')}</h3>
+                <h3 className="text-2xl font-bold text-blue-800">{t('req.online.title')}</h3>
               </div>
               <div className="space-y-5">
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg mb-1">{t('req.online.hours')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.online.hours.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('req.online.hours.desc')}</p>
                 </div>
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg mb-1">{t('req.online.debrief')}</p>
-                  <p className="text-sm text-[#b0b0b0]">{t('req.online.debrief.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('req.online.debrief.desc')}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* 适合与否 */}
-          <div className="bg-[#0a0a0a] p-8 border-2 border-[#dadafa]/30 hover:border-[#ff102a] transition-colors group">
-            <div className="text-white">
+          <div className="bg-gray-50 p-8 border-2 border-gray-200 hover:border-blue-800 transition-colors group">
+            <div className="text-gray-800">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold">{t('unsuitable.title')}</h3>
+                <h3 className="text-2xl font-bold text-blue-800">{t('unsuitable.title')}</h3>
               </div>
               <div className="space-y-5">
                 <div className="border-l-4 border-[#eb383e] pl-4 hover:pl-6 transition-all">
@@ -462,14 +462,14 @@ const DummyContent = () => {
                     <span className="text-[#ff102a]">✗</span>
                     {t('unsuitable.gambler')}
                   </p>
-                  <p className="text-sm text-[#b0b0b0]">{t('unsuitable.gambler.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('unsuitable.gambler.desc')}</p>
                 </div>
-                <div className="border-l-4 border-[#dadafa] pl-4 hover:pl-6 transition-all">
+                <div className="border-l-4 border-gray-300 pl-4 hover:pl-6 transition-all">
                   <p className="font-bold text-lg flex items-center gap-2 mb-1">
-                    <span className="text-[#dadafa]">✓</span>
+                    <span className="text-blue-800">✓</span>
                     {t('expectations.mindset')}
                   </p>
-                  <p className="text-sm text-[#b0b0b0]">{t('expectations.mindset.desc')}</p>
+                  <p className="text-sm text-gray-500">{t('expectations.mindset.desc')}</p>
                 </div>
               </div>
             </div>
@@ -477,7 +477,7 @@ const DummyContent = () => {
         </div>
 
         {/* 重要提示 */}
-        <div className="mt-8 bg-[#131318] text-white p-8 border-2 border-[#ff102a]">
+        <div className="mt-8 bg-blue-50 text-gray-800 p-8 border-2 border-blue-800">
           <div className="flex items-start gap-6">
             <div className="flex-shrink-0 w-16 h-16 bg-[#ff102a] flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -485,11 +485,11 @@ const DummyContent = () => {
               </svg>
             </div>
             <div className="flex-1">
-              <h4 className="text-2xl font-bold mb-3">{t('req.notice.title')}</h4>
+              <h4 className="text-2xl font-bold mb-3 text-blue-800">{t('req.notice.title')}</h4>
               <p className="text-lg leading-relaxed mb-4">
                 {t('req.notice.once')}{t('req.notice.desc')}
               </p>
-              <p className="text-[#dadafa]">
+              <p className="text-gray-600">
                 {t('req.notice.philosophy')}
               </p>
             </div>
@@ -499,7 +499,7 @@ const DummyContent = () => {
 
         {/* 视频介绍板块 - Akira 风格 */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
-          <h2 className="text-4xl font-bold text-center mb-4 text-[#ff102a] w-full">
+          <h2 className="text-4xl font-bold text-center mb-4 text-blue-800 w-full">
             {t('video.title')}
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
@@ -508,24 +508,24 @@ const DummyContent = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 视频 1 */}
-            <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/30 overflow-hidden group hover:border-[#ff102a] transition-all">
-              <div className="relative h-64 bg-[#131318] flex items-center justify-center">
-                <div className="text-center text-white">
+            <div className="bg-gray-50 border-2 border-gray-200 overflow-hidden group hover:border-blue-800 transition-all">
+              <div className="relative h-64 bg-gray-100 flex items-center justify-center">
+                <div className="text-center text-gray-800">
                   <div className="text-6xl mb-4"></div>
                   <p className="text-lg font-semibold">{t('video.doc1.title')}</p>
-                  <p className="text-sm text-[#dadafa]">{t('video.doc1.rating')}</p>
+                  <p className="text-sm text-gray-500">{t('video.doc1.rating')}</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">{t('video.doc1.title')}</h3>
-                <p className="text-[#b0b0b0] mb-4 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">{t('video.doc1.title')}</h3>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {t('video.doc1.desc')}
                 </p>
                 <a
                   href="https://www.bilibili.com/video/BV19a411X7eY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-[#ff102a] text-white font-bold border-2 border-[#ff102a] hover:bg-[#eb383e] hover:border-[#eb383e] transition-colors"
+                  className="inline-block px-6 py-3 bg-blue-800 text-white font-bold border-2 border-blue-800 hover:bg-blue-700 hover:border-blue-700 transition-colors"
                 >
                   {t('video.doc1.cta')}
                 </a>
@@ -533,24 +533,24 @@ const DummyContent = () => {
             </div>
 
             {/* 视频 2 */}
-            <div className="bg-[#0a0a0a] border-2 border-[#dadafa]/30 overflow-hidden group hover:border-[#ff102a] transition-all">
-              <div className="relative h-64 bg-[#131318] flex items-center justify-center">
-                <div className="text-center text-white">
+            <div className="bg-gray-50 border-2 border-gray-200 overflow-hidden group hover:border-blue-800 transition-all">
+              <div className="relative h-64 bg-gray-100 flex items-center justify-center">
+                <div className="text-center text-gray-800">
                   <div className="text-6xl mb-4"></div>
                   <p className="text-lg font-semibold">{t('video.doc2.title')}</p>
-                  <p className="text-sm text-[#dadafa]">{t('video.doc2.rating')}</p>
+                  <p className="text-sm text-gray-500">{t('video.doc2.rating')}</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">{t('video.doc2.title')}</h3>
-                <p className="text-[#b0b0b0] mb-4 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">{t('video.doc2.title')}</h3>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {t('video.doc2.desc')}
                 </p>
                 <a
                   href="https://www.bilibili.com/video/BV1FZ4y1o734"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-[#ff102a] text-white font-bold border-2 border-[#ff102a] hover:bg-[#eb383e] hover:border-[#eb383e] transition-colors"
+                  className="inline-block px-6 py-3 bg-blue-800 text-white font-bold border-2 border-blue-800 hover:bg-blue-700 hover:border-blue-700 transition-colors"
                 >
                   {t('video.doc2.cta')}
                 </a>
@@ -562,17 +562,17 @@ const DummyContent = () => {
           <div className="mt-16">
             {/* 收益统计 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-[#0a0a0a] p-6 border-2 border-[#dadafa]/30 text-center hover:border-[#ff102a] transition-colors">
-                <div className="text-4xl font-black text-white mb-2">{t('showcase.junior')}</div>
-                <p className="text-2xl font-bold text-[#dadafa]">¥10,000 - ¥30,000</p>
-                <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
+              <div className="bg-gray-50 p-6 border-2 border-gray-200 text-center hover:border-blue-800 transition-colors">
+                <div className="text-4xl font-black text-blue-800 mb-2">{t('showcase.junior')}</div>
+                <p className="text-2xl font-bold text-gray-700">¥10,000 - ¥30,000</p>
+                <p className="text-sm text-gray-500 mt-2">{t('showcase.income.range')}</p>
               </div>
-              <div className="bg-[#0a0a0a] p-6 border-2 border-[#ff102a] text-center">
-                <div className="text-4xl font-black text-white mb-2">{t('showcase.intermediate')}</div>
-                <p className="text-2xl font-bold text-[#eb383e]">¥30,000 - ¥60,000</p>
-                <p className="text-sm text-[#b0b0b0] mt-2">{t('showcase.income.range')}</p>
+              <div className="bg-gray-50 p-6 border-2 border-blue-800 text-center">
+                <div className="text-4xl font-black text-blue-800 mb-2">{t('showcase.intermediate')}</div>
+                <p className="text-2xl font-bold text-blue-600">¥30,000 - ¥60,000</p>
+                <p className="text-sm text-gray-500 mt-2">{t('showcase.income.range')}</p>
               </div>
-              <div className="bg-[#ff102a] p-6 border-2 border-[#ff102a] text-center">
+              <div className="bg-blue-800 p-6 border-2 border-blue-800 text-center">
                 <div className="text-4xl font-black text-white mb-2">{t('showcase.senior')}</div>
                 <p className="text-2xl font-bold text-white">¥60,000 - ¥100,000+</p>
                 <p className="text-sm text-white/70 mt-2">{t('showcase.income.range')}</p>
@@ -619,7 +619,7 @@ const DummyContent = () => {
             <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-black mb-6 leading-none">
               {t('cta.title')}
             </h2>
-            <div className="w-32 h-2 bg-[#ff102a] mx-auto mb-8"></div>
+            <div className="w-32 h-2 bg-blue-800 mx-auto mb-8"></div>
             <p className="text-2xl md:text-3xl text-gray-600 font-semibold">
               {t('cta.subtitle')}
             </p>
@@ -628,7 +628,7 @@ const DummyContent = () => {
           {/* 关键信息 - 横向排列 */}
           <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
             <div className="text-center">
-              <div className="text-7xl font-black text-[#ff102a] mb-2">10-15%</div>
+              <div className="text-7xl font-black text-yellow-600 mb-2">10-15%</div>
               <p className="text-sm text-gray-600">{t('cta.passrate')}</p>
             </div>
             <div className="text-6xl text-gray-300">|</div>
@@ -652,10 +652,10 @@ const DummyContent = () => {
           <div className="text-center">
             <button
               onClick={() => setIsEmailModalOpen(true)}
-              className="group relative inline-block px-24 py-8 bg-[#ff102a] text-white font-black text-4xl overflow-hidden transition-all duration-300 hover:scale-105"
+              className="group relative inline-block px-24 py-8 bg-blue-800 text-white font-black text-4xl overflow-hidden transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10">{t('cta.button.interview')}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff102a] via-[#eb383e] to-[#ff102a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <p className="text-sm text-gray-500 mt-6">
               {t('cta.button.note')}

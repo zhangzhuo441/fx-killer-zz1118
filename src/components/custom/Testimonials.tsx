@@ -229,7 +229,7 @@ export default function Testimonials() {
   const doubledTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section className="relative py-20 bg-black overflow-hidden">
+    <section className="relative py-20 bg-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -239,10 +239,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#ff102a]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
             {language === 'zh' ? '学员感言' : 'Student Testimonials'}
           </h2>
-          <p className="text-[#dadafa] max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             {language === 'zh'
               ? '来自真实学员的反馈，他们通过系统培训成为职业交易员'
               : 'Real feedback from students who became professional traders through systematic training'}
@@ -268,22 +268,22 @@ export default function Testimonials() {
             {doubledTestimonials.map((testimonial, index) => (
               <div
                 key={`${testimonial.id}-${index}`}
-                className="flex-shrink-0 bg-[#0a0a0a] border-2 border-[#dadafa]/30 p-6 hover:shadow-lg transition-shadow"
+                className="flex-shrink-0 bg-gray-50 border-2 border-gray-200 p-6 hover:shadow-lg transition-shadow"
                 style={{ width: '380px' }}
               >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
                   {/* Avatar */}
-                  <div className="w-12 h-12 bg-[#ff102a] flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-12 h-12 bg-blue-800 flex items-center justify-center text-white font-bold text-lg">
                     {testimonial.avatar}
                   </div>
                   {/* Name & Role */}
                   <div>
-                    <h3 className="font-bold text-[#ff102a]">
+                    <h3 className="font-bold text-blue-800">
                       {language === 'zh' ? testimonial.name.zh : testimonial.name.en}
                     </h3>
-                    <p className="text-sm text-[#dadafa]">
+                    <p className="text-sm text-gray-500">
                       {language === 'zh' ? testimonial.role.zh : testimonial.role.en}
                     </p>
                   </div>
@@ -295,14 +295,14 @@ export default function Testimonials() {
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-[#ff102a]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
 
               {/* Content */}
-              <p className="text-[#b0b0b0] leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {language === 'zh' ? testimonial.content.zh : testimonial.content.en}
               </p>
             </div>

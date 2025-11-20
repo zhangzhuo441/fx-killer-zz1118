@@ -53,7 +53,7 @@ export function BackToTop() {
       }}
       transition={{ duration: 0.3 }}
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-50 p-3 bg-black dark:bg-white text-white dark:text-black border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors ${
+      className={`fixed bottom-6 right-6 z-50 p-3 bg-blue-900 dark:bg-white text-white dark:text-blue-900 border-2 border-blue-900 dark:border-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-900 dark:hover:text-white transition-colors ${
         isVisible ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
       aria-label="Back to top"
