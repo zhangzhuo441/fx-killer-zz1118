@@ -170,7 +170,7 @@ export default async function PortalLayout({
           <BackToTop />
           <FloatingContactForm />
           <WelcomeModalWrapper />
-          <CalendlyWidget />
+          {/* <CalendlyWidget /> */}
           <SubscriptionNotification />
           <Analytics />
           <SpeedInsights />
