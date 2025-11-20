@@ -37,7 +37,7 @@ export default function FloatingContactForm() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed right-6 bottom-20 z-40 bg-black dark:bg-white text-white dark:text-black p-3 border-2 border-black dark:border-white shadow-2xl hover:scale-110 transition-transform"
+          className="fixed right-6 bottom-20 z-40 bg-blue-900 dark:bg-white text-white dark:text-black p-3 border-2 border-blue-900 dark:border-white shadow-2xl hover:scale-110 transition-transform"
           aria-label={isZh ? '联系我们' : 'Contact Us'}
           title={isZh ? '快速联系我们' : 'Quick Contact'}
         >
@@ -62,7 +62,7 @@ export default function FloatingContactForm() {
         <div className="fixed right-6 bottom-20 z-40 w-80 max-w-[calc(100vw-3rem)]">
           <div className="bg-white dark:bg-gray-900 border-2 border-black dark:border-white shadow-2xl">
             {/* Header */}
-            <div className="bg-black dark:bg-white text-white dark:text-black px-6 py-4 flex items-center justify-between">
+            <div className="bg-blue-900 dark:bg-white text-white dark:text-black px-6 py-4 flex items-center justify-between">
               <h3 className="text-lg font-bold">
                 {isZh ? '快速联系' : 'Quick Contact'}
               </h3>
@@ -188,7 +188,7 @@ export default function FloatingContactForm() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors"
+                className="w-full px-6 py-3 bg-blue-900 dark:bg-white text-white dark:text-black font-bold border-2 border-blue-900 dark:border-white hover:bg-white hover:text-blue-900 dark:hover:bg-black dark:hover:text-white transition-colors"
               >
                 {isZh ? '快联系我' : 'Contact Me'}
               </button>

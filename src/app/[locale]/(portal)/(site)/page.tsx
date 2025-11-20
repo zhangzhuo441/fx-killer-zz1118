@@ -60,7 +60,7 @@ const DummyContent = () => {
   return (
     <div className="w-full -mt-16">
       {/* Hero Section */}
-      <div className="relative overflow-hidden h-screen bg-black">
+      <div className="relative overflow-hidden h-screen bg-white">
         {/* Hyperspeed Background with Akira Preset */}
         <div className="absolute inset-0 w-full h-full">
           <Hyperspeed effectOptions={hyperspeedPresets.akira} />
@@ -72,26 +72,26 @@ const DummyContent = () => {
             <div className="max-w-3xl flex flex-col space-y-10">
             {/* Main Title */}
             <ScaleFadeIn delay={0.2}>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white tracking-tight leading-none">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight leading-none">
                 <BrandName inHero={true} />
               </h1>
             </ScaleFadeIn>
 
             {/* Subtitle */}
             <FadeInSlide direction="right" delay={0.4}>
-              <div className="text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight space-y-2">
+              <div className="text-2xl md:text-3xl lg:text-4xl text-blue-800 font-bold leading-tight space-y-2">
                 {language === 'zh' ? (
                   <>
                     <p>精准、专业、高效</p>
                     <p>
-                      <span className="inline-block bg-[#ff102a] text-white px-3 py-1 animate-pulse">免费培养</span>真正的外汇交易专家
+                      <span className="inline-block bg-blue-700 text-white px-3 py-1 animate-pulse">免费培养</span>真正的外汇交易专家
                     </p>
                   </>
                 ) : (
                   <>
                     <p>Precise, Professional, Efficient</p>
                     <p>
-                      <span className="inline-block bg-[#ff102a] text-white px-3 py-1 animate-pulse whitespace-nowrap">Free Training</span>{' '}
+                      <span className="inline-block bg-blue-700 text-white px-3 py-1 animate-pulse whitespace-nowrap">Free Training</span>{' '}
                       for True Forex Trading&nbsp;Experts
                     </p>
                   </>
@@ -105,14 +105,14 @@ const DummyContent = () => {
                 <PulseButton className="w-full sm:w-auto">
                   <ShineButton
                     onClick={() => router.push(`/${language}/splan/join-us`)}
-                    className="w-full px-12 py-6 bg-[#ff102a] text-white text-xl font-black border-2 border-[#ff102a] hover:bg-[#eb383e] hover:border-[#eb383e] transition-all shadow-lg"
+                    className="w-full px-12 py-6 bg-blue-700 text-white text-xl font-black border-2 border-blue-700 hover:bg-blue-800 hover:border-blue-800 transition-all shadow-lg"
                   >
                     {t('hero.cta.learn')}
                   </ShineButton>
                 </PulseButton>
                 <button
                   onClick={() => router.push(`/${language}/dashboard`)}
-                  className="w-full sm:w-auto px-12 py-6 bg-transparent text-white text-xl font-black border-2 border-[#dadafa] hover:bg-[#dadafa] hover:text-black transition-all"
+                  className="w-full sm:w-auto px-12 py-6 bg-transparent text-blue-800 text-xl font-black border-2 border-blue-800 hover:bg-blue-800 hover:text-white transition-all"
                 >
                   {t('hero.cta.dashboard')}
                 </button>
@@ -124,7 +124,7 @@ const DummyContent = () => {
       </div>
 
       {/* Shared Black Background for All Sections (除了Hero和Footer) */}
-      <div className="relative bg-black w-full overflow-hidden">
+      <div className="relative bg-white w-full overflow-hidden">
 
         {/* 为什么选择 Space-time trading - Akira 风格 */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
@@ -133,7 +133,7 @@ const DummyContent = () => {
             {t('why.title')}
           </h2>
           <div className="w-24 h-1 bg-[#ff102a] mx-auto mb-4"></div>
-          <p className="text-[#dadafa] text-lg">
+          <p className="text-gray-600 text-lg">
             {t('why.subtitle')}
           </p>
         </div>
@@ -374,7 +374,7 @@ const DummyContent = () => {
             {t('req.title')}
           </h2>
           <div className="w-24 h-1 bg-[#ff102a] mx-auto mb-4"></div>
-          <p className="text-[#dadafa] text-lg">
+          <p className="text-gray-600 text-lg">
             {t('req.subtitle')}
           </p>
         </div>
@@ -502,7 +502,7 @@ const DummyContent = () => {
           <h2 className="text-4xl font-bold text-center mb-4 text-[#ff102a] w-full">
             {t('video.title')}
           </h2>
-          <p className="text-center text-[#dadafa] mb-12 text-lg">
+          <p className="text-center text-gray-600 mb-12 text-lg">
             {t('video.subtitle')}
           </p>
 
@@ -580,8 +580,8 @@ const DummyContent = () => {
             </div>
 
             {/* 收益图片滚动展示 */}
-            <div className="bg-[#131318] border-2 border-[#dadafa]/30 p-8">
-              <h3 className="text-2xl font-bold text-center mb-6 text-white">
+            <div className="bg-gray-50 border-2 border-gray-200 p-8">
+              <h3 className="text-2xl font-bold text-center mb-6 text-black">
                 {t('showcase.screenshots.title')}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -589,7 +589,7 @@ const DummyContent = () => {
                   const imageIndex = currentImageIndex + offset;
                   const image = profitImages[imageIndex < profitImages.length ? imageIndex : imageIndex - profitImages.length];
                   return (
-                    <div key={offset} className="relative h-80 overflow-hidden bg-[#0a0a0a] border-2 border-[#dadafa]/30">
+                    <div key={offset} className="relative h-80 overflow-hidden bg-[#0a0a0a] border-2 border-gray-200">
                       <div className="relative w-full h-full flex items-center justify-center p-4">
                         <img
                           src={image}
@@ -602,7 +602,7 @@ const DummyContent = () => {
                 })}
               </div>
               <div className="mt-6 text-center">
-                <p className="text-sm text-[#dadafa]">
+                <p className="text-sm text-gray-600">
                   {t('showcase.screenshots.note')}
                 </p>
               </div>
@@ -616,11 +616,11 @@ const DummyContent = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-6 py-32">
           {/* 主标题 */}
           <div className="text-center mb-20">
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-none">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-black mb-6 leading-none">
               {t('cta.title')}
             </h2>
             <div className="w-32 h-2 bg-[#ff102a] mx-auto mb-8"></div>
-            <p className="text-2xl md:text-3xl text-[#dadafa] font-semibold">
+            <p className="text-2xl md:text-3xl text-gray-600 font-semibold">
               {t('cta.subtitle')}
             </p>
           </div>
@@ -629,22 +629,22 @@ const DummyContent = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
             <div className="text-center">
               <div className="text-7xl font-black text-[#ff102a] mb-2">10-15%</div>
-              <p className="text-sm text-[#dadafa]">{t('cta.passrate')}</p>
+              <p className="text-sm text-gray-600">{t('cta.passrate')}</p>
             </div>
-            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-6xl text-gray-300">|</div>
             <div className="text-center">
-              <div className="text-5xl font-black text-white mb-2">{t('cta.elimination.title')}</div>
-              <p className="text-sm text-[#dadafa]">{t('cta.elimination')}</p>
+              <div className="text-5xl font-black text-black mb-2">{t('cta.elimination.title')}</div>
+              <p className="text-sm text-gray-600">{t('cta.elimination')}</p>
             </div>
-            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-6xl text-gray-300">|</div>
             <div className="text-center">
-              <div className="text-5xl font-black text-white mb-2">{t('cta.time.title')}</div>
-              <p className="text-sm text-[#dadafa]">{t('cta.time.cost')}</p>
+              <div className="text-5xl font-black text-black mb-2">{t('cta.time.title')}</div>
+              <p className="text-sm text-gray-600">{t('cta.time.cost')}</p>
             </div>
-            <div className="text-6xl text-[#dadafa]/20">|</div>
+            <div className="text-6xl text-gray-300">|</div>
             <div className="text-center">
-              <div className="text-5xl font-black text-white mb-2">¥0</div>
-              <p className="text-sm text-[#dadafa]">{t('cta.money.cost')}</p>
+              <div className="text-5xl font-black text-black mb-2">¥0</div>
+              <p className="text-sm text-gray-600">{t('cta.money.cost')}</p>
             </div>
           </div>
 
@@ -657,7 +657,7 @@ const DummyContent = () => {
               <span className="relative z-10">{t('cta.button.interview')}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#ff102a] via-[#eb383e] to-[#ff102a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
-            <p className="text-sm text-[#b0b0b0] mt-6">
+            <p className="text-sm text-gray-500 mt-6">
               {t('cta.button.note')}
             </p>
           </div>

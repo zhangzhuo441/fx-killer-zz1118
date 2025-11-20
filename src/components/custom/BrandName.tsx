@@ -32,8 +32,8 @@ export default function BrandName({ inNavbar = false, inHero = false }: BrandNam
         // 根据使用场景决定颜色
         let colorClass;
         if (inHero) {
-          // Hero 中始终是白色（因为背景是黑色）
-          colorClass = isSecondPart ? 'font-normal text-gray-400' : 'font-black text-white';
+          // Hero 中背景为白色，文字为蓝色
+          colorClass = isSecondPart ? 'font-normal text-blue-900' : 'font-black text-blue-800';
         } else if (inNavbar) {
           // 导航栏中根据主题切换
           colorClass = isSecondPart ? 'font-normal text-gray-600 dark:text-gray-400' : 'font-black text-black dark:text-white';

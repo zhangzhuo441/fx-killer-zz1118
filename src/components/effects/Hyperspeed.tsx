@@ -258,12 +258,12 @@ export const hyperspeedPresets = {
     carShiftX: [-0.2, 0.2],
     carFloorSeparation: [0.05, 1],
     colors: {
-      roadColor: 0x080808,
-      islandColor: 0x0a0a0a,
-      background: 0x000000,
+      roadColor: 0xbbbbbb,
+      islandColor: 0xbbbbbb,
+      background: 0xffffff,
       shoulderLines: 0x131318,
       brokenLines: 0x131318,
-      leftCars: [0xff102a, 0xeb383e, 0xff102a],
+      leftCars: [0x1444E1, 0x2E77F2, 0x1444E1],
       rightCars: [0xdadafa, 0xbebae3, 0x8f97e4],
       sticks: 0xdadafa
     }
