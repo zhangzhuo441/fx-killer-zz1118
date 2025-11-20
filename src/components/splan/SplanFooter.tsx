@@ -232,9 +232,7 @@ export default function SplanFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://crm.ecmarkets.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   EC Markets
@@ -242,9 +240,7 @@ export default function SplanFooter() {
               </li>
               <li>
                 <a
-                  href="https://secure.tickmill.com/redirect/index.php?cii=17262&cis=1&lp=https%3A%2F%2Ftickmill.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   TickMill
@@ -252,9 +248,7 @@ export default function SplanFooter() {
               </li>
               <li>
                 <a
-                  href="https://accounts.binance.com/register?ref=11912329"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Binance
@@ -266,9 +260,7 @@ export default function SplanFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://trader.ftmo.com/?affiliates=UUdNjacFYttdgsZcEozt"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   FTMO
@@ -276,9 +268,7 @@ export default function SplanFooter() {
               </li>
               <li>
                 <a
-                  href="https://fundednext.com/a/4rfxkiller"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   FundedNext
