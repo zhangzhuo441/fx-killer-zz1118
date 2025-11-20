@@ -234,7 +234,8 @@ const FAQItem = ({ faq, isOpen, onClick }: { faq: FAQ; isOpen: boolean; onClick:
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       className={`bg-white dark:bg-gray-800 border-2 overflow-hidden transition-all ${
-        isOpen ? 'border-black dark:border-white shadow-lg' : 'border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500'
+        // 修改点：border-black -> border-blue-900
+        isOpen ? 'border-blue-900 dark:border-white shadow-lg' : 'border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500'
       }`}
     >
       <button
@@ -248,7 +249,8 @@ const FAQItem = ({ faq, isOpen, onClick }: { faq: FAQ; isOpen: boolean; onClick:
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
           className={`flex-shrink-0 w-8 h-8 flex items-center justify-center ${
-            isOpen ? 'bg-black dark:bg-white' : 'bg-gray-200 dark:bg-gray-700'
+            // 修改点：bg-black -> bg-blue-950
+            isOpen ? 'bg-blue-950 dark:bg-white' : 'bg-gray-200 dark:bg-gray-700'
           }`}
         >
           <span className={`text-lg font-bold ${isOpen ? 'text-white dark:text-black' : 'text-gray-600 dark:text-gray-400'}`}>
@@ -308,7 +310,8 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black border-b-2 border-gray-800">
+      {/* 修改点：from-black -> from-blue-950, border-gray-800 -> border-blue-900 */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 border-b-2 border-blue-900">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -342,10 +345,12 @@ export default function FAQPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('faq.search.placeholder')}
-              className="w-full px-6 py-5 pr-32 text-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition-all"
+              // 修改点：focus:border-black -> focus:border-blue-900
+              className="w-full px-6 py-5 pr-32 text-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-900 dark:focus:border-white transition-all"
             />
             <div className="absolute right-2 top-1/2 -translate-y-1/2">
-              <span className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold text-sm">
+              {/* 修改点：bg-black -> bg-blue-950 */}
+              <span className="px-6 py-3 bg-blue-950 dark:bg-white text-white dark:text-black font-bold text-sm">
                 {t('faq.search.button')}
               </span>
             </div>
@@ -355,9 +360,11 @@ export default function FAQPage() {
         {/* Course FAQs */}
         <section className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <div className="w-1 h-12 bg-blue-950 dark:bg-white"></div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white">{t('faq.category.course')}</h2>
-            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <span className="px-4 py-2 bg-blue-950 dark:bg-white text-white dark:text-black text-sm font-bold">
               {filterFAQs(faqData.course).length}
             </span>
           </div>
@@ -376,9 +383,11 @@ export default function FAQPage() {
         {/* Learning FAQs */}
         <section className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <div className="w-1 h-12 bg-blue-950 dark:bg-white"></div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white">{t('faq.category.learning')}</h2>
-            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <span className="px-4 py-2 bg-blue-950 dark:bg-white text-white dark:text-black text-sm font-bold">
               {filterFAQs(faqData.learning).length}
             </span>
           </div>
@@ -397,9 +406,11 @@ export default function FAQPage() {
         {/* Pricing FAQs */}
         <section className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <div className="w-1 h-12 bg-blue-950 dark:bg-white"></div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white">{t('faq.category.pricing')}</h2>
-            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <span className="px-4 py-2 bg-blue-950 dark:bg-white text-white dark:text-black text-sm font-bold">
               {filterFAQs(faqData.pricing).length}
             </span>
           </div>
@@ -418,9 +429,11 @@ export default function FAQPage() {
         {/* Support FAQs */}
         <section className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <div className="w-1 h-12 bg-blue-950 dark:bg-white"></div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white">{t('faq.category.support')}</h2>
-            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <span className="px-4 py-2 bg-blue-950 dark:bg-white text-white dark:text-black text-sm font-bold">
               {filterFAQs(faqData.support).length}
             </span>
           </div>
@@ -439,9 +452,11 @@ export default function FAQPage() {
         {/* Other FAQs */}
         <section className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <div className="w-1 h-12 bg-blue-950 dark:bg-white"></div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white">{t('faq.category.other')}</h2>
-            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+            {/* 修改点：bg-black -> bg-blue-950 */}
+            <span className="px-4 py-2 bg-blue-950 dark:bg-white text-white dark:text-black text-sm font-bold">
               {filterFAQs(faqData.other).length}
             </span>
           </div>
@@ -464,9 +479,11 @@ export default function FAQPage() {
           className="relative"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/5 to-gray-900/5 dark:from-white/5 dark:to-gray-100/5 blur-xl"></div>
-          <div className="relative bg-gradient-to-br from-black via-gray-900 to-black dark:from-white dark:via-gray-100 dark:to-white p-12 border-2 border-black dark:border-white text-center">
+          {/* 修改点：from-black -> from-blue-950, border-black -> border-blue-900 */}
+          <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 dark:from-white dark:via-gray-100 dark:to-white p-12 border-2 border-blue-900 dark:border-white text-center">
             <div className="mb-6">
-              <div className="inline-block w-16 h-16 bg-white dark:bg-black flex items-center justify-center mb-4">
+              {/* 修改点：dark:bg-black -> dark:bg-blue-950 */}
+              <div className="inline-block w-16 h-16 bg-white dark:bg-blue-950 flex items-center justify-center mb-4">
                 <svg className="w-10 h-10 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -478,7 +495,8 @@ export default function FAQPage() {
             </p>
             <button
               onClick={() => setIsEmailModalOpen(true)}
-              className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white font-bold text-lg border-2 border-white dark:border-black hover:bg-gray-100 dark:hover:bg-gray-900 transition-all hover:shadow-lg"
+              // 修改点：dark:bg-black -> dark:bg-blue-950, dark:border-black -> dark:border-blue-900
+              className="px-10 py-4 bg-white dark:bg-blue-950 text-black dark:text-white font-bold text-lg border-2 border-white dark:border-blue-900 hover:bg-gray-100 dark:hover:bg-gray-900 transition-all hover:shadow-lg"
             >
               {t('faq.contact.button')}
             </button>

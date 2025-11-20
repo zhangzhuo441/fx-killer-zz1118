@@ -17,7 +17,13 @@ export default function JoinUsPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero - 增强版 */}
-      <div className="relative bg-gradient-to-br from-black via-gray-900 to-black text-white border-b-2 border-gray-800 overflow-hidden">
+      {/* 修改点：
+          from-black via-gray-900 to-black 
+          改为 
+          from-blue-950 via-blue-900 to-blue-950 
+          border-gray-800 改为 border-blue-900
+      */}
+      <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white border-b-2 border-blue-900 overflow-hidden">
         {/* 装饰性背景 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -56,15 +62,15 @@ export default function JoinUsPage() {
         {/* Welcome */}
         <section className="relative">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.welcome.title')}</h2>
           </div>
           <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            <div className="bg-gradient-to-r from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-l-4 border-black dark:border-white">
+            <div className="bg-gradient-to-r from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-l-4 border-blue-900 dark:border-white">
               <p className="mb-4">
                 {t('joinus.welcome.intro')}
               </p>
-              <div className="inline-block bg-black text-white dark:bg-white dark:text-black px-6 py-3 font-bold text-xl">
+              <div className="inline-block bg-blue-900 text-white dark:bg-white dark:text-blue-900 px-6 py-3 font-bold text-xl">
                 {t('joinus.welcome.warning')}
               </div>
             </div>
@@ -77,7 +83,7 @@ export default function JoinUsPage() {
         {/* About */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.about.title')}</h2>
           </div>
           <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -87,22 +93,22 @@ export default function JoinUsPage() {
             <p className="pl-8 border-l-2 border-gray-200 dark:border-gray-700">
               {t('joinus.about.desc2')}
             </p>
-            <div className="bg-black dark:bg-white text-white dark:text-black p-8 border-2 border-black dark:border-white">
+            <div className="bg-blue-900 dark:bg-white text-white dark:text-blue-900 p-8 border-2 border-blue-900 dark:border-white">
               <h3 className="text-2xl font-bold mb-6">{t('joinus.about.timeline')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base">
-                <div className="bg-white/10 dark:bg-black/10 p-4 border border-white/20 dark:border-black/20">
+                <div className="bg-white/10 dark:bg-blue-900/10 p-4 border border-white/20 dark:border-blue-900/20">
                   <p className="font-bold mb-2">{t('joinus.about.phase1.title')}</p>
                   <p className="text-sm opacity-90">{t('joinus.about.phase1.desc')}</p>
                 </div>
-                <div className="bg-white/10 dark:bg-black/10 p-4 border border-white/20 dark:border-black/20">
+                <div className="bg-white/10 dark:bg-blue-900/10 p-4 border border-white/20 dark:border-blue-900/20">
                   <p className="font-bold mb-2">{t('joinus.about.phase2.title')}</p>
                   <p className="text-sm opacity-90">{t('joinus.about.phase2.desc')}</p>
                 </div>
-                <div className="bg-white/10 dark:bg-black/10 p-4 border border-white/20 dark:border-black/20">
+                <div className="bg-white/10 dark:bg-blue-900/10 p-4 border border-white/20 dark:border-blue-900/20">
                   <p className="font-bold mb-2">{t('joinus.about.notfit.title')}</p>
                   <p className="text-sm opacity-90">{t('joinus.about.notfit.desc')}</p>
                 </div>
-                <div className="bg-white/10 dark:bg-black/10 p-4 border border-white/20 dark:border-black/20">
+                <div className="bg-white/10 dark:bg-blue-900/10 p-4 border border-white/20 dark:border-blue-900/20">
                   <p className="font-bold mb-2">{t('joinus.about.fit.title')}</p>
                   <p className="text-sm opacity-90">{t('joinus.about.fit.desc')}</p>
                 </div>
@@ -114,7 +120,7 @@ export default function JoinUsPage() {
         {/* Video Resources */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.videos.title')}</h2>
           </div>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 pl-8 border-l-2 border-gray-200 dark:border-gray-700">
@@ -122,30 +128,30 @@ export default function JoinUsPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a href="https://www.bilibili.com/video/BV19a411X7eY" target="_blank" rel="noopener noreferrer"
-               className="group relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-black dark:hover:border-white transition-all">
-              <div className="text-5xl mb-4"></div>
-              <div className="inline-block px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-xs font-bold mb-3">
+               className="group relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-900 dark:hover:border-white transition-all">
+              <div className="text-5xl mb-4">📺</div>
+              <div className="inline-block px-3 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-xs font-bold mb-3">
                 {t('joinus.videos.doc1.rating')}
               </div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('video.doc1.title')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {t('joinus.videos.doc1.desc')}
               </p>
-              <div className="mt-4 text-black dark:text-white font-semibold group-hover:underline">
+              <div className="mt-4 text-blue-900 dark:text-white font-semibold group-hover:underline">
                 {t('joinus.videos.doc1.cta')}
               </div>
             </a>
             <a href="https://www.bilibili.com/video/BV1FZ4y1o734" target="_blank" rel="noopener noreferrer"
-               className="group relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-black dark:hover:border-white transition-all">
-              <div className="text-5xl mb-4"></div>
-              <div className="inline-block px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-xs font-bold mb-3">
+               className="group relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-900 dark:hover:border-white transition-all">
+              <div className="text-5xl mb-4">🎬</div>
+              <div className="inline-block px-3 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-xs font-bold mb-3">
                 {t('joinus.videos.doc2.rating')}
               </div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('video.doc2.title')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {t('joinus.videos.doc2.desc')}
               </p>
-              <div className="mt-4 text-black dark:text-white font-semibold group-hover:underline">
+              <div className="mt-4 text-blue-900 dark:text-white font-semibold group-hover:underline">
                 {t('joinus.videos.doc2.cta')}
               </div>
             </a>
@@ -155,7 +161,7 @@ export default function JoinUsPage() {
         {/* Your Profile */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.profile.title')}</h2>
           </div>
           <div className="space-y-8">
@@ -165,7 +171,7 @@ export default function JoinUsPage() {
               </p>
             </div>
 
-            <div className="bg-black dark:bg-white text-white dark:text-black p-8 border-2 border-black dark:border-white">
+            <div className="bg-blue-900 dark:bg-white text-white dark:text-blue-900 p-8 border-2 border-blue-900 dark:border-white">
               <h3 className="text-2xl font-bold mb-4">{t('joinus.profile.income.title')}</h3>
               <p className="text-base leading-relaxed opacity-90">
                 {t('joinus.profile.income.desc')}
@@ -176,25 +182,25 @@ export default function JoinUsPage() {
               <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-black dark:bg-white flex items-center justify-center text-2xl">
-                    
+                    🎯
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{t('joinus.profile.basic.title')}</h3>
                 </div>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.basic.1')}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.basic.2')}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.basic.3')}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.basic.4')}
                   </li>
                 </ul>
@@ -203,17 +209,17 @@ export default function JoinUsPage() {
               <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8 border-2 border-gray-200 dark:border-gray-700">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-black dark:bg-white flex items-center justify-center text-2xl">
-                    
+                    ⏰
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{t('joinus.profile.time.title')}</h3>
                 </div>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.time.1')}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-black dark:text-white font-bold">•</span>
+                    <span className="text-blue-900 dark:text-white font-bold">•</span>
                     {t('joinus.profile.time.2')}
                   </li>
                 </ul>
@@ -225,17 +231,17 @@ export default function JoinUsPage() {
         {/* Training Plan */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.plan.title')}</h2>
           </div>
           <div className="space-y-6">
             {/* Phase 1 */}
-            <div className="group relative bg-white dark:bg-gray-800 border-2 border-black dark:border-white p-8 hover:shadow-lg transition-all">
-              <div className="absolute -left-3 -top-3 w-12 h-12 bg-black dark:bg-white border-2 border-black dark:border-white flex items-center justify-center">
-                <span className="text-white dark:text-black font-black text-xl">1</span>
+            <div className="group relative bg-white dark:bg-gray-800 border-2 border-blue-900 dark:border-white p-8 hover:shadow-lg transition-all">
+              <div className="absolute -left-3 -top-3 w-12 h-12 bg-blue-900 dark:bg-white border-2 border-blue-900 dark:border-white flex items-center justify-center">
+                <span className="text-white dark:text-blue-900 font-black text-xl">1</span>
               </div>
               <div className="ml-4">
-                <div className="inline-block px-4 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-bold mb-4">
+                <div className="inline-block px-4 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-sm font-bold mb-4">
                   {t('joinus.plan.phase1.days')}
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('joinus.plan.phase1.title')}</h3>
@@ -252,19 +258,19 @@ export default function JoinUsPage() {
             </div>
 
             {/* Phase 2 */}
-            <div className="group relative bg-white dark:bg-gray-800 border-2 border-gray-700 dark:border-gray-400 p-8 hover:shadow-lg transition-all">
-              <div className="absolute -left-3 -top-3 w-12 h-12 bg-gray-700 dark:bg-gray-400 border-2 border-gray-700 dark:border-gray-400 flex items-center justify-center">
-                <span className="text-white dark:text-black font-black text-xl">2</span>
+            <div className="group relative bg-white dark:bg-gray-800 border-2 border-blue-900 dark:border-white p-8 hover:shadow-lg transition-all">
+              <div className="absolute -left-3 -top-3 w-12 h-12 bg-blue-900 dark:bg-white border-2 border-blue-900 dark:border-white flex items-center justify-center">
+                <span className="text-white dark:text-blue-900 font-black text-xl">2</span>
               </div>
               <div className="ml-4">
-                <div className="inline-block px-4 py-1 bg-gray-700 dark:bg-gray-400 text-white dark:text-black text-sm font-bold mb-4">
+                <div className="inline-block px-4 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-sm font-bold mb-4">
                   {t('joinus.plan.phase2.days')}
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('joinus.plan.phase2.title')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   {t('joinus.plan.phase2.desc')}
                 </p>
-                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-gray-600">
+                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-blue-900 dark:border-white">
                   <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                     <li><strong>{language === 'zh' ? '第一周' : 'Week 1'}</strong>：{t('joinus.plan.phase2.week1')}</li>
                     <li><strong>{language === 'zh' ? '第二周' : 'Week 2'}</strong>：{t('joinus.plan.phase2.week2')}</li>
@@ -275,19 +281,19 @@ export default function JoinUsPage() {
             </div>
 
             {/* Phase 3 */}
-            <div className="group relative bg-white dark:bg-gray-800 border-2 border-gray-800 dark:border-gray-300 p-8 hover:shadow-lg transition-all">
-              <div className="absolute -left-3 -top-3 w-12 h-12 bg-gray-800 dark:bg-gray-300 border-2 border-gray-800 dark:border-gray-300 flex items-center justify-center">
-                <span className="text-white dark:text-black font-black text-xl">3</span>
+            <div className="group relative bg-white dark:bg-gray-800 border-2 border-blue-900 dark:border-white p-8 hover:shadow-lg transition-all">
+              <div className="absolute -left-3 -top-3 w-12 h-12 bg-blue-900 dark:bg-white border-2 border-blue-900 dark:border-white flex items-center justify-center">
+                <span className="text-white dark:text-blue-900 font-black text-xl">3</span>
               </div>
               <div className="ml-4">
-                <div className="inline-block px-4 py-1 bg-gray-800 dark:bg-gray-300 text-white dark:text-black text-sm font-bold mb-4">
+                <div className="inline-block px-4 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-sm font-bold mb-4">
                   {t('joinus.plan.phase3.days')}
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('joinus.plan.phase3.title')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   {t('joinus.plan.phase3.desc')}
                 </p>
-                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-gray-700">
+                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-blue-900 dark:border-white">
                   <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                     <li><strong>{language === 'zh' ? '盈利考核要求' : 'Profit assessment requirement'}</strong>：{t('joinus.plan.phase3.req')}</li>
                     <li><strong>{t('joinus.plan.phase3.warning')}</strong></li>
@@ -297,19 +303,19 @@ export default function JoinUsPage() {
             </div>
 
             {/* Phase 4 */}
-            <div className="group relative bg-white dark:bg-gray-800 border-2 border-gray-800 dark:border-gray-400 p-8 hover:shadow-lg transition-all">
-              <div className="absolute -left-3 -top-3 w-12 h-12 bg-gray-800 dark:bg-gray-400 border-2 border-gray-800 dark:border-gray-400 flex items-center justify-center">
-                <span className="text-white dark:text-black font-black text-xl">4</span>
+            <div className="group relative bg-white dark:bg-gray-800 border-2 border-blue-900 dark:border-white p-8 hover:shadow-lg transition-all">
+              <div className="absolute -left-3 -top-3 w-12 h-12 bg-blue-900 dark:bg-white border-2 border-blue-900 dark:border-white flex items-center justify-center">
+                <span className="text-white dark:text-blue-900 font-black text-xl">4</span>
               </div>
               <div className="ml-4">
-                <div className="inline-block px-4 py-1 bg-gray-800 dark:bg-gray-400 text-white dark:text-black text-sm font-bold mb-4">
+                <div className="inline-block px-4 py-1 bg-blue-900 dark:bg-white text-white dark:text-blue-900 text-sm font-bold mb-4">
                   {t('joinus.plan.phase4.days')}
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">{t('joinus.plan.phase4.title')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   {t('joinus.plan.phase4.desc')}
                 </p>
-                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-gray-700">
+                <div className="bg-gray-100 dark:bg-gray-900 p-4 border-l-2 border-blue-900 dark:border-white">
                   <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                     <li>{t('joinus.plan.phase4.1')}</li>
                     <li>{t('joinus.plan.phase4.2')}</li>
@@ -320,19 +326,19 @@ export default function JoinUsPage() {
             </div>
 
             {/* Phase 5 */}
-            <div className="group relative bg-black dark:bg-white text-white dark:text-black border-2 border-black dark:border-white p-8 hover:shadow-xl transition-all">
-              <div className="absolute -left-3 -top-3 w-12 h-12 bg-white dark:bg-black border-2 border-black dark:border-white flex items-center justify-center">
-                <span className="text-black dark:text-white font-black text-xl">★</span>
+            <div className="group relative bg-blue-900 dark:bg-white text-white dark:text-blue-900 border-2 border-blue-900 dark:border-white p-8 hover:shadow-xl transition-all">
+              <div className="absolute -left-3 -top-3 w-12 h-12 bg-white dark:bg-blue-900 border-2 border-blue-900 dark:border-white flex items-center justify-center">
+                <span className="text-blue-900 dark:text-white font-black text-xl">★</span>
               </div>
               <div className="ml-4">
-                <div className="inline-block px-4 py-1 bg-white dark:bg-black text-black dark:text-white text-sm font-bold mb-4">
+                <div className="inline-block px-4 py-1 bg-white dark:bg-blue-900 text-blue-900 dark:text-white text-sm font-bold mb-4">
                   {t('joinus.plan.phase5.days')}
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{t('joinus.plan.phase5.title')}</h3>
                 <p className="mb-4 opacity-90">
                   {t('joinus.plan.phase5.desc')}
                 </p>
-                <div className="bg-white/10 dark:bg-black/10 p-4 border-l-2 border-white/50 dark:border-black/50">
+                <div className="bg-white/10 dark:bg-blue-900/10 p-4 border-l-2 border-white/50 dark:border-blue-900/50">
                   <ul className="text-sm space-y-2 opacity-90">
                     <li>{t('joinus.plan.phase5.1')}</li>
                     <li>{t('joinus.plan.phase5.2')}</li>
@@ -349,7 +355,7 @@ export default function JoinUsPage() {
         {/* Trading Rules */}
         <section>
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-16 bg-black dark:bg-white"></div>
+            <div className="w-1 h-16 bg-blue-900 dark:bg-white"></div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white">{t('joinus.rules.title')}</h2>
           </div>
           <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 border-2 border-gray-300 dark:border-gray-700 p-8">
@@ -357,7 +363,7 @@ export default function JoinUsPage() {
               {t('joinus.rules.desc')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white dark:bg-gray-900 p-6 border-l-4 border-black dark:border-white">
+              <div className="bg-white dark:bg-gray-900 p-6 border-l-4 border-blue-900 dark:border-white">
                 <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">{t('joinus.rules.trading.title')}</h3>
                 <ul className="space-y-3 text-gray-800 dark:text-gray-200">
                   <li className="flex items-start gap-2">
@@ -382,7 +388,7 @@ export default function JoinUsPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white dark:bg-gray-900 p-6 border-l-4 border-black dark:border-white">
+              <div className="bg-white dark:bg-gray-900 p-6 border-l-4 border-blue-900 dark:border-white">
                 <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">{t('joinus.rules.meeting.title')}</h3>
                 <ul className="space-y-3 text-gray-800 dark:text-gray-200">
                   <li className="flex items-start gap-2">
@@ -400,7 +406,7 @@ export default function JoinUsPage() {
         </section>
 
         {/* Final Words */}
-        <section className="bg-gradient-to-br from-black via-gray-900 to-black text-white p-12 border-2 border-black relative overflow-hidden">
+        <section className="bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white p-12 border-2 border-blue-900 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
@@ -441,13 +447,13 @@ export default function JoinUsPage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <LocaleLink
               href="/splan/psychology-test"
-              className="px-10 py-4 bg-white dark:bg-gray-900 border-2 border-black dark:border-white text-black dark:text-white font-bold text-lg hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all hover:shadow-lg"
+              className="px-10 py-4 bg-white dark:bg-gray-900 border-2 border-blue-900 dark:border-white text-blue-900 dark:text-white font-bold text-lg hover:bg-blue-900 hover:text-white dark:hover:bg-white dark:hover:text-blue-900 transition-all hover:shadow-lg"
             >
               {t('joinus.cta.psychology')}
             </LocaleLink>
             <ShineButton
               onClick={handleApply}
-              className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black font-bold text-lg border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all hover:shadow-lg animate-shake"
+              className="px-10 py-4 bg-blue-900 text-white font-bold text-lg border-2 border-blue-900 hover:bg-white hover:text-blue-900 dark:hover:bg-white dark:hover:text-blue-900 transition-all hover:shadow-lg animate-shake"
             >
               {t('joinus.cta.interview')}
             </ShineButton>

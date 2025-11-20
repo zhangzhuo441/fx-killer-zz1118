@@ -92,7 +92,8 @@ export default function EconomicCalendarPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-black via-gray-900 to-black text-white border-b-2 border-gray-800 overflow-hidden">
+      {/* 修改点：from-black -> from-blue-950, border-gray-800 -> border-blue-900 */}
+      <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white border-b-2 border-blue-900 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white blur-3xl"></div>
@@ -135,8 +136,9 @@ export default function EconomicCalendarPage() {
                     onClick={() => setSelectedDate(date)}
                     className={`px-4 py-2 text-sm font-semibold border-2 whitespace-nowrap transition-colors ${
                       selectedDate === date
-                        ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
-                        : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white'
+                        // 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900, hover:border-black -> hover:border-blue-900
+                        ? 'bg-blue-950 dark:bg-white text-white dark:text-black border-blue-900 dark:border-white'
+                        : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700 hover:border-blue-900 dark:hover:border-white'
                     }`}
                   >
                     <div>
@@ -166,7 +168,8 @@ export default function EconomicCalendarPage() {
                   onClick={() => setSelectedImportance('all')}
                   className={`px-4 py-2 text-sm font-semibold border-2 transition-colors ${
                     selectedImportance === 'all'
-                      ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                      // 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900
+                      ? 'bg-blue-950 dark:bg-white text-white dark:text-black border-blue-900 dark:border-white'
                       : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700'
                   }`}
                 >
@@ -178,7 +181,8 @@ export default function EconomicCalendarPage() {
                     onClick={() => setSelectedImportance(imp)}
                     className={`px-4 py-2 text-sm font-semibold border-2 transition-colors ${
                       selectedImportance === imp
-                        ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                        // 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900
+                        ? 'bg-blue-950 dark:bg-white text-white dark:text-black border-blue-900 dark:border-white'
                         : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700'
                     }`}
                   >
@@ -199,7 +203,8 @@ export default function EconomicCalendarPage() {
                   onClick={() => setSelectedCurrency('all')}
                   className={`px-4 py-2 text-sm font-semibold border-2 whitespace-nowrap transition-colors ${
                     selectedCurrency === 'all'
-                      ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                      // 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900
+                      ? 'bg-blue-950 dark:bg-white text-white dark:text-black border-blue-900 dark:border-white'
                       : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700'
                   }`}
                 >
@@ -211,7 +216,8 @@ export default function EconomicCalendarPage() {
                     onClick={() => setSelectedCurrency(cur)}
                     className={`px-4 py-2 text-sm font-semibold border-2 whitespace-nowrap transition-colors ${
                       selectedCurrency === cur
-                        ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                        // 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900
+                        ? 'bg-blue-950 dark:bg-white text-white dark:text-black border-blue-900 dark:border-white'
                         : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-700'
                     }`}
                   >
@@ -229,7 +235,8 @@ export default function EconomicCalendarPage() {
         <div className="bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800">
           {loading ? (
             <div className="p-12 text-center">
-              <div className="inline-block w-8 h-8 border-4 border-gray-300 dark:border-gray-700 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+              {/* 修改点：border-t-black -> border-t-blue-900 */}
+              <div className="inline-block w-8 h-8 border-4 border-gray-300 dark:border-gray-700 border-t-blue-900 dark:border-t-white rounded-full animate-spin"></div>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
                 {isZh ? '加载中...' : 'Loading...'}
               </p>
@@ -248,7 +255,8 @@ export default function EconomicCalendarPage() {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-black dark:bg-white text-white dark:text-black border-b-2 border-gray-200 dark:border-gray-800">
+                  {/* 修改点：bg-black -> bg-blue-950 */}
+                  <tr className="bg-blue-950 dark:bg-white text-white dark:text-black border-b-2 border-gray-200 dark:border-gray-800">
                     <th className="px-4 py-3 text-left font-bold text-sm">
                       {isZh ? '时间' : 'Time'}
                     </th>

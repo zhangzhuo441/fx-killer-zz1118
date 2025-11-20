@@ -35,7 +35,8 @@ export default function LiveTradingClient({ members }: LiveTradingClientProps) {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero Section - Matching news page style */}
-      <div className="relative bg-gradient-to-br from-black via-gray-900 to-black text-white border-b-2 border-gray-800 overflow-hidden">
+      {/* 修改点：from-black -> from-blue-950, border-gray-800 -> border-blue-900 */}
+      <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white border-b-2 border-blue-900 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white blur-3xl"></div>

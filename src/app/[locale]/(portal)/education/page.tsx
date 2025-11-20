@@ -100,7 +100,8 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section - 增强版 */}
-      <div className="relative bg-gradient-to-br from-black via-gray-900 to-black text-white border-b-2 border-gray-800 overflow-hidden">
+      {/* 修改点：from-black -> from-blue-950, border-gray-800 -> border-blue-900 */}
+      <div className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white border-b-2 border-blue-900 overflow-hidden">
         {/* 装饰性背景 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -231,7 +232,8 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
         </div>
 
         {/* CTA Section */}
-        <div className="bg-black dark:bg-white text-white dark:text-black p-12 border-2 border-black dark:border-white">
+        {/* 修改点：CTA Section - bg-black -> bg-blue-950, border-black -> border-blue-900 */}
+        <div className="bg-blue-950 dark:bg-white text-white dark:text-black p-12 border-2 border-blue-900 dark:border-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">
               {isZh ? '准备好成为职业交易员了吗？' : 'Ready to Become a Professional Trader?'}
@@ -252,13 +254,14 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocaleLink
                 href="/splan/join-us"
-                className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white font-bold text-lg border-2 border-white dark:border-black hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:hover:text-black transition-all inline-block text-center"
+                // 修改点：dark:bg-black -> dark:bg-blue-950, border-white -> border-white (保持对比)
+                className="px-10 py-4 bg-white dark:bg-blue-950 text-blue-950 dark:text-white font-bold text-lg border-2 border-white dark:border-blue-900 hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:hover:text-blue-950 transition-all inline-block text-center"
               >
                 {isZh ? '了解培训计划' : 'Learn About Training'}
               </LocaleLink>
               <LocaleLink
                 href="/splan/psychology-test"
-                className="px-10 py-4 bg-transparent text-white dark:text-black font-bold text-lg border-2 border-white dark:border-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all inline-block text-center"
+                className="px-10 py-4 bg-transparent text-white dark:text-black font-bold text-lg border-2 border-white dark:border-black hover:bg-white hover:text-blue-950 dark:hover:bg-black dark:hover:text-white transition-all inline-block text-center"
               >
                 {isZh ? '免费心理测评' : 'Free Psychology Test'}
               </LocaleLink>

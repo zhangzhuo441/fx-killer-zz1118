@@ -36,7 +36,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
     <EducationPageTemplate content={content} language={lang}>
       {/* Section 1: What is Forex */}
       <section id="what-is-forex" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '什么是外汇交易？' : 'What is Forex Trading?'}
         </h2>
 
@@ -50,7 +50,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               : ', also known as Foreign Exchange Trading or FX Trading, refers to the investment activity of buying and selling different countries\' currencies to profit from exchange rate fluctuations. The Foreign Exchange Market (Forex or FX) is the world\'s largest and most liquid financial market.'}
           </p>
 
-          <div className="bg-black dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-black dark:border-white">
+          <div className="bg-blue-950 dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-4">
               {isZh ? '💡 核心概念' : '💡 Core Concept'}
             </h3>
@@ -107,7 +107,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
       {/* Section 2: Market Mechanism */}
       <section id="forex-market" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '外汇市场的运作机制' : 'How the Forex Market Works'}
         </h2>
 
@@ -129,54 +129,54 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
           {/* Trading Sessions Table */}
           <div className="overflow-x-auto mb-8">
-            <table className="w-full border-2 border-black dark:border-white">
+            <table className="w-full border-2 border-blue-900 dark:border-white">
               <thead>
-                <tr className="bg-black dark:bg-white text-white dark:text-black">
-                  <th className="border-2 border-black dark:border-white px-4 py-3 text-left font-bold">
+                <tr className="bg-blue-950 dark:bg-white text-white dark:text-black">
+                  <th className="border-2 border-blue-900 dark:border-white px-4 py-3 text-left font-bold">
                     {isZh ? '交易时段' : 'Trading Session'}
                   </th>
-                  <th className="border-2 border-black dark:border-white px-4 py-3 text-left font-bold">
+                  <th className="border-2 border-blue-900 dark:border-white px-4 py-3 text-left font-bold">
                     {isZh ? '开盘时间（北京时间）' : 'Open Time (Beijing)'}
                   </th>
-                  <th className="border-2 border-black dark:border-white px-4 py-3 text-left font-bold">
+                  <th className="border-2 border-blue-900 dark:border-white px-4 py-3 text-left font-bold">
                     {isZh ? '特点' : 'Characteristics'}
                   </th>
                 </tr>
               </thead>
               <tbody className="text-gray-700 dark:text-gray-300">
                 <tr>
-                  <td className="border-2 border-black dark:border-white px-4 py-3 font-bold">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3 font-bold">
                     {isZh ? '悉尼时段' : 'Sydney Session'}
                   </td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">06:00 - 15:00</td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">06:00 - 15:00</td>
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">
                     {isZh ? '流动性较低，波动较小' : 'Lower liquidity, smaller volatility'}
                   </td>
                 </tr>
                 <tr className="bg-gray-50 dark:bg-gray-900">
-                  <td className="border-2 border-black dark:border-white px-4 py-3 font-bold">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3 font-bold">
                     {isZh ? '东京时段' : 'Tokyo Session'}
                   </td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">08:00 - 16:00</td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">08:00 - 16:00</td>
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">
                     {isZh ? '亚洲货币对活跃' : 'Asian currency pairs active'}
                   </td>
                 </tr>
                 <tr>
-                  <td className="border-2 border-black dark:border-white px-4 py-3 font-bold">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3 font-bold">
                     {isZh ? '伦敦时段' : 'London Session'}
                   </td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">15:30 - 00:30</td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">15:30 - 00:30</td>
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">
                     {isZh ? '交易量最大，波动性高' : 'Highest volume, high volatility'}
                   </td>
                 </tr>
                 <tr className="bg-gray-50 dark:bg-gray-900">
-                  <td className="border-2 border-black dark:border-white px-4 py-3 font-bold">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3 font-bold">
                     {isZh ? '纽约时段' : 'New York Session'}
                   </td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">20:30 - 05:00</td>
-                  <td className="border-2 border-black dark:border-white px-4 py-3">
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">20:30 - 05:00</td>
+                  <td className="border-2 border-blue-900 dark:border-white px-4 py-3">
                     {isZh ? '美元货币对最活跃' : 'USD pairs most active'}
                   </td>
                 </tr>
@@ -184,7 +184,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </table>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-6 my-6">
+          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-blue-900 dark:border-white p-6 my-6">
             <h4 className="text-lg font-bold mb-3 text-black dark:text-white">
               {isZh ? '⚡️ 实战技巧：最佳交易时间' : '⚡️ Pro Tip: Best Trading Times'}
             </h4>
@@ -203,7 +203,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
           </p>
 
           <div className="grid md:grid-cols-2 gap-4 mb-6">
-            <div className="border-2 border-black dark:border-white p-4">
+            <div className="border-2 border-blue-900 dark:border-white p-4">
               <h4 className="font-bold text-black dark:text-white mb-2">
                 {isZh ? '🏦 中央银行' : '🏦 Central Banks'}
               </h4>
@@ -213,7 +213,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
                   : 'Control money supply, intervene in exchange rates to maintain economic stability'}
               </p>
             </div>
-            <div className="border-2 border-black dark:border-white p-4">
+            <div className="border-2 border-blue-900 dark:border-white p-4">
               <h4 className="font-bold text-black dark:text-white mb-2">
                 {isZh ? '🏢 商业银行' : '🏢 Commercial Banks'}
               </h4>
@@ -223,7 +223,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
                   : 'Provide currency exchange services for businesses and individuals'}
               </p>
             </div>
-            <div className="border-2 border-black dark:border-white p-4">
+            <div className="border-2 border-blue-900 dark:border-white p-4">
               <h4 className="font-bold text-black dark:text-white mb-2">
                 {isZh ? '🏭 企业机构' : '🏭 Corporate Institutions'}
               </h4>
@@ -233,7 +233,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
                   : 'Multinational corporations conducting international trade settlement and hedging exchange rate risks'}
               </p>
             </div>
-            <div className="border-2 border-black dark:border-white p-4">
+            <div className="border-2 border-blue-900 dark:border-white p-4">
               <h4 className="font-bold text-black dark:text-white mb-2">
                 {isZh ? '👤 个人交易者' : '👤 Individual Traders'}
               </h4>
@@ -249,7 +249,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
       {/* Section 3: Currency Pairs */}
       <section id="currency-pairs" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '货币对：交易的基础单位' : 'Currency Pairs: The Basic Trading Unit'}
         </h2>
 
@@ -266,7 +266,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               : '. A currency pair consists of two currencies, for example EUR/USD (Euro/US Dollar).'}
           </p>
 
-          <div className="bg-black dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-black dark:border-white">
+          <div className="bg-blue-950 dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-4">
               {isZh ? '📐 货币对结构解析' : '📐 Currency Pair Structure'}
             </h3>
@@ -301,7 +301,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
           </h3>
 
           <div className="space-y-6 mb-8">
-            <div className="border-l-4 border-black dark:border-white pl-6">
+            <div className="border-l-4 border-blue-900 dark:border-white pl-6">
               <h4 className="text-xl font-bold mb-3 text-black dark:text-white">
                 {isZh ? '1. 主要货币对（Major Pairs）' : '1. Major Pairs'}
               </h4>
@@ -358,9 +358,9 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-6 my-6">
+          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-blue-900 dark:border-white p-6 my-6">
             <h4 className="text-lg font-bold mb-3 text-black dark:text-white">
-              {isZh ? '💡 新手建议' : '💡 Beginner Recommendation'}
+              {isZh ? '💡 新手建议' : '�� Beginner Recommendation'}
             </h4>
             <p className="text-gray-700 dark:text-gray-300 mb-0">
               {isZh
@@ -373,7 +373,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
       {/* Section 4: Key Terms */}
       <section id="key-terms" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '核心交易术语解析' : 'Core Trading Terminology'}
         </h2>
 
@@ -385,7 +385,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
           </p>
 
           <div className="space-y-4 mb-8">
-            <div className="border-2 border-black dark:border-white p-5">
+            <div className="border-2 border-blue-900 dark:border-white p-5">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '点（Pip）' : 'Pip (Point in Percentage)'}
               </h4>
@@ -404,7 +404,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               </p>
             </div>
 
-            <div className="border-2 border-black dark:border-white p-5">
+            <div className="border-2 border-blue-900 dark:border-white p-5">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '点差（Spread）' : 'Spread'}
               </h4>
@@ -421,7 +421,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               </p>
             </div>
 
-            <div className="border-2 border-black dark:border-white p-5">
+            <div className="border-2 border-blue-900 dark:border-white p-5">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '手数（Lot）' : 'Lot Size'}
               </h4>
@@ -450,7 +450,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               </ul>
             </div>
 
-            <div className="border-2 border-black dark:border-white p-5">
+            <div className="border-2 border-blue-900 dark:border-white p-5">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '杠杆（Leverage）' : 'Leverage'}
               </h4>
@@ -469,7 +469,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               </p>
             </div>
 
-            <div className="border-2 border-black dark:border-white p-5">
+            <div className="border-2 border-blue-900 dark:border-white p-5">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '保证金（Margin）' : 'Margin'}
               </h4>
@@ -488,7 +488,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
               </p>
             </div>
 
-            <div className="border-2 border-black dark:border-white p-5 bg-red-50 dark:bg-red-950">
+            <div className="border-2 border-blue-900 dark:border-white p-5 bg-red-50 dark:bg-red-950">
               <h4 className="text-lg font-bold mb-2 text-black dark:text-white">
                 {isZh ? '⚠️ 止损（Stop Loss）' : '⚠️ Stop Loss'}
               </h4>
@@ -508,7 +508,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
       {/* Section 5: How to Trade */}
       <section id="how-to-trade" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '外汇交易如何进行？' : 'How to Trade Forex?'}
         </h2>
 
@@ -570,7 +570,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
           <div className="space-y-4 mb-8">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-950 dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
                 1
               </div>
               <div>
@@ -586,7 +586,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-950 dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
                 2
               </div>
               <div>
@@ -602,7 +602,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-950 dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
                 3
               </div>
               <div>
@@ -618,7 +618,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-950 dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
                 4
               </div>
               <div>
@@ -634,7 +634,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-950 dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-xl">
                 5
               </div>
               <div>
@@ -654,13 +654,13 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
       {/* Section 6: Practical Tips */}
       <section id="practical-tips" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '新手实战技巧' : 'Practical Tips for Beginners'}
         </h2>
 
         <div className="prose prose-lg max-w-none">
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-black dark:bg-white text-white dark:text-black p-6 border-2 border-black dark:border-white">
+            <div className="bg-blue-950 dark:bg-white text-white dark:text-black p-6 border-2 border-blue-900 dark:border-white">
               <h3 className="text-xl font-bold mb-4">
                 {isZh ? '✅ 应该做的' : '✅ Do These'}
               </h3>
@@ -749,9 +749,9 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-8 my-8">
+          <div className="bg-gray-50 dark:bg-gray-900 border-2 border-blue-900 dark:border-white p-8 my-8">
             <h3 className="text-2xl font-bold mb-6 text-black dark:text-white">
-              {isZh ? '🎯 Space-time trading 推荐学习路径' : '🎯 Space-time trading Recommended Learning Path'}
+              {isZh ? '�� Space-time trading 推荐学习路径' : '�� Space-time trading Recommended Learning Path'}
             </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">

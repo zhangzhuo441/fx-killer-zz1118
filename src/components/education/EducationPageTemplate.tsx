@@ -31,7 +31,8 @@ export default function EducationPageTemplate({
         </nav>
 
         {/* Hero Section */}
-        <header className="mb-12 pb-8 border-b-2 border-black dark:border-white">
+        {/* 修改点：border-black -> border-blue-900 */}
+        <header className="mb-12 pb-8 border-b-2 border-blue-900 dark:border-white">
           <h1 className="text-4xl md:text-5xl font-black text-black dark:text-white mb-6 leading-tight">
             {content.heroTitle}
           </h1>
@@ -86,7 +87,8 @@ export default function EducationPageTemplate({
 
         {/* FAQ Section */}
         <section id="faq" className="mb-16">
-          <h2 className="text-3xl font-black mb-8 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+          {/* 修改点：border-black -> border-blue-900 */}
+          <h2 className="text-3xl font-black mb-8 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
             {content.faqTitle}
           </h2>
 
@@ -94,13 +96,15 @@ export default function EducationPageTemplate({
             {content.faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group border-2 border-black dark:border-white"
+                // 修改点：border-black -> border-blue-900
+                className="group border-2 border-blue-900 dark:border-white"
               >
                 <summary className="cursor-pointer p-6 font-bold text-lg text-black dark:text-white list-none flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                   <span>{faq.question}</span>
                   <span className="transform group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div className="px-6 py-6 text-gray-700 dark:text-gray-300 border-t-2 border-black dark:border-white">
+                {/* 修改点：border-black -> border-blue-900 */}
+                <div className="px-6 py-6 text-gray-700 dark:text-gray-300 border-t-2 border-blue-900 dark:border-white">
                   <p className="leading-relaxed">{faq.answer}</p>
                 </div>
               </details>
@@ -110,7 +114,8 @@ export default function EducationPageTemplate({
 
         {/* Related Resources */}
         <section className="mb-16">
-          <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+          {/* 修改点：border-black -> border-blue-900 */}
+          <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
             {content.relatedTitle}
           </h2>
 
@@ -119,7 +124,8 @@ export default function EducationPageTemplate({
               <LocaleLink
                 key={index}
                 href={resource.href}
-                className="border-2 border-black dark:border-white p-6 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group"
+                // 修改点：border-black -> border-blue-900, hover:bg-black -> hover:bg-blue-950
+                className="border-2 border-blue-900 dark:border-white p-6 hover:bg-blue-950 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group"
               >
                 <div className="text-3xl mb-4">{resource.icon}</div>
                 <h3 className="text-xl font-bold mb-2">{resource.title}</h3>
@@ -132,7 +138,8 @@ export default function EducationPageTemplate({
         </section>
 
         {/* CTA Section */}
-        <section className="bg-black dark:bg-white text-white dark:text-black p-12 border-2 border-black dark:border-white">
+        {/* 修改点：bg-black -> bg-blue-950, border-black -> border-blue-900 */}
+        <section className="bg-blue-950 dark:bg-white text-white dark:text-black p-12 border-2 border-blue-900 dark:border-white">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">
               {content.ctaTitle}
@@ -183,7 +190,8 @@ export default function EducationPageTemplate({
         </section>
 
         {/* Footer Navigation */}
-        <nav className="mt-16 flex justify-between items-center pt-8 border-t-2 border-black dark:border-white">
+        {/* 修改点：border-black -> border-blue-900 */}
+        <nav className="mt-16 flex justify-between items-center pt-8 border-t-2 border-blue-900 dark:border-white">
           <LocaleLink
             href={content.footerPrevHref || "/education"}
             className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white font-bold transition-colors"

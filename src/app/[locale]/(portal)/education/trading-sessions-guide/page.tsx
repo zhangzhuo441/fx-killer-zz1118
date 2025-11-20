@@ -28,7 +28,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
     <EducationPageTemplate content={content} language={lang}>
       {/* Section 1: Why Important */}
       <section id="why-important" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '为什么交易时段如此重要？' : 'Why Trading Sessions Matter'}
         </h2>
         <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -63,7 +63,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
                 : 'Some sessions favor trending moves, others tend to range'}
             </li>
           </ul>
-          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-black dark:border-white">
+          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-blue-900 dark:border-white">
             <strong>{isZh ? '💡 核心观点：' : '💡 Key Insight:'}</strong>{' '}
             {isZh
               ? '选对交易时段，可以显著提升盈利概率，降低交易成本。这不是可选项，而是成功交易的必备条件。'
@@ -74,7 +74,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
 
       {/* Section 2: Four Sessions */}
       <section id="four-sessions" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '全球四大交易时段详解' : 'The Four Major Trading Sessions'}
         </h2>
 
@@ -240,7 +240,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
 
       {/* Section 3: Overlap Periods */}
       <section id="overlap-periods" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '重叠时段：交易的黄金时刻' : 'Overlap Periods: Golden Trading Hours'}
         </h2>
         <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -251,7 +251,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
           </p>
 
           {/* Tokyo-London Overlap */}
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-3">
               {isZh ? '🌅 东京-伦敦重叠 (Tokyo-London Overlap)' : '🌅 Tokyo-London Overlap'}
             </h3>
@@ -272,7 +272,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
           </div>
 
           {/* London-New York Overlap */}
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-3">
               {isZh ? '🔥 伦敦-纽约重叠 (London-New York Overlap) - 最佳时段' : '🔥 London-New York Overlap - Prime Time'}
             </h3>
@@ -309,7 +309,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
             </p>
           </div>
 
-          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-black dark:border-white">
+          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-blue-900 dark:border-white">
             <strong>{isZh ? '💡 专业建议：' : '💡 Pro Tip:'}</strong>{' '}
             {isZh
               ? '如果你只能在一个时段交易，毫无疑问选择伦敦-纽约重叠时段（北京时间20:00-00:00）。这4小时内的交易机会，可能超过其他20小时的总和。'
@@ -320,66 +320,66 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
 
       {/* Section 4: Currency Pairs Best Times */}
       <section id="currency-pairs" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '不同货币对的最佳交易时段' : 'Best Trading Times for Currency Pairs'}
         </h2>
         <div className="overflow-x-auto">
-          <table className="w-full border-2 border-black dark:border-white">
+          <table className="w-full border-2 border-blue-900 dark:border-white">
             <thead>
-              <tr className="bg-black dark:bg-white text-white dark:text-black">
-                <th className="border-2 border-black dark:border-white p-3 text-left">
+              <tr className="bg-blue-950 dark:bg-white text-white dark:text-black">
+                <th className="border-2 border-blue-900 dark:border-white p-3 text-left">
                   {isZh ? '货币对' : 'Currency Pair'}
                 </th>
-                <th className="border-2 border-black dark:border-white p-3 text-left">
+                <th className="border-2 border-blue-900 dark:border-white p-3 text-left">
                   {isZh ? '最佳交易时段' : 'Best Trading Session'}
                 </th>
-                <th className="border-2 border-black dark:border-white p-3 text-left">
+                <th className="border-2 border-blue-900 dark:border-white p-3 text-left">
                   {isZh ? '北京时间' : 'Beijing Time'}
                 </th>
               </tr>
             </thead>
             <tbody className="text-gray-700 dark:text-gray-300">
               <tr>
-                <td className="border-2 border-black dark:border-white p-3 font-bold">EUR/USD</td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">EUR/USD</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   {isZh ? '伦敦-纽约重叠' : 'London-NY Overlap'}
                 </td>
-                <td className="border-2 border-black dark:border-white p-3">20:00 - 00:00</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">20:00 - 00:00</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border-2 border-black dark:border-white p-3 font-bold">GBP/USD</td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">GBP/USD</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   {isZh ? '伦敦-纽约重叠' : 'London-NY Overlap'}
                 </td>
-                <td className="border-2 border-black dark:border-white p-3">20:00 - 00:00</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">20:00 - 00:00</td>
               </tr>
               <tr>
-                <td className="border-2 border-black dark:border-white p-3 font-bold">USD/JPY</td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">USD/JPY</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   {isZh ? '东京 + 纽约' : 'Tokyo + New York'}
                 </td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   08:00 - 17:00, 20:00 - 05:00
                 </td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border-2 border-black dark:border-white p-3 font-bold">AUD/USD</td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">AUD/USD</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   {isZh ? '悉尼 + 东京' : 'Sydney + Tokyo'}
                 </td>
-                <td className="border-2 border-black dark:border-white p-3">06:00 - 17:00</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">06:00 - 17:00</td>
               </tr>
               <tr>
-                <td className="border-2 border-black dark:border-white p-3 font-bold">USD/CAD</td>
-                <td className="border-2 border-black dark:border-white p-3">{isZh ? '纽约' : 'New York'}</td>
-                <td className="border-2 border-black dark:border-white p-3">20:00 - 05:00</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">USD/CAD</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">{isZh ? '纽约' : 'New York'}</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">20:00 - 05:00</td>
               </tr>
               <tr className="bg-gray-50 dark:bg-gray-800">
-                <td className="border-2 border-black dark:border-white p-3 font-bold">EUR/JPY</td>
-                <td className="border-2 border-black dark:border-white p-3">
+                <td className="border-2 border-blue-900 dark:border-white p-3 font-bold">EUR/JPY</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">
                   {isZh ? '东京-伦敦重叠' : 'Tokyo-London Overlap'}
                 </td>
-                <td className="border-2 border-black dark:border-white p-3">15:00 - 17:00</td>
+                <td className="border-2 border-blue-900 dark:border-white p-3">15:00 - 17:00</td>
               </tr>
             </tbody>
           </table>
@@ -388,11 +388,11 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
 
       {/* Section 5: Practical Strategy */}
       <section id="practical-strategy" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '基于时段的实战交易策略' : 'Session-Based Trading Strategies'}
         </h2>
         <div className="space-y-6">
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-3 text-black dark:text-white">
               {isZh ? '策略1：亚洲时段区间交易' : 'Strategy 1: Asian Session Range Trading'}
             </h3>
@@ -415,7 +415,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
             </ul>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-3 text-black dark:text-white">
               {isZh ? '策略2：伦敦开盘突破' : 'Strategy 2: London Open Breakout'}
             </h3>
@@ -438,7 +438,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
             </ul>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-3 text-black dark:text-white">
               {isZh ? '策略3：纽约开盘趋势跟踪' : 'Strategy 3: New York Open Trend Following'}
             </h3>
@@ -465,7 +465,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
 
       {/* Section 6: Volatility Patterns */}
       <section id="volatility-patterns" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '波动性模式与风险管理' : 'Volatility Patterns & Risk Management'}
         </h2>
         <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -517,7 +517,7 @@ export default async function TradingSessionsGuidePage({ params }: { params: Pro
             </ul>
           </div>
 
-          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-black dark:border-white">
+          <p className="bg-gray-100 dark:bg-gray-800 p-4 border-l-4 border-blue-900 dark:border-white">
             <strong>{isZh ? '⚠️ 风险警告：' : '⚠️ Risk Warning:'}</strong>{' '}
             {isZh
               ? '时段转换时刻（如伦敦开盘、纽约开盘）价格波动剧烈且不可预测。新手应避免在开盘前后15分钟内交易，等待市场稳定后再行动。'

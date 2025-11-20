@@ -27,7 +27,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
     <EducationPageTemplate content={content} language={lang}>
       {/* Section 1: What is Day Trading */}
       <section id="what-is-day-trading" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '什么是日内交易？' : 'What is Day Trading?'}
         </h2>
         <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -37,7 +37,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
               : 'Day Trading, also known as intraday trading, refers to buying and selling within the same trading day without holding positions overnight. Day traders profit from short-term market movements, typically holding positions from minutes to hours, aiming to capture small but frequent profits from intraday price fluctuations.'}
           </p>
 
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-4">{isZh ? '日内交易的核心特征' : 'Core Characteristics of Day Trading'}</h3>
             <ul className="space-y-3">
               <li>
@@ -101,7 +101,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </ul>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
               {isZh ? '日内交易的挑战' : 'Challenges of Day Trading'}
             </h3>
@@ -155,69 +155,69 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
           </p>
 
           <div className="overflow-x-auto">
-            <table className="w-full border-2 border-black dark:border-white">
+            <table className="w-full border-2 border-blue-900 dark:border-white">
               <thead>
-                <tr className="bg-black dark:bg-white text-white dark:text-black">
-                  <th className="border border-black dark:border-white p-3 text-left">
+                <tr className="bg-blue-950 dark:bg-white text-white dark:text-black">
+                  <th className="border border-blue-900 dark:border-white p-3 text-left">
                     {isZh ? '时间框架' : 'Timeframe'}
                   </th>
-                  <th className="border border-black dark:border-white p-3 text-left">
+                  <th className="border border-blue-900 dark:border-white p-3 text-left">
                     {isZh ? '持仓时间' : 'Holding Period'}
                   </th>
-                  <th className="border border-black dark:border-white p-3 text-left">
+                  <th className="border border-blue-900 dark:border-white p-3 text-left">
                     {isZh ? '目标利润' : 'Target Profit'}
                   </th>
-                  <th className="border border-black dark:border-white p-3 text-left">
+                  <th className="border border-blue-900 dark:border-white p-3 text-left">
                     {isZh ? '止损设置' : 'Stop-Loss'}
                   </th>
-                  <th className="border border-black dark:border-white p-3 text-left">
+                  <th className="border border-blue-900 dark:border-white p-3 text-left">
                     {isZh ? '适合交易者' : 'Suitable For'}
                   </th>
                 </tr>
               </thead>
               <tbody className="text-sm">
-                <tr className="border border-black dark:border-white">
-                  <td className="border border-black dark:border-white p-3 font-bold">M5 (5分钟)</td>
-                  <td className="border border-black dark:border-white p-3">
+                <tr className="border border-blue-900 dark:border-white">
+                  <td className="border border-blue-900 dark:border-white p-3 font-bold">M5 (5分钟)</td>
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '15-60分钟' : '15-60 minutes'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '10-20点' : '10-20 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '10-15点' : '10-15 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '激进型，快速反应' : 'Aggressive, quick response'}
                   </td>
                 </tr>
-                <tr className="bg-gray-50 dark:bg-gray-800 border border-black dark:border-white">
-                  <td className="border border-black dark:border-white p-3 font-bold">M15 (15分钟)</td>
-                  <td className="border border-black dark:border-white p-3">
+                <tr className="bg-gray-50 dark:bg-gray-800 border border-blue-900 dark:border-white">
+                  <td className="border border-blue-900 dark:border-white p-3 font-bold">M15 (15分钟)</td>
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '1-3小时' : '1-3 hours'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '20-40点' : '20-40 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '20-30点' : '20-30 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '平衡型，最常用' : 'Balanced, most common'}
                   </td>
                 </tr>
-                <tr className="border border-black dark:border-white">
-                  <td className="border border-black dark:border-white p-3 font-bold">H1 (1小时)</td>
-                  <td className="border border-black dark:border-white p-3">
+                <tr className="border border-blue-900 dark:border-white">
+                  <td className="border border-blue-900 dark:border-white p-3 font-bold">H1 (1小时)</td>
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '2-8小时' : '2-8 hours'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '40-80点' : '40-80 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '30-50点' : '30-50 pips'}
                   </td>
-                  <td className="border border-black dark:border-white p-3">
+                  <td className="border border-blue-900 dark:border-white p-3">
                     {isZh ? '保守型，信号可靠' : 'Conservative, reliable signals'}
                   </td>
                 </tr>
@@ -225,7 +225,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </table>
           </div>
 
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-4">{isZh ? '多时间框架分析法' : 'Multiple Timeframe Analysis'}</h3>
             <p className="mb-3">
               {isZh
@@ -255,7 +255,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 border-2 border-black dark:border-white">
+            <div className="p-6 border-2 border-blue-900 dark:border-white">
               <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
                 {isZh ? 'M5图表优缺点' : 'M5 Chart Pros & Cons'}
               </h3>
@@ -279,7 +279,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
               </div>
             </div>
 
-            <div className="p-6 border-2 border-black dark:border-white">
+            <div className="p-6 border-2 border-blue-900 dark:border-white">
               <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
                 {isZh ? 'H1图表优缺点' : 'H1 Chart Pros & Cons'}
               </h3>
@@ -304,7 +304,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </div>
           </div>
 
-          <div className="p-6 bg-gray-100 dark:bg-gray-800 border-l-4 border-black dark:border-white">
+          <div className="p-6 bg-gray-100 dark:bg-gray-800 border-l-4 border-blue-900 dark:border-white">
             <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
               {isZh ? '新手建议' : 'Beginner Recommendation'}
             </h3>
@@ -319,11 +319,11 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
 
       {/* Section 3: Entry and Exit Strategies */}
       <section id="entry-exit" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '入场与出场策略' : 'Entry and Exit Strategies'}
         </h2>
         <div className="space-y-6">
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-4 text-black dark:text-white">
               {isZh ? '策略1：趋势跟踪入场' : 'Strategy 1: Trend Following Entry'}
             </h3>
@@ -349,7 +349,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </div>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-4 text-black dark:text-white">
               {isZh ? '策略2：突破交易' : 'Strategy 2: Breakout Trading'}
             </h3>
@@ -385,7 +385,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </div>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-xl font-bold mb-4 text-black dark:text-white">
               {isZh ? '策略3：区间震荡交易' : 'Strategy 3: Range Trading'}
             </h3>
@@ -417,7 +417,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </div>
           </div>
 
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-4">{isZh ? '出场策略：比入场更重要' : 'Exit Strategies: More Important Than Entry'}</h3>
             <p className="mb-3">
               {isZh
@@ -672,11 +672,11 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
 
       {/* Section 6: Risk Management */}
       <section id="risk-management" className="mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-black dark:border-white pl-4">
+        <h2 className="text-3xl font-black mb-6 text-black dark:text-white border-l-4 border-blue-900 dark:border-white pl-4">
           {isZh ? '风险管理要点' : 'Risk Management Essentials'}
         </h2>
         <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-          <div className="p-6 bg-black dark:bg-white text-white dark:text-black">
+          <div className="p-6 bg-blue-950 dark:bg-white text-white dark:text-black">
             <h3 className="text-xl font-bold mb-4">{isZh ? '日内交易风险管理黄金法则' : 'Day Trading Risk Management Golden Rules'}</h3>
             <ul className="space-y-3">
               <li>
@@ -712,7 +712,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
             </ul>
           </div>
 
-          <div className="p-6 border-2 border-black dark:border-white">
+          <div className="p-6 border-2 border-blue-900 dark:border-white">
             <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
               {isZh ? '仓位计算公式' : 'Position Sizing Formula'}
             </h3>
@@ -745,7 +745,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 border-2 border-black dark:border-white">
+            <div className="p-6 border-2 border-blue-900 dark:border-white">
               <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
                 {isZh ? '情绪管理技巧' : 'Emotional Management Tips'}
               </h3>
@@ -758,7 +758,7 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
               </ul>
             </div>
 
-            <div className="p-6 border-2 border-black dark:border-white">
+            <div className="p-6 border-2 border-blue-900 dark:border-white">
               <h3 className="text-lg font-bold mb-3 text-black dark:text-white">
                 {isZh ? '资金管理建议' : 'Money Management Recommendations'}
               </h3>
