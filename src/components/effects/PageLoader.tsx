@@ -5,6 +5,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // 页面加载动画
 export default function PageLoader() {
+  // 在组件开始就检查是否为感谢页面，如果是则直接不渲染
+  const isThankYouPage = typeof window !== 'undefined' ? window.location.pathname.includes('/thank-you') : false;
+  
+  // 如果是感谢页面，直接返回null，不渲染任何加载动画
+  if (isThankYouPage) {
+    return null;
+  }
+
   const [isLoading, setIsLoading] = useState(true);
   const [isDark, setIsDark] = useState(false);
 
@@ -21,10 +29,10 @@ export default function PageLoader() {
       attributeFilter: ['class'],
     });
 
-    // 页面加载完成后隐藏加载动画
+    // 非感谢页面正常显示2.5秒加载动画
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // 2.5秒后消失
+    }, 2500);
 
     return () => {
       clearTimeout(timer);

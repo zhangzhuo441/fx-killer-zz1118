@@ -95,10 +95,11 @@ export default function FloatingContactForm() {
               className="p-6 space-y-4"
             >
               {/* Hidden Fields */}
+              {/* 使用系统内部感谢页面路径，添加window.location.origin确保完整URL */}
               <input
                 type="hidden"
                 name="_next"
-                value={`${siteUrl}/${language}/thank-you`}
+                value={`${typeof window !== 'undefined' ? window.location.origin : ''}/${language}/thank-you`}
               />
               <input
                 type="hidden"
